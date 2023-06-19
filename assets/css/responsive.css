@@ -1,0 +1,40 @@
+/*====== style responsive ======*/
+@media only screen and (max-width: 1200px) {}
+/* end breakpoint 1200px */
+
+@media only screen and (max-width: 1024px) {
+    .wrap__login-page h1 {
+        font-size: 20px;
+    }
+}
+/* end breakpoint 1024px */
+
+@media only screen and (max-width: 768px) {
+    .wrap__login-page h1 {
+        font-size: 18px;
+    }
+    .wrap__login-page .bct {
+        max-width: 120px;
+    }
+    .login-box {
+        width: 100%;
+        max-width: 438px;
+        padding: 25px 20px;
+    }
+    .login-box h3 {
+        font-size: 18px;
+    }
+    .form-login__row.pass-code span {
+        width: 110px;
+    }
+}
+/* end breakpoint 768px */
+
+@media only screen and (max-width: 479px) {}
+/* end breakpoint 479px */
+
+@media only screen and (max-width: 360px) {}
+/* end breakpoint 360px */
+
+@media only screen and (max-width: 320px) {}
+/* end breakpoint 320px */

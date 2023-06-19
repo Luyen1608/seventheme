@@ -1,0 +1,297 @@
+/* style for content all page  */
+
+.cat__tags {
+    flex-wrap: nowrap;
+    padding: 40px 0px 36px;
+    column-gap: 30px;
+}
+
+.cat__tag-item a {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color:  #1D2E04;
+    padding: 3px 0px;
+    position: relative;
+}
+
+.cat__tag-item a.active::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/line-red.png);
+    width: 90%;
+    height: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cat__tag-item a.active {
+    color: #EE6055;
+}
+
+.cat__tag-item a:hover {
+    color: #EE6055;
+    opacity: 1;
+}
+
+.wrap-product__list {
+    row-gap: 26px;
+}
+
+.product__item {
+    height: 100%;
+    background-color: #F7F7F7;;
+    transition: .2s;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sale-of {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #F74239;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 2.8px 8px;
+    z-index: 2;
+}
+
+.product__item .p__thumb {
+    overflow: hidden;
+    height: 245px;
+    display: block;
+}
+
+.product__item:hover {
+    background-color: var(--style01-cl-hightlight);
+    color: #fff;
+}
+
+.product__item:hover .p__text .__title {
+    color: #fff;
+}
+
+.product__item:hover .p__text span {
+    color: #fff;
+}
+
+.product__item:hover .p__text span.old {
+    opacity: .6;
+}
+
+.product__item .p__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: .3s;
+}
+
+.product__item .p__thumb:hover img {
+    transform: scale(1.04);
+}
+
+.product__item .p__thumb:hover {
+    opacity: .8;
+}
+
+.product__item .p__text .__title {
+    font-size: 14px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+.p__price {
+    column-gap: 8px;
+}
+
+.p__price span {
+    font-size: 13px;
+    color: #5E5E5E;
+    font-weight: 400;
+    transition: .2s;
+}
+
+.p__price span.new {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--style01-cl-hightlight);
+}
+
+.wrap__blogs {
+    padding: 50px 0px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.blog__item {
+    width: 100%;
+}
+
+.blog__item .blog__thumb {
+    display: block;
+}
+
+.blog__item .blog__thumb img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.blog__item .__text {
+    padding: 16px 0px;
+}
+
+.blog__item .__text .__title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.blog__item .__text  p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.wrap__login-page {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    padding: 20px;
+
+    background-image: url(../images/background-banner-blue-do-hoa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap__login-page .bct {
+    max-width: 184px;
+    margin: 0 auto;
+}
+
+.wrap__login-page h1 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.wrap__login-page h1 span {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.login-box {
+    width: 438px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF80;
+    background: rgba(255, 255, 255, 0.62);  
+    padding: 25px 70px;
+}
+
+.login-box h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #023E8A;
+}
+
+.login-box p {
+    font-size: 11px;
+    color: #023E8A;
+    text-align: center;
+}
+
+.form-login__row {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-login__row span {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0077B6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login__row.pass-code  span {
+    width: 114px;
+}
+
+.form-login__row.pass-code .form-control {
+    padding-left: 124px;
+}
+
+.form-login__row  .form-control {
+    height: 54px;
+    padding-left: 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0077B699;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-login__row  .form-control::placeholder {
+    color: #023E8A99;
+}
+
+.form-login__row button {
+    width: 100%;
+    height: 41px;
+    background-color: #0077B6;
+    color: #fff;
+}
+
+.form-login__row button:hover {
+    color: #fff;
+    opacity: .7;
+}
+
+.form-login__row .form-check-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #023E8A;
+}
+
+.form-login__row a {
+    color: #023E8A;
+    font-size: 16px;
+    font-weight: 300;
+}
+
