@@ -13,6 +13,7 @@
     color:  #1D2E04;
     padding: 3px 0px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .cat__tag-item a.active::after {

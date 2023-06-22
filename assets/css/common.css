@@ -85,8 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
     --style01-cl-hightlight : #7AA341;
     --style01-border-color : #79A837;
 
-    --style02-cl-hightlight : #7AA341;
-    --style02-border-color : #79A837;
+    --style02-cl-hightlight : #162570;
 }
 
 
@@ -104,7 +103,8 @@ header {
 }
 
 #homeStyle02 .header-top {
-    
+    background: var(--style02-cl-hightlight);
+    color: #ffffff;
 }
 
 .header-top__inner {
@@ -196,6 +196,22 @@ header {
     position: relative;
 }
 
+.shopping-cart::after {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #F74239;
+    width: 20px;
+    height: 20px;
+    top: -11px;
+    right: -12px;
+    content: attr(data-content) !important;
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .shopping-cart img {
     max-width: 35px;
 }
@@ -249,6 +265,10 @@ header {
     position: relative;
 }
 
+.menu-item.active > a {
+    color: #EE6055;
+}
+
 .menu-item:hover .menu__sub {
     opacity: 1;
     visibility: visible;
@@ -296,6 +316,11 @@ header {
     height: 56px;
 }
 
+.menu-item > a:hover {
+    color: #EE6055;
+    opacity: 1;
+}
+
 .nav__left-title  {
     height: 56px;
     background: #86BE4C3D;
@@ -306,6 +331,10 @@ header {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+#homeStyle02 .nav__left-title {
+    background: #B1CEF23D;
 }
 
 #homeStyle01 .header__menu {
@@ -344,11 +373,16 @@ header {
 footer {
     display: block;
     position: relative;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
 }
 
 #homeStyle01 footer {
     background-color: #434A3D;
+    color: #fff;
+}
+
+#homeStyle02 footer {
+    background-color: #162570;
     color: #fff;
 }
 
@@ -371,6 +405,14 @@ footer {
 .footer__block {
     width: auto;
     max-width: 261px;
+}
+
+.footer__block  img.bct {
+    max-width: 200px;
+}
+
+.footer__block.--last {
+    max-width: 320px;
 }
 
 .footer-company__info {
@@ -396,11 +438,16 @@ footer {
 }
 
 .form-group__ft input {
-    height: 46px;
+    height: 40px;
     background-color: transparent;
     border: 1px solid #fff;
     font-size: 14px;
     font-weight: 600;
+    color: #fff;
+}
+
+.form-group__ft input:focus {
+    background-color: transparent;
     color: #fff;
 }
 
@@ -412,17 +459,44 @@ footer {
 
 .form-group__ft  button {
     position: absolute;
-    width: 58px;
-    height: 38px;
+    width: 50px;
+    height: 100%;
     background-color: #fff;
     border: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    right: 4px;
-    top:50%;
-    transform: translateY(-50%);
+    right: 0px;
+    top:0;
+}
+
+.footer-bt {
+    margin-top: 20px;
+    padding: 16px 0px; 
+    border-top: 1px solid #fff;
+}
+
+.footer-bt__inner {
+    column-gap: 16px;
+}
+
+.form-group__ft {
+    min-width: 220px;
+}
+
+.call-now {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.call-now a {
+    color: #F74239;
 }
 /* end style footer */
 
