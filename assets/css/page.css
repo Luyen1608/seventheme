@@ -144,6 +144,7 @@
 
 .blog__item {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .blog__item .blog__thumb {
@@ -154,6 +155,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    width: 100%;
 }
 
 .blog__item .__text {
@@ -296,3 +298,21 @@
     font-weight: 300;
 }
 
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 479px) {
+    .product__item .p__thumb {
+        height: 180px;
+    }
+    .product__item .p__text {
+        padding: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .product__item .p__thumb {
+        height: 140px;
+    }
+}
