@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home-page demo 02</title>
+
+        <!-- link css bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- link css bootstrap 5 -->
+
+        <!-- add fontawesome -->
+        <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+        <!-- add fontawesome -->
+
+        <!-- swiper slider css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <!-- swiper slider css -->
+
+        <!-- link css style  -->
+        <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
+        <!-- link css style  -->
+
+
+    </head>
+
+    <body>
+
+        <div class="wrapper" id="homeStyle03">
+            <!-- start header -->
+            <header>
+                <div class="container">
+                    <div class="header__center d-flex align-items-center justify-content-between">
+                        <div class="wrap-header__logo d-flex align-items-center">
+                            <a href="home.html" class="header__logo">
+                                <img src="./assets/images/logo.png" alt="">
+                            </a>
+                            <div class="wrap-header__form">
+                                <form action="">
+                                    <div class="form-group-header">
+                                        <input type="text" class="form-control --style01"
+                                            placeholder="Tìm kiếm sản phẩm....">
+                                        <button type="submit" class="btn --style01">
+                                            <img src="./assets/images/search-icon-white.svg" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__info d-flex align-items-center">
+                            <a href="tel:1900 1900" class="__item --ct">
+                                <img src="./assets/images/phone-icon-demo2.svg" alt="">
+                                <div class="__text">
+                                    Hotline:
+                                    <span>1900 1900</span>
+                                </div>
+                            </a>
+                            <div class="wrap__header-user">
+                                <img src="./assets/images/user-02.svg" alt="">
+                                <div class="__text">
+                                    <a href="#">Đăng nhập</a>
+                                    <a href="#">Đăng ký</a>
+                                </div>
+                            </div>
+                            
+                            <div class="shopping-cart" data-content="3">
+                                <img src="./assets/images/cart-demo2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-header__nav d-flex align-items-center">
+                        <div class="header__right">
+                            <ul class="header__menu">
+                                <li class="menu-item active">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Sản phẩm
+                                        <img src="./assets/images/down-icon-white.svg" alt="">
+                                    </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Nội thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vật liệu xây dựng</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mỹ nghệ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Tin tức
+                                        <img src="./assets/images/down-icon-white.svg" alt="">
+                                    </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Tin mới nhất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tin trong nước</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Khuyến mại</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Thư viện ảnh</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <div class="home-banner">
+                                <img src="./assets/images/banner-home02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- end header -->
+
+            <!-- start nav mobile -->
+            <div class="btns-wrap only-mobile">
+                <div class="mobile-cate-btn">
+                    <div class="container-al">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="shopping-cart" data-content="3">
+                    <img src="./assets/images/Shipping.svg" alt="">
+                </div>
+                <a href="#" class="sign-in-btn btn-mobile"> Đăng nhập </a>
+                <a href="#" class="sign-up-btn btn-mobile"> Đăng ký </a>
+            </div>
+            <!-- end nav mobile -->
+
+            <!-- start menu mobile -->
+            <div class="mobile-categories">
+                <div class="container-al">
+                    <ul class="mobile-categories-list">
+                        <li><span>Trang chủ</span></li>
+                        <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+                            <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown" id="sd-1">
+                                <li><a href="#">1 Hello world</a></li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Chào hàng </span></li>
+                        <li><span> Doanh nghiệp </span></li>
+                        <li class="dropdown">
+                            <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        Giới thiệu tổng quan sàn<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Quảng cáo </span></li>
+                        <li class="dropdown">
+                            <span>
+                                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end menu mobile -->
+
+            <!-- overlay when open menu mobile -->
+            <div class="mobile-overlay"></div>
+            <!-- overlay when open menu mobile -->
+
+            <!-- start main -->
+            <main>
+                <div class="container">
+                    
+                    <div class="wrap__search-home">
+                        <div class="section-title text-center mb-4 mt-3">
+                            <h2>Xu hướng tìm kiếm</h2>
+                            <img src="./assets/images/section-line.png" alt="">
+                        </div>
+                        <ul class="h-cat-search">
+                            <li>
+                                <a href="#" class="cat-search__link">
+                                    <img src="./assets/images/product-demo2-01.png" alt="">
+                                    <span>Hoa quả tươi</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cat-search__link">
+                                    <img src="./assets/images/product-demo2-02.png" alt="">
+                                    <span>Hàng nhập khẩu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cat-search__link">
+                                    <img src="./assets/images/product-demo2-03.png" alt="">
+                                    <span>Rau củ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cat-search__link">
+                                    <img src="./assets/images/product-demo2-04.png" alt="">
+                                    <span>Đồ khô</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="cat-search__link">
+                                    <img src="./assets/images/product-demo2-05.png" alt="">
+                                    <span>Hạt ngũ cốc</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- home demo2 product -->
+                    <div class="p-layout2">
+                        <div class="section-title text-center mb-4 mt-5">
+                            <h2>Rau Củ</h2>
+                            <span>Rau, củ, nấm, rau củ sơ chế</span>
+                            <img src="./assets/images/section-line.png" alt="">
+                        </div>
+                    </div>
+                    <!-- home demo2 product -->
+
+                    <div class="wrap__blogs">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-title text-center mb-4">
+                                    <h2>TIN TỨC MỚI NHẤT</h2>
+                                    <img src="./assets/images/section-line.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-01.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-02.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-03.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- end main -->
+
+            <!-- start footer -->
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">VỀ CHÚNG TÔI</h3>
+                            <ul class="footer__menu">
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khuyến mại</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">HỖ TRỢ KHÁCH HÀNG</h3>
+                            <ul class="footer__menu">
+                                <li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hướng dẫn thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                            <div class="footer-company__info">
+                                <span>Địa Chỉ: </span>
+                                Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Hotline: </span>
+                                <a href="tel:1900 1900">1900 1900</a>
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Mail hỗ trợ: </span>
+                                <a href="mailto:demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Liên kết: </span>
+                                <a href="#"><img src="./assets/images/fb.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer__block --last">
+                            <a href="#" class="d-block mb-3">
+                                <img src="./assets/images/fanpage.png" alt="">
+                            </a>
+                            <img class="bct" src="./assets/images/bo-cong-thuong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bt">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="footer-bt__inner d-flex align-items-center">
+                                    <h3 class="footer__block-title --title-register pb-0">ĐĂNG KÝ NHẬN BẢN TIN</h3>
+                                    <form action="">
+                                        <div class="form-group__ft">
+                                            <input type="text" class="form-control" placeholder="Email của bạn">
+                                            <button type="submit">
+                                                <img src="./assets/images/Button-send.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="call-now">Gọi ngay cho chúng tôi để được hỗ trợ tốt nhất: <a
+                                        href="tel:1900 1900">1900 1900</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+
+        <!-- swiper slider js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- swiper slider js -->
+
+        <script src="./assets/js/main.js"></script>
+
+        <script>
+            const productSlider = new Swiper('.product-sl', {
+                loop: true,
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const productSlider02 = new Swiper('.product-sl-02', {
+                loop: true,
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const followSlider = new Swiper('.follow-slider', {
+                loop: true,
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const customerSlider = new Swiper('.customer-slider', {
+                loop: true,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+        </script>
+    </body>
+
+</html>
