@@ -13,6 +13,10 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- link css bootstrap 5 -->
 
+        <!-- add fontawesome -->
+        <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+        <!-- add fontawesome -->
+
         <!-- swiper slider css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <!-- swiper slider css -->
@@ -20,7 +24,6 @@
         <!-- link css style  -->
         <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
-        <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css">
         <!-- link css style  -->
 
 
@@ -29,7 +32,6 @@
     <body>
 
         <div class="wrapper" id="homeStyle01">
-
             <!-- start header -->
             <header>
                 <div class="header-top">
@@ -58,7 +60,8 @@
                             <div class="wrap-header__form">
                                 <form action="">
                                     <div class="form-group-header">
-                                        <input type="text" class="form-control --style01" placeholder="Tìm kiếm sản phẩm....">
+                                        <input type="text" class="form-control --style01"
+                                            placeholder="Tìm kiếm sản phẩm....">
                                         <button type="submit" class="btn --style01">
                                             <img src="./assets/images/Search.svg" alt="">
                                         </button>
@@ -75,9 +78,8 @@
                                 TÌM ĐỊA CHỈ
                                 <span>CÔNG TY</span>
                             </a>
-                            <div class="shopping-cart">
+                            <div class="shopping-cart" data-content="3">
                                 <img src="./assets/images/Shipping.svg" alt="">
-                                <span class="cart-total">3</span>
                             </div>
                         </div>
                     </div>
@@ -100,6 +102,20 @@
                                         Ngoại thất
                                     </a>
                                     <img class="img-ab" src="./assets/images/ant-design_caret-right-filled.svg" alt="">
+                                    <ul class="side-nav__sub">
+                                        <li>
+                                            <a href="#">Ngoại thất 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 4</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
@@ -107,6 +123,20 @@
                                         Đồ trang trí
                                     </a>
                                     <img class="img-ab" src="./assets/images/ant-design_caret-right-filled.svg" alt="">
+                                    <ul class="side-nav__sub">
+                                        <li>
+                                            <a href="#">Đồ trang trí 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 4</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">
@@ -146,11 +176,33 @@
                                     <a href="#">Sản phẩm
                                         <img src="./assets/images/iconspace_Down_25px.svg" alt="">
                                     </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Nội thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vật liệu xây dựng</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mỹ nghệ</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#">Tin tức
                                         <img src="./assets/images/iconspace_Down_25px.svg" alt="">
                                     </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Tin mới nhất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tin trong nước</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item">
                                     <a href="#">Khuyến mại</a>
@@ -168,9 +220,86 @@
                         </div>
                     </div>
                 </div>
-                
+
             </header>
             <!-- end header -->
+
+            <!-- start nav mobile -->
+            <div class="btns-wrap only-mobile">
+                <div class="mobile-cate-btn">
+                    <div class="container-al">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="shopping-cart" data-content="3">
+                    <img src="./assets/images/Shipping.svg" alt="">
+                </div>
+                <a href="#" class="sign-in-btn btn-mobile"> Đăng nhập </a>
+                <a href="#" class="sign-up-btn btn-mobile"> Đăng ký </a>
+            </div>
+            <!-- end nav mobile -->
+
+            <!-- start menu mobile -->
+            <div class="mobile-categories">
+                <div class="container-al">
+                    <ul class="mobile-categories-list">
+                        <li><span>Trang chủ</span></li>
+                        <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+                            <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown" id="sd-1">
+                                <li><a href="#">1 Hello world</a></li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Chào hàng </span></li>
+                        <li><span> Doanh nghiệp </span></li>
+                        <li class="dropdown">
+                            <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        Giới thiệu tổng quan sàn<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Quảng cáo </span></li>
+                        <li class="dropdown">
+                            <span>
+                                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end menu mobile -->
+
+            <!-- overlay when open menu mobile -->
+            <div class="mobile-overlay"></div>
+            <!-- overlay when open menu mobile -->
 
             <!-- start main -->
             <main>
@@ -186,7 +315,7 @@
                             <a href="#" class="active">ĐỒ TRANG TRÍ</a>
                         </li>
                         <li class="cat__tag-item">
-                            <a href="#" >ĐỒ BẾP</a>
+                            <a href="#">ĐỒ BẾP</a>
                         </li>
                         <li class="cat__tag-item">
                             <a href="#">VẬT LIỆU XÂY DỰNG</a>
@@ -203,7 +332,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-01.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -218,7 +347,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-02.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -233,7 +362,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-03.jpg" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -248,7 +377,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-04.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -263,7 +392,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-01.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -278,7 +407,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-02.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -293,7 +422,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-03.jpg" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -308,7 +437,7 @@
                                     <span class="sale-of">-10%</span>
                                     <a href="#" class="p__thumb">
                                         <img src="./assets/images/product-thumb-04.png" alt="">
-                                    </a> 
+                                    </a>
                                     <div class="p__text p-3">
                                         <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
                                         <div class="p__price pt-2 d-flex align-items-center justify-content-center">
@@ -321,7 +450,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="wrap__blogs">
                         <div class="row">
                             <div class="col-12">
@@ -332,7 +461,7 @@
                             </div>
                         </div>
                         <div class="row pt-2">
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-md-4">
                                 <div class="blog__item">
                                     <a href="#" class="blog__thumb">
                                         <img src="./assets/images/blog-thumb-01.jpg" alt="">
@@ -341,11 +470,12 @@
                                         <a href="#" class="__title">
                                             Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
                                         </a>
-                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-md-4">
                                 <div class="blog__item">
                                     <a href="#" class="blog__thumb">
                                         <img src="./assets/images/blog-thumb-02.jpg" alt="">
@@ -354,11 +484,12 @@
                                         <a href="#" class="__title">
                                             Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
                                         </a>
-                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 col-md-4">
                                 <div class="blog__item">
                                     <a href="#" class="blog__thumb">
                                         <img src="./assets/images/blog-thumb-03.jpg" alt="">
@@ -367,7 +498,8 @@
                                         <a href="#" class="__title">
                                             Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
                                         </a>
-                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
                                     </div>
                                 </div>
                             </div>
@@ -437,17 +569,34 @@
                                 <a href="#"><img src="./assets/images/fb.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="footer__block">
-                            <h3 class="footer__block-title">ĐĂNG KÝ NHẬN BẢN TIN</h3>
-                            <form action="">
-                                <div class="form-group__ft mb-4">
-                                    <input type="text" class="form-control" placeholder="Email của bạn">
-                                    <button type="submit">
-                                        <img src="./assets/images/Button-send.svg" alt="">
-                                    </button>
+                        <div class="footer__block --last">
+                            <a href="#" class="d-block mb-3">
+                                <img src="./assets/images/fanpage.png" alt="">
+                            </a>
+                            <img class="bct" src="./assets/images/bo-cong-thuong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bt">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="footer-bt__inner d-flex align-items-center">
+                                    <h3 class="footer__block-title --title-register pb-0">ĐĂNG KÝ NHẬN BẢN TIN</h3>
+                                    <form action="">
+                                        <div class="form-group__ft">
+                                            <input type="text" class="form-control" placeholder="Email của bạn">
+                                            <button type="submit">
+                                                <img src="./assets/images/Button-send.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
-                            <img src="./assets/images/bo-cong-thuong.png" alt="">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="call-now">Gọi ngay cho chúng tôi để được hỗ trợ tốt nhất: <a
+                                        href="tel:1900 1900">1900 1900</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -460,7 +609,7 @@
         <!-- swiper slider js -->
 
         <script src="./assets/js/main.js"></script>
-    
+
         <script>
             const productSlider = new Swiper('.product-sl', {
                 loop: true,

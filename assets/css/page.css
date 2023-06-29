@@ -2,8 +2,24 @@
 
 .cat__tags {
     flex-wrap: nowrap;
-    padding: 40px 0px 36px;
+    padding: 40px 0px 10px;
     column-gap: 30px;
+    overflow: auto;
+    margin-bottom: 26px;
+}
+
+.cat__tags::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.cat__tags::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #ccc;
 }
 
 .cat__tag-item a {
@@ -13,6 +29,8 @@
     color:  #1D2E04;
     padding: 3px 0px;
     position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .cat__tag-item a.active::after {
@@ -71,9 +89,21 @@
     display: block;
 }
 
+.p-product__list02 .product__item .p__thumb {
+    height: 165px;
+}
+
+.p-product__list02 .product__item .p__thumb img {
+    border-radius: 5px;
+}
+
 .product__item:hover {
     background-color: var(--style01-cl-hightlight);
     color: #fff;
+}
+
+#homeStyle02 .product__item:hover  {
+    background-color: var(--style02-cl-hightlight);
 }
 
 .product__item:hover .p__text .__title {
@@ -139,10 +169,19 @@
     font-size: 28px;
     padding-bottom: 8px;
     font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-title span {
+    font-size: 16px;
+    color: #1D2E04;
+    display: block;
+    padding-bottom: 6px;
 }
 
 .blog__item {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .blog__item .blog__thumb {
@@ -153,6 +192,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
+    width: 100%;
 }
 
 .blog__item .__text {
@@ -295,3 +335,141 @@
     font-weight: 300;
 }
 
+.h-cat-search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.h-cat-search li {
+    width: calc(100%/5 - 22.4px);
+    margin-right: 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(122, 163, 65, 0.40);
+    padding-top: 10px;
+    transition: .3s ease;
+}
+
+.h-cat-search li:hover {
+    box-shadow: 0px 0px 5px 2px rgba(122, 163, 65, 0.20);
+}
+
+.h-cat-search li img {
+    width: 146px;
+    height: 130px;
+    object-fit: cover;
+    margin: 0px auto;
+}
+
+.h-cat-search li span {
+    display: block;
+    text-align: center;
+    padding: 15px 6px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.h-cat-search li:nth-child(5) {
+    margin-right: 0px;
+}
+
+.p-product__list02 {
+    display: flex;
+    row-gap: 15px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.p-product__list02 .product__item {
+    flex: 1;
+    padding:10px 15px 15px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(122, 163, 65, 0.40);
+    background: #FFF;
+    min-width: 210px;
+    transition: .3s ease;
+}
+
+.p-product__list02 .product__item:hover {
+    box-shadow: 0px 0px 5px 2px rgba(122, 163, 65, 0.20);
+}
+
+.p-product__list02 .product__item .p__text .__title {
+    text-align: left;
+    padding: 8px 0px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-line-clamp: 2;
+    min-height: 48px;
+}
+
+.p-product__list02 .p__price span.new {
+    color: #F74239;
+}
+
+.p__price a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1A75C4;
+}
+
+.p-product__list02 .product__item:hover .p__text .__title {
+    color: var(--style03-cl-hightlight);
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .cat__tags {
+        column-gap: 16px;
+    }
+    .cat__tag-item a {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product__item .p__text .__title {
+        font-size: 13px;
+    } 
+    .p__price span {
+        font-size: 12px;
+    } 
+    .p__price span.new {
+        font-size: 13px;
+    }
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .section-title img {
+        height: 3px;
+    }
+    .cat__tags {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .product__item .p__thumb {
+        height: 180px;
+    }
+    .product__item .p__text {
+        padding: 10px !important;
+    }
+    .cat__tags {
+        justify-content: flex-start !important;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .product__item .p__thumb {
+        height: 140px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+}
