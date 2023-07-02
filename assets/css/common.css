@@ -245,6 +245,7 @@ header {
     font-size: 16px;
     font-weight: 600;
     display: block;
+    white-space: nowrap;
 }
 
 .wrap__header-user a:hover {
@@ -260,6 +261,7 @@ header {
     color: #F74239;
     font-weight: 600;
     display: block;
+    white-space: nowrap;
 }
 
 .shopping-cart {
@@ -521,6 +523,18 @@ footer {
     padding: 40px 0px 0px 0px;
 }
 
+#homeStyle03 footer {
+    padding-top: 0px;
+}
+
+#homeStyle03 footer .style03-footer {
+    margin-bottom: 40px;
+}
+
+#homeStyle03 .footer__block-title {
+    color: #2F3235;
+}
+
 #homeStyle01 footer {
     background-color: #434A3D;
     color: #fff;
@@ -592,6 +606,15 @@ footer {
     color: #fff;
 }
 
+#homeStyle03 .form-group__ft input {
+    border-radius: 4px;
+    border: 1px solid  #C4C4C4;
+}
+
+#homeStyle03 .form-group__ft button {
+    background-color: var(--style03-cl-hightlight);
+}
+
 .form-group__ft input:focus {
     background-color: transparent;
     color: #fff;
@@ -622,6 +645,10 @@ footer {
     border-top: 1px solid #fff;
 }
 
+#homeStyle03 .footer-bt {
+    border-color: #c4c4c4;
+}
+
 .footer-bt__inner {
     column-gap: 16px;
 }
@@ -639,6 +666,10 @@ footer {
     align-items: center;
     justify-content: flex-end;
     white-space: nowrap;
+}
+
+#homeStyle03 .call-now {
+    color: #2F3235;
 }
 
 .call-now a {
@@ -715,7 +746,7 @@ footer {
         left: 0;
         right: 0;
         background-color: #fff;
-        z-index: 99;
+        z-index: 199;
         padding: 10px 10px;
         justify-content: center;
         align-items: center;
@@ -826,6 +857,10 @@ footer {
     }
     footer {
         padding-bottom: 40px;
+    }
+    #homeStyle03 .home-banner {
+        transform: translate(0);
+        width: 100%;
     }
 }
 
