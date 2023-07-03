@@ -164,6 +164,10 @@ header {
     height: 50px;
 }
 
+#homeStyle03 .form-group-header input.--style06 {
+    border-radius: 90px;
+}
+
 #homeStyle01 input.--style01 {
     border-color: var(--style01-border-color);
 }
@@ -203,6 +207,11 @@ header {
     top: 3px;
     right: 3px;
     background-color: var(--style03-cl-hightlight);
+}
+
+#homeStyle03 .form-group-header button.--style06 {
+    border-radius: 50%;
+    background-color: #13AC37;
 }
 
 .header__info  {
@@ -355,6 +364,10 @@ header {
     justify-content: flex-start;
     border-radius: 10px;
     background: linear-gradient(90deg, #2E9F3C 0%, #5EA700 100%);
+}
+
+#homeStyle03 .header__menu.--style06 {
+    background: #13AC37;
 }
 
 #homeStyle03 .header__menu li > a:hover {
@@ -529,6 +542,7 @@ footer {
 
 #homeStyle03 footer .style03-footer {
     margin-bottom: 40px;
+    width: 100%;
 }
 
 #homeStyle03 .footer__block-title {
