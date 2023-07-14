@@ -104,11 +104,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-
-
 /*====== start style common css ======*/
-
-
 
 header {
     position: relative;
@@ -123,10 +119,6 @@ header {
 #homeStyle02 .header-top {
     background: var(--style02-cl-hightlight);
     color: #ffffff;
-}
-
-#homeStyle05 .header-container-full{
-    background-color: #1f4d90;
 }
 
 .header-top__inner {
@@ -248,19 +240,6 @@ header {
     margin-right: 8px;
 }
 
-
-#homeStyle05 .header__info .__item{
-    align-items: start;
-    color: #fff;
-}
-#homeStyle05 .header__info .__item span{
-    color: #fff;
-}
-
-#homeStyle05 .header__info .__item img {
-    margin-right: 0px;
-}
-
 .wrap__header-user {
     display: flex;
     align-items: center;
@@ -307,14 +286,6 @@ header {
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--style03-border-color);
-}
-
-#homeStyle05 .shopping-cart::after{
-    background-color: #fff;
-    color: #FFA600;
-    top: -15px;
-    right: -14px;
-
 }
 
 #homeStyle03 .shopping-cart::after {
@@ -415,10 +386,6 @@ header {
     background-color: #F74239;
 }
 
-#homeStyle05 .menu-item.active > a{
-    color: #FFA600;
-}
-
 .menu-item {
     position: relative;
 }
@@ -493,10 +460,6 @@ header {
 
 #homeStyle02 .nav__left-title {
     background: #B1CEF23D;
-}
-
-#homeStyle05 .nav__left-title{
-    background: #bccade;
 }
 
 #homeStyle01 .header__menu {
@@ -591,10 +554,6 @@ footer {
     color: #fff;
 }
 
-#homeStyle05 footer{
-    background-color: #1f4d90;
-}
-
 #homeStyle02 footer {
     background-color: #162570;
     color: #fff;
@@ -668,10 +627,6 @@ footer {
 
 #homeStyle03 .form-group__ft button {
     background-color: var(--style03-cl-hightlight);
-}
-
-#homeStyle05 {
-
 }
 
 .form-group__ft input:focus {
@@ -969,6 +924,3 @@ footer {
 @media only screen and (max-width: 320px) {
     
 }
-
-
-/* home 3 home 4 */
