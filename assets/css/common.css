@@ -316,6 +316,12 @@ header {
     align-items: center;
     justify-content: center;
 }
+.home3 .shopping-cart{
+    border: none;
+}
+#homeStyle02 .shopping-cart{
+    border: none;
+}
 
 #homeStyle03 .shopping-cart {
     width: 40px;
@@ -331,8 +337,6 @@ header {
 #homeStyle05 .shopping-cart::after{
     background-color: #fff;
     color: #FFA600;
-    top: -15px;
-    right: -14px;
 
 }
 #homeStyle07 .shopping-cart::after{
@@ -389,7 +393,14 @@ header {
     width: 100%;
     align-items: stretch;
 }
+#homeStyle05 .header__menu{
+    background-color: #fff;
 
+}
+
+#homeStyle05 .header__menu .menu-item a{
+    color: #000;
+}
 #homeStyle07 .header__menu{
     width: 100%;
     background-color: #10302c;
@@ -632,6 +643,9 @@ footer {
 #homeStyle03 .footer__block-title {
     color: #2F3235;
 }
+#homeStyle05 .footer__block-title {
+    color: #fff;
+}
 
 #homeStyle01 footer {
     background-color: #434A3D;
@@ -776,6 +790,9 @@ footer {
 
 #homeStyle03 .call-now {
     color: #2F3235;
+}
+#homeStyle05 .call-now {
+    color: #fff;
 }
 
 .call-now a {
