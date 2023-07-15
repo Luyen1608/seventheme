@@ -129,6 +129,10 @@ header {
     background-color: #1f4d90;
 }
 
+#homeStyle07 .header-container-full{
+    background-color:#143b36 ;
+}
+
 .header-top__inner {
     height: 35px;
 }
@@ -260,6 +264,17 @@ header {
 #homeStyle05 .header__info .__item img {
     margin-right: 0px;
 }
+#homeStyle07 .header__info .__item{
+    align-items: start;
+    color: #fff;
+}
+#homeStyle07 .header__info .__item span{
+    color: #fff;
+}
+
+#homeStyle07 .header__info .__item img {
+    margin-right: 0px;
+}
 
 .wrap__header-user {
     display: flex;
@@ -309,11 +324,24 @@ header {
     border: 1px solid var(--style03-border-color);
 }
 
+#homeStyle07 .shopping-cart{
+    border: none;
+}
+
 #homeStyle05 .shopping-cart::after{
     background-color: #fff;
     color: #FFA600;
     top: -15px;
     right: -14px;
+
+}
+#homeStyle07 .shopping-cart::after{
+    background-color: #fff;
+    color: #000;
+    top: -5px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
 
 }
 
@@ -362,7 +390,13 @@ header {
     align-items: stretch;
 }
 
+#homeStyle07 .header__menu{
+    width: 100%;
+    background-color: #10302c;
+}
+#homeStyle07 .header__menu{
 
+}
 .wrap-nav___left {
     width: 240px;
     align-self: stretch;
@@ -388,6 +422,10 @@ header {
     z-index: 10;
 }
 
+#homeStyle07 .header__menu{
+    border-radius: 14px;
+}
+
 #homeStyle03 .header__menu {
     color: #fff;
     justify-content: flex-start;
@@ -403,7 +441,11 @@ header {
     color: #fff;
     background-color: #F74239;
 }
-
+#homeStyle07 .header__menu li > a:hover {
+    color: #fff;
+    border-radius: 14px;
+    background-color: #F74239;
+}
 #homeStyle03 .menu-item > a {
     border-radius: 10px;
     height: 50px;
@@ -413,6 +455,11 @@ header {
 #homeStyle03 .menu-item.active > a  {
     color: #fff;
     background-color: #F74239;
+}
+#homeStyle07 .menu-item.active > a  {
+    color: #fff;
+    background-color: #F74239;
+    border-radius: 14px;
 }
 
 #homeStyle05 .menu-item.active > a{
