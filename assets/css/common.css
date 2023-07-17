@@ -125,7 +125,12 @@ header {
     ),
     linear-gradient(0deg, #f8f8f8, #f8f8f8);
 }
+#homeStyle07 .login-btn{
 
+}
+#homeStyle07 .register-btn{
+  font-size: 12px;
+}
 #homeStyle02 .header-top {
   background: var(--style02-cl-hightlight);
   color: #ffffff;
@@ -350,9 +355,11 @@ header {
 
 #homeStyle07 .banner {
   background: url(../images/banner07.png);
-  margin: -24px 0px;
   padding-top: 10px;
   height: 384px;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 #homeStyle07 .banner .container {
@@ -1014,7 +1021,7 @@ footer {
     padding-top: 16px;
     white-space: pre-wrap;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 10px;
   }
   .btns-wrap.only-mobile {
     column-gap: 30px;

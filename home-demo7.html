@@ -83,8 +83,8 @@
                   <div class="d-flex align-items-center gap-1">
                     <img src="./assets/images/user-white.svg" alt="" />
                     <div class="__item">
-                      <span>ĐĂNG NHẬP</span>
-                      <span>ĐĂNG KÝ</span>
+                      <a class="login-btn" href="./login.html">ĐĂNG NHẬP</a>
+                      <a class="register-btn" href="/login.html">ĐĂNG KÝ<a>
                     </div>
                   </div>
                 </a>
@@ -435,7 +435,7 @@
                 </a>
                 <div class="p__text">
                   <a href="#" class="__title"
-                    >Cafe rang xay thượng hạng loại 150gr kèm sữa</a
+                    >Cafe rang xay thượng hạng loại 150gr kèm sữa Cafe rang xay thượng hạng loại 150gr kèm sữa</a
                   >
                   <div class="p__price pt-2 d-flex align-items-center">
                     <a href="#">Liên hệ</a>
@@ -555,7 +555,12 @@
                       Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương
                       có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng
                       dụng vào thực tiễn...
+                      Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương
+                      có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng
+                      dụng vào thực tiễn...
+                    
                     </p>
+                      
                   </div>
                 </div>
               </div>
@@ -566,6 +571,8 @@
                   </a>
                   <div class="__text">
                     <a href="#" class="__title">
+                      Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công
+                      Thương
                       Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công
                       Thương
                     </a>
@@ -691,5 +698,52 @@
       </footer>
       <!-- end footer -->
     </div>
+     <!-- swiper slider js -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <!-- swiper slider js -->
+
+     <script src="./assets/js/main.js"></script>
+ 
+     <script>
+         const productSlider = new Swiper('.product-sl', {
+             loop: true,
+             slidesPerView: 4,
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+         });
+
+         const productSlider02 = new Swiper('.product-sl-02', {
+             loop: true,
+             slidesPerView: 3,
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+         });
+
+         const followSlider = new Swiper('.follow-slider', {
+             loop: true,
+             slidesPerView: 4,
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+         });
+
+         const customerSlider = new Swiper('.customer-slider', {
+             loop: true,
+             slidesPerView: 1,
+             navigation: {
+                 nextEl: '.swiper-button-next',
+                 prevEl: '.swiper-button-prev',
+             },
+             pagination: {
+                 el: '.swiper-pagination',
+             },
+         });
+
+     </script>
   </body>
 </html>

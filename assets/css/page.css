@@ -118,7 +118,13 @@
 .product__item:hover .p__text .__title {
   color: #fff;
 }
-
+.product__item .p__text .__title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
 .product__item:hover .p__text span {
   color: #fff;
 }
@@ -238,7 +244,17 @@
 .blog__item .blog__thumb {
   display: block;
 }
+.blog__item p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding-top: 8px;
+  overflow: hidden;
+}
 
+.blog__item .__title{
+  
+}
 .blog__item .blog__thumb img {
   height: 200px;
   object-fit: cover;
@@ -254,7 +270,11 @@
   display: block;
   font-size: 16px;
   font-weight: 600;
-  padding-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
 }
 
 .blog__item .__text p {
@@ -456,7 +476,7 @@
   padding: 8px 0px 12px;
   font-size: 14px;
   font-weight: 400;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   min-height: 48px;
 }
 
@@ -488,7 +508,10 @@
   background-color: #fff;
   position: relative;
 }
-#homeStyle07 .wrap-more__link .__link {
+#homeStyle07 .wrap-more__link .__link:hover a{
+  background-color: #fff;
+  color: #d69c52 !important;
+  transition: 0.2s ease;
 }
 .wrap-more__link::after,
 .wrap-more__link::before {
@@ -553,8 +576,6 @@
   opacity: 1;
 }
 
-
-
 /* home 3 home 4 */
 @import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
 .home3 .header-top {
@@ -608,6 +629,11 @@
   width: 21px;
   height: 21px;
   display: inline-block;
+}
+
+.header__info img{
+  width: 21px;
+  height: 21px;
 }
 
 .header__info .shopping-cart::after {
@@ -1306,6 +1332,10 @@ footer .call-now {
     font-size: 26px;
     line-height: 20px;
   }
+  .header__info img{
+    width: 18px;
+    height: 18px;
+  }
   .cat__tags {
     column-gap: 16px;
   }
@@ -1334,6 +1364,10 @@ footer .call-now {
   .product-title .title-main {
     font-size: 25px;
     line-height: 18px;
+  }
+  .header__info img{
+    width: 16px;
+    height: 16px;
   }
   #homeStyle07 .blog__item .__text {
     padding: 10px;
@@ -1391,6 +1425,10 @@ footer .call-now {
   .product-title .title-main {
     font-size: 22px;
     line-height: 20px;
+  }
+  .header__info img{
+    width: 14px;
+    height: 14px;
   }
   .product__item .p__thumb {
     height: 180px;
