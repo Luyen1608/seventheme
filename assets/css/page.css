@@ -559,7 +559,7 @@
   transform: translateY(-50%);
 }
 #homeStyle07 .wrap-more__link .__link {
-  background-color: #143b36;
+  background-color: transparent;
 }
 #homeStyle07 .wrap-more__link::after,
 #homeStyle07 .wrap-more__link::before {
