@@ -125,10 +125,9 @@ header {
     ),
     linear-gradient(0deg, #f8f8f8, #f8f8f8);
 }
-#homeStyle07 .login-btn{
-
+#homeStyle07 .login-btn {
 }
-#homeStyle07 .register-btn{
+#homeStyle07 .register-btn {
   font-size: 12px;
 }
 #homeStyle02 .header-top {
@@ -138,6 +137,9 @@ header {
 
 #homeStyle05 .header-container-full {
   background-color: #1f4d90;
+  display: flex;
+  height: 92px;
+  align-items: center;
 }
 
 #homeStyle07 .header-container-full {
@@ -795,6 +797,7 @@ footer {
   font-weight: 600;
   color: #fff;
   height: 100%;
+  gap: 5px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1013,9 +1016,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    #homeStyle07 .banner {
-        height: 250px;
-      }
+  #homeStyle07 .banner {
+    height: 250px;
+  }
   .call-now {
     justify-content: flex-start;
     padding-top: 16px;
