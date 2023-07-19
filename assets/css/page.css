@@ -1,6 +1,6 @@
 /* style for content all page  */
 
-.wrapper{
+.wrapper {
   position: relative;
 }
 
@@ -12,23 +12,29 @@
   margin-bottom: 26px;
 }
 
-.stick-cart{
+.stick-cart {
   position: fixed;
   top: 55%;
-  right: 2%;
+  right: 0.2%;
   z-index: 99;
+  background-color: rgba(255, 99, 165, 1);
+  color: #ff63a5;
+  padding: 10px;
+  border-radius: 10px;
 }
-.stick-cart img{
+.stick-cart img {
   width: 21px;
   height: 21px;
 }
-.stick-cart.shopping-cart:after{
+.stick-cart.shopping-cart:after {
   content: "3" !important;
   width: 16px;
   height: 16px;
   font-size: 10px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
 }
-
 
 .cat__tags::-webkit-scrollbar {
   width: 5px;
@@ -151,7 +157,7 @@
   color: #fff;
 }
 #homeStyle07 .product__item:hover .p__text span {
-  color: #023e8a;
+  color: #143b36;
 }
 
 .product__item:hover .p__text span.old {
@@ -162,6 +168,11 @@
   display: flex;
   justify-content: center;
 }
+#homeStyle05 .product__item:hover .p__text span.old {
+  opacity: 0.6;
+  color: #03045e;
+}
+
 .product__item .p__thumb img {
   /* width: 100%;
   height: 100%; */
@@ -246,7 +257,7 @@
   text-transform: uppercase;
 }
 #homeStyle05 .section-title .__border {
-  height: 1px;
+  height: 3px;
   max-width: 100%;
   background: linear-gradient(90deg, rgba(31, 77, 144, 0.73) 0%, #f4f0e8 100%);
 }
@@ -281,8 +292,7 @@
   overflow: hidden;
 }
 
-.blog__item .__title{
-  
+.blog__item .__title {
 }
 .blog__item .blog__thumb img {
   height: 200px;
@@ -499,10 +509,10 @@
 .p-product__list02.--style06 .product__item {
   border-color: #13ac37;
 }
-#homeStyle05 .p-product__list02.--style06 .product__item{
-  border: 1px solid #EBEBEB
+#homeStyle05 .p-product__list02.--style06 .product__item {
+  border: 1px solid #ebebeb;
 }
-#homeStyle05 .p-product__list02{
+#homeStyle05 .p-product__list02 {
   column-gap: 0;
 }
 .p-product__list02 .product__item:hover {
@@ -535,7 +545,16 @@
 .p-product__list02 .product__item:hover .p__text .__title {
   color: var(--style03-cl-hightlight);
 }
+#homeStyle05 .p-product__list02 .product__item:hover .p__text .__title {
+  color: #1f4d90;
+}
+#homeStyle07 .p-product__list02 .product__item:hover .p__text .__title {
+  color: #143b36;
 
+}
+#homeStyle07 .p-product__list02 .product__item:hover .p__text .__title {
+  color: #143b36;
+}
 .wrap-more__link {
   position: relative;
 }
@@ -546,7 +565,7 @@
   background-color: #fff;
   position: relative;
 }
-#homeStyle07 .wrap-more__link .__link:hover a{
+#homeStyle07 .wrap-more__link .__link:hover a {
   background-color: #fff;
   color: #d69c52 !important;
   transition: 0.2s ease;
@@ -563,7 +582,7 @@
   transform: translateY(-50%);
 }
 #homeStyle07 .wrap-more__link .__link {
-  background-color: transparent;
+  background-color: #143b36;
 }
 #homeStyle07 .wrap-more__link::after,
 #homeStyle07 .wrap-more__link::before {
@@ -672,7 +691,7 @@
   display: inline-block;
 }
 
-.header__info img{
+.header__info img {
   width: 21px;
   height: 21px;
 }
@@ -956,6 +975,10 @@
 .header__info {
   -webkit-column-gap: 30px;
   column-gap: 30px;
+}
+
+#homeStyle07 .header__info{
+  column-gap: 23px;
 }
 
 .header__info .section {
@@ -1245,6 +1268,17 @@ footer .call-now {
   border-radius: 10px;
 }
 
+#homeStyle01 .header__menu {
+  background: transparent;
+}
+
+#homeStyle01 .header__menu .menu-item {
+  color: #000;
+}
+#homeStyle01 .header__menu .menu-item a {
+  color: #000;
+}
+
 .header__menu .menu-item {
   display: inline-block;
 }
@@ -1278,6 +1312,12 @@ footer .call-now {
   gap: 12px;
 }
 
+#homeStyle01 .nav__left-title {
+  background-color: #e2f0d4;
+  color: #000;
+}
+
+.wrap-nav___left {
 #homeStyle04 .wrap-nav___left {
   border: 1px solid #0096c7;
   border-radius: 10px;
@@ -1383,7 +1423,7 @@ footer .call-now {
     font-size: 26px;
     line-height: 20px;
   }
-  .header__info img{
+  .header__info img {
     width: 18px;
     height: 18px;
   }
@@ -1416,7 +1456,7 @@ footer .call-now {
     font-size: 25px;
     line-height: 18px;
   }
-  .header__info img{
+  .header__info img {
     width: 16px;
     height: 16px;
   }
@@ -1479,7 +1519,7 @@ footer .call-now {
     font-size: 22px;
     line-height: 20px;
   }
-  .header__info img{
+  .header__info img {
     width: 14px;
     height: 14px;
   }
