@@ -164,6 +164,11 @@
   opacity: 0.6;
 }
 
+#homeStyle05 .product__item:hover .p__text span.old {
+  opacity: 0.6;
+  color: #03045e;
+}
+
 .product__item .p__thumb img {
   width: 100%;
   height: 100%;
@@ -535,6 +540,9 @@
 
 .p-product__list02 .product__item:hover .p__text .__title {
   color: var(--style03-cl-hightlight);
+}
+#homeStyle05 .p-product__list02 .product__item:hover .p__text .__title {
+  color: #1f4d90;
 }
 #homeStyle07 .p-product__list02 .product__item:hover .p__text .__title {
   color: #143b36;
