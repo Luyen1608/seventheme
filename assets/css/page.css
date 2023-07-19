@@ -146,6 +146,11 @@
   background-color: var(--style02-cl-hightlight);
 }
 
+#homeStyle02 .product__item:hover .__title{
+  color: #fff;
+  opacity: 1;
+}
+
 .product__item:hover .p__text .__title {
   color: #fff;
 }
@@ -1293,15 +1298,15 @@ footer .call-now {
   gap: 12px;
 }
 
+#homeStyle003 .wrap-header__nav{
+  margin-top: 0;
+}
+
 #homeStyle01 .nav__left-title {
   background-color: #e2f0d4;
   color: #000;
 }
 
-<<<<<<< HEAD
-=======
-.wrap-nav___left {
->>>>>>> a42f27d76400e250ef8160e2bfe6903f3f913f40
 #homeStyle04 .wrap-nav___left {
   border: 1px solid #0096c7;
   border-radius: 10px;
