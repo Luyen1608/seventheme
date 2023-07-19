@@ -29,8 +29,22 @@
   color: #f74239 !important;
 }
 
-#homeStyle01 .shopping-cart {
+#homeStyle01 .header__info .shopping-cart {
+  border: none !important;
+}
+.header__info .shopping-cart {
   border: none;
+}
+
+footer {
+  background-color: #434a3d;
+  margin-top: 40px;
+}
+.footer__menu li a {
+  color: #fff;
+}
+.footer-company__info{
+  color: #fff;
 }
 
 footer .footer__block-title {
@@ -47,6 +61,7 @@ footer .call-now {
 .breadcump p {
   font-size: 14px;
   font-weight: 600;
+  color: #1d2e04b2;
   line-height: 18px;
   margin-left: 7px;
   text-align: left;
@@ -59,6 +74,24 @@ footer .call-now {
   background-color: #fdfdfd;
   border-radius: 10px;
   margin-top: 20px;
+}
+.login .form {
+  padding: 24px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 456px;
+}
+
+.captcha-wrap {
+  display: flex;
+  align-items: center;
+}
+.captcha-wrap img {
+  height: 55px;
+  margin-left: -10px;
+}
+.captcha-wrap input {
+  border-right: none !important;
 }
 
 .form-header h1 {
@@ -108,7 +141,6 @@ footer .call-now {
   gap: 8px;
 }
 .form .input-wrap,
-.form .captcha-wrap,
 .form .row-title {
   padding: 0 30px;
 }
@@ -139,11 +171,33 @@ footer .call-now {
   font-weight: 600;
   line-height: 20px;
 }
-.agree-btn {
+.login .input-wrap {
+  padding: 0 !important;
+}
+.login .forget-pass {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.forget-pass a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #0077b6;
+}
+.agree-btn,
+.login-btn {
   background-color: #4b6328;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
+  display: block;
   padding: 15px 32px;
   text-align: center;
   color: #fff;
@@ -151,38 +205,15 @@ footer .call-now {
   margin-top: 30px;
   border-radius: 14px;
 }
+.login-btn {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
 .form input:focus {
   border: 1px solid #de3618;
 }
-.form .captcha-wrap {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.form .captcha-wrap .captcha-img-wrap {
-  gap: 15px;
-  display: flex;
-  align-items: center;
-}
-.form .captcha-wrap .captcha-img-wrap .captcha-img {
-  max-width: 100%;
-  width: 216px;
-}
-.form .captcha-wrap .captcha-input {
-  flex: 1;
-}
-.form .captcha-wrap a {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  /* identical to box height, or 140% */
-  /* Xanh 1 */
-  color: #0184d3;
-}
-.form .captcha-wrap .speaker {
-  width: 31px;
-}
+
 .form .form-register {
   display: flex;
   align-items: center;
@@ -236,10 +267,114 @@ footer .call-now {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  .form {
+    padding: 50px 90px;
+    margin-top: 20px;
+  }
+  .login .forget-pass {
+    font-size: 14px;
+  }
+  .forget-pass a {
+    font-size: 14px;
+  }
+  .form-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 28px;
+  }
+  .form-header p {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .form-header a {
+    font-size: 15px;
+  }
+  .form .large-col {
+    height: 150px;
+  }
+  .form .form-input-wrap ~ .form-input-wrap {
+    margin-top: 32px;
+  }
+  .form .title {
+    font-size: 19px;
+    margin-bottom: 26px;
+  }
+  .form .title p {
+    font-size: 15px;
+  }
+
+  .form .input-wrap {
+    gap: 8px;
+  }
+  .form .input-wrap,
+  .form .row-title {
+    padding: 0 26px;
+  }
+  .form .label {
+    font-size: 15px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  .form textarea::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .agree-btn {
+    font-size: 19px;
+    padding: 15px 32px;
+    margin-top: 30px;
+  }
+
+  .form .form-register {
+    gap: 25px;
+  }
+
+  .form .form-register .register-wrap {
+    gap: 25px;
+  }
+  .form .form-register .register-wrap .box {
+    gap: 14px;
+  }
+  .form .form-register .register-wrap .box input {
+    cursor: pointer;
+    width: 18.5px;
+    height: 18.5px;
+  }
+  .form .form-register .register-wrap .box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .form .row-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form .row-title ~ .input-wrap ~ .input-wrap {
+    margin-top: 20px;
+  }
+
+  .form input {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .form input::placeholder,
   .form textarea::placeholder {
     font-size: 0;
+  }
+  .login .forget-pass {
+    font-size: 12px;
+  }
+  .forget-pass a {
+    font-size: 12px;
   }
   .form .row-title {
     font-size: 15px;
@@ -264,5 +399,205 @@ footer .call-now {
     gap: 5px;
     align-items: flex-start;
     flex-direction: column;
+  }
+  .form {
+    padding: 40px 70px;
+    margin-top: 20px;
+  }
+
+  .form-header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 28px;
+  }
+  .form-header p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .form-header a {
+    font-size: 14px;
+  }
+  .form .large-col {
+    height: 120px;
+  }
+  .form .form-input-wrap ~ .form-input-wrap {
+    margin-top: 25px;
+  }
+  .form .title {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .form .title p {
+    font-size: 15px;
+  }
+
+  .form .input-wrap {
+    gap: 8px;
+  }
+  .form .input-wrap,
+  .form .row-title {
+    padding: 0 26px;
+  }
+  .form .label {
+    font-size: 15px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+  .form textarea::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .agree-btn {
+    font-size: 18px;
+    padding: 15px 32px;
+    margin-top: 30px;
+  }
+
+  .form .form-register {
+    gap: 25px;
+  }
+
+  .form .form-register .register-wrap {
+    gap: 25px;
+  }
+  .form .form-register .register-wrap .box {
+    gap: 14px;
+  }
+  .form .form-register .register-wrap .box input {
+    cursor: pointer;
+    width: 18.5px;
+    height: 18.5px;
+  }
+  .form .form-register .register-wrap .box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .form .row-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form .row-title ~ .input-wrap ~ .input-wrap {
+    margin-top: 20px;
+  }
+
+  .form input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .form {
+    padding: 15px 10px;
+    margin-top: 16px;
+  }
+  .login .form {
+    padding: 20px;
+    width: 300px;
+  }
+  .captcha-wrap img {
+    height: 50px;
+  }
+  .login .forget-pass {
+    font-size: 10px;
+  }
+  .forget-pass a {
+    font-size: 10px;
+  }
+  .form-header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 28px;
+  }
+  .form-header p {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .form-header a {
+    font-size: 13px;
+  }
+  .form .large-col {
+    height: 100px;
+  }
+  .form .form-input-wrap ~ .form-input-wrap {
+    margin-top: 20px;
+  }
+  .form .title {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .form .title p {
+    font-size: 14px;
+  }
+
+  .form .input-wrap {
+    gap: 8px;
+  }
+  .form .input-wrap,
+  .form .row-title {
+    padding: 0 12px;
+  }
+  .form .label {
+    font-size: 13px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 12px 18px;
+    font-size: 12px;
+  }
+  .form textarea::placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .agree-btn {
+    font-size: 16px;
+    padding: 15px 32px;
+    margin-top: 30px;
+  }
+
+  .form .form-register {
+    gap: 25px;
+  }
+
+  .form .form-register .register-wrap {
+    gap: 25px;
+  }
+  .form .form-register .register-wrap .box {
+    gap: 14px;
+  }
+  .form .form-register .register-wrap .box input {
+    cursor: pointer;
+    width: 18.5px;
+    height: 18.5px;
+  }
+  .form .form-register .register-wrap .box p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .form .row-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form .row-title ~ .input-wrap ~ .input-wrap {
+    margin-top: 20px;
+  }
+
+  .form input {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .header__menu{
+    display: none;
   }
 }

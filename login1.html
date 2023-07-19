@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="wrapper register " >
+    <div class="wrapper login">
       <!-- start header -->
       <header>
         <div class="header-top">
@@ -352,88 +352,40 @@
       <!-- start main -->
       <div class="breadcump">
         <div class="container">
-          <p>Trang chủ / Đăng kí</p>
+          <p>Trang chủ / Đăng nhập</p>
         </div>
       </div>
       <main>
         <div class="container">
           <div class="form-header">
-            <h1>Đăng ký tài khoản</h1>
-            <p>Bạn đã có tài khoản ? Đăng nhập <a href="#">tại đây</a></p>
+            <h1>Đăng nhập</h1>
+            <p>Bạn chưa có tài khoản ? Đăng ký <a href="#">tại đây</a></p>
           </div>
           <div class="form">
             <div class="form-input-wrap">
-              <h2 class="title">Thông tin tài khoản</h2>
               <div class="row gx-3 gy-3">
-                <div class="input-wrap col-lg-6">
+                <div class="input-wrap col-lg-12">
                   <p class="label">Tên tài khoản<span>*</span></p>
-                  <input type="text" placeholder="Nhập tên tài khoản tại đây" />
+                  <input type="text" placeholder="Nhập tên đăng nhập tại đây" />
                 </div>
-                <div class="input-wrap col-lg-6">
-                  <p class="label">Họ tên <span>*</span></p>
-                  <input type="text" placeholder="Nhập họ tên tại đây" />
+                <div class="input-wrap col-lg-12">
+                  <p class="label">Mật khẩu <span>*</span></p>
+                  <input type="text" placeholder="Nhập mật khẩu tại đây" />
+                  <div class="captcha-wrap">
+                    <input type="text" placeholder="Nhập mật khẩu tại đây" />
+                    <img src="./assets/images/teenyicons_password-outline.svg" alt="">
+                  </div>
                 </div>
-                <div class="input-wrap col-lg-6">
-                  <p class="label">Mật khẩu</p>
-                  <input
-                    type="text"
-                    placeholder="Nhập mật khẩu tại đây"
-                  />
-                </div>
-                <div class="input-wrap col-lg-6">
-                  <p class="label">Xác nhận mật khẩu</p>
-                  <input
-                    type="text"
-                    placeholder="Xác nhận mật khẩu tại đây"
-                  />
-                </div>
-
-                
               </div>
-             
+              <a class="login-btn agree-btn">
+                Đăng nhập
+              </a>
+              <div class="forget-pass">
+                Quên mật khẩu bấm <a href="#">
+                    vào đây
+                </a>
+              </div>
             </div>
-            <div class="form-input-wrap">
-                <h2 class="title">Thông tin cá nhân</h2>
-                <div class="row gx-3 gy-3">
-                  <div class="input-wrap col-lg-6">
-                    <p class="label">Số điện thoại<span>*</span></p>
-                    <input type="text" placeholder="Nhập số điện thoại tại đây" />
-                  </div>
-                  <div class="input-wrap col-lg-6">
-                    <p class="label">Email<span>*</span></p>
-                    <input type="text" placeholder="Nhập email tại đây" />
-                  </div>
-                  
-  
-                  <div class="input-wrap col-lg-12">
-                    <p class="label">Địa chỉ liên hệ</p>
-                    <textarea
-                      class="large-col"
-                      type="text"
-                      title="Nhập địa chỉ người mua tại đây"
-                      placeholder="Nhập địa chỉ người mua tại đây"
-                    >
-                    </textarea>
-                  </div>
-                  <div class="input-wrap col-lg-6">
-                    <p class="label">Tỉnh</p>
-                    <input
-                      type="text"
-                      placeholder="Chọn tỉnh  tại đây"
-                    />
-                  </div>
-                  <div class="input-wrap col-lg-6">
-                    <p class="label">Thành phố</p>
-                    <input
-                      type="text"
-                      placeholder="Chọn thành phố  tại đây"
-                    />
-                  </div>
-                </div>
-                <div class="agree-btn">
-                  Tôi đồng ý, tạo tài khoản của tôi
-                </div>
-              </div>
           </div>
         </div>
       </main>
