@@ -1380,6 +1380,11 @@ footer .call-now {
   justify-content: center;
 }
 
+#homeStyle01  footer .footer__block-title,
+#homeStyle01 footer .call-now {
+  color: #fff;
+}
+
 @media (min-width: 300px) {
   .section-production .product__layput .wrap-product__list {
     -ms-grid-columns: (1fr) [1];

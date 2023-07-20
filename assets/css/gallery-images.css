@@ -10,3 +10,21 @@
     font-weight: 600;
     padding: 10px 0;
 }
+
+.images__layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+.images__layout .images__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+@media (max-width: 1024px) {
+    .images__layout {
+        column-gap: 6px;
+    }
+}
