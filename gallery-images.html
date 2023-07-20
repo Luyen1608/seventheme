@@ -21,6 +21,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <!-- swiper slider css -->
 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css" type="text/css">
         <!-- link css style  -->
         <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
@@ -323,7 +325,7 @@
                         </li>
                     </ul>
 
-                    <div class="images__layout">
+                    <!-- <div class="images__layout">
                         <div class="images__column">
                             <div><img src="./assets/images/gallery/image1.png"/></div>
                             <div><img src="./assets/images/gallery/image2.png"/></div>
@@ -348,8 +350,60 @@
                             <div><img src="./assets/images/gallery/image15.png"/></div>
                             <div><img src="./assets/images/gallery/image16.png"/></div>
                         </div>
+                    </div> -->
+                    <div class="images__layout" id="lightgallery">
+                            <a href="./assets/images/gallery/image1.png" class="span-6">
+                                <img alt="image 1" src="./assets/images/gallery/image1.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image5.png" >
+                                <img alt="image 2" src="./assets/images/gallery/image5.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image9.png" >
+                                <img alt="image 3" src="./assets/images/gallery/image9.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image13.png" >
+                                <img alt="image 4" src="./assets/images/gallery/image13.png" />
+                            </a>
+                        
+                            <a href="./assets/images/gallery/image2.png" >
+                                <img alt="image 5" src="./assets/images/gallery/image2.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image6.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image6.png" />
+                            </a>
+                            
+                            <a href="./assets/images/gallery/image10.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image10.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image14.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image14.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image3.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image3.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image7.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image7.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image11.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image11.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image15.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image15.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image4.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image4.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image8.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image8.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image12.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image12.png" />
+                            </a>
+                            <a href="./assets/images/gallery/image16.png" >
+                                <img alt="image 6" src="./assets/images/gallery/image16.png" />
+                            </a>
+                            
                     </div>
-
                 </div>
             </main>
             <!-- end main -->
@@ -452,7 +506,9 @@
         <!-- swiper slider js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <!-- swiper slider js -->
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
         <script src="./assets/js/main.js"></script>
 
         <script>
@@ -493,6 +549,11 @@
                 pagination: {
                     el: '.swiper-pagination',
                 },
+            });
+
+            lightGallery(document.getElementById('lightgallery'), {
+                plugins: [lgZoom, lgThumbnail],
+                speed: 500
             });
 
         </script>
