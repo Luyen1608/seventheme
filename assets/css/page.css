@@ -1265,6 +1265,11 @@ footer .call-now {
   color: #000;
 }
 
+#homeStyle01 .header__menu .menu-item.active a,
+#homeStyle01 .header__menu .menu-item:hover a {
+  color: #ee6055;
+}
+
 .header__menu .menu-item {
   display: inline-block;
 }

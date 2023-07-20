@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home page</title>
+
+        <!-- link css bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- link css bootstrap 5 -->
+
+        <!-- add fontawesome -->
+        <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+        <!-- add fontawesome -->
+
+        <!-- swiper slider css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <!-- swiper slider css -->
+
+        <!-- link css style  -->
+        <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/gallery-images.css" type="text/css">
+        <!-- link css style  -->
+
+
+    </head>
+
+    <body>
+
+        <div class="wrapper" id="homeStyle01">
+            <!-- start header -->
+            <header>
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-top__inner d-flex align-items-center justify-content-between">
+                            <span class="header__company-name">Công ty TNHH Company Name</span>
+                            <div class="header__account d-flex align-items-center">
+                                <a href="#" class="acc-register account-item">
+                                    <img src="./assets/images/user.svg" alt="">
+                                    Đăng ký
+                                </a>
+                                <a href="#" class="acc-login account-item">
+                                    <img src="./assets/images/login.svg" alt="">
+                                    Đăng nhập
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="header__center d-flex align-items-center justify-content-between">
+                        <div class="wrap-header__logo d-flex align-items-center">
+                            <a href="home.html" class="header__logo">
+                                <img src="./assets/images/logo.png" alt="">
+                            </a>
+                            <div class="wrap-header__form">
+                                <form action="">
+                                    <div class="form-group-header">
+                                        <input type="text" class="form-control --style01"
+                                            placeholder="Tìm kiếm sản phẩm....">
+                                        <button type="submit" class="btn --style01">
+                                            <img src="./assets/images/Search.svg" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__info d-flex align-items-center">
+                            <a href="tel:1900 1900" class="__item">
+                                LIÊN HỆ HOTLINE
+                                <span>1900 1900</span>
+                            </a>
+                            <a href="t#" class="__item">
+                                TÌM ĐỊA CHỈ
+                                <span>CÔNG TY</span>
+                            </a>
+                            <div class="shopping-cart" data-content="3">
+                                <img src="./assets/images/Shipping.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-header__nav d-flex align-items-center">
+                        <div class="wrap-nav___left">
+                            <h3 class="nav__left-title">
+                                <img src="./assets/images/mdi-light_menu.svg" alt="">
+                                TẤT CẢ SẢN PHẨM
+                            </h3>
+                            <ul class="side-nav">
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Nội thất
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Ngoại thất
+                                    </a>
+                                    <img class="img-ab" src="./assets/images/ant-design_caret-right-filled.svg" alt="">
+                                    <ul class="side-nav__sub">
+                                        <li>
+                                            <a href="#">Ngoại thất 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Đồ trang trí
+                                    </a>
+                                    <img class="img-ab" src="./assets/images/ant-design_caret-right-filled.svg" alt="">
+                                    <ul class="side-nav__sub">
+                                        <li>
+                                            <a href="#">Đồ trang trí 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Đồ trang trí 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Đồ bếp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Vật liệu xây dựng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Mỹ nghệ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fw-bold">
+                                        <img src="./assets/images/Right-icon.svg" alt="">
+                                        Xem thêm ...
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__right">
+                            <ul class="header__menu">
+                                <li class="menu-item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Sản phẩm
+                                        <img src="./assets/images/iconspace_Down_25px.svg" alt="">
+                                    </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Nội thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Ngoại thất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vật liệu xây dựng</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mỹ nghệ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Tin tức
+                                        <img src="./assets/images/iconspace_Down_25px.svg" alt="">
+                                    </a>
+                                    <ul class="menu__sub">
+                                        <li>
+                                            <a href="#">Tin mới nhất</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tin trong nước</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Khuyến mại</a>
+                                </li>
+                                <li class="menu-item active">
+                                    <a href="#">Thư viện ảnh</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <div class="home-banner">
+                                <img src="./assets/images/banner-home01.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- end header -->
+
+            <!-- start nav mobile -->
+            <div class="btns-wrap only-mobile">
+                <div class="mobile-cate-btn">
+                    <div class="container-al">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="shopping-cart" data-content="3">
+                    <img src="./assets/images/Shipping.svg" alt="">
+                </div>
+                <a href="#" class="sign-in-btn btn-mobile"> Đăng nhập </a>
+                <a href="#" class="sign-up-btn btn-mobile"> Đăng ký </a>
+            </div>
+            <!-- end nav mobile -->
+
+            <!-- start menu mobile -->
+            <div class="mobile-categories">
+                <div class="container-al">
+                    <ul class="mobile-categories-list">
+                        <li><span>Trang chủ</span></li>
+                        <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+                            <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown" id="sd-1">
+                                <li><a href="#">1 Hello world</a></li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Chào hàng </span></li>
+                        <li><span> Doanh nghiệp </span></li>
+                        <li class="dropdown">
+                            <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        Giới thiệu tổng quan sàn<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                        <li><span> Quảng cáo </span></li>
+                        <li class="dropdown">
+                            <span>
+                                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                            <ul class="sub-dropdown">
+                                <li class="lv2-dropdown">
+                                    <span>
+                                        1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                                    <ul class="lv2-sub-dropdown">
+                                        <li><a href="#">Thị trường quốc tế</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Nhật Bản</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">2 Hello world</a></li>
+                                <li><a href="#">3 Hello world</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end menu mobile -->
+
+            <!-- overlay when open menu mobile -->
+            <div class="mobile-overlay"></div>
+            <!-- overlay when open menu mobile -->
+
+            <!-- start main -->
+            <div class="breakcrumbs">
+                <div class="container">Trang chủ / Thư viện ảnh</div>
+            </div>
+            <main>
+                <div class="container">
+                    <ul class="cat__tags d-flex align-items-center justify-content-center">
+                        <li class="cat__tag-item">
+                            <a href="#" class="active">TẤT CẢ ẢNH</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#" >HOẠT ĐỘNG ĐÀO TẠO</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">HOẠT ĐỘNG QUỐC TẾ</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">HOẠT ĐỘNG KHÁC</a>
+                        </li>
+                    </ul>
+
+                    <div class="product__layput">
+                        <div class="row wrap-product__list">
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-01.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-02.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-03.jpg" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-04.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-01.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-02.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-03.jpg" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-4 col-xl-3">
+                                <div class="product__item">
+                                    <span class="sale-of">-10%</span>
+                                    <a href="#" class="p__thumb">
+                                        <img src="./assets/images/product-thumb-04.png" alt="">
+                                    </a>
+                                    <div class="p__text p-3">
+                                        <a href="#" class="__title">Đèn lồng xuất khẩu chất lượng...</a>
+                                        <div class="p__price pt-2 d-flex align-items-center justify-content-center">
+                                            <span class="new">400.000đ</span>
+                                            <span class="old text-decoration-line-through">560.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wrap__blogs">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-title text-center mb-4">
+                                    <h2>TIN TỨC MỚI NHẤT</h2>
+                                    <img src="./assets/images/section-line.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-01.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-02.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="blog__item">
+                                    <a href="#" class="blog__thumb">
+                                        <img src="./assets/images/blog-thumb-03.jpg" alt="">
+                                    </a>
+                                    <div class="__text">
+                                        <a href="#" class="__title">
+                                            Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                                        </a>
+                                        <p>Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có sự chuyển biến
+                                            rõ nét, góp phần nâng cao hiệu quả ứng dụng vào thực tiễn...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- end main -->
+
+            <!-- start footer -->
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">VỀ CHÚNG TÔI</h3>
+                            <ul class="footer__menu">
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a href="#">Khuyến mại</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">HỖ TRỢ KHÁCH HÀNG</h3>
+                            <ul class="footer__menu">
+                                <li>
+                                    <a href="#">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hướng dẫn thanh toán</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách bảo mật</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__block">
+                            <h3 class="footer__block-title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                            <div class="footer-company__info">
+                                <span>Địa Chỉ: </span>
+                                Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Hotline: </span>
+                                <a href="tel:1900 1900">1900 1900</a>
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Mail hỗ trợ: </span>
+                                <a href="mailto:demo@gmail.com">demo@gmail.com</a>
+                            </div>
+                            <div class="footer-company__info">
+                                <span>Liên kết: </span>
+                                <a href="#"><img src="./assets/images/fb.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer__block --last">
+                            <a href="#" class="d-block mb-3">
+                                <img src="./assets/images/fanpage.png" alt="">
+                            </a>
+                            <img class="bct" src="./assets/images/bo-cong-thuong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bt">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-12 col-md-6">
+                                <div class="footer-bt__inner d-flex align-items-center">
+                                    <h3 class="footer__block-title --title-register pb-0">ĐĂNG KÝ NHẬN BẢN TIN</h3>
+                                    <form action="">
+                                        <div class="form-group__ft">
+                                            <input type="text" class="form-control" placeholder="Email của bạn">
+                                            <button type="submit">
+                                                <img src="./assets/images/Button-send.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="call-now">Gọi ngay cho chúng tôi để được hỗ trợ tốt nhất: <a
+                                        href="tel:1900 1900">1900 1900</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+
+        <!-- swiper slider js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- swiper slider js -->
+
+        <script src="./assets/js/main.js"></script>
+
+        <script>
+            const productSlider = new Swiper('.product-sl', {
+                loop: true,
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const productSlider02 = new Swiper('.product-sl-02', {
+                loop: true,
+                slidesPerView: 3,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const followSlider = new Swiper('.follow-slider', {
+                loop: true,
+                slidesPerView: 4,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const customerSlider = new Swiper('.customer-slider', {
+                loop: true,
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            });
+
+        </script>
+    </body>
+
+</html>

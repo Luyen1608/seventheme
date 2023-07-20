@@ -1,0 +1,12 @@
+.wrap-nav___left .side-nav, .home-banner {
+    display: none;
+}
+
+.breakcrumbs {
+    background: 
+    rgba(235, 235, 235, 0.5);
+    color: rgba(29, 46, 4, 0.7);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0;
+}
