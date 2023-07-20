@@ -9045,9 +9045,9 @@ h1 {
 }
 
 .box-border {
-    border-top: 2px solid #61a533;
     margin-top: 20px;
     padding: 20px 15px 0 0;
+    margin-bottom: 40px;
 }
 
 .frames-detail {
@@ -11713,8 +11713,7 @@ input[name="fRName"].input-assess {
 }
 
 .rating-average {
-    display: grid;
-    grid-template-columns: 130px auto;
+    display: flex;
     align-items: center;
     justify-content: center;
     grid-template-areas:
@@ -11752,6 +11751,7 @@ input[name="fRName"].input-assess {
 
 .rating-count {
     grid-area: rating;
+    font-weight: 600;
 }
 
 .customer-rating {
@@ -11784,7 +11784,7 @@ input[name="fRName"].input-assess {
 .customer-button {
     font-size: 15px;
     text-align: center;
-    background: var(--primary);
+    background: #345878 !important;
     border: 0;
     outline: 0;
     color: #fff;

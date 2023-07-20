@@ -36,6 +36,14 @@
   border: none;
 }
 
+.nav__left-title {
+  background: linear-gradient(
+      0deg,
+      rgba(134, 190, 76, 0.24),
+      rgba(134, 190, 76, 0.24)
+    ),
+    linear-gradient(0deg, #f8f8f8, #f8f8f8);
+}
 footer {
   background-color: #434a3d;
   margin-top: 40px;
@@ -43,7 +51,7 @@ footer {
 .footer__menu li a {
   color: #fff;
 }
-.footer-company__info{
+.footer-company__info {
   color: #fff;
 }
 
@@ -597,7 +605,7 @@ footer .call-now {
   }
 }
 @media screen and (max-width: 1023.98px) {
-  .header__menu{
+  .header__menu {
     display: none;
   }
 }
