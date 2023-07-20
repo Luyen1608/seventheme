@@ -1265,6 +1265,11 @@ footer .call-now {
   color: #000;
 }
 
+#homeStyle01 .header__menu .menu-item.active a,
+#homeStyle01 .header__menu .menu-item:hover a {
+  color: #ee6055;
+}
+
 .header__menu .menu-item {
   display: inline-block;
 }
@@ -1373,6 +1378,11 @@ footer .call-now {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+#homeStyle01  footer .footer__block-title,
+#homeStyle01 footer .call-now {
+  color: #fff;
 }
 
 @media (min-width: 300px) {
