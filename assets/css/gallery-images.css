@@ -13,7 +13,8 @@
 
 .images__layout {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+    /*grid-template-rows: repeat(24, auto);*/
     margin-bottom: 50px;
 }
 
@@ -22,6 +23,14 @@
     flex-direction: column;
     row-gap: 6px;
 }
+
+/* .span-6 {
+    grid-row: span 6;
+}
+
+.span-5 {
+    grid-row: span 5;
+} */
 
 @media (max-width: 1024px) {
     .images__layout {
