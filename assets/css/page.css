@@ -22,6 +22,10 @@
   color: #ff63a5;
   padding: 10px;
   border-radius: 10px;
+  border: 3px solid #fff !important;
+}
+#homeStyle05 .stick-cart{
+  border: 3px solid #1f4d90 !important;
 }
 .stick-cart img {
   width: 21px;
@@ -98,6 +102,10 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+}
+
+#homeStyle05 .product__item{
+  border-radius: 0;
 }
 
 .sale-of {
@@ -1326,7 +1334,9 @@ footer .call-now {
   margin-top: 12px;
   gap: 12px;
 }
-
+#homeStyle05 .wrap-header__nav{
+  margin-top: 0;
+}
 #homeStyle003 .wrap-header__nav{
   margin-top: 0;
 }
