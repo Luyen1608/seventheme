@@ -132,6 +132,10 @@ p {
     color: var(--style01-cl-hightlight);
 }
 
+#homeStyle01 .__item:hover {
+    color: white;
+}
+
 #homeStyle02 a:hover {
     color: var(--style02-cl-hightlight);
 }
