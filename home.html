@@ -23,6 +23,7 @@
     <!-- link css style  -->
     <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
+
     <!-- link css style  -->
 
 
@@ -292,26 +293,28 @@
         <!-- start main -->
         <main>
             <div class="container">
-                <ul class="cat__tags d-flex align-items-center justify-content-center">
-                    <li class="cat__tag-item">
-                        <a href="#">NỘI THẤT</a>
-                    </li>
-                    <li class="cat__tag-item">
-                        <a href="#">NGOẠI THẤT</a>
-                    </li>
-                    <li class="cat__tag-item">
-                        <a href="#" class="active">ĐỒ TRANG TRÍ</a>
-                    </li>
-                    <li class="cat__tag-item">
-                        <a href="#">ĐỒ BẾP</a>
-                    </li>
-                    <li class="cat__tag-item">
-                        <a href="#">VẬT LIỆU XÂY DỰNG</a>
-                    </li>
-                    <li class="cat__tag-item">
-                        <a href="#">MỸ NGHỆ</a>
-                    </li>
-                </ul>
+                <div class="overflow-auto" style="margin-bottom: 26px;">
+                    <ul class="cat__tags d-flex align-items-center justify-content-center" style="margin-bottom: 0px;overflow: unset;">
+                        <li class="cat__tag-item">
+                            <a href="#">NỘI THẤT</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">NGOẠI THẤT</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#" class="active">ĐỒ TRANG TRÍ</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">ĐỒ BẾP</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">VẬT LIỆU XÂY DỰNG</a>
+                        </li>
+                        <li class="cat__tag-item">
+                            <a href="#">MỸ NGHỆ</a>
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="product__layput">
                     <div class="row wrap-product__list">
@@ -504,7 +507,7 @@
                         <div class="col-12">
                             <div class="section-title text-center mb-4">
                                 <h2>TIN TỨC MỚI NHẤT</h2>
-                                <img src="./assets/images/section-line.png" alt="">
+                                <img class="m-auto" src="./assets/images/section-line.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -624,7 +627,7 @@
             <div class="footer-bt">
                 <div class="container">
                     <div class="row justify-content-between">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 pb-1">
                             <div class="footer-bt__inner d-flex align-items-center">
                                 <h3 class="footer__block-title --title-register pb-0">ĐĂNG KÝ NHẬN BẢN TIN</h3>
                                 <form action="">
@@ -637,7 +640,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 pb-1">
                             <p class="call-now">Gọi ngay cho chúng tôi để được hỗ trợ tốt nhất: <a href="tel:1900 1900">1900 1900</a></p>
                         </div>
                     </div>
@@ -652,6 +655,9 @@
     <!-- swiper slider js -->
 
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/menu_style.js"></script>
+    <link rel="stylesheet" href="./assets/css/menu_style.css" type="text/css">
 
     <script>
         const productSlider = new Swiper('.product-sl', {
