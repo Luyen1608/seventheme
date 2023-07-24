@@ -243,6 +243,7 @@
     font-size: 22px;
     line-height: 24px;
     color: #de3618;
+    
   }
   .shipping-list .shipping-item + .shipping-item {
     margin-top: 20px;
@@ -554,6 +555,9 @@
   }
   .cart-content .cart-table .cart-table-row .right {
     gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: center;
     justify-content: flex-end;
   }
@@ -915,7 +919,6 @@
       max-width: 100px;
     }
     .cart-content .cart-table-row .right {
-      gap: 10px !important;
     }
   }
   /* only 786 */

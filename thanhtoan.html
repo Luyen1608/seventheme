@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    
+    <link rel="stylesheet" href="./assets/css/page.css" />
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pre-header">
+        <div class="container-al">
+          <div class="pre-header-contact">
+            <p class="text">Sàn thương mại điện tử các sản phẩm từ tre</p>
+            <p class="text">
+              <img src="./assets/img/Iconspace_Call_25px.svg" alt="" />
+              Liên hệ: 0123456789
+            </p>
+          </div>
+
+          <div class="select-language-btn">
+            <div class="text">
+              <img src="./assets/img/google.svg" alt="" />
+              Select language
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <h1 class="banner-heading">bamboo from vietnam</h1>
+        <div class="bamboo-left">
+          <img src="./assets/img/bbl.png" alt="" />
+        </div>
+        <div class="bamboo-right">
+          <img src="./assets/img/bamboo.jpg" class="bamboo-right-img" alt="" />
+          <img src="./assets/img/bbrec.png" class="bamboo-right-rec" alt="" />
+        </div>
+      </div>
+      <header class="header">
+        <div class="container-al">
+          <div class="logo">
+            <img src="./assets/img/logo-full.png" alt="" />
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="header-search"
+              placeholder="Tìm kiếm sản phẩm"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="btns-wrap">
+            <div class="cart-btn">
+              <img src="./assets/img/cart-2.svg" alt="" />
+            </div>
+            <a href="#" class="sign-in-btn"> Đăng nhập </a>
+            <a href="#" class="sign-up-btn"> Đăng ký </a>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-overlay"></div>
+      <div class="mobile-categories">
+        <div class="container-al">
+          <ul class="mobile-categories-list">
+            <li><span>Trang chủ</span></li>
+            <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown" id="sd-1">
+                <li>1 Hello world</li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+            <li><span> Doanh nghiệp </span></li>
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>Thị trường quốc tế</li>
+                    <li>Mỹ</li>
+                    <li>Nhật Bản</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>1 Hello world</li>
+                    <li>2 Hello world</li>
+                    <li>3 Hello world</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="btns-wrap only-mobile">
+        <div class="mobile-cate-btn">
+          <div class="container-al">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="cart-btn">
+          <img src="./assets/img/cart-2.svg" alt="" />
+        </div>
+        <a href="#" class="sign-in-btn"> Đăng nhập </a>
+        <a href="#" class="sign-up-btn"> Đăng ký </a>
+      </div>
+      <div class="categories">
+        <div class="container-al">
+          <ul class="categories-list">
+            <li><span> Trang chủ </span></li>
+
+            <li class="dropdown">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="line">1 Hello world 1 Hello world</li>
+
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+
+            <li><span> Doanh nghiệp </span></li>
+
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown line">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li class="line">Thông thị trường quốc tế</li>
+
+                    <li class="line">Mỹ</li>
+
+                    <li class="line">
+                      Nhật Bả
+                      <nav></nav>
+                    </li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span class="line">
+                    1 Hello world <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown mobile">
+                    <li class="line">1 Hello world</li>
+                    <li class="line">2 Hello world</li>
+                    <li class="line">3 Hello world</li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cart-content">
+        <div class="container-al">
+          <div class="cart-section cart-cart">
+            <div class="cart-section-heading address-card">
+              <div class="top">
+                <img src="./assets/img/location-icon.svg" alt="" />
+                <h2>Địa chỉ nhận hàng</h2>
+              </div>
+              <div class="content">
+                <div class="info">Đoàn Văn Luyện (+84) 372296969</div>
+                <div class="address">
+                  Số nhà 1504 thị trấn hòa bình - tỉnh thừa thiên huế - hà đông
+                  - hà nội
+                </div>
+                <p href="#" class="address-card-btn">
+                  Chỉnh sửa
+                  <i class="fa-solid fa-chevron-down"></i>
+                </p>
+              </div>
+            </div>
+            <div class="row gx-3 cart-section-content active">
+              <div class="col-lg-9 col-md-12 col-12">
+                <div class="cart-table">
+                  <div class="cart-table-heading">
+                    <div class="left">
+                      <img src="./assets/img/logo-ref3.png" alt="" />
+                      <a href="#">
+                        <span>Công ty TNHH Hòa Phát</span>
+                      </a>
+                    </div>
+                    <div class="right">
+                      <h3>Đơn giá</h3>
+                      <h3>Số lượng</h3>
+                      <h3>Thành tiền</h3>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                  <div class="cart-table-list">
+                    <div class="cart-table-row row">
+                      <div class="left col-5">
+                        <div class="img-cart">
+                          <img src="./assets/img/item1.png" alt="" />
+                        </div>
+                        <a href="#">
+                          <span
+                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
+                          >
+                        </a>
+                      </div>
+                      <div class="right col-7">
+                        <div class="price">đ 350,000,000</div>
+                        <div class="quantity">100</div>
+                        <div class="price">đ 350,000,000</div>
+                      </div>
+                    </div>
+                    <div class="cart-table-row row">
+                      <div class="left col-5">
+                        <div class="img-cart">
+                          <img src="./assets/img/item1.png" alt="" />
+                        </div>
+                        <a href="#">
+                          <span>sang trọng</span>
+                        </a>
+                      </div>
+                      <div class="right col-7">
+                        <div class="price">đ 350,000,000</div>
+                        <div class="quantity">100</div>
+                        <div class="price">đ 350,000,000</div>
+                      </div>
+                    </div>
+                    <div class="cart-table-row row">
+                      <div class="left col-5">
+                        <div class="img-cart">
+                          <img src="./assets/img/item1.png" alt="" />
+                        </div>
+                        <a href="#">
+                          <span>sang trọng</span>
+                        </a>
+                      </div>
+                      <div class="right col-7">
+                        <div class="price">đ 350,000,000</div>
+                        <div class="quantity">100</div>
+                        <div class="price">đ 350,000,000</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-table-footer">
+                  <p>Đơn vị vận chuyển</p>
+                  <div class="d-flex flex-column">
+                    <p>Viettel Post</p>
+                    <p>Nhận hàng vào 3 Th04 - 11 Th04</p>
+                  </div>
+                  <div class="change">Thay đổi</div>
+                  <div class="price">đ 15,000</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-12">
+                <div class="cart-detail mt-lg-0 mt-3">
+                  <div class="cart-detail-header">
+                    <h2>Phương thức thanh toán</h2>
+                    <a href="#" class="show-payment-info"
+                      >Xem tất cả
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </div>
+                  <div class="cart-detail-content active">
+                    <div
+                      class="cart-detail-row pay-method"
+                      style="border-bottom: none"
+                    >
+                      <div class="pay-opt">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <div class="left">
+                            <img src="./assets/img/money-icon.svg" alt="" />
+                            Thanh toán khi nhận hàng
+                          </div>
+                          <input type="radio" />
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <p>Phí thu hộ 0đ</p>
+                        </div>
+                      </div>
+                      <div class="pay-opt">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <div class="left">
+                            <img src="./assets/img/card.svg" alt="" />
+                            Thẻ tín dụng/Thẻ ghi nợ
+                          </div>
+                          <input type="radio" />
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <p class="add-card">Chọn để thêm thẻ</p>
+                          <img src="./assets/img/card-list.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Thông tin đơn hàng</h3>
+                    <div
+                      class="cart-detail-row d-flex align-items-center justify-content-between"
+                    >
+                      <span>Tạm tính (21 sản phẩm)</span>
+                      <p>đ 2,500,000</p>
+                    </div>
+                    <div
+                      class="cart-detail-row d-flex align-items-center justify-content-between"
+                    >
+                      <span>Vận chuyển</span>
+                      <p>đ 20,000</p>
+                    </div>
+                    <div
+                      class="cart-detail-row d-flex align-items-center justify-content-between"
+                    >
+                      <h2>Tổng tiền</h2>
+                      <h3>đ 2,520,000</h3>
+                    </div>
+                    <div class="cart-btn">Đặt hàng</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-section mt-5 mb-5 cart-contact"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container-al">
+          <div class="left flex-column d-flex">
+            <div class="logo-list">
+              <img src="./assets/img/logo-ref1.png" alt="" />
+              <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
+              <img src="./assets/img/logo-ref3.png" alt="" />
+              <img src="./assets/img/ft-vcci.png" alt="" />
+            </div>
+            <div class="d-flex align-items-center" style="gap: 10px">
+              <img src="./assets/img/logo2.png" class="logo-2" alt="" />
+              <p class="footer-text m-width">
+                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
+                tre tại Việt Nam
+              </p>
+            </div>
+            <div class="social-list">
+              <a href="">
+                <img src="./assets/img/mdi_instagram.svg" alt="" />
+              </a>
+              <a href=""
+                ><img src="./assets/img/ic_baseline-facebook.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/img/mdi_google-plus.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="list">
+              <h2>Hướng dẫn mua bán</h2>
+              <ul>
+                <li><a class="footer-text">Hướng dẫn cho người mua</a></li>
+                <li>
+                  <a class="footer-text">Hướng dẫn cho người bán</a>
+                </li>
+                <li>
+                  <a class="footer-text">Bảo mật thông tin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
+              <ul>
+                <li>
+                  <img src="./assets/img/map.svg" alt="" />
+                  <p class="footer-text">
+                    Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/img/Phone.svg" alt="" />
+                  <p class="footer-text">Điện Thoại: 123-4567-890</p>
+                </li>
+                <li>
+                  <img src="./assets/img/Message.svg" alt="" />
+                  <p class="footer-text">Email: contact@itb.com.vn</p>
+                </li>
+              </ul>
+            </div>
+            <div class="returns">
+              <div class="returns-link">
+                <p class="text">Liên kết website</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="option-list">
+                  <div class="option-item">Liên kết website</div>
+                  <div class="option-item">lorem1</div>
+                  <div class="option-item">lorem2</div>
+                </div>
+              </div>
+              <div class="returns-visit">
+                <p class="text">Lượt truy cập</p>
+                <p class="text number">7398898</p>
+              </div>
+              <div class="dangky-img-wrap">
+                <img src="./assets/img/dk.svg" alt="" class="dangky-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="ctm-modal payment-info">
+        <div class="d-flex align-items-center justify-content-between">
+          <h2>Chọn phương thức thanh toán</h2>
+          <i class="fa-solid fa-xmark payment-close-btn"></i>
+        </div>
+
+        <div class="pay-opt-list">
+          <div class="pay-opt">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="left">
+                <img src="./assets/img/money-blue.svg" alt="" />
+                <div class="d-flex gap-2 flex-column">
+                  <h3>Thanh toán khi nhận hàng</h3>
+                  <p>Thanh toán khi nhận hàng</p>
+                </div>
+              </div>
+              <input type="radio" />
+            </div>
+          </div>
+          <div class="pay-opt">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="left">
+                <img src="./assets/img/card-blue.svg" alt="" />
+                <div class="d-flex gap-2 flex-column">
+                  <h3>Thẻ Tín dụng/Thẻ ghi nợ</h3>
+                  <p>Thẻ Tín dụng/Thẻ ghi nợ</p>
+                </div>
+              </div>
+              <img src="./assets/img/card-list.svg" alt="" />
+              <input type="radio" />
+            </div>
+          </div>
+          <div class="pay-opt">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="left">
+                <img src="./assets/img/vnpay.svg" alt="" />
+                <div class="d-flex gap-2 flex-column">
+                  <h3>Thanh toán qua VNPay</h3>
+                  <p>Thanh toán qua VNPay</p>
+                </div>
+              </div>
+              <input type="radio" />
+            </div>
+          </div>
+        </div>
+        <div class="payment-info-submit">Xác nhận</div>
+      </div>
+      <div class="ctm-modal address-book">
+        <div class="address-book-header">
+          <h2>Địa chỉ giao hàng</h2>
+          <i class="fa-solid fa-xmark address-book-close-btn"></i>
+        </div>
+        <div
+          class="address-book-actions d-flex align-items-center justify-content-between"
+        >
+          <span>Chọn địa chỉ giao hàng</span>
+          <div class="btn">Thêm địa chỉ</div>
+        </div>
+        <div class="address-book-list">
+          <div class="address-book-item">
+            <div
+              class="address-book-item-header d-flex align-items-center justify-content-between"
+            >
+              <div class="name">Đoàn Văn Luyện</div>
+              <div class="actions">
+                <img src="./assets/img/edit.svg" alt="" />
+                <img src="./assets/img/bin.svg" alt="" />
+              </div>
+            </div>
+            <ul>
+              <li>Số nhà 5 dãy A khu tập thể</li>
+              <li>Hà cầu - Hà Đông - Hà nội</li>
+              <li>Phone: +(372) 587-2335</li>
+            </ul>
+          </div>
+          <div class="address-book-item">
+            <div
+              class="address-book-item-header d-flex align-items-center justify-content-between"
+            >
+              <div class="name">Đoàn Văn Luyện</div>
+              <div class="actions">
+                <img src="./assets/img/edit.svg" alt="" />
+                <img src="./assets/img/bin.svg" alt="" />
+              </div>
+            </div>
+            <ul>
+              <li>Số nhà 5 dãy A khu tập thể</li>
+              <li>Hà cầu - Hà Đông - Hà nội</li>
+              <li>Phone: +(372) 587-2335</li>
+            </ul>
+          </div>
+          <div class="address-book-item">
+            <div
+              class="address-book-item-header d-flex align-items-center justify-content-between"
+            >
+              <div class="name">Đoàn Văn Luyện</div>
+              <div class="actions">
+                <img src="./assets/img/edit.svg" alt="" />
+                <img src="./assets/img/bin.svg" alt="" />
+              </div>
+            </div>
+            <ul>
+              <li>Số nhà 5 dãy A khu tập thể</li>
+              <li>Hà cầu - Hà Đông - Hà nội</li>
+              <li>Phone: +(372) 587-2335</li>
+            </ul>
+          </div>
+          <div class="address-book-item">
+            <div
+              class="address-book-item-header d-flex align-items-center justify-content-between"
+            >
+              <div class="name">Đoàn Văn Luyện</div>
+              <div class="actions">
+                <img src="./assets/img/edit.svg" alt="" />
+                <img src="./assets/img/bin.svg" alt="" />
+              </div>
+            </div>
+            <ul>
+              <li>Số nhà 5 dãy A khu tập thể</li>
+              <li>Hà cầu - Hà Đông - Hà nội</li>
+              <li>Phone: +(372) 587-2335</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ctm-modal shipping-list">
+        <div
+          class="shipping-list-header d-flex align-items-center justify-content-between"
+        >
+          <h2>Chọn đơn vị vận chuyển</h2>
+          <i class="fa-solid fa-xmark shipping-list-close-btn"></i>
+        </div>
+        <h3>Kênh vân chuyển liên kết</h3>
+        <div class="shipping-item active">
+          <div class="left d-flex flex-column">
+            <div class="d-flex align-items-center gap-2">
+              <div class="shipping-name">Giao hàng tiết kiệm</div>
+              <div class="price">đ 21,000</div>
+            </div>
+            <p class="mt-1">Nhận hàng vào 31 Th03 - 2 Th04</p>
+          </div>
+          <div class="right">
+            <img src="./assets/img/checked.svg" alt="" />
+          </div>
+        </div>
+        <div class="shipping-item">
+          <div class="left d-flex flex-column">
+            <div class="d-flex align-items-center gap-2">
+              <div class="shipping-name">Giao hàng tiết kiệm</div>
+              <div class="price">đ 21,000</div>
+            </div>
+            <p class="mt-1">Nhận hàng vào 31 Th03 - 2 Th04</p>
+          </div>
+          <div class="right">
+            <img src="./assets/img/checked.svg" alt="" />
+          </div>
+        </div>
+        <div class="shipping-item">
+          <div class="left d-flex flex-column">
+            <div class="d-flex align-items-center gap-2">
+              <div class="shipping-name">Giao hàng tiết kiệm</div>
+              <div class="price">đ 21,000</div>
+            </div>
+            <p class="mt-1">Nhận hàng vào 31 Th03 - 2 Th04</p>
+          </div>
+          <div class="right">
+            <img src="./assets/img/checked.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="ctm-modal address-book-card-add">
+        <div class="address-book-card-add-header">
+          <p>Thêm thẻ</p>
+          <i class="fa-solid fa-xmark address-book-card-add"></i>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <p>Chi tiết thẻ</p>
+          <img src="./assets/img/card-list.svg" alt="" />
+        </div>
+        <div class="input-list">
+          <div class="input-row">
+            <p>Số thẻ <span>*</span></p>
+            <input type="text" placeholder="Nhập họ tên người mua tại đây..." />
+          </div>
+          <div class="input-wrap row">
+            <div class="col-lg-6 input-row">
+              <p>Ngày hết hạn  <span>*</span></p>
+              <input type="text" placeholder="MM/YY" />
+            </div>
+            <div class="col-lg-6 input-row">
+              <p>Mã CVV <span>*</span></p>
+              <input type="text" placeholder="Số CVV trên thẻ" />
+            </div>
+          </div>
+          <div class="input-row">
+            <p>Họ tên chủ thẻ <span>*</span></p>
+            <input type="text" placeholder="Nhập họ tên chủ thẻ..." />
+          </div>
+        </div>
+        <h3>
+          Địa chỉ đăng ký thẻ Tín dụng/Ghi nợ
+        </h3>
+       <div class="input-list">
+        <div class="input-row">
+          <p>Địa chỉ <span>*</span></p>
+          <input type="text" placeholder="Nhập địa chỉ đăng ký..." />
+        </div>
+        <div class="input-row">
+          <p>Mã bưu chính<span>*</span></p>
+          <input type="text" placeholder="MM/YY" />
+        </div>
+       </div>
+        <div class="address-book-card-add-actions">
+          <div class="back">
+            Trở lại
+          </div>
+          <div class="submit">
+            Xác nhận
+          </div>
+        </div>
+      </div>
+      <div class="ctm-modal address-book-address-add">
+        <div class="address-book-address-add-header">
+          <h2>Thêm địa chỉ</h2>
+          <i class="fa-solid fa-xmark address-book-address-add-btn-close"></i>
+        </div>
+        <div class="input-list">
+          <div class="row input-wrap">
+            <div class="col-lg-6 input-row">
+              <p>
+                Họ tên <span>*</span>
+              </p>
+              <input type="text" placeholder="Nhập họ tên người mua tại đây...">
+            </div>
+            <div class="col-lg-6 input-row">
+              <p>Số điện thoại <span> *</span></p>
+              <input type="text" placeholder="Nhập số điện thoại tại đây...">
+            </div>
+          </div>
+          <div class="input-wrap row">
+            <div class="col-lg-4 input-row">
+              <p>Thành phố <span>*</span></p>
+              <input type="text" placeholder="Nhập thành phố...">
+            </div>
+            <div class="col-lg-4 input-row">
+              <p>Quận <span>*</span></p>
+              <input type="text" placeholder="Nhập quận...">
+            </div>
+            <div class="col-lg-4 input-row">
+              <p>Huyện <span>*</span></p>
+              <input type="text" placeholder="Nhập huyện...">
+            </div>
+          </div>
+          <div class="input-row">
+            <p>Địa chỉ cụ thể <span>*</span></p>
+            <textarea type="text" placeholder="Nhập địa chỉ người mua tại đây..." class="large"></textarea>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="checkbox">
+            <input type="checkbox">
+            <span>Đặt làm địa chỉ mặc định</span>
+          </div>
+          <div class="submit">
+            Hoàn thành
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
+  <!--  <script src="./assets/js/app.js"></script> -->
+  <script src="./assets/js/cart.js"></script>
+  <script src="./assets/js/thanhtoan.js"></script>
+  <script>
+    const controls = document.querySelectorAll(".product-cotrol__quantity");
+    console.log(controls);
+    controls.forEach((item, i) => {
+      console.log(item);
+      item
+        .querySelector(".quantity__augure")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const _this = this;
+          const input = item.querySelector(
+            '[rel-script="quantity-change"] input'
+          );
+          const max = input.getAttribute("max");
+          const value = input.value;
+
+          if (Number(max) > Number(value)) {
+            let quantity = Number(value) + 1;
+            input.setAttribute("value", quantity);
+          } else {
+            if (Number(max) < 0) input.setAttribute("value", 0);
+            else input.setAttribute("value", max);
+          }
+        });
+      item
+        .querySelector(".quantity__reduce")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const _this = this;
+          const input = item.querySelector(
+            '[rel-script="quantity-change"] input'
+          );
+          const max = input.getAttribute("max");
+          const min = input.getAttribute("min");
+          const value = input.value;
+
+          if (Number(min) < Number(value)) {
+            let quantity = Number(value) - 1;
+            input.setAttribute("value", quantity);
+          } else {
+            if (Number(max) <= Number(min)) input.setAttribute("value", 0);
+            else input.setAttribute("value", min);
+          }
+        });
+    });
+
+    /* document.addEventListener("DOMContentLoaded", function () {
+      productQuantityChange();
+    }); */
+    // handle product quantity
+  </script>
+</html>
