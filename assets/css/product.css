@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
 }
 ul,
 h1,
@@ -6828,6 +6827,7 @@ footer .call-now {
     rgba(255, 255, 255, 0.83) 100%
   );
   position: absolute;
+  border-radius: 12px;
   display: flex;
   height: 60px;
   justify-content: center;
