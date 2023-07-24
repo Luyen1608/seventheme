@@ -753,6 +753,17 @@ a:hover {
     visibility: visible;
 }
 
+.filter-text {
+    align-items: center;
+    display: inherit;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 0.275rem 0.55rem;
+    font-size: 0.725rem;
+}
+
 .footer .returns-link .option-list {
     transition: 0.1s;
     opacity: 0;
@@ -931,6 +942,10 @@ a:hover {
 }
 
 .mobile-overlay {
+    display: none;
+}
+
+.mobile-overlay-filter {
     display: none;
 }
 
@@ -5422,6 +5437,23 @@ footer .call-now {
         opacity: 0.4;
         visibility: visible;
     }
+    .mobile-overlay-filter {
+        display: block;
+        position: fixed;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 96;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        background-color: #000;
+        transition: 0.2s ease;
+    }
+    .mobile-overlay-filter.active {
+        opacity: 0.4;
+        visibility: visible;
+    }
     .mobile-categories {
         display: block;
         overflow: scroll;
@@ -6321,11 +6353,25 @@ footer .call-now {
     color: #fff;
 }
 
+.collection-filter.active {
+    left: -15px;
+}
+
+.collection-filter {
+    left: -365px;
+}
+
 .wrap__product-filter {
     position: sticky;
     top: 0px;
     border-radius: 8px;
     border: 1px solid #dddfe3;
+}
+
+@media (max-width: 991px) {
+    .wrap__product-filter {
+        border: none;
+    }
 }
 
 .wrap__product-filter .__inner {

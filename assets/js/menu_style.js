@@ -1,4 +1,4 @@
-$(".filter-main-btn").append("<div class='cart-btn' data-content='10'><img src='assets/images/cart-2.svg' alt=''></div>");
+// $(".filter-main-btn").append("<div class='cart-btn' data-content='10'><img src='assets/images/cart-2.svg' alt=''></div>");
 $("body").append("<ul class='nk-sticky-toolbar'><li class='demo-purchase' data-content='2'><a href='/Cart'><img src='assets/images/cart-red.svg' alt=''></a></li></ul>");
 
 

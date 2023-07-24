@@ -3,15 +3,34 @@ $(document).ready(function() {
         $(this).parent().children(".content-toggle").slideToggle();
         // $(".content-toggle").slideToggle();
     });
-});
 
-$('.filter-btn').on('click', function(e) {
-    $('.collection-filter').css("left", "-15px");
 });
-$('.filter-back').on('click', function(e) {
-    $('.collection-filter').css("left", "-365px");
-    $('.sidebar-popup').trigger('click');
-});
+mobileOverlayFilter = document.querySelector(".mobile-overlay-filter");
+collectionFilter = document.querySelector(".collection-filter");
+filterBtn = document.querySelector(".filter-btn");
+filterBack = document.querySelector(".filter-back");
+// $('.filter-btn').on('click', function(e) {
+//     $('.collection-filter').toggleClass("active")
+//     $('.mobile-overlay').toggleClass("active")
+
+// });
+// $('.filter-back').on('click', function(e) {
+//     $('.collection-filter').toggleClass("active")
+//     $('.mobile-overlay').toggleClass("active")
+//     $('.sidebar-popup').trigger('click');
+// });
+mobileOverlayFilter.onclick = () => {
+    collectionFilter.classList.toggle("active");
+    mobileOverlayFilter.classList.toggle("active");
+};
+filterBack.onclick = () => {
+    collectionFilter.classList.toggle("active");
+    mobileOverlayFilter.classList.toggle("active");
+};
+filterBtn.onclick = () => {
+    collectionFilter.classList.toggle("active");
+    mobileOverlayFilter.classList.toggle("active");
+};
 var coll = document.getElementsByClassName("collapsible-ct");
 if (coll[0]) {
     coll[0].addEventListener("click", function() {
