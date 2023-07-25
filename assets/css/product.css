@@ -6546,6 +6546,15 @@ footer .call-now {
 #homeStyle01 .filter__submit {
     background-color: #7AA341;
 }
+#homeStyle01 .btn-buy {
+    background-color: #FF8E01;
+}
+#homeStyle01 a.btn-buy:hover {
+    color: white;
+}
+#homeStyle01 a.btn-add-cart:hover {
+    color: white;
+}
 
 .filter__submit {
     width: 100%;
@@ -7284,7 +7293,7 @@ footer .call-now {
 }
 
 .product-desc__text {
-    padding: 25px;
+    padding: 25px 0px;
     font-weight: 600;
     font-size: 14px;
     padding-top: 0;
