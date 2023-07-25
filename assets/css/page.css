@@ -14,21 +14,21 @@ font-weight: 600!important;
 line-height: 24px!important;
 }
 
-.product-info__row h4 {
+/* .product-info__row h4 {
     font-size: 14px !important;
     font-style: normal;
     font-weight: 600 !important;
     line-height: 20px;
     /* 125% */
-}
+} */
 
-.product-info__row div.__right  {
+/* .product-info__row div.__right  {
     font-size: 14px !important;
     font-style: normal;
     font-weight: 400 !important;
     line-height: 18px;
     /* 125% */
-}
+} */
 
 .customer-button:hover {
     color: white !important;
@@ -37,7 +37,7 @@ line-height: 24px!important;
 }
 
 .product-desc__text span {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-style: normal;
     font-weight: 400 !important;
     line-height: 18px;
