@@ -1000,37 +1000,37 @@
         e.preventDefault();
         const _this = this;
         const input = document.querySelector(
-          '[rel-script="quantity-change "] input'
+          '[rel-script="quantity-change"] input'
         );
-        const max = input.getAttribute("max ");
+        const max = input.getAttribute("max");
         const value = input.value;
 
         if (Number(max) > Number(value)) {
           let quantity = Number(value) + 1;
-          input.setAttribute("value ", quantity);
+          input.setAttribute("value", quantity);
         } else {
-          if (Number(max) < 0) input.setAttribute("value ", 0);
-          else input.setAttribute("value ", max);
+          if (Number(max) < 0) input.setAttribute("value", 0);
+          else input.setAttribute("value", max);
         }
       });
     document
-      .querySelector(".quantity__reduce ")
+      .querySelector(".quantity__reduce")
       .addEventListener("click ", function (e) {
         e.preventDefault();
         const _this = this;
         const input = document.querySelector(
-          '[rel-script="quantity-change "] input'
+          '[rel-script="quantity-change"] input'
         );
-        const max = input.getAttribute("max ");
-        const min = input.getAttribute("min ");
+        const max = input.getAttribute("max");
+        const min = input.getAttribute("min");
         const value = input.value;
 
         if (Number(min) < Number(value)) {
           let quantity = Number(value) - 1;
-          input.setAttribute("value ", quantity);
+          input.setAttribute("value", quantity);
         } else {
-          if (Number(max) <= Number(min)) input.setAttribute("value ", 0);
-          else input.setAttribute("value ", min);
+          if (Number(max) <= Number(min)) input.setAttribute("value", 0);
+          else input.setAttribute("value", min);
         }
       });
   }
