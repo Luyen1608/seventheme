@@ -1023,7 +1023,25 @@
   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
 <script src="./assets/js/app.js "></script>
 <script src="./assets/js/custom.js "></script>
-
+<script>
+  document.querySelectorAll('.tab-item').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.tab-item').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  document.querySelectorAll('.checkmark').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.checkmark').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  
+</script>
 <script>
   $(".pr-slider ").slick({
     dots: true,

@@ -181,114 +181,8 @@
         <div class="content">
             <div class="container pt-2">
                 <div class="row">
-                    <div class="col-xl-18 col-lg-4 pb-5 collection-filter">
-                        <div class="collection-mobile-back"><span class="filter-back"><i class="fa fa-angle-left"
-                  aria-hidden="true"></i> Quay lại</span></div>
-                        <aside class="wrap__product-filter">
-                            <form action="">
-                                <div class="__inner">
-                                    <h2>Tìm kiếm</h2>
-                                    <ul class="filter__tags">
-                                        <li>
-                                            <img src="./assets/img/close.svg" alt="">
-                                            <span>Danh mục</span>
-                                        </li>
-                                        <li>
-                                            <img src="./assets/img/close.svg" alt="">
-                                            <span>Nơi sản xuất</span>
-                                        </li>
-                                        <li>
-                                            <img src="./assets/img/close.svg" alt="">
-                                            <span>Thương hiệu</span>
-                                        </li>
-                                    </ul>
-                                    <a href="" class="delete__all-filter">Xóa tất cả</a>
-                                </div>
-                                <div class="__inner">
-                                    <a href="" class="product-cat__title">
-                    Danh mục<img src="./assets/img/up.svg" alt="">
-                  </a>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check1" checked>
-                                        <label class="form-check-label" for="Check1">Đồ bếp</label>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check2">
-                                        <label class="form-check-label" for="Check2">Nội thất</label>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check3">
-                                        <label class="form-check-label" for="Check3">Ngoại thất</label>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check4">
-                                        <label class="form-check-label" for="Check4">Mỹ nghệ</label>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check5">
-                                        <label class="form-check-label" for="Check5">Vật liệu xây dựng</label>
-                                    </div>
-                                </div>
-
-
-                                <div class="__inner">
-                                    <a href="" class="product-cat__title">
-                    Nơi sản xuất<img src="./assets/img/up.svg" alt="">
-                  </a>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check6" checked>
-                                        <label class="form-check-label" for="Check6">Hà nội</label>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="Check7">
-                                        <label class="form-check-label" for="Check7">Nghệ an</label>
-                                    </div>
-                                    <div class="content-collapsible" id="content-collapsible" style="display:none">
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="Check6">
-                                            <label class="form-check-label" for="Check6">Hải Phòng</label>
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="Check7">
-                                            <label class="form-check-label" for="Check7">Yên Bái</label>
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="Check7">
-                                            <label class="form-check-label" for="Check7">Lào Cao</label>
-                                        </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="Check7">
-                                            <label class="form-check-label" for="Check7">Hà Tĩnh</label>
-                                        </div>
-                                    </div>
-
-                                    <a class="product-filter__more collapsible-ct" id="collapsible-ct">
-                                        <span id="showmore" class="showmore">Xem thêm</span><img src="./assets/img/down-02.svg" alt="">
-                                    </a>
-
-                                </div>
-                                <div class="__inner">
-                                    <a href="" class="product-cat__title mb-0">
-                    Thương hiệu<img src="./assets/img/down02.svg" alt="">
-                  </a>
-                                </div>
-                                <div class="__inner">
-                                    <a href="" class="product-cat__title">
-                    Khoảng giá
-                  </a>
-                                    <div class="form-group-site d-flex">
-                                        <input type="text" class="form-control" placeholder="Từ">
-                                        <span>~</span>
-                                        <input type="text" class="form-control" placeholder="Đến">
-                                    </div>
-                                </div>
-                                <div class="form__under">
-                                    <button class="filter__submit" type="submit">Áp dụng</button>
-                                </div>
-                            </form>
-                        </aside>
-                    </div>
-                    <div class="col-xl-82 col-lg-8 pb-3">
+                   
+                    <div class=" pb-3">
                         <div class="filter-main-btn" style="width: fit-content; margin-bottom: 10px;" ">
               
             </div>
@@ -1056,7 +950,25 @@
   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD " crossorigin="anonymous "></script>
 <script src="./assets/js/app.js "></script>
 <script src="./assets/js/custom.js "></script>
-
+<script>
+  document.querySelectorAll('.tab-item').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.tab-item').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  document.querySelectorAll('.checkmark').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.checkmark').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  
+</script>
 <script>
   $(".pr-slider ").slick({
     dots: true,
@@ -1065,7 +977,7 @@
     nextArrow:
       '<a class="slick-next " href="# "> <i class="fa-solid fa-chevron-right "></i></a>',
     customPaging: function (slick, index) {
-      var targetImage = slick.$slides.eq(index).find("img ").attr("src ");
+      var targetImage = slick.$slides.eq(index).find("img").attr("src");
       return '<img src=" ' + targetImage + ' "/>';
     },
   });
