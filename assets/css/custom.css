@@ -232,6 +232,7 @@
 @media (max-width: 450px){
     .product-info__row {
         display: block;
+        gap: 5px;
     }
 }
 footer .list{

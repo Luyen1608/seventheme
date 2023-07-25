@@ -7267,7 +7267,18 @@ footer .call-now {
 .product-desc__block.active{
     max-height: 10000px;
 }
-
+.wrap-info__product-detail.hdmh{
+    display: none;
+}
+.hdmh.active{
+    display: block;
+}
+.wrap-info__product-detail {
+    display: block;
+}
+.wrap-info__product-detail.unshow{
+    display: none;
+}
 .wrap-info__product-detail {
     padding: 25px;
 }
@@ -7971,11 +7982,14 @@ footer .call-now {
         font-size: 18px;
         font-weight: 600;
     }
+    .product-info__row .__right{
+        font-size: 13px;
+    }
     .product-info__row h4 {
         width: 22%;
         max-width: 250px;
         min-width: 150px;
-        font-size: 16px;
+        font-size: 14px;
         color: #000;
         margin-bottom: 0px;
         font-weight: 600;

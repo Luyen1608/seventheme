@@ -425,11 +425,11 @@
               <h3>Thông tin về sản phẩm</h3>
 
                 </div>
-                <div class="tab-item">
+                <div class="tab-item hdmh">
                   <h3>Hướng dẫn mua hàng</h3>
                 </div>
               </div>
-              <ul class="wrap-info__product-detail ">
+              <ul class="wrap-info__product-detail thongtin">
                 
                 <li class="product-info__row ">
                   <h4>Chất liệu:</h4>
@@ -478,6 +478,20 @@
                 
                 
               </ul>
+              <div class="wrap-info__product-detail hdmh">
+                
+              
+                
+                <div class="product-desc__text">
+                  Craft & Decor là brand chuyên về các sản phẩm mây tre được đan thủ công từ những bàn tay lành nghề của nghệ nhân làng thủ công mỹ nghệ Việt Nam. <br>
+                  SẢN PHẨM: Bàn trà mây tre mặt khảm trai decor | Thủ công mỹ nghệ xuất khẩu <br>
+                  - Được làm thủ công từ những bàn tay của các nghệ nhân lành nghề của làng nghề thủ công Việt Nam <br>
+                  - Chất liệu mây tre đan tự nhiên, kết hợp khảm trai tinh xảo <br>
+                  - Thân thiện - An toàn - Chất lượng <br>
+                  KÍCH CỠ: - Size to: Rộng 40cm x cao 43cm <br>
+                  - Size nhỏ: Rộng 30cm x cao 33cm <br>
+                </div>
+              </div>
               <div class="product-desc__text">
                 Craft & Decor là brand chuyên về các sản phẩm mây tre được đan thủ công từ những bàn tay lành nghề của nghệ nhân làng thủ công mỹ nghệ Việt Nam. <br>
                 SẢN PHẨM: Bàn trà mây tre mặt khảm trai decor | Thủ công mỹ nghệ xuất khẩu <br>
@@ -1208,12 +1222,46 @@
 <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js "></script>
 <script src="./assets//js/rating.js "></script>
 <script>
+  const wrapInfoProductDetail = document.querySelector('.wrap-info__product-detail')
+  const tabItems = document.querySelectorAll('.tab-item')
+  console.log(tabItems)
+  tabItems.forEach(item => {
+    item.onclick = () => {
+      console.log(item)
+      if(item.classList.contains('hdmh')){
+        console.log(item)
+        document.querySelector('.wrap-info__product-detail.thongtin').classList.add('unshow')
+        document.querySelector('.wrap-info__product-detail.hdmh').classList.add('active')
+      } else{
+        document.querySelector('.wrap-info__product-detail').classList.remove('unshow')
+        document.querySelector('.wrap-info__product-detail.hdmh').classList.remove('active')
+
+      }
+    }
+  })
+  const moreBtn = document.querySelector('.more-btn')
+  const productDescBlock = document.querySelector('.product-desc__block')
+  console.log(productDescBlock)
+  let i =0
+  moreBtn.onclick = () => {
+    moreBtn.querySelector('img').classList.toggle('active')
+    productDescBlock.classList.toggle('active')
+  }
   document.querySelectorAll('.tab-item').forEach(item => {
     item.onclick = () => {
       document.querySelectorAll('.tab-item').forEach(i => {
         i.classList.remove('active')
       })
      item.classList.add('active')
+     if(item.classList.contains('hdmh')){
+      console.log(item)
+      document.querySelector('.wrap-info__product-detail').classList.add('unshow')
+      document.querySelector('.wrap-info__product-detail.hdmh').classList.add('active')
+    } else{
+      document.querySelector('.wrap-info__product-detail').classList.remove('unshow')
+      document.querySelector('.wrap-info__product-detail.hdmh').classList.remove('active')
+
+    }
     }
   })
   document.querySelectorAll('.checkmark').forEach(item => {
