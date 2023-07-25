@@ -951,6 +951,14 @@
 <script src="./assets/js/app.js "></script>
 <script src="./assets/js/custom.js "></script>
 <script>
+  const moreBtn = document.querySelector('.more-btn')
+  const productDescBlock = document.querySelector('.product-desc__block')
+  console.log(productDescBlock)
+  let i =0
+  moreBtn.onclick = () => {
+    moreBtn.querySelector('img').classList.toggle('active')
+    productDescBlock.classList.toggle('active')
+  }
   document.querySelectorAll('.tab-item').forEach(item => {
     item.onclick = () => {
       document.querySelectorAll('.tab-item').forEach(i => {

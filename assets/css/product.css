@@ -936,8 +936,15 @@ a:hover {
 .mobile-categories {
     display: none;
 }
-
+.collapsed{
+    height: 800px;
+}
+.more-btn img.active{
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
 .mobile-cate-btn {
+
 }
 
 .mobile-overlay {
@@ -7253,6 +7260,12 @@ footer .call-now {
     padding-top: 0;
     border-radius: 12px;
     position: relative;
+    max-height: 540px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.product-desc__block.active{
+    max-height: 10000px;
 }
 
 .wrap-info__product-detail {
