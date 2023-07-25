@@ -7981,10 +7981,17 @@ footer .call-now {
 /* mobile */
 
 @media screen and (max-width: 767.98px) {
+    
     .product-desc__block h3 {
         font-size: 16px;
         margin-bottom: 22px;
         gap: 4px;
+    }
+    .tab-item{
+        padding: 8px;
+    }
+    .tab-item h3{
+        font-size: 15px;
     }
     .wrap__breadcrumbs h2 {
         font-size: 18px;
