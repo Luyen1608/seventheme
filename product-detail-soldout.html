@@ -1207,4 +1207,23 @@
 </script>
 <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js "></script>
 <script src="./assets//js/rating.js "></script>
+<script>
+  document.querySelectorAll('.tab-item').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.tab-item').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  document.querySelectorAll('.checkmark').forEach(item => {
+    item.onclick = () => {
+      document.querySelectorAll('.checkmark').forEach(i => {
+        i.classList.remove('active')
+      })
+     item.classList.add('active')
+    }
+  })
+  
+</script>
 </html>

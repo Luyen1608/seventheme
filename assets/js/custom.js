@@ -1,7 +1,6 @@
 $(document).ready(function() {
     $(".btn-toggle").click(function() {
         $(this).parent().children(".content-toggle").slideToggle();
-        // $(".content-toggle").slideToggle();
     });
 
 });
@@ -9,16 +8,7 @@ mobileOverlayFilter = document.querySelector(".mobile-overlay-filter");
 collectionFilter = document.querySelector(".collection-filter");
 filterBtn = document.querySelector(".filter-btn");
 filterBack = document.querySelector(".filter-back");
-// $('.filter-btn').on('click', function(e) {
-//     $('.collection-filter').toggleClass("active")
-//     $('.mobile-overlay').toggleClass("active")
 
-// });
-// $('.filter-back').on('click', function(e) {
-//     $('.collection-filter').toggleClass("active")
-//     $('.mobile-overlay').toggleClass("active")
-//     $('.sidebar-popup').trigger('click');
-// });
 mobileOverlayFilter.onclick = () => {
     collectionFilter.classList.toggle("active");
     mobileOverlayFilter.classList.toggle("active");
@@ -45,14 +35,3 @@ if (coll[0]) {
         }
     });
 }
-// if ($(".pr-slider")) {
-//     $(".pr-slider").slick({
-//         dots: true,
-//         prevArrow: '<a class="slick-prev" href="#"> <i class="fa-solid fa-chevron-left"></i></a>',
-//         nextArrow: '<a class="slick-next" href="#"> <i class="fa-solid fa-chevron-right"></i></a>',
-//         customPaging: function(slick, index) {
-//             var targetImage = slick.$slides.eq(index).find("img").attr("src");
-//             return '<img src=" ' + targetImage + ' "/>';
-//         },
-//     });
-// }
