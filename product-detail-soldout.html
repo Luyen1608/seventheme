@@ -1065,7 +1065,7 @@
     nextArrow:
       '<a class="slick-next " href="# "> <i class="fa-solid fa-chevron-right "></i></a>',
     customPaging: function (slick, index) {
-      var targetImage = slick.$slides.eq(index).find("img ").attr("src ");
+      var targetImage = slick.$slides.eq(index).find("img").attr("src");
       return '<img src=" ' + targetImage + ' "/>';
     },
   });
