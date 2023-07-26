@@ -692,16 +692,16 @@
 }
 
 .cart-content .cart-table-footer .change {
-    font-weight: 500;
-    font-size: 22px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 24px;
     color: #0184d3;
     cursor: pointer;
 }
 
 .cart-content .cart-table-footer .price {
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
     line-height: 32px;
     color: #de3618;
 }
@@ -1085,6 +1085,7 @@
     .cart-content .cart-table-footer {
         padding: 8px;
         flex-wrap: wrap;
+        gap: 5px;
     }
 
     .cart-content .cart-table-footer p {
@@ -1515,7 +1516,7 @@
     }
 
     .cart-content .cart-table-footer .change {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cart-content .cart-table-footer .price {
@@ -1840,7 +1841,7 @@
     }
 
     .cart-content .cart-table-footer .change {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cart-content .cart-table-footer .price {
@@ -2029,7 +2030,7 @@
     }
 
     .cart-content .cart-table-footer .change {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cart-content .cart-table-footer .price {

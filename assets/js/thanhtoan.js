@@ -6,7 +6,7 @@ const addressBookOpenBtn = document.querySelector(".address-card-btn");
 console.log(addressBookOpenBtn);
 const shippingListCloseBtn = document.querySelector(".shipping-list-close-btn");
 const shippingListOpenBtn = document.querySelector(
-  ".change-ship.change"
+  ".cart-table-footer .change"
 );
 
 paymentCloseBtn.onclick = () => {
