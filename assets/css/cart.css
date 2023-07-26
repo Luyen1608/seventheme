@@ -183,6 +183,7 @@
 }
 
 .address-book.active {
+    border: 1px solid #dddfe3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -206,7 +207,7 @@
     margin: 0 auto;
     text-align: center;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 30px;
     text-align: center;
     color: #303030;
@@ -301,6 +302,8 @@
 }
 
 .shipping-list.active {
+    border-radius: 10px;
+    border: 1px solid #dddfe3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -386,6 +389,8 @@
 }
 
 .address-book-card-add.active {
+    border-radius: 10px;
+    border: 1px solid #dddfe3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -507,6 +512,7 @@
 }
 
 .address-book-address-add.active {
+    border: 1px solid #dddfe3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -545,9 +551,10 @@
 }
 
 .address-book-address-add .input-row {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
 }
 
 .address-book-address-add .input-row p {
@@ -576,7 +583,15 @@
 .address-book-address-add .input-row .large {
     height: 92px;
 }
-
+.address-book-address-add .input-row .large:focus {
+    border: 1px solid #de3618;
+}
+.ctm-modal input:focus{
+    border: 1px solid #de3618 !important;
+}
+.address-book-address-add .input-row input:focus, .address-book-address-add .input-row textarea:focus{
+    border: 1px solid #e2f0d4 !important;
+}
 .address-book-address-add>.d-flex {
     margin-top: 20px;
 }
@@ -2099,7 +2114,7 @@
 
 .cart-detail-left {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
