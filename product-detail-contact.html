@@ -225,7 +225,6 @@
                 </div>
                 <div class=" wrap-product__desc ">
                   <ul class=" wrap-info__product-detail ">
-
                     <li class=" product-info__row ">
                       <h4>Tên sản phẩm:</h4>
                       <div class="__right name " style="font-weight: 600 !important;">
@@ -299,7 +298,7 @@
                     <h3 class="txt-headling-5 text-center">Hướng dẫn <br class="d-none-400 ">mua hàng</h3>
                   </div>
                 </div>
-                <div class="wrap-info__product-detail thongtin">
+                <div class="wrap-info__product-detail tab thongtin">
                   <ul class=" ">
 
                     <li class="product-info__row ">
@@ -364,7 +363,7 @@
                     <span>- Size nhỏ: Rộng 30cm x cao 33cm <br></span>
                   </div>
                 </div>
-                <div class="wrap-info__product-detail hdmh">
+                <div class="wrap-info__product-detail tab hdmh">
                   <div class="product-desc__text 12">
                     Craft & Decor là brand chuyên về các sản phẩm mây tre được
                     đan thủ công từ những bàn tay lành nghề của nghệ nhân làng
@@ -899,7 +898,7 @@
         document.querySelector('.wrap-info__product-detail.thongtin').classList.add('unshow')
         document.querySelector('.wrap-info__product-detail.hdmh').classList.add('active')
       } else{
-        document.querySelector('.wrap-info__product-detail').classList.remove('unshow')
+        document.querySelector('.wrap-info__product-detail.tab').classList.remove('unshow')
         document.querySelector('.wrap-info__product-detail.hdmh').classList.remove('active')
 
       }
@@ -921,10 +920,10 @@
      item.classList.add('active')
      if(item.classList.contains('hdmh')){
       console.log(item)
-      document.querySelector('.wrap-info__product-detail').classList.add('unshow')
+      document.querySelector('.wrap-info__product-detail.tab').classList.add('unshow')
       document.querySelector('.wrap-info__product-detail.hdmh').classList.add('active')
     } else{
-      document.querySelector('.wrap-info__product-detail').classList.remove('unshow')
+      document.querySelector('.wrap-info__product-detail.tab').classList.remove('unshow')
       document.querySelector('.wrap-info__product-detail.hdmh').classList.remove('active')
 
     }
