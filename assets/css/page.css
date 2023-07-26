@@ -851,6 +851,14 @@ line-height: 20px;
     box-shadow: -3px 8px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
+.side-nav-hide {
+    position: absolute;
+    background: white;
+    z-index: 9999;
+    width: 240px;
+    height: auto;
+}
+
 #homeStyle01 .side-nav {
     border: 1px solid rgba(134, 190, 76, 0.24);
     border-top: none;
