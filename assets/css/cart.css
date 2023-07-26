@@ -1,9 +1,10 @@
-.block-cart-shop{
+.block-cart-shop {
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
+
 .cart-ship {
     width: 100%;
     display: flex;
@@ -2170,6 +2171,12 @@ input::-webkit-inner-spin-button {
     border: 1px solid var(--red-2, #F74239);
 
     color: #F74239;
+}
+
+@media screen and (max-width: 991px) {
+    .pt-3-991 {
+        padding-top: 1rem !important;
+    }
 }
 
 
