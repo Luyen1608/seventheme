@@ -1,3 +1,83 @@
+.block-cart-shop{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+}
+.cart-ship {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 5px;
+    border: 1px solid #F3F9EC;
+    background: var(--green-light, linear-gradient(90deg, #CFE8B0 0%, #FFF 100%));
+}
+
+.block-ship {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-ship-price {
+    flex-shrink: 0;
+    color: var(--red-1, #DE3618);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.change-ship {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.change-ship a {
+    color: var(--xanh-1, #0184D3) !important;
+    /* Body 2 */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.name-ship {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.name-ship span {
+    color: var(--neutral-1, #303030);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+.txt-count {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    white-space: pre;
+}
+
+.div-logo-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+}
+
 .payment-info {
     width: 550px;
     position: fixed;
@@ -2023,7 +2103,8 @@
     align-items: flex-start;
     gap: 10px;
 }
-.cart-detail-info-text{
+
+.cart-detail-info-text {
     flex: 1 0 0;
 }
 
@@ -2034,20 +2115,23 @@
     line-height: 22px;
     /* 129.412% */
 }
+
 .cart-detail-info .size-product {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
 }
+
 input[type=number] {
     -moz-appearance: textfield;
     padding-left: 0px;
-  }
-  input::-webkit-outer-spin-button,
+}
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -2057,18 +2141,20 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     align-items: flex-end;
 }
-.cart-detail-right .price{
+
+.cart-detail-right .price {
     color: var(--red-2, #F74239);
     font-family: Segoe UI;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px; /* 129.412% */
+    line-height: 22px;
+    /* 129.412% */
     letter-spacing: 0.65px;
 }
-.cart-detail-right .price{
-    
-}
+
+.cart-detail-right .price {}
+
 .cart-btn-del {
     display: flex;
     padding: 7px 20px;
