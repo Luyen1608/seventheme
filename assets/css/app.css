@@ -879,14 +879,7 @@
     border-radius: 8px;
 }
 
-.news-wrap .news-item .news-item-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    /* or 135% */
-    /* Neutral/1 */
-    color: #303030;
-}
+
 
 .news-wrap .news-item .news-item-info {
     display: flex;
@@ -1083,10 +1076,7 @@
         width: 100%;
         object-fit: cover;
     }
-    .news-wrap .news-item .news-item-title {
-        font-size: 16px;
-        line-height: 18px;
-    }
+   
     .news-wrap .news-item .news-item-info {
         font-size: 12px;
     }
@@ -1182,10 +1172,7 @@
         width: 100%;
         object-fit: cover;
     }
-    .news-wrap .news-item .news-item-title {
-        font-size: 16px;
-        line-height: 18px;
-    }
+    
     .news-wrap .news-item .news-item-info {
         font-size: 12px;
     }
@@ -1243,10 +1230,7 @@
     .news-wrap .news-menu a {
         font-size: 12px;
     }
-    .news-wrap .news-item .news-item-title {
-        line-height: 20px;
-        font-size: 15px;
-    }
+   
     .news-wrap .news-item .news-item-info {
         font-size: 12px;
     }
@@ -1326,9 +1310,7 @@
     .news-wrap .news-menu a {
         font-size: 10px;
     }
-    .news-wrap .news-item .news-item-title {
-        font-size: 16px;
-    }
+    
     .news-wrap .news-item .news-item-info {
         font-size: 13px;
     }
@@ -1407,9 +1389,7 @@
     .news-wrap .news-menu a {
         font-size: 13px;
     }
-    .news-wrap .news-item .news-item-title {
-        font-size: 18px;
-    }
+   
     .news-wrap .news-item .news-item-info {
         font-size: 14px;
     }
@@ -3101,35 +3081,11 @@
     gap: 3px;
 }
 
-.cart-content .cart-table-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 27px 20px;
-    background: linear-gradient(90deg, #cfe8b0 0%, #ffffff 100%);
-    border-top: 1px dashed #000000;
-}
 
-.cart-content .cart-table-footer p {
-    font-size: 20px;
-    line-height: 32px;
-    color: #303030;
-}
 
-.cart-content .cart-table-footer .change {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 24px;
-    color: #0184d3;
-    cursor: pointer;
-}
 
-.cart-content .cart-table-footer .price {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: #de3618;
-}
+
+
 
 .cart-content .cart-table-heading .right {
     display: flex;

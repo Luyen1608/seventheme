@@ -2016,7 +2016,7 @@ display: -webkit-box;
 
 .news-wrap .news-item .news-item-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 27px;
   display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -2048,7 +2048,7 @@ display: -webkit-box;
 
 .news-wrap .news-item .news-item-content {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 20px;
   color: #303030;display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -2536,7 +2536,7 @@ letter-spacing: 0px;
     font-size: 13px;
   }
   .news-wrap .news-item .news-item-content {
-    font-size: 15px;
+    font-size: 14px;
   }
   .news-wrap .breadcump-wrap .search-bar {
     max-width: 300px;
@@ -2610,13 +2610,13 @@ letter-spacing: 0px;
     font-size: 13px;
   }
   .news-wrap .news-item .news-item-title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .news-wrap .news-item .news-item-info {
     font-size: 14px;
   }
   .news-wrap .news-item .news-item-content {
-    font-size: 16px;
+    font-size: 14px;
   }
   .news-wrap .breadcump-wrap {
     gap: 30px;
@@ -4349,35 +4349,12 @@ letter-spacing: 0px;
   gap: 3px;
 }
 
-.cart-content .cart-table-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 27px 20px;
-  background: linear-gradient(90deg, #cfe8b0 0%, #ffffff 100%);
-  border-top: 1px dashed #000000;
-}
 
-.cart-content .cart-table-footer p {
-  font-size: 20px;
-  line-height: 32px;
-  color: #303030;
-}
 
-.cart-content .cart-table-footer .change {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 24px;
-  color: #0184d3;
-  cursor: pointer;
-}
 
-.cart-content .cart-table-footer .price {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
-  color: #de3618;
-}
+
+
+
 
 .cart-content .cart-table-heading .right {
   display: flex;
@@ -4726,23 +4703,7 @@ letter-spacing: 0px;
     width: 150px;
     font-size: 12px;
   }
-  .cart-content .cart-table-footer {
-    padding: 8px;
-    flex-wrap: wrap;
-  }
-  .cart-content .cart-table-footer p {
-    line-height: 20px;
-    font-size: 13px;
-  }
-  .cart-content .cart-table-footer .change {
-    margin-right: 5px;
-    line-height: 20px;
-    font-size: 13px;
-  }
-  .cart-content .cart-table-footer .price {
-    line-height: 20px;
-    font-size: 11px;
-  }
+  
   .cart-content .address-card {
     padding: 15px;
   }
@@ -5026,18 +4987,7 @@ letter-spacing: 0px;
     width: 220px;
     font-size: 14px;
   }
-  .cart-table-footer {
-    padding: 20px 16px;
-  }
-  .cart-table-footer p {
-    font-size: 14px;
-  }
-  .cart-table-footer .change {
-    font-size: 16px;
-  }
-  .cart-table-footer .price {
-    font-size: 14px;
-  }
+  
   .cart-content .address-card {
     padding: 15px;
   }
@@ -5064,15 +5014,7 @@ letter-spacing: 0px;
     line-height: 24px;
     margin-left: 10px;
   }
-  .cart-content .cart-table-footer p {
-    font-size: 16px;
-  }
-  .cart-content .cart-table-footer .change {
-    font-size: 18px;
-  }
-  .cart-content .cart-table-footer .price {
-    font-size: 16px;
-  }
+ 
   .cart-content .cart-table-heading .right {
     gap: 40px;
   }
@@ -5281,18 +5223,7 @@ letter-spacing: 0px;
   .quantity {
     font-size: 13px;
   }
-  .cart-table-footer {
-    padding: 22px 18px;
-  }
-  .cart-table-footer p {
-    font-size: 16px;
-  }
-  .cart-table-footer .change {
-    font-size: 18px;
-  }
-  .cart-table-footer .price {
-    font-size: 16px;
-  }
+  
   .cart-content .address-card {
     padding: 20px;
   }

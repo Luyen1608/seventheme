@@ -590,14 +590,18 @@
     align-items: center;
     gap: 3px;
 }
+ .cart-table-footer img{
+    width: 32px;
+    height: 32px;
 
+}
 .cart-content .cart-table-footer {
     display: flex;
+    margin: 15px 0;
     align-items: center;
     justify-content: space-between;
     padding: 27px 20px;
     background: linear-gradient(90deg, #cfe8b0 0%, #ffffff 100%);
-    border-top: 1px dashed #000000;
 }
 
 .cart-content .cart-table-footer p {
