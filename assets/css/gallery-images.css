@@ -38,3 +38,85 @@
         margin-bottom: 3px;
     }
 }
+
+
+/********************* Modal đăng ký nhận bản tin ************************/
+.modal__box {
+    width: 345px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 12px 40px 32px;
+    border: 1px solid #C8C4C4;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.modal__box .box, .modal__box .box input, .modal__box .content  {
+    width: 100%;
+}
+.modal__box .box {
+    margin: 12px 0;
+}
+.modal__box .box input {
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 8px;
+}
+
+.modal__box .box.button-news input {
+    width: 228px;
+    color: #fff;
+    background-color: #395319;
+    border-radius: 8px;
+}
+
+.box.button-news {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.modal__box .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #303030;
+}
+.modal__box .description {
+    color: #727272;
+    width: 260px;
+    text-align: center;
+}
+
+.wrapper__modal{
+   position: absolute;
+   top: 450px;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 99999;
+}
+
+.wrapper__modal.show {
+    display: flex;
+}
+.wrapper__modal.hide {
+    display: none;
+}
+
+.wrapper__modal .btn-close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+@media (min-width: 768px) {
+    .modal__box {
+        width: 530px;
+    }
+    
+}

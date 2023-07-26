@@ -289,12 +289,12 @@
                     <div class="choose-product choose__number ">
                       <span class="__title ">Số lượng</span>
                       <div class="wrap-product__quantity ">
-                        <div rel-script="quantity-change "
-                          class="quantity product-cotrol__quantity ">
-                          <a href="javascript:void(0)" class="quantity__reduce ">-</a>
+                        <div rel-script="quantity-change"
+                          class="quantity product-cotrol__quantity">
+                          <a href="javascript:void(0)" class="quantity__reduce">-</a>
                           <input type="number " value="1 " max="99 " min="1 "
-                            class="quantity__control " />
-                          <a href="javascript:void(0)" class="quantity__augure ">+</a>
+                            class="quantity__control" />
+                          <a href="javascript:void(0)" class="quantity__augure">+</a>
                         </div>
                         <span>Sản phẩm</span>
                       </div>
@@ -992,53 +992,54 @@
 
   // config slider
 
-  // handle product quantity
-  function productQuantityChange() {
-    document
-      .querySelector(".quantity__augure ")
-      .addEventListener("click ", function (e) {
+</script>
+<script>
+    
+  const controls = document.querySelectorAll(".product-cotrol__quantity");
+  console.log(controls);
+  controls.forEach((item, i) => {
+    console.log(item);
+    item
+      .querySelector(".quantity__augure")
+      .addEventListener("click", function (e) {
         e.preventDefault();
         const _this = this;
-        const input = document.querySelector(
-          '[rel-script="quantity-change "] input'
+        const input = item.querySelector(
+          '[rel-script="quantity-change"] input'
         );
-        const max = input.getAttribute("max ");
+        const max = input.getAttribute("max");
         const value = input.value;
-
+  
         if (Number(max) > Number(value)) {
           let quantity = Number(value) + 1;
-          input.setAttribute("value ", quantity);
+          input.setAttribute("value", quantity);
         } else {
-          if (Number(max) < 0) input.setAttribute("value ", 0);
-          else input.setAttribute("value ", max);
+          if (Number(max) < 0) input.setAttribute("value", 0);
+          else input.setAttribute("value", max);
         }
       });
-    document
-      .querySelector(".quantity__reduce ")
-      .addEventListener("click ", function (e) {
+    item
+      .querySelector(".quantity__reduce")
+      .addEventListener("click", function (e) {
         e.preventDefault();
         const _this = this;
-        const input = document.querySelector(
-          '[rel-script="quantity-change "] input'
-        );
-        const max = input.getAttribute("max ");
-        const min = input.getAttribute("min ");
+        const input = item.querySelector('[rel-script="quantity-change"] input');
+        const max = input.getAttribute("max");
+        const min = input.getAttribute("min");
         const value = input.value;
-
+  
         if (Number(min) < Number(value)) {
           let quantity = Number(value) - 1;
-          input.setAttribute("value ", quantity);
+          input.setAttribute("value", quantity);
         } else {
-          if (Number(max) <= Number(min)) input.setAttribute("value ", 0);
-          else input.setAttribute("value ", min);
+          if (Number(max) <= Number(min)) input.setAttribute("value", 0);
+          else input.setAttribute("value", min);
         }
       });
-  }
-
-  document.addEventListener("DOMContentLoaded ", function () {
-    productQuantityChange();
   });
-    // handle product quantity
+  
+
+  
 </script>
   <style>
   
