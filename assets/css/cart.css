@@ -350,14 +350,14 @@ gap: 15px;
 
 .shipping-list .shipping-item .shipping-name {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 24px;
     color: #303030;
 }
 
 .shipping-list .shipping-item .price {
-    font-weight: 300;
-    font-size: 22px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 24px;
     color: #de3618;
 }
