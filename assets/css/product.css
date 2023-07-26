@@ -1884,6 +1884,10 @@ line-height: 22px;
 font-size: 16px;
 font-weight: 600;
 line-height: 20px;
+display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
 }
 .news-search{
@@ -1995,8 +1999,10 @@ line-height: 20px;
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
-  /* or 135% */
-  /* Neutral/1 */
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   color: #303030;
 }
 
@@ -2025,7 +2031,10 @@ line-height: 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
-  color: #303030;
+  color: #303030;display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .news-detail {
