@@ -324,33 +324,7 @@
                             <a href="#">HOẠT ĐỘNG KHÁC</a>
                         </li>
                     </ul>
-
-                    <!-- <div class="images__layout">
-                        <div class="images__column">
-                            <div><img src="./assets/images/gallery/image1.png"/></div>
-                            <div><img src="./assets/images/gallery/image2.png"/></div>
-                            <div><img src="./assets/images/gallery/image3.png"/></div>
-                            <div><img src="./assets/images/gallery/image4.png"/></div>
-                        </div>
-                        <div class="images__column">
-                            <div><img src="./assets/images/gallery/image5.png"/></div>
-                            <div><img src="./assets/images/gallery/image6.png"/></div>
-                            <div><img src="./assets/images/gallery/image7.png"/></div>
-                            <div><img src="./assets/images/gallery/image8.png"/></div>
-                        </div>
-                        <div class="images__column">
-                            <div><img src="./assets/images/gallery/image9.png"/></div>
-                            <div><img src="./assets/images/gallery/image10.png"/></div>
-                            <div><img src="./assets/images/gallery/image11.png"/></div>
-                            <div><img src="./assets/images/gallery/image12.png"/></div>
-                        </div>
-                        <div class="images__column">
-                            <div><img src="./assets/images/gallery/image13.png"/></div>
-                            <div><img src="./assets/images/gallery/image14.png"/></div>
-                            <div><img src="./assets/images/gallery/image15.png"/></div>
-                            <div><img src="./assets/images/gallery/image16.png"/></div>
-                        </div>
-                    </div> -->
+                    
                     <div class="images__layout" id="lightgallery">
                             <a href="./assets/images/gallery/image1.png" class="span-6">
                                 <img alt="image 1" src="./assets/images/gallery/image1.png" />
@@ -485,7 +459,7 @@
                                     <form action="">
                                         <div class="form-group__ft">
                                             <input type="text" class="form-control" placeholder="Email của bạn">
-                                            <button type="submit">
+                                            <button type="button" id="btn-send-news">
                                                 <img src="./assets/images/Button-send.svg" alt="">
                                             </button>
                                         </div>
@@ -503,53 +477,38 @@
             <!-- end footer -->
         </div>
 
+        <div class="wrapper__modal hide">
+            <div class="modal__box" >
+                <div class="btn-close"><img src="./assets/images/close.svg"/></div>
+                <div class="title">Đăng ký nhận bản tin</div>
+                <div class="description">Vui lòng cung cấp thêm thông tin để chúng tôi hỗ trợ bạn được tốt hơn</div>
+                <div class="content">
+                    <div class="box"><input type="text" placeholder="Họ tên *"></div>
+                    <div class="box"><input type="tel" placeholder="Số điện thoại"></div>
+                    <div class="box"><input type="text" placeholder="Địa chỉ"></div>
+                    <div class="box"><input type="mail" placeholder="Email"></div>
+                    <div class="box button-news"><input type="submit" value="Đăng ký nhận bản tin"></div>
+                </div>
+            </div>
+        </div>
+
         <!-- swiper slider js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./assets/js/jquery.min.js"></script>
         <!-- swiper slider js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.umd.min.js"></script>
         <script src="./assets/js/main.js"></script>
 
-        <script>
-            const productSlider = new Swiper('.product-sl', {
-                loop: true,
-                slidesPerView: 4,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+        <script>     
+            $(".btn-close").click(function() {
+                $(".wrapper__modal").addClass("hide");
             });
-
-            const productSlider02 = new Swiper('.product-sl-02', {
-                loop: true,
-                slidesPerView: 3,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            const followSlider = new Swiper('.follow-slider', {
-                loop: true,
-                slidesPerView: 4,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            const customerSlider = new Swiper('.customer-slider', {
-                loop: true,
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                },
-            });
+            
+            $("#btn-send-news").click(function() {
+                $(".wrapper__modal").removeClass("hide");
+            }) ; 
 
             lightGallery(document.getElementById('lightgallery'), {
                 plugins: [lgZoom, lgThumbnail],
