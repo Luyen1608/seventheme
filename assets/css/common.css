@@ -147,7 +147,7 @@ header {
 
 .header-top {
     width: 100%;
-    background: linear-gradient( 0deg, var(--style-color-light), var(--style-color-light));
+    background: linear-gradient( 0deg, var(--style-color-main), var(--style-color-main));
 }
 
 #homeStyle07 .login-btn {}

@@ -989,7 +989,7 @@ a:hover {
 }
 
 .nav__left-title {
-  background-color: var(--style-color-light) !important;
+  background-color: var(--style-color-main) !important;
 }
 
 .header__info .shopping-cart {

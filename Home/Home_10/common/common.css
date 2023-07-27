@@ -23,13 +23,13 @@
 }
 
 :root {
-    --style-color-main: #6BD329;
-    --style-color-dark: #54A422;
-    --style-color-light: rgba(107, 211, 41, 0.62);;
-    --style-color-light-2: rgba(107, 211, 41, 0.20);
+    --style-color-main: #2A8B09;
+    --style-color-dark: #206E05;
+    --style-color-light: #2A8B09;
+    --style-color-light-2: rgba(42, 139, 9, 0.20);
     --style-color-btn-contrast: #ff8e01;
 
-    --style-color-bg-footer: #60c521;
+    --style-color-bg-footer: #2A8B09;
 
     --style-color-in-bg: white;
     --style-color-input: #2a8b0930;
@@ -54,7 +54,3 @@ footer a:hover {
 }
 .cart-ship {
     background: var(--green-light, linear-gradient(90deg, var(--style-color-light-2) 0%, #FFF 100%)) !important;
-}
-input::placeholder{
-    color: rgb(199, 189, 189) !important;
-}
