@@ -930,9 +930,6 @@ a:hover {
 .mobile-categories {
   display: none;
 }
-.collapsed {
-  height: 800px;
-}
 .more-btn img.active {
   transform: rotate(180deg);
   transition: 0.2s ease;
