@@ -23,6 +23,7 @@
 
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css" type="text/css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <!-- link css style  -->
         <link rel="stylesheet" href="./assets/css/common.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/page.css" type="text/css">
@@ -477,7 +478,7 @@
             <!-- end footer -->
         </div>
 
-        <div class="wrapper__modal hide">
+        <div class="wrapper__modal hide" id="dialog">
             <div class="modal__box" >
                 <div class="btn-close"><img src="./assets/images/close.svg"/></div>
                 <div class="title">Đăng ký nhận bản tin</div>
@@ -494,7 +495,8 @@
 
         <!-- swiper slider js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="./assets/js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <!-- swiper slider js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
@@ -503,12 +505,14 @@
 
         <script>     
             $(".btn-close").click(function() {
-                $(".wrapper__modal").addClass("hide");
+                $("#dialog" ).dialog("close");
+
             });
             
             $("#btn-send-news").click(function() {
-                $(".wrapper__modal").removeClass("hide");
+                $( "#dialog").dialog();
             }) ; 
+
 
             lightGallery(document.getElementById('lightgallery'), {
                 plugins: [lgZoom, lgThumbnail],
