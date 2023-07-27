@@ -54,3 +54,4 @@ footer a:hover {
 }
 .cart-ship {
     background: var(--green-light, linear-gradient(90deg, var(--style-color-light-2) 0%, #FFF 100%)) !important;
+}
