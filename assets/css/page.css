@@ -221,12 +221,12 @@ line-height: 20px;
 }
 
 .product__item:hover {
-    background-color: var(--style01-cl-hightlight);
+    background-color: var(--style-color-main);
     color: #fff;
 }
 
 #homeStyle02 .product__item:hover {
-    background-color: var(--style02-cl-hightlight);
+    background-color: var(--style-color-main);
 }
 
 #homeStyle01 .product__item:hover .__title {
@@ -331,7 +331,7 @@ line-height: 20px;
 .p__price span.new {
     font-size: 14px;
     font-weight: 600;
-    color: var(--style01-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 #homeStyle05 .p__price span.new {
@@ -998,7 +998,7 @@ line-height: 20px;
 }
 
 #homeStyle003 footer {
-    background: #434a3d;
+    background: var(--style-color-bg-footer);
     color: #fff;
 }
 
@@ -1333,7 +1333,6 @@ footer .footer__block-title {
 }
 
 footer .form-group__ft {
-    border: 1px solid #2f3235;
     border-radius: 4px;
 }
 
@@ -1500,8 +1499,8 @@ footer .call-now {
 }
 
 #homeStyle01 .nav__left-title {
-    background-color: #e2f0d4;
-    color: #000;
+    background-color: var(--style-color-main);
+    color: var(--style-color-in-bg);
 }
 
 #homeStyle04 .wrap-nav___left {

@@ -14,7 +14,7 @@
 
     border-radius: 5px;
     border: 1px solid #F3F9EC;
-    background: var(--green-light, linear-gradient(90deg, #CFE8B0 0%, #FFF 100%));
+    background: var(--green-light, linear-gradient(90deg, var(--style-color-light) 0%, #FFF 100%));
 }
 
 .block-ship {
@@ -123,7 +123,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
-    background: #395319;
+    background: var(--style-color-dark);
     margin: 34px auto 0;
     border-radius: 8px;
 }
@@ -224,7 +224,7 @@
 }
 
 .address-book-actions .btn {
-    background: #395319;
+    background: var(--style-color-dark);
     border-radius: 8px;
     font-size: 16px;
     line-height: 20px;
@@ -496,7 +496,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #395319;
+    background: var(--style-color-dark);
     border-radius: 8px;
 }
 
@@ -590,7 +590,7 @@
     border: 1px solid #de3618 !important;
 }
 .address-book-address-add .input-row input:focus, .address-book-address-add .input-row textarea:focus{
-    border: 1px solid #e2f0d4 !important;
+    border: 1px solid var(--style-color-main) !important;
 }
 .address-book-address-add>.d-flex {
     margin-top: 20px;
@@ -618,7 +618,7 @@
     padding: 12px 32px;
     gap: 10px;
     width: 250px;
-    background: #395319;
+    background: var(--style-color-dark);
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px;
@@ -768,7 +768,7 @@
 }
 
 .cart-content .cart-detail .pay-opt {
-    background: rgba(139, 198, 63, 0.1);
+    background: var(--style-color-light-2);
     padding: 8px;
     border: 1px solid #dddfe3;
     border-radius: 5px;

@@ -178,7 +178,7 @@ div.contact-btn {
 }
 
 .section-title a {
-    color: #8bc63f;
+    color: var(--style-color-main);
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -256,7 +256,7 @@ a:hover {
 .banner {
     position: relative;
     height: 261px;
-    background-color: #8bc63f;
+    background-color: var(--style-color-main);
     display: flex;
     align-items: center;
 }
@@ -353,7 +353,7 @@ a:hover {
     height: 56px;
     padding: 0 3px;
     border-radius: 8px;
-    background-color: #8bc63f;
+    background-color: var(--style-color-main);
 }
 
 .header .search-bar .search-icon:hover {
@@ -374,7 +374,7 @@ a:hover {
 
 .header .btns-wrap .sign-up-btn {
     padding: 10px;
-    background-color: #8bc63f;
+    background-color: var(--style-color-main);
     font-size: 18px;
     border-radius: 8px;
     color: #fff;
@@ -383,7 +383,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #8bc63f;
+    background: var(--style-color-main);
     border-radius: 8px;
 }
 
@@ -898,7 +898,7 @@ a:hover {
     z-index: 9;
     gap: 18px;
     user-select: none;
-    color: #8bc63f;
+    color: var(--style-color-main);
     cursor: pointer;
 }
 
@@ -1367,7 +1367,7 @@ footer .call-now {
 .login .form .row-title .line {
     width: 110%;
     margin-top: 8px;
-    background: linear-gradient(90deg, #ffffff 0%, #8bc63f 20%, #8bc63f 40%, #8bc63f 60%, #8bc63f 80%, #ffffff 100%);
+    background: linear-gradient(90deg, #ffffff 0%, var(--style-color-main) 20%, var(--style-color-main) 40%, var(--style-color-main) 60%, var(--style-color-main) 80%, #ffffff 100%);
     height: 6px;
 }
 
@@ -1947,7 +1947,7 @@ footer .call-now {
     height: 45px;
     padding: 0 3px;
     border-radius: 8px;
-    background-color: #8bc63f;
+    background-color: var(--style-color-main);
 }
 
 .search-bar .search-icon:hover {
@@ -1959,7 +1959,7 @@ footer .call-now {
 }
 
 .news-wrap .news-menu h2 {
-    background: linear-gradient(90deg, #8bc63f 0%, #ffffff 100%);
+    background: linear-gradient(90deg, var(--style-color-main) 0%, #ffffff 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 18px;
@@ -6028,7 +6028,7 @@ footer .call-now {
 
     .btns-wrap.only-mobile .sign-up-btn {
         padding: 10px;
-        background-color: #8bc63f;
+        background-color: var(--style-color-main);
         font-size: 18px;
         border-radius: 8px;
         color: #fff;
@@ -6037,7 +6037,7 @@ footer .call-now {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #8bc63f;
+        background: var(--style-color-main);
         border-radius: 8px;
     }
 
@@ -7205,7 +7205,7 @@ footer .call-now {
 }
 
 .search-icon {
-    background: #8bc63f;
+    background: var(--style-color-main);
     mix-blend-mode: normal;
     border-radius: 4px;
     cursor: pointer;
@@ -7559,7 +7559,7 @@ footer .call-now {
 
 .l-product__item .contact-btn {
     position: absolute;
-    background: #8bc63f;
+    background: var(--style-color-main);
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
