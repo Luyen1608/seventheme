@@ -42,12 +42,10 @@
 
 /********************* Modal đăng ký nhận bản tin ************************/
 .modal__box {
-    width: 345px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    padding: 12px 40px 32px;
-    border: 1px solid #C8C4C4;
+    padding: 12px 24px 32px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -94,7 +92,6 @@
 
 .wrapper__modal{
    position: absolute;
-   top: 450px;
    bottom: 0;
    right: 0;
    left: 0;
@@ -114,9 +111,32 @@
     top: 16px;
 }
 
+.ui-widget.ui-widget-content {
+    width: 315px !important;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    background: unset;
+    border: none;
+    display: none;
+}
+
+.ui-button {
+    display: none;
+}
+
+.ui-button .ui-icon, .ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
+    background-image: url(../images/close.svg);
+}
+
+.ui-icon-closethick { background-position: unset}
+
 @media (min-width: 768px) {
-    .modal__box {
-        width: 530px;
+    .ui-widget.ui-widget-content {
+        width: 500px !important;
     }
+    /* .modal__box {
+        width: 530px;
+    } */
     
 }
