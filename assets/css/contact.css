@@ -35,6 +35,7 @@
   border: 1px solid #DEDEDE;
 }
 .contact-form textarea {
+    border: 1px solid #DEDEDE;
   padding: 10px 25px;
   font-size: 14px;
   font-weight: 400;
