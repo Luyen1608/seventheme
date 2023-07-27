@@ -126,6 +126,8 @@ p {
     --style02-cl-hightlight: #162570;
     --style03-cl-hightlight: #5ea700;
     --style03-border-color: #2e9f3c;
+
+    --style09-border-color: #2e9f3c;
 }
 
 #homeStyle01 a:hover {
