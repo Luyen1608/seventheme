@@ -37,6 +37,8 @@
     border: 1px solid #DEDEDE;
   padding: 10px 25px;
   font-size: 14px;
+  border-radius: 6px;
+
   font-weight: 400;
   line-height: 18px;
   height: 64px;
