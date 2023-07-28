@@ -23,16 +23,16 @@
 }
 
 :root {
-    --style-color-main: #6BD329;
-    --style-color-dark: #54A422;
-    --style-color-light: rgba(107, 211, 41, 0.62);;
-    --style-color-light-2: rgba(107, 211, 41, 0.20);
+    --style-color-main: #209C5A;
+    --style-color-dark: #147D45;
+    --style-color-light: rgba(32, 156, 90, 0.62);
+    --style-color-light-2: rgba(32, 156, 90, 0.20);
     --style-color-btn-contrast: #ff8e01;
 
-    --style-color-bg-footer: #60c521;
+    --style-color-bg-footer: #209C5A;
 
     --style-color-in-bg: white;
-    --style-color-input: #2a8b0930;
+    --style-color-input: rgba(32, 156, 90, 0.62);;
 
 }
 
@@ -57,4 +57,7 @@ footer a:hover {
 }
 footer input::placeholder{
     color: rgba(255, 255, 255, 0.76) !important;
+}
+.news-menu input::placeholder{
+    color: rgba(255, 255, 255, 0.486) !important;
 }
