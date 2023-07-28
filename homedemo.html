@@ -260,36 +260,32 @@
                   <a href="#">Liên hệ</a>
                 </li>
               </ul>
-              <div class="swiper home-banner" style="width: 100%;">
+              <div class="swiper home-banner">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                  <img src="./assets/images/banner-demo02.jpg" alt="" />
-
+                    <img src="./assets/images/banner-demo02.jpg" alt="" />
                   </div>
                   <div class="swiper-slide">
-                  <img src="./assets/images/banner-home01.png" alt="" />
-
+                    <img src="./assets/images/banner-home01.png" alt="" />
                   </div>
                   <div class="swiper-slide">
-                  <img src="./assets/images/banner-demo02.jpg" alt="" />
-
+                    <img src="./assets/images/banner-demo02.jpg" alt="" />
                   </div>
-                  
+
                   ...
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-              
+
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-              
+
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
               </div>
-            
             </div>
           </div>
         </div>
@@ -764,6 +760,9 @@
       const productSlider = new Swiper(".swiper", {
         loop: true,
         slidesPerView: 1,
+        autoplay: {
+          delay: 3000,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

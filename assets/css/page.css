@@ -1,5 +1,7 @@
 /* style for content all page  */
-
+.swiper{
+    width: 900px;
+}
 .txt-headling-5 {
     font-size: 16px !important;
     font-style: normal;
@@ -1617,6 +1619,9 @@ footer .call-now {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 1024px) {
+    .swiper{
+        width: 900px;
+    }
     .product-title .title-main {
         font-size: 26px;
         line-height: 20px;
@@ -1658,6 +1663,9 @@ footer .call-now {
 }
 
 @media only screen and (max-width: 768px) {
+    .swiper{
+        width: 600px;
+    }
     .product-title .title-main {
         font-size: 25px;
         line-height: 18px;
@@ -1738,6 +1746,9 @@ footer .call-now {
 }
 
 @media only screen and (max-width: 479px) {
+    .swiper{
+        width: 300px;
+    }
     .product-title .title-main {
         font-size: 22px;
         line-height: 20px;
