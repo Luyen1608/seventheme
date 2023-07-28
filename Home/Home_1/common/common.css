@@ -26,16 +26,47 @@
     --style-color-main: #7aa341;
     --style-color-dark: #4b6328;
     --style-color-light: #ddeacf;
-    --style-color-light-2: rgba(139, 198, 63, 0.1);
+    --style-color-light-2: #E8F4D9;  
     --style-color-btn-contrast: #ff8e01;
 
-    --style-color-bg-footer: #434a3d;
+    
 
     --style-color-in-bg: black;
     --style-color-input: rgba(139, 198, 63, 0.384);
+    --style-color-in-bg-menu: black;
+    --style-color-in-bg-dark: rgb(255, 255, 255);
+
+    /* footer */
+    --style-color-bg-footer: #434a3d;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: #434a3d;
+    --style-color-bg-color-hover: #ddeacf;
+    --style-color-color-share: white;
+    --style-color-bg-placehoder-footer: #ddeacf;
+    --style-color-call: #f74239;
 
 
 }
+footer input::placeholder{
+    color: var(--style-color-bg-placehoder-footer)!important;
+}
+#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
+    color: var(--style-color-color-footer) !important;
+}
+.footer__menu li a{
+    color: var(--style-color-color-footer) !important;
+}
+#homeStyle01 a:hover {
+    color: var(--style-color-bg-color-hover) !important;
+}
+footer .call-now a {
+    color: var(--style-color-call) !important;
+}
+footer .form-group__ft button {
+    background-color: white!important;
+}
+
+
 input:focus textarea:focus {
     outline: none !important;
     border: 1px solid var(--style-color-main) !important;

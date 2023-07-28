@@ -226,7 +226,7 @@ header {
 }
 
 #homeStyle03 input.--style01 {
-    border-color: var(--style-color-dark);
+    border-color: var(--style-color-main);
 }
 
 .form-group-header input::placeholder {
@@ -368,12 +368,7 @@ header {
     border: none;
 }
 
-#homeStyle03 .shopping-cart {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--style-color-dark);
-}
+
 
 #homeStyle07 .shopping-cart {
     border: none;
@@ -499,7 +494,7 @@ header {
     color: #fff;
     justify-content: flex-start;
     border-radius: 10px;
-    background: linear-gradient(90deg, #2e9f3c 0%, #5ea700 100%);
+    background: linear-gradient(90deg, var(--style-color-dark) 0%, var(--style-color-main) 100%);
 }
 
 #homeStyle03 .header__menu.--style06 {
@@ -511,6 +506,7 @@ header {
     background-color: #f74239;
 }
 
+
 #homeStyle07 .header__menu li>a:hover {
     color: #fff;
     border-radius: 14px;
@@ -521,6 +517,11 @@ header {
     border-radius: 10px;
     height: 50px;
     padding: 12px 15px;
+}
+#homeStyle03 .menu__sub li a {
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 100%;
 }
 
 #homeStyle03 .menu-item.active>a {
