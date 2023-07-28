@@ -1,0 +1,63 @@
+/*======= common style =======*/
+
+
+/* font roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font roboto */
+
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --style-color-main: #209C5A;
+    --style-color-dark: #147D45;
+    --style-color-light: rgba(32, 156, 90, 0.62);
+    --style-color-light-2: rgba(32, 156, 90, 0.20);
+    --style-color-btn-contrast: #ff8e01;
+
+    --style-color-bg-footer: #209C5A;
+
+    --style-color-in-bg: white;
+    --style-color-input: rgba(32, 156, 90, 0.62);;
+
+}
+
+input:focus textarea:focus {
+    outline: none !important;
+    border: 1px solid var(--style-color-main) !important;
+}
+.header__company-name{
+    color: white;
+}
+.header__account{
+    color: white;
+}
+.account-item:hover {
+    color: white !important;
+}
+footer a:hover {
+    color: var(--style-color-in-bg) !important;
+}
+.cart-ship {
+    background: var(--green-light, linear-gradient(90deg, var(--style-color-light-2) 0%, #FFF 100%)) !important;
+}
+footer input::placeholder{
+    color: rgba(255, 255, 255, 0.76) !important;
+}
+.news-menu input::placeholder{
+    color: rgba(255, 255, 255, 0.486) !important;
+}

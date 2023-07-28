@@ -120,18 +120,10 @@ p {
     color: #2f3235;
 }
 
-:root {
-    --style01-cl-hightlight: #7aa341;
-    --style01-border-color: #79a837;
-    --style02-cl-hightlight: #162570;
-    --style03-cl-hightlight: #5ea700;
-    --style03-border-color: #2e9f3c;
 
-    --style09-border-color: #2e9f3c;
-}
 
 #homeStyle01 a:hover {
-    color: var(--style01-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 #homeStyle01 .__item:hover {
@@ -139,11 +131,11 @@ p {
 }
 
 #homeStyle02 a:hover {
-    color: var(--style02-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 #homeStyle03 a:hover {
-    color: var(--style03-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 
@@ -155,7 +147,7 @@ header {
 
 .header-top {
     width: 100%;
-    background: linear-gradient( 0deg, rgba(134, 190, 76, 0.24), rgba(134, 190, 76, 0.24)), linear-gradient(0deg, #f8f8f8, #f8f8f8);
+    background: linear-gradient( 0deg, var(--style-color-main), var(--style-color-main));
 }
 
 #homeStyle07 .login-btn {}
@@ -165,7 +157,7 @@ header {
 }
 
 #homeStyle02 .header-top {
-    background: var(--style02-cl-hightlight);
+    background: var(--style-color-main);
     color: #ffffff;
 }
 
@@ -230,11 +222,11 @@ header {
 }
 
 #homeStyle01 input.--style01 {
-    border-color: var(--style01-border-color);
+    border-color: var(--style-color-main);
 }
 
 #homeStyle03 input.--style01 {
-    border-color: var(--style03-border-color);
+    border-color: var(--style-color-dark);
 }
 
 .form-group-header input::placeholder {
@@ -267,7 +259,7 @@ header {
     width: 44px;
     top: 3px;
     right: 3px;
-    background-color: var(--style03-cl-hightlight);
+    background-color: var(--style-color-main);
 }
 
 #homeStyle03 .form-group-header button.--style06 {
@@ -345,7 +337,7 @@ header {
 }
 
 .wrap__header-user a:hover {
-    color: var(--style03-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 .header__info .__item .__text {
@@ -380,7 +372,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid var(--style03-border-color);
+    border: 1px solid var(--style-color-dark);
 }
 
 #homeStyle07 .shopping-cart {
@@ -722,7 +714,7 @@ footer {
 }
 
 #homeStyle01 footer {
-    background-color: #434a3d;
+    background-color: var(--style-color-bg-footer);
     color: #fff;
 }
 
@@ -802,7 +794,7 @@ footer {
 }
 
 #homeStyle03 .form-group__ft button {
-    background-color: var(--style03-cl-hightlight);
+    background-color: var(--style-color-main);
 }
 
 #homeStyle05 {}
@@ -933,7 +925,7 @@ footer {
         right: -10px;
     }
     .btns-wrap.only-mobile .sign-up-btn {
-        background-color: var(--style01-cl-hightlight);
+        background-color: var(--style-color-main);
         padding: 2px 12px;
         border-radius: 12px;
         color: #fff;

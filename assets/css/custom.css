@@ -31,8 +31,8 @@
 }
 
 .form-check-input:checked {
-    background-color: #395319;
-    border-color: #395319;
+    background-color: var(--style-color-dark);
+    border-color: var(--style-color-dark);
 }
 .product-desc__block h3 a img {
     height: 21px;
@@ -134,7 +134,7 @@
 }
 }
 .color-xanh-0{
-    color: #395319;
+    color: var(--style-color-dark);
 }
 .verify-img.mobile{
     display: none;
