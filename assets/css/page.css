@@ -572,7 +572,7 @@ line-height: 20px;
     width: calc(100% / 5 - 22.4px);
     margin-right: 28px;
     border-radius: 10px;
-    border: 1px solid rgba(122, 163, 65, 0.4);
+    border: 1px solid var(--style-color-main);
     padding-top: 10px;
     transition: 0.3s ease;
 }
@@ -612,7 +612,7 @@ line-height: 20px;
     flex: 1;
     padding: 10px 15px 15px 15px;
     border-radius: 10px;
-    border: 1px solid rgba(122, 163, 65, 0.4);
+    border: 1px solid var(--style-color-main);
     background: #fff;
     min-width: 210px;
     transition: 0.3s ease;
@@ -662,7 +662,7 @@ line-height: 20px;
 }
 
 .p-product__list02 .product__item:hover .p__text .__title {
-    color: var(--style03-cl-hightlight);
+    color: var(--style-color-main);
 }
 
 #homeStyle05 .p-product__list02 .product__item:hover .p__text .__title {

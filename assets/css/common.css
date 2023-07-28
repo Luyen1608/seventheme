@@ -226,7 +226,7 @@ header {
 }
 
 #homeStyle03 input.--style01 {
-    border-color: var(--style-color-dark);
+    border-color: var(--style-color-main);
 }
 
 .form-group-header input::placeholder {
@@ -372,7 +372,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid var(--style-color-dark);
+    border: 1px solid var(--style-color-main);
 }
 
 #homeStyle07 .shopping-cart {
@@ -499,7 +499,7 @@ header {
     color: #fff;
     justify-content: flex-start;
     border-radius: 10px;
-    background: linear-gradient(90deg, #2e9f3c 0%, #5ea700 100%);
+    background: linear-gradient(90deg, var(--style-color-dark) 0%, var(--style-color-main) 100%);
 }
 
 #homeStyle03 .header__menu.--style06 {
