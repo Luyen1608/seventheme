@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./assets/css/page.css" />
     <link rel="stylesheet" href="./assets/css/product.css">
     <link rel="stylesheet" href="./assets/css/cart.css" />
+    <!-- <script src="./assets/js/jquery.min.js"></script> -->
+
 
 </head>
 
@@ -53,7 +55,7 @@
             <div class="header__center d-flex align-items-center justify-content-between">
                 <div class="wrap-header__logo d-flex align-items-center">
                     <a href="home.html" class="header__logo">
-                        <img src="../../assets/images/logo.png" alt="">
+                        <img src="./assets/images/logo.png" alt="">
                     </a>
                     <div class="wrap-header__form">
                         <form action="">
@@ -335,6 +337,8 @@
                 </div>
             </div>
         </div>
+        <div w3-include-html="footer.html"></div>
+        <div id="includedContent"></div>
          <!-- start footer -->
          <footer>
             <div class="container">
@@ -433,8 +437,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <script src="./assets/js/menu_style.js"></script>
+    <link rel="stylesheet" href="./assets/css/menu_style.css" />
 <!--  <script src="./assets/js/app.js"></script> -->
-<script src="./assets/js/cart.js"></script>
 <script>
     const controls = document.querySelectorAll(".product-cotrol__quantity");
     console.log(controls);
@@ -485,6 +492,52 @@
       productQuantityChange();
     }); */
     // handle product quantity
+   
 </script>
+<script> 
+    $(function(){
+      $("#includedContent").load("footer.html"); 
+    });
+    
+    </script> 
+    <script>
+        function addHTML() {
+           var el, i, domEl, fileName, xmlHttp;
+           
+           /*Iterate all DOM*/
+           el = document.getElementsByTagName("*");
+           for (i = 0; i < el.length; i++) {
+              domEl = el[i];
+              
+              /*find the element having w3-include-html attribute*/
+              fileName = domEl.getAttribute("w3-include-html");
+              if (fileName) {
+                 
+                 /*http request with attribute value as file name*/
+                 xmlHttp = new XMLHttpRequest();
+                 xmlHttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                       if (this.status == 200) {
+                          domEl.innerHTML = this.responseText;
+                       }
+                       if (this.status == 404) {
+                          domEl.innerHTML = "Page not found.";
+                       }
+                       
+                       /* Remove the attribute and invoke the function again*/
+                       domEl.removeAttribute("w3-include-html");
+                       addHTML();
+                    }
+                 }
+                 xmlHttp.open("GET", fileName, true);
+                 xmlHttp.send();
+                 
+                 /*function ends*/
+                 return;
+              }
+           }
+        }
+        addHTML();
+     </script>
 
 </html>

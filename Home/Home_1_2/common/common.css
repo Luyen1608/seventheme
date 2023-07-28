@@ -23,14 +23,13 @@
 }
 
 :root {
-    --style-color-main: #5EA700  ;
-    --style-color-dark: #2E9F3C ;
+    --style-color-main: #7aa341;
+    --style-color-dark: #4b6328;
     --style-color-light: #ddeacf;
     --style-color-light-2: rgba(139, 198, 63, 0.1);
     --style-color-btn-contrast: #ff8e01;
 
     --style-color-bg-footer: #434a3d;
-    --style-color-in-bg-footer: #434a3d;
 
     --style-color-in-bg: black;
     --style-color-input: rgba(139, 198, 63, 0.384);
@@ -38,47 +37,21 @@
 
 
 }
-
 input:focus textarea:focus {
     outline: none !important;
     border: 1px solid var(--style-color-main) !important;
 }
-
 .header-top {
     width: 100%;
-    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2));
+    background: linear-gradient( 0deg, var(--style-color-light-2), var(--style-color-light-2));
 }
-
 #homeStyle01 .nav__left-title {
     background-color: var(--style-color-light-2) !important;
-    color: var(--style-color-light-2);
+    color: var(--style-color-light-2) ;
 }
-
 .nav__left-title {
-    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
+    background: linear-gradient( 0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
 }
-
-.news-menu input::placeholder {
+.news-menu input::placeholder{
     color: rgba(0, 0, 0, 0.405) !important;
-}
-
-
-/* home */
-@media only screen and (max-width: 768px) {
-    .section-title img {
-        height: 10px !important;
-        width: 150px !important;
-    }
-}
-.wrap__header-user {
-    gap: 10px;
-}
-.header__info .__item.--ct {
-    gap: 10px;
-}
-footer input {
-    color: var(--style-color-in-bg) !important;
-}
-.product__item:hover .p__text span {
-    color: var(--style-color-dark) !important
 }

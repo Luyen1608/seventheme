@@ -368,12 +368,7 @@ header {
     border: none;
 }
 
-#homeStyle03 .shopping-cart {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--style-color-main);
-}
+
 
 #homeStyle07 .shopping-cart {
     border: none;
