@@ -33,11 +33,53 @@
     --style-color-in-bg-footer: #434a3d;
 
     --style-color-in-bg: black;
-    --style-color-input: rgba(139, 198, 63, 0.384);
+    --style-color-input: #8bc63f59;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
+    --style-color-in-bg-dark: rgb(255, 255, 255);
+    /* footer */
+    --style-color-bg-footer: white;
+    --style-color-color-footer: #2f3235;
+    --style-color-bg-btn-footer: #5EA700;
+    --style-color-bg-color-hover: white;
+    --style-color-color-share: #2f3235;
+    --style-color-bg-placehoder-footer: #2f323586;
+    --style-color-call: #f74239;
+    --style-color-btn-footer:white;
 
 
+}
+
+footer .form-group__ft button {
+    background-color: var(--style-color-bg-btn-footer)!important;
+}
+.footer-company__info {
+    color: var(--style-color-color-footer)!important;
+}
+footer .footer-company__info span {
+    color: var(--style-color-color-footer)!important;
+}
+footer {
+    background-color: var(--style-color-bg-footer)!important;
+    color: var(--style-color-color-footer)!important;
+}
+footer input::placeholder{
+    color: var(--style-color-bg-placehoder-footer)!important;
+}
+#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
+    color: var(--style-color-color-footer) !important;
+}
+.footer__menu li a:hover {
+    color: var(--style-color-bg-color-hover) !important;
+}
+.footer__menu li a{
+    color: var(--style-color-color-footer) !important;
+}
+#homeStyle01 a:hover {
+    color: var(--style-color-bg-color-hover) !important;
+}
+footer .call-now a {
+    color: var(--style-color-call) !important;
 }
 
 input:focus textarea:focus {
@@ -62,7 +104,10 @@ input:focus textarea:focus {
 .news-menu input::placeholder {
     color: rgba(0, 0, 0, 0.405) !important;
 }
-
+#homeStyle01 .change-ship a:hover{
+    color: var(--style-color-dark)!important;
+    opacity: 0.6;
+}
 
 /* home */
 @media only screen and (max-width: 768px) {
@@ -80,7 +125,7 @@ input:focus textarea:focus {
 footer input {
     color: var(--style-color-in-bg) !important;
 }
-.product__item:hover .p__text span {
+.p-product__list02 .product__item:hover .p__text span {
     color: var(--style-color-dark) !important
 }
 #homeStyle03 .shopping-cart {
