@@ -1890,6 +1890,15 @@ display: -webkit-box;
     overflow: hidden;
 
 }
+.featured-news li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .news-search{
     display: flex;
     align-items: center;
@@ -1940,6 +1949,9 @@ display: -webkit-box;
   font-size: 16px;
   line-height: 20px;
   color: #373333;
+}
+.featured-news a{
+  font-weight: 500 !important;
 }
 
 .news-wrap .left {

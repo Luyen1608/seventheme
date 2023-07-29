@@ -119,9 +119,6 @@ p {
 #homeStyle01 {
     color: #2f3235;
 }
-
-
-
 #homeStyle01 a:hover {
     color: var(--style-color-main);
 }

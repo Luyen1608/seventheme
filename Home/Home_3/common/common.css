@@ -41,12 +41,17 @@
     --style-color-bg-footer: #434a3d;
     --style-color-color-footer: white;
     --style-color-bg-btn-footer: white;
-    --style-color-bg-color-hover: #8F0B02;
+    --style-color-bg-color-hover: #CA0C00;
     --style-color-color-share: white;
     --style-color-bg-placehoder-footer: #ddeacf;
     --style-color-call: #f74239;
     --style-color-btn-footer:#8F0B02;
     --style-footer-color-hover: #ECC6C4;
+
+    --style-color-menu-active: #CA0C00;
+    --style-color-menu-hover: #CA0C00;
+    
+    --style-color-filter-hover: #CA0C00;
 
 
 }
@@ -71,6 +76,9 @@ footer input::placeholder{
     color: var(--style-color-color-footer) !important;
 }
 .footer__menu li a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+footer a:hover {
     color: var(--style-footer-color-hover) !important;
 }
 .footer__menu li a{
@@ -154,3 +162,4 @@ footer input {
 footer a:hover {
     color: var(--style-footer-color-hover) !important;
 }
+

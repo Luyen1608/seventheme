@@ -1,0 +1,114 @@
+
+/* hover */
+.filter__submit:hover{
+    opacity: 0.6;
+}
+#homeStyle01 .header__menu .menu-item.active a, #homeStyle01 .header__menu .menu-item a:hover {
+    color: var(--style-color-menu-hover) !important;
+}
+#homeStyle01 .wrap__product-filter a:hover{
+    color: var(--style-color-filter-hover) !important;
+    opacity: 1 !important;
+}
+#homeStyle01 .news-category a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .forget-pass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .cat__tag-item a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .loginclass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .featured-news a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .news-item .news-item-title a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .comment-btn a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .item-click .click-like:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .item-click .click-cmt:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .item-click .click-use:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .product__brand a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .__right.code a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01.register .form-header a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .cart-detail-right a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle01 .pagination-site .__item:hover {
+    color: white;
+}
+
+/* hover */
+#homeStyle03 .header__menu .menu-item.active a{
+    color: var(--style-color-menu-active) !important;
+}
+#homeStyle03 .header__menu .menu-item a:hover {
+    color: var(--style-color-menu-hover) !important;
+}
+#homeStyle03 .wrap__product-filter a:hover{
+    color: var(--style-color-filter-hover) !important;
+    opacity: 1 !important;
+}
+#homeStyle03 .news-category a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .forget-pass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .cat__tag-item a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .loginclass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .featured-news a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .news-item .news-item-title a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .comment-btn a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .item-click .click-like:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .item-click .click-cmt:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .item-click .click-use:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .product__brand a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .__right.code a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03.register .form-header a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .cart-detail-right a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle03 .pagination-site .__item:hover {
+    color: white;
+} 
