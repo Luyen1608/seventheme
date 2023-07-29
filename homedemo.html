@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page 1.1</title>
-
+    <!-- carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <!-- link css bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -32,6 +34,7 @@
     <!-- link css style  -->
     <link rel="stylesheet" href="./assets/css/common.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/page.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
     <!-- link css style  -->
   </head>
 
@@ -260,31 +263,32 @@
                   <a href="#">Liên hệ</a>
                 </li>
               </ul>
-              <div class="swiper home-banner">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img src="./assets/images/banner-demo02.jpg" alt="" />
+              <div class="home-banner">
+                
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img src="./assets/images/banner-demo02.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/banner-home01.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/images/banner-demo02.jpg" alt="" />
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/images/banner-home01.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./assets/images/banner-demo02.jpg" alt="" />
-                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
 
-                  ...
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
               </div>
             </div>
           </div>
@@ -799,5 +803,12 @@
         },
       });
     </script>
+    <script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
   </body>
 </html>
