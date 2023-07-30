@@ -23,37 +23,54 @@
 }
 
 :root {
-    --style-color-main: #5EA700  ;
-    --style-color-dark: #2E9F3C ;
-    --style-color-light: #ddeacf;
-    --style-color-light-2: rgba(139, 198, 63, 0.1);
+    --style-color-main: #13AC37  ;
+    --style-color-dark: #069628 ;
+    --style-color-light: #64BF7A;
+    --style-color-light-2: #C8E6CF;
     --style-color-btn-contrast: #ff8e01;
 
     --style-color-bg-footer: #434a3d;
     --style-color-in-bg-footer: #434a3d;
 
     --style-color-in-bg: black;
-    --style-color-input: #8bc63f59;
+    --style-color-input: #9AD6A8;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
     /* footer */
     --style-color-bg-footer: white;
     --style-color-color-footer: #2f3235;
-    --style-color-bg-btn-footer: #5EA700;
+    --style-color-bg-btn-footer: #069628;
     --style-color-bg-color-hover: white;
     --style-color-color-share: #2f3235;
     --style-color-bg-placehoder-footer: #2f323586;
     --style-color-call: #f74239;
     --style-color-btn-footer:white;
-    --style-footer-color-hover:#2E9F3C;
     
+    --style-footer-color-hover: #069628;
+    --style-border-input-footer: #c4c4c4;
+
     --style-color-menu-active: white;
     --style-color-menu-hover: white;
-    
-    --style-color-filter-hover: #2E9F3C;
+    --style-color-filter-hover: #069628;
 
 
+}
+.menu-item>a:hover {
+    color: var(--style-color-call);
+    opacity: 1;
+}
+.footer__menu li a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+footer a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+#homeStyle01 footer a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+#homeStyle01 .news-detail-footer a:hover {
+    color: var(--style-footer-color-hover) !important;
 }
 
 footer .form-group__ft button {
@@ -75,12 +92,7 @@ footer input::placeholder{
 #homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
     color: var(--style-color-color-footer) !important;
 }
-.footer__menu li a:hover {
-    color: var(--style-footer-color-hover) !important;
-}
-footer a:hover {
-    color: var(--style-footer-color-hover) !important;
-}
+
 .footer__menu li a{
     color: var(--style-color-color-footer) !important;
 }
@@ -137,17 +149,28 @@ footer input {
 .p-product__list02 .product__item:hover .p__text span {
     color: var(--style-color-dark) !important
 }
-#homeStyle03 .shopping-cart {
+.shopping-cart {
     width: 40px;
     height: 40px;
     border-radius: 10px;
     border: 1px solid var(--style-color-main);
 }
 @media only screen and (max-width: 1024px) {
-    #homeStyle03 .shopping-cart {
+    .shopping-cart {
         width: inherit;
         height: inherit;
         border: none;
     }
 }
-
+.p-product__list02.--style06 .product__item {
+    border-color: #13ac37;
+}
+.header__info .shopping-cart {
+    border: 1px solid var(--style-color-main) !important;
+}
+footer .form-group__ft input {
+    border: 1px solid var(--style-border-input-footer);
+}
+footer .footer-bt {
+    border-color: var(--style-border-input-footer);
+}

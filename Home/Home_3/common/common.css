@@ -23,35 +23,35 @@
 }
 
 :root {
-    --style-color-main: #5EA700  ;
-    --style-color-dark: #2E9F3C ;
-    --style-color-light: #ddeacf;
-    --style-color-light-2: rgba(139, 198, 63, 0.1);
+    --style-color-main: #CA0C00  ;
+    --style-color-dark: #8F0B02 ;
+    --style-color-light: #DA645D;
+    --style-color-light-2: #ECC6C4;
     --style-color-btn-contrast: #ff8e01;
 
     --style-color-bg-footer: #434a3d;
-    --style-color-in-bg-footer: #434a3d;
+    --style-color-in-bg-footer: white;
 
     --style-color-in-bg: black;
-    --style-color-input: #8bc63f59;
+    --style-color-input: #E39792;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
     /* footer */
-    --style-color-bg-footer: white;
-    --style-color-color-footer: #2f3235;
-    --style-color-bg-btn-footer: #5EA700;
-    --style-color-bg-color-hover: white;
-    --style-color-color-share: #2f3235;
-    --style-color-bg-placehoder-footer: #2f323586;
+    --style-color-bg-footer: #434a3d;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: white;
+    --style-color-bg-color-hover: #CA0C00;
+    --style-color-color-share: white;
+    --style-color-bg-placehoder-footer: #ddeacf;
     --style-color-call: #f74239;
-    --style-color-btn-footer:white;
-    --style-footer-color-hover:#2E9F3C;
+    --style-color-btn-footer:#8F0B02;
+    --style-footer-color-hover: #ECC6C4;
+
+    --style-color-menu-active: #CA0C00;
+    --style-color-menu-hover: #CA0C00;
     
-    --style-color-menu-active: white;
-    --style-color-menu-hover: white;
-    
-    --style-color-filter-hover: #2E9F3C;
+    --style-color-filter-hover: #CA0C00;
 
 
 }
@@ -84,8 +84,11 @@ footer a:hover {
 .footer__menu li a{
     color: var(--style-color-color-footer) !important;
 }
-#homeStyle01 a:hover {
+#homeStyle003 a:hover {
     color: var(--style-color-bg-color-hover) !important;
+}
+#homeStyle003 footer a:hover {
+    color: var(--style-footer-color-hover) !important;
 }
 footer .call-now a {
     color: var(--style-color-call) !important;
@@ -132,7 +135,7 @@ input:focus textarea:focus {
     gap: 10px;
 }
 footer input {
-    color: var(--style-color-in-bg) !important;
+    color: var(--style-color-in-bg-footer) !important;
 }
 .p-product__list02 .product__item:hover .p__text span {
     color: var(--style-color-dark) !important
@@ -149,5 +152,14 @@ footer input {
         height: inherit;
         border: none;
     }
+}
+.home3 .header-top {
+    background: var(--style-color-main);
+}
+.section-line .view-more:hover a {
+    color: #fff!important;
+}
+footer a:hover {
+    color: var(--style-footer-color-hover) !important;
 }
 

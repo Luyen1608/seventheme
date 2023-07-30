@@ -39,11 +39,18 @@
     /* footer */
     --style-color-bg-footer: #434a3d;
     --style-color-color-footer: white;
-    --style-color-bg-btn-footer: #434a3d;
+    --style-color-bg-btn-footer: white;
     --style-color-bg-color-hover: #ddeacf;
     --style-color-color-share: white;
     --style-color-bg-placehoder-footer: #ddeacf;
     --style-color-call: #f74239;
+    --style-color-btn-footer:white;
+
+    --style-footer-color-hover: #069628;
+    --style-border-input-footer: #c4c4c4;
+    
+    --style-color-menu-hover: #f74239;
+    --style-color-filter-hover: #069628;
 
 
 }
@@ -85,3 +92,5 @@ input:focus textarea:focus {
 .news-menu input::placeholder{
     color: rgba(0, 0, 0, 0.405) !important;
 }
+
+
