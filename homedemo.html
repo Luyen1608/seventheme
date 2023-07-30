@@ -283,11 +283,8 @@
                   <div class="swiper-pagination"></div>
 
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
 
                   <!-- If we need scrollbar -->
-                  <div class="swiper-scrollbar"></div>
                 </div>
               </div>
             </div>
@@ -764,6 +761,9 @@
       const productSlider = new Swiper(".swiper", {
         loop: true,
         slidesPerView: 1,
+        pagination: {
+          el: '.swiper-pagination',
+        },
         autoplay: {
           delay: 3000,
         },
