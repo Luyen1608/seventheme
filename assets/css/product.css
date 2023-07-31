@@ -927,22 +927,11 @@ a:hover {
   display: none;
 }
 
-.mobile-categories {
-  display: none;
-}
 .more-btn img.active {
   transform: rotate(180deg);
   transition: 0.2s ease;
 }
 .mobile-cate-btn {
-}
-
-.mobile-overlay {
-  display: none;
-}
-
-.mobile-overlay-filter {
-  display: none;
 }
 
 .contact-wrap {
@@ -5477,7 +5466,7 @@ letter-spacing: 0px;
 /* mobile */
 
 @media screen and (max-width: 991px) {
-
+/* 
   .mobile-cate-btn {
     display: block;
   }
@@ -5646,7 +5635,7 @@ letter-spacing: 0px;
     padding: 5px 0px;
     width: 100%;
     padding-left: 20px;
-  }
+  } */
 }
 @media screen and (max-width: 767.98px) {
   /* quantity */
@@ -5670,69 +5659,6 @@ letter-spacing: 0px;
   }
   .header .btns-wrap {
     display: none;
-  }
-  .btns-wrap.only-mobile {
-    display: flex;
-    align-items: center;
-    gap: 44px;
-    white-space: nowrap;
-    position: fixed;
-    bottom: -3px;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    z-index: 999;
-    padding: 10px 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .btns-wrap.only-mobile .sign-in-btn {
-    color: #727272;
-    font-size: 18px;
-  }
-  .btns-wrap.only-mobile .sign-up-btn {
-    padding: 10px;
-    background-color: var(--style-color-main);
-    font-size: 18px;
-    border-radius: 8px;
-    color: #fff;
-    width: 99px;
-    /* Primary/02 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--style-color-main);
-    border-radius: 8px;
-  }
-  .btns-wrap.only-mobile .cart-btn {
-    cursor: pointer;
-    position: relative;
-  }
-  .btns-wrap.only-mobile .cart-btn img {
-    width: 24px;
-  }
-  .btns-wrap.only-mobile .cart-btn::after {
-    position: absolute;
-    border-radius: 100%;
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    top: -19px;
-    right: -16px;
-    content: attr(data-content) !important;
-    font-size: 12px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .btns-wrap.only-mobile .sign-up-btn {
-    width: 80px;
-    height: 27px;
-  }
-  .btns-wrap.only-mobile .sign-in-btn,
-  .btns-wrap.only-mobile .sign-up-btn {
-    font-size: 14px;
   }
   .slider {
     margin-top: 16px;

@@ -5106,19 +5106,8 @@ a:hover {
 .slider::-webkit-scrollbar {
     display: none;
 }
-
-.mobile-categories {
-    display: none;
-}
-
 .mobile-cate-btn {
 }
-
-.mobile-overlay {
-    display: none;
-}
-
-
 /* mobile */
 
 @media screen and (max-width: 767.98px) {
@@ -5148,69 +5137,6 @@ a:hover {
     .header .btns-wrap {
         display: none;
     }
-    .btns-wrap.only-mobile {
-        display: flex;
-        align-items: center;
-        gap: 44px;
-        white-space: nowrap;
-        position: fixed;
-        bottom: -3px;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        z-index: 99;
-        padding: 10px 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    .btns-wrap.only-mobile .sign-in-btn {
-        color: #727272;
-        font-size: 18px;
-    }
-    .btns-wrap.only-mobile .sign-up-btn {
-        padding: 10px;
-        background-color: var(--style-color-main);
-        font-size: 18px;
-        border-radius: 8px;
-        color: #fff;
-        width: 99px;
-        /* Primary/02 */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--style-color-main);
-        border-radius: 8px;
-    }
-    .btns-wrap.only-mobile .cart-btn {
-        cursor: pointer;
-        position: relative;
-    }
-    .btns-wrap.only-mobile .cart-btn img {
-        width: 24px;
-    }
-    .btns-wrap.only-mobile .cart-btn::after {
-        position: absolute;
-        border-radius: 100%;
-        background-color: red;
-        width: 20px;
-        height: 20px;
-        top: -19px;
-        right: -16px;
-        content: attr(data-content) !important;
-        font-size: 12px;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .btns-wrap.only-mobile .sign-up-btn {
-        width: 80px;
-        height: 27px;
-    }
-    .btns-wrap.only-mobile .sign-in-btn,
-    .btns-wrap.only-mobile .sign-up-btn {
-        font-size: 14px;
-    }
     .slider {
         margin-top: 16px;
     }
@@ -5219,135 +5145,6 @@ a:hover {
     }
     .pre-header-contact .select-language-btn .text {
         font-size: 10px;
-    }
-    .mobile-cate-btn {
-        display: block;
-    }
-    .mobile-overlay {
-        display: block;
-        position: fixed;
-        right: 0;
-        visibility: hidden;
-        opacity: 0;
-        z-index: 96;
-        width: 43vw;
-        height: 100vh;
-        top: 0;
-        background-color: #000;
-        transition: 0.2s ease;
-    }
-    .mobile-overlay.active {
-        opacity: 0.4;
-        visibility: visible;
-    }
-    .mobile-categories {
-        display: block;
-        overflow: scroll;
-        position: fixed;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 99;
-        top: 0vh;
-        height: 94vh;
-        left: 0vw;
-        width: fit-content;
-        transition: 0.2s ease-in-out;
-    }
-    .mobile-categories.active {
-        visibility: visible;
-        opacity: 1;
-    }
-    .mobile-categories .mobile-categories-list {
-        top: 0vh;
-        height: 96vh;
-        left: 0vw;
-        overflow: scroll;
-        position: fixed;
-        visibility: unset;
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        border-radius: 8px;
-        width: 57vw;
-    }
-    .mobile-categories .mobile-categories-list::-webkit-scrollbar {
-        display: none;
-    }
-    .mobile-categories .mobile-categories-list>li {
-        font-weight: 500;
-        padding: 10px 15px;
-        line-height: 24px;
-        cursor: pointer;
-        font-size: 15px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown {
-        gap: 0px;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        z-index: 99;
-    }
-    .mobile-categories .mobile-categories-list .dropdown span {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown span i {
-        transition: 0.1s;
-    }
-    .mobile-categories .mobile-categories-list .dropdown span i.active {
-        rotate: 180deg;
-    }
-    .mobile-categories .mobile-categories-list .dropdown i {
-        font-size: 8px;
-        color: #959ead;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown {
-        position: relative;
-        display: flex;
-        border-radius: 8px;
-        max-height: 0;
-        overflow: hidden;
-        flex-direction: column;
-        transition: 0.2s;
-        font-weight: 400;
-        visibility: hidden;
-        gap: 0px;
-        transition: 0.2s ease;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown.active {
-        visibility: visible;
-        overflow: auto;
-        max-height: 700px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown span {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown .lv2-dropdown {
-        max-height: 0;
-        overflow: hidden;
-        transition: 0.2s ease;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown {
-        max-height: 0;
-        overflow: hidden;
-        transition: 0.2s ease;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown.active {
-        max-height: 200px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown li {
-        font-size: 12px;
-    }
-    .mobile-categories .mobile-categories-list .dropdown .sub-dropdown li {
-        font-weight: 400;
-        font-size: 12px;
-        color: #555;
-        padding: 5px 0px;
-        width: 100%;
-        padding-left: 20px;
     }
     .categories {
         display: none;
