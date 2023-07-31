@@ -1,0 +1,168 @@
+/*======= common style =======*/
+
+
+/* font roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font roboto */
+
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --style-color-main: #143B36  ;
+    --style-color-dark: #10302C ;
+    --style-color-light: #69827E;
+    --style-color-light-2: #C8D0CF;
+    --style-color-btn-contrast: #ff8e01;
+
+    --style-color-bg-footer: #434a3d;
+    --style-color-in-bg-footer: #434a3d;
+
+    --style-color-in-bg: white;
+    --style-color-input: #BDC7C5;
+    --style-color-in-bg-menu: black;
+    --style-color-bg-footer-light: white;
+    --style-color-in-bg-dark: rgb(255, 255, 255);
+    /* footer */
+    --style-color-bg-footer: #10302C;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: white;
+    --style-color-bg-color-hover: white;
+    --style-color-color-share: #2f3235;
+    --style-color-bg-placehoder-footer: #ddeacf;
+    --style-color-call: #f74239;
+    --style-color-btn-footer:white;
+    --style-footer-color-hover:#2E9F3C;
+    
+    --style-color-menu-active: white;
+    --style-color-menu-hover: white;
+    
+    --style-color-filter-hover: #2E9F3C;
+
+
+}
+
+footer .form-group__ft button {
+    background-color: var(--style-color-bg-btn-footer)!important;
+}
+.footer-company__info {
+    color: var(--style-color-color-footer)!important;
+}
+footer .footer-company__info span {
+    color: var(--style-color-color-footer)!important;
+}
+footer {
+    background-color: var(--style-color-bg-footer)!important;
+    color: var(--style-color-color-footer)!important;
+}
+footer input::placeholder{
+    color: var(--style-color-bg-placehoder-footer)!important;
+}
+#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
+    color: var(--style-color-color-footer) !important;
+}
+.footer__menu li a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+footer a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+.footer__menu li a{
+    color: var(--style-color-color-footer) !important;
+}
+#homeStyle01 a:hover {
+    color: var(--style-color-bg-color-hover) !important;
+}
+footer .call-now a {
+    color: var(--style-color-call) !important;
+}
+
+input:focus textarea:focus {
+    outline: none !important;
+    border: 1px solid var(--style-color-main) !important;
+}
+
+.header-top {
+    width: 100%;
+    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2));
+}
+
+#homeStyle01 .nav__left-title {
+    background-color: var(--style-color-light-2) !important;
+    color: var(--style-color-light-2);
+}
+
+.nav__left-title {
+    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
+}
+
+.news-menu input::placeholder {
+    color: rgba(0, 0, 0, 0.405) !important;
+}
+#homeStyle01 .change-ship a:hover{
+    color: var(--style-color-dark)!important;
+    opacity: 0.6;
+}
+
+/* home */
+@media only screen and (max-width: 768px) {
+    .section-title img {
+        height: 10px !important;
+        width: 150px !important;
+    }
+}
+.wrap__header-user {
+    gap: 10px;
+}
+.header__info .__item.--ct {
+    gap: 10px;
+}
+footer input {
+    color: var(--style-color-in-bg) !important;
+}
+.p-product__list02 .product__item:hover .p__text span {
+    color: var(--style-color-dark) !important
+}
+#homeStyle03 .shopping-cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--style-color-main);
+}
+@media only screen and (max-width: 1024px) {
+    #homeStyle03 .shopping-cart {
+        width: inherit;
+        height: inherit;
+        border: none;
+    }
+}
+
+#homeStyle07 .menu__sub li a {
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 100%;
+}
+#homeStyle07 .menu__sub li a:hover>svg>path  {
+    fill: var(--style-color-menu-hover);
+}
+#homeStyle07 .shopping-cart {
+    box-shadow: none;
+}
+#homeStyle07 main {
+    padding: 20px 0;
+    background-color: var(--style-color-main);
+}
