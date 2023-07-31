@@ -194,7 +194,7 @@ header {
 }
 
 .header__center {
-    padding: 25px 0px;
+    padding: 20px 0px;
     column-gap: 20px;
 }
 
@@ -402,8 +402,8 @@ header {
 #homeStyle07 .banner .container {}
 
 #homeStyle03 .shopping-cart::after {
-    top: -5px;
-    right: -4px;
+    /* top: -5px;
+    right: -4px; */
 }
 
 .shopping-cart::after {
@@ -513,7 +513,7 @@ header {
     background-color: #f74239;
 }
 
-#homeStyle03 .menu-item>a {
+.menu-item>a {
     border-radius: 10px;
     height: 50px;
     padding: 12px 15px;
@@ -593,7 +593,6 @@ header {
     font-weight: 600;
     padding: 16px 15px;
     white-space: nowrap;
-    height: 56px;
 }
 
 .menu-item>a:hover {

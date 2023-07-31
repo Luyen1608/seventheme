@@ -1,8 +1,15 @@
+/* all */
+#homeStyle01 .news-detail-footer a:hover, #homeStyle03 .news-detail-footer a:hover, #homeStyle05 .news-detail-footer a:hover ,#homeStyle07 .news-detail-footer a:hover {
+    color: var(--style-color-main) !important;
+}
+
 
 /* hover */
 .filter__submit:hover{
     opacity: 0.6;
 }
+
+
 #homeStyle01 .header__menu .menu-item.active a, #homeStyle01 .header__menu .menu-item a:hover {
     color: var(--style-color-menu-hover) !important;
 }
@@ -172,8 +179,6 @@
 #homeStyle05 .pagination-site .__item:hover {
     color: white;
 } 
-
-
 /* hover */
 #homeStyle07 .header__menu .menu-item.active a{
     color: var(--style-color-menu-active) !important;
@@ -230,25 +235,77 @@
 #homeStyle07 .pagination-site .__item:hover {
     color: white;
 } 
-
-
-
 #homeStyle07 a:hover  {
     color: var(--style-color-btn-contrast);
 }
 #homeStyle07 .header__info .__item:hover {
     color: var(--style-color-btn-contrast);
 }
-
-
-
-
-
 /* cart mobile */
 #homeStyle07 .shopping-cart::after, #homeStyle01 .shopping-cart::after, #homeStyle03 .shopping-cart::after, #homeStyle05 .shopping-cart::after {
     background-color: #f74239;
     color: #ffffff;
 }
-.shopping-cart{
-    /* padding: 0px !important; */
+
+/* hover */
+#homeStyle04 .header__menu .menu-item.active a{
+    color: var(--style-color-menu-active) !important;
+}
+#homeStyle04 .header__menu .menu-item a:hover {
+    color: var(--style-color-menu-hover) !important;
+}
+#homeStyle04 .wrap__product-filter a:hover{
+    color: var(--style-color-filter-hover) !important;
+    opacity: 1 !important;
+}
+#homeStyle04 .news-category a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .forget-pass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .cat__tag-item a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .loginclass a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .featured-news a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .news-item .news-item-title a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .comment-btn a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .item-click .click-like:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .item-click .click-cmt:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .item-click .click-use:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .product__brand a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .__right.code a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04.register .form-header a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .cart-detail-right a:hover{
+    color: var(--style-color-main) !important;
+}
+#homeStyle04 .pagination-site .__item:hover {
+    color: white;
+} 
+#homeStyle04 a:hover  {
+    color: var(--style-color-btn-contrast);
+}
+#homeStyle04 .header__info .__item:hover {
+    color: var(--style-color-btn-contrast);
 }

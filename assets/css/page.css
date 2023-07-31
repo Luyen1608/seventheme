@@ -1075,10 +1075,7 @@ line-height: 20px;
     border-color: #0077b6;
 }
 
-.home4 .header__center {
-    padding: 11px 0;
-    color: #2f3235;
-}
+
 
 .home4 .header__center .section {
     font-size: 16px;
@@ -1427,7 +1424,7 @@ footer .call-now {
 
 #homeStyle04 .header__menu .menu-item a {
     padding: 12px 16px;
-    height: unset;
+    /* height: unset; */
     color: #fff;
 }
 
