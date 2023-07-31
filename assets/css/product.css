@@ -5681,7 +5681,7 @@ letter-spacing: 0px;
     left: 0;
     right: 0;
     background-color: #fff;
-    z-index: 99;
+    z-index: 999;
     padding: 10px 10px;
     justify-content: center;
     align-items: center;

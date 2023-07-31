@@ -71,6 +71,20 @@ optionItems.forEach((item) => {
         item.classList.add("active");
     };
 });
+      const productSlider = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
 /* cart page */
 
