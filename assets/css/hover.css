@@ -5,11 +5,18 @@
 #homeStyle07 .news-detail-footer a:hover {
     color: var(--style-color-main) !important;
 }
+.blog__item .__title:hover{
+    color: var(--style-color-main) !important;
+}
 .menu__sub li a:hover>svg>path {
     fill: var(--style-color-menu-hover);
 }
 .menu-item a:hover>svg>path {
     fill: var(--style-color-menu-hover);
+}
+.side-nav li a:hover {
+    color: var(--style-color-main) !important;
+    opacity: 0.8;
 }
 
 @media (max-width: 480px) {
@@ -31,7 +38,13 @@
     opacity: 0.6;
 }
 
+#homeStyle01 .account-item:hover>svg>path {
+    fill: var(--style-color-main) !important;
+}
 
+#homeStyle01 .account-item:hover{
+    color: var(--style-color-main);
+}
 #homeStyle01 .header__menu .menu-item.active a,
 #homeStyle01 .header__menu .menu-item a:hover {
     color: var(--style-color-menu-hover) !important;

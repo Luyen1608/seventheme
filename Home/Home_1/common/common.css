@@ -64,7 +64,7 @@ footer input::placeholder{
     color: var(--style-color-color-footer) !important;
 }
 #homeStyle01 a:hover {
-    color: var(--style-color-bg-color-hover) !important;
+    color: var(--style-color-bg-color-hover);
 }
 footer .call-now a {
     color: var(--style-color-call) !important;
@@ -91,4 +91,7 @@ input:focus textarea:focus {
 }
 .news-menu input::placeholder{
     color: rgba(0, 0, 0, 0.405) !important;
+}
+.side-nav li a:hover{
+    color: var(--style-color-main) !important;
 }
