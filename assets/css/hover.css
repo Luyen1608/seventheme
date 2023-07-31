@@ -15,6 +15,14 @@
         font-size: 12px;
     }
 }
+@media (max-width: 1024px) {
+    .pl-0-1024{
+        padding-left: 0px!important;
+    }
+    .pr-0-1024{
+        padding-right: 0px!important;
+    }
+}
 
 /* hover */
 .filter__submit:hover {
@@ -415,4 +423,86 @@
 
 #homeStyle04 .header__info .__item:hover {
     color: var(--style-color-btn-contrast);
+}
+
+/* hover */
+#homeStyle003 .header__menu .menu-item.active a {
+    color: var(--style-color-menu-active) !important;
+}
+
+#homeStyle003 .header__menu .menu-item a:hover {
+    color: var(--style-color-menu-hover) !important;
+}
+
+#homeStyle003 .wrap__product-filter a:hover {
+    color: var(--style-color-filter-hover) !important;
+    opacity: 1 !important;
+}
+
+#homeStyle003 .news-category a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .forget-pass a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .cat__tag-item a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .loginclass a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .featured-news a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .news-item .news-item-title a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .comment-btn a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .item-click .click-like:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .item-click .click-cmt:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .item-click .click-use:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .product__brand a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .__right.code a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003.register .form-header a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .cart-detail-right a:hover {
+    color: var(--style-color-main) !important;
+}
+
+#homeStyle003 .pagination-site .__item:hover {
+    color: white !important;
+}
+
+#homeStyle003 a:hover {
+    color: var(--style-color-btn-contrast);
+}
+
+#homeStyle003 .header__info .__item:hover {
+    color: var(--style-color-btn-contrast) !important;
 }
