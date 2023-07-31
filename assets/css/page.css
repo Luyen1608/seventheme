@@ -1005,10 +1005,7 @@ line-height: 20px;
     background-color: #10302c;
 }
 
-#homeStyle07 main {
-    padding: 20px 0;
-    background-color: #143b36;
-}
+
 
 @media (min-width: 300px) {
     .section-production .product__layput .wrap-product__list {

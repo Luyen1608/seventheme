@@ -368,13 +368,16 @@ header {
 
 
 #homeStyle07 .shopping-cart {
-    border: none;
+    /* border: none;
     z-index: 600;
     right: 0;
     border-radius: 6px 0 0 6px;
     border-right: 0;
     box-shadow: -2px 0 24px -2px rgba(43, 55, 72, .15);
-    padding: 7px;
+    padding: 7px; */
+}
+#homeStyle07 .shopping-cart {
+    border: none;
 }
 
 #homeStyle05 .shopping-cart::after {
