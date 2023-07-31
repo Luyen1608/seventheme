@@ -30,7 +30,7 @@
     --style-color-btn-contrast: #ffb300;
 
     --style-color-bg-footer: #434a3d;
-    --style-color-in-bg-footer: #434a3d;
+    --style-color-in-bg-footer: #2f3235;
 
     --style-color-in-bg: black;
     --style-color-input: #B1DBE9;
@@ -74,7 +74,7 @@ footer {
 footer input::placeholder{
     color: var(--style-color-bg-placehoder-footer)!important;
 }
-#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
+#homeStyle04 footer .footer__block-title, #homeStyle04 footer .call-now{
     color: var(--style-color-color-footer) !important;
 }
 .footer__menu li a:hover {
@@ -179,4 +179,17 @@ footer .style04-footer {
 }
 .header__right .home-banner, .header__right .home-banner img{
     height: 100%;
+}
+footer .footer__block-title {
+    color: var(--style-color-in-bg-footer) !important;
+}
+footer .style03-footer {
+    margin-bottom: 40px!important;
+    width: 100% !important;
+}
+footer .call-now {
+    color: #fff;
+}
+#homeStyle04 .shopping-cart {
+    border: 1px solid var(--style-color-main);
 }
