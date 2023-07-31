@@ -55,6 +55,9 @@
 #homeStyle01 .pagination-site .__item:hover {
     color: white;
 }
+#homeStyle01 .header__info .__item:hover {
+    color: var(--style-color-main) !important;
+}
 
 /* hover */
 #homeStyle03 .header__menu .menu-item.active a{
