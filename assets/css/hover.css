@@ -5,8 +5,10 @@
 #homeStyle07 .news-detail-footer a:hover {
     color: var(--style-color-main) !important;
 }
-
 .menu__sub li a:hover>svg>path {
+    fill: var(--style-color-menu-hover);
+}
+.menu-item a:hover>svg>path {
     fill: var(--style-color-menu-hover);
 }
 
