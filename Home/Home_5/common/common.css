@@ -105,9 +105,9 @@ input:focus textarea:focus {
     background: linear-gradient(0deg, var(--style-color-main), var(--style-color-main));
 }
 
-#homeStyle01 .nav__left-title {
+#homeStyle05 .nav__left-title {
     background-color: var(--style-color-light-2) !important;
-    color: var(--style-color-light-2);
+    color: black;
 }
 
 .nav__left-title {
