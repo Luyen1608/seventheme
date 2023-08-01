@@ -352,6 +352,9 @@
 #homeStyle07 .header__info .__item:hover {
     color: var(--style-color-btn-contrast);
 }
+#homeStyle07 .product__item:hover .p__text span {
+    color: var(--style-color-in-bg-dark) !important;
+}
 
 /* cart mobile */
 #homeStyle07 .shopping-cart::after,

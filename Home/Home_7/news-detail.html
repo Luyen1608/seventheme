@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+
+    <script src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link swiper slider -->
+    <!-- link swiper slider -->
+
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/hover.css" type="text/css">
+    <link rel="stylesheet" href="./common/common.css" />
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/product.css" />
+  </head>
+
+  <body>
+    <div class="wrapper" id="homeStyle07">
+      <!-- start header -->
+      <header>
+        <div class="header-container-full">
+          <div class="container">
+            <div
+              class="header__center d-flex align-items-center justify-content-between"
+            >
+              <div class="wrap-header__logo d-flex align-items-center">
+                <a href="home.html" class="header__logo">
+                  <img src="../../assets/images/logo7.svg" alt="" />
+                </a>
+                <div class="wrap-header__form">
+                  <form action="">
+                    <div class="form-group-header">
+                      <input
+                        type="text"
+                        class="form-control --style01"
+                        placeholder="Tìm kiếm sản phẩm...."
+                      />
+                      <button type="submit" class="btn --style01">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4827 16.0078L19.9264 18.4508C20.6053 19.1296 19.5872 20.1479 18.9083 19.4692L16.4644 17.026C13.5287 19.4473 9.19783 19.2622 6.47649 16.5409C3.57099 13.6354 3.57099 8.92465 6.47649 6.01915C9.38199 3.11365 14.0927 3.11365 16.9982 6.01915C19.7198 8.74076 19.9046 13.0722 17.4827 16.0078ZM15.98 7.03739C13.6369 4.69424 9.83787 4.69424 7.49472 7.03739C5.15158 9.38053 5.15158 13.1795 7.49472 15.5227C9.83787 17.8658 13.6369 17.8658 15.98 15.5227C18.3231 13.1795 18.3231 9.38053 15.98 7.03739Z" fill="var(--style-color-main)"/>
+                          </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__info d-flex align-items-center">
+                <a href="tel:1900 1900">
+                  <div class="d-flex align-items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                      <path d="M13.0499 0.999975C15.0882 1.21474 16.9921 2.11877 18.4468 3.56256C19.9015 5.00634 20.8198 6.90339 21.0499 8.93997M13.0499 4.99997C14.0334 5.19391 14.9359 5.679 15.6403 6.39228C16.3447 7.10557 16.8184 8.0141 16.9999 8.99998M20.9999 15.92V18.92C21.0011 19.1985 20.944 19.4741 20.8324 19.7293C20.7209 19.9845 20.5572 20.2136 20.352 20.4018C20.1468 20.5901 19.9045 20.7335 19.6407 20.8227C19.3769 20.9119 19.0973 20.945 18.8199 20.92C15.7428 20.5856 12.7869 19.5341 10.1899 17.85C7.77376 16.3146 5.72527 14.2661 4.18993 11.85C2.49991 9.24118 1.44818 6.27097 1.11993 3.17997C1.09494 2.90344 1.12781 2.62474 1.21643 2.3616C1.30506 2.09846 1.4475 1.85666 1.6347 1.6516C1.82189 1.44653 2.04974 1.28268 2.30372 1.1705C2.55771 1.05831 2.83227 1.00024 3.10993 0.999975H6.10993C6.59524 0.995198 7.06572 1.16705 7.43369 1.48351C7.80166 1.79996 8.04201 2.23942 8.10993 2.71997C8.23656 3.68004 8.47138 4.6227 8.80993 5.52997C8.94448 5.8879 8.9736 6.27689 8.89384 6.65086C8.81408 7.02482 8.6288 7.36809 8.35993 7.63998L7.08993 8.90997C8.51349 11.4135 10.5864 13.4864 13.0899 14.91L14.3599 13.64C14.6318 13.3711 14.9751 13.1858 15.3491 13.1061C15.723 13.0263 16.112 13.0554 16.4699 13.19C17.3772 13.5285 18.3199 13.7634 19.2799 13.89C19.7657 13.9585 20.2093 14.2032 20.5265 14.5775C20.8436 14.9518 21.0121 15.4296 20.9999 15.92Z" stroke="var(--style-color-in-bg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <div class="__item">
+                      LIÊN HỆ HOTLINE
+                      <span>1900 1900</span>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="t#" class="__item">
+                  <div class="d-flex align-items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M18.75 9.75C18.75 7.95979 18.0388 6.2429 16.773 4.97703C15.5071 3.71116 13.7902 3 12 3C10.2098 3 8.4929 3.71116 7.22703 4.97703C5.96116 6.2429 5.25 7.95979 5.25 9.75C5.25 12.519 7.4655 16.128 12 20.451C16.5345 16.128 18.75 12.519 18.75 9.75ZM12 22.5C6.4995 17.5005 3.75 13.2495 3.75 9.75C3.75 7.56196 4.61919 5.46354 6.16637 3.91637C7.71354 2.36919 9.81196 1.5 12 1.5C14.188 1.5 16.2865 2.36919 17.8336 3.91637C19.3808 5.46354 20.25 7.56196 20.25 9.75C20.25 13.2495 17.5005 17.5005 12 22.5Z" fill="var(--style-color-in-bg)"/>
+                      <path d="M12 12C12.5967 12 13.169 11.7629 13.591 11.341C14.0129 10.919 14.25 10.3467 14.25 9.75C14.25 9.15326 14.0129 8.58097 13.591 8.15901C13.169 7.73705 12.5967 7.5 12 7.5C11.4033 7.5 10.831 7.73705 10.409 8.15901C9.98705 8.58097 9.75 9.15326 9.75 9.75C9.75 10.3467 9.98705 10.919 10.409 11.341C10.831 11.7629 11.4033 12 12 12ZM12 13.5C11.0054 13.5 10.0516 13.1049 9.34835 12.4017C8.64509 11.6984 8.25 10.7446 8.25 9.75C8.25 8.75544 8.64509 7.80161 9.34835 7.09835C10.0516 6.39509 11.0054 6 12 6C12.9946 6 13.9484 6.39509 14.6517 7.09835C15.3549 7.80161 15.75 8.75544 15.75 9.75C15.75 10.7446 15.3549 11.6984 14.6517 12.4017C13.9484 13.1049 12.9946 13.5 12 13.5Z" fill="var(--style-color-in-bg)"/>
+                      </svg>
+                    <div class="__item">
+                      TÌM ĐỊA CHỈ
+                      <span>CÔNG TY</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="t#" class="__item">
+                  <div class="d-flex align-items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.04183 8.75002C9.04183 8.09888 9.17008 7.45412 9.41926 6.85255C9.66844 6.25098 10.0337 5.70437 10.4941 5.24395C10.9545 4.78353 11.5011 4.4183 12.1027 4.16912C12.7043 3.91994 13.349 3.79169 14.0002 3.79169C14.6513 3.79169 15.2961 3.91994 15.8976 4.16912C16.4992 4.4183 17.0458 4.78353 17.5062 5.24395C17.9667 5.70437 18.3319 6.25098 18.5811 6.85255C18.8302 7.45412 18.9585 8.09888 18.9585 8.75002C18.9585 10.0651 18.4361 11.3262 17.5062 12.2561C16.5764 13.186 15.3152 13.7084 14.0002 13.7084C12.6851 13.7084 11.424 13.186 10.4941 12.2561C9.56422 11.3262 9.04183 10.0651 9.04183 8.75002ZM14.0002 5.54169C13.1493 5.54169 12.3332 5.87971 11.7315 6.48139C11.1298 7.08307 10.7918 7.89912 10.7918 8.75002C10.7918 9.60092 11.1298 10.417 11.7315 11.0187C12.3332 11.6203 13.1493 11.9584 14.0002 11.9584C14.8511 11.9584 15.6671 11.6203 16.2688 11.0187C16.8705 10.417 17.2085 9.60092 17.2085 8.75002C17.2085 7.89912 16.8705 7.08307 16.2688 6.48139C15.6671 5.87971 14.8511 5.54169 14.0002 5.54169ZM9.3335 17.2084C8.6373 17.2084 7.96962 17.4849 7.47734 17.9772C6.98506 18.4695 6.7085 19.1372 6.7085 19.8334V21.2194C6.7085 21.2404 6.72366 21.259 6.74466 21.2625C11.5502 22.0465 16.4513 22.0465 21.2557 21.2625C21.2659 21.2608 21.2751 21.2556 21.2818 21.2476C21.2884 21.2397 21.292 21.2297 21.2918 21.2194V19.8334C21.2918 19.1372 21.0153 18.4695 20.523 17.9772C20.0307 17.4849 19.363 17.2084 18.6668 17.2084H18.2702C18.2389 17.2081 18.2078 17.2128 18.178 17.2224L17.1688 17.5525C15.1099 18.2247 12.8905 18.2247 10.8315 17.5525L9.82116 17.2224C9.79213 17.2131 9.76182 17.2083 9.73133 17.2084H9.3335ZM4.9585 19.8334C4.9585 18.673 5.41943 17.5602 6.2399 16.7398C7.06038 15.9193 8.17317 15.4584 9.3335 15.4584H9.73016C9.946 15.4584 10.1607 15.4934 10.3648 15.5587L11.3752 15.8889C13.0809 16.4456 14.9194 16.4456 16.6252 15.8889L17.6355 15.5587C17.8397 15.4922 18.0543 15.4584 18.269 15.4584H18.6668C19.8272 15.4584 20.94 15.9193 21.7604 16.7398C22.5809 17.5602 23.0418 18.673 23.0418 19.8334V21.2194C23.0418 22.099 22.4048 22.848 21.5368 22.9892C16.5454 23.804 11.4549 23.804 6.4635 22.9892C6.04341 22.9208 5.66134 22.7052 5.38562 22.381C5.1099 22.0567 4.9585 21.645 4.9585 21.2194V19.8334Z" fill="var(--style-color-in-bg)"/>
+                      </svg>
+                    <div class="__item">
+                      <a class="login-btn" href="../../login.html">ĐĂNG NHẬP</a>
+                      <a class="register-btn" href="/login.html">ĐĂNG KÝ<a>
+                    </div>
+                  </div>
+                </a>
+                <div class="shopping-cart" data-content="3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                    <path d="M3.68734 6.36115L5.52603 19.6083C5.66328 20.5972 6.50871 21.3334 7.50704 21.3334L24.8051 21.3334C25.8035 21.3334 26.6489 20.5972 26.7861 19.6083L28.388 8.06737C28.5132 7.1656 27.8127 6.36115 26.9023 6.36115L3.68734 6.36115ZM3.68734 6.36115L3.21698 2.66428C3.08988 1.66536 2.23994 0.916707 1.23297 0.916707H0.916504" stroke="var(--style-color-in-bg)" stroke-width="1.5"/>
+                    <path d="M11.125 27.8959C11.125 26.6878 10.1456 25.7084 8.9375 25.7084C7.72938 25.7084 6.75 26.6878 6.75 27.8959C6.75 29.104 7.72938 30.0834 8.9375 30.0834C10.1456 30.0834 11.125 29.104 11.125 27.8959Z" stroke="var(--style-color-in-bg)" stroke-width="1.5"/>
+                    <path d="M25.708 27.8959C25.708 26.6878 24.7286 25.7084 23.5205 25.7084C22.3124 25.7084 21.333 26.6878 21.333 27.8959C21.333 29.104 22.3124 30.0834 23.5205 30.0834C24.7286 30.0834 25.708 29.104 25.708 27.8959Z" stroke="var(--style-color-in-bg)" stroke-width="1.5"/>
+                    </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="" style="background-color: var(--style-color-main);">
+          <div class="container">
+            <div class="wrap-header__nav d-flex align-items-center">
+              <ul class="header__menu">
+                <li class="menu-item active">
+                  <a href="#">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#"
+                    >Sản phẩm
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z" fill="var(--style-color-bg-color-hover)"/>
+                      </svg>
+                  </a>
+                  <ul class="menu__sub">
+                    <li>
+                      <a href="#">Tin mới nhất
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z" fill="var(--style-color-in-bg-menu)"/>
+                          </svg>
+                      </a>
+                      <ul class="sub-dropdown" id="sd-1">
+                        <li><a href="#">1 Hello world</a></li>
+                        <li><a href="#">2 Hello world</a></li>
+                        <li><a href="#">3 Hello world</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Tin trong nước</a>
+                    </li>
+                  </ul>
+                  
+                </li>
+                <li class="menu-item">
+                  <a href="#"
+                    >Tin tức
+                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z" fill="var(--style-color-bg-color-hover)"/>
+                      </svg>
+                  </a>
+                  <ul class="menu__sub">
+                    <li>
+                      <a href="#">Tin mới nhất</a>
+                    </li>
+                    <li>
+                      <a href="#">Tin trong nước</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Khuyến mại</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Thư viện ảnh</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="breadcump">
+        <div class="container">
+          <p>Trang chủ / </p><strong>Tin tức</strong>
+        </div>
+      </div>
+
+      <div class="news-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 left pt-3-768">
+              <div class="news-menu">
+                <div class="news-search-wrap">
+                  <h2>
+                    Tìm kiếm tin tức
+                  </h2>
+                  <div class="news-search position-relative">
+                    <div class="w-100 h-100">
+                      <input class="w-100 h-100" type="text"
+                        placeholder="Nhập nội dung tin tức...">
+                    </div>
+                    <div class="search-icon">
+                      <img src="../../assets/images/search-icon-white.svg" alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-menu">
+                <h2>Danh mục tin tức</h2>
+                <ul class="news-category">
+                  <li><a>Tin tức quốc tế</a></li>
+                  <li><a>Tin trong nước</a></li>
+                  <li><a>Thị trường hoa quả</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2 class="mb-3">Tin tức nổi bật</h2>
+                <ul class="featured-news">
+                  <li>
+                    <img src="../../assets/images/featured-news.png" alt>
+                    <a>Chính phủ ban hành Nghị định quy định... Chính phủ ban
+                      hành Nghị định quy định... Chính phủ ban
+                      hành Nghị định quy định...</a>
+                  </li>
+                  <li>
+                    <img src="../../assets/images/featured-news.png" alt>
+                    <a>Chính phủ ban hành Nghị định quy định...</a>
+                  </li>
+                  <li>
+                    <img src="../../assets/images/featured-news.png" alt>
+                    <span>Chính phủ ban hành Nghị định quy định...</span>
+                  </li>
+                  <li>
+                    <img src="../../assets/images/featured-news.png" alt>
+                    <span>Chính phủ ban hành Nghị định quy định...</span>
+                  </li>
+                  <li>
+                    <img src="../../assets/images/featured-news.png" alt>
+                    <span>Chính phủ ban hành Nghị định quy định...</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-8 right">
+
+              <div class="news-detail">
+                <h1 class="news-detail-heading">
+                  Chính phủ ban hành Nghị định quy định Chức năng, nhiệm vụ và
+                  cơ cấu tổ chức mới của Bộ Công Thương
+                </h1>
+                <div class="news-detail-view">
+                  <div class="d-flex align-items-center gap-3">
+                    <p class="d-flex align-items-center gap-1">
+                      <img src="../../assets/images/date.svg" alt />
+                      08/12/2022 11:06
+                    </p>
+                    <p class="d-flex align-items-center gap-1">
+                      <img src="../../assets/images/eye.svg" alt />
+                      Lượt xem: 103
+                    </p>
+                  </div>
+                </div>
+                <h2 class="news-detail-subheading">
+                  Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có
+                  sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào
+                  thực tiễn, tăng cường hiệu quả, hiệu lực quản lý Nhà nước của
+                  ngành Công Thương.
+                </h2>
+                <div class="news-detail-text">
+                  Trong khuôn khổ các hoạt động “Tổng kết hoạt động KH&CN nổi
+                  bật của ngành Công Thương giai đoạn 2016-2020 và định hướng
+                  giai đoạn đến 2030, tầm nhìn đến 2045”, ngày 24/10/2022, Bộ
+                  Công Thương đã tổ chức Hội thảo chuyên đề “Phát triển hệ thống
+                  các tổ chức KH&CN công lập, gắn với định hướng hoạt động
+                  KH&CN, đổi mới sáng tạo của ngành Công Thương giai đoạn đến
+                  năm 2030, tầm nhìn đến 2045”. Hội thảo do Vụ trưởng Vụ KH&CN
+                  Trần Việt Hòa chủ trì có sự tham gia của đông đảo các đơn vị
+                  Cục, Vụ, Viện, các tổ chức KH&CN thuộc Bộ Công Thương.
+                </div>
+                <div class="news-detail-img">
+                  <img src="../../assets/images/news-detail-img.svg" alt />
+                </div>
+                <div class="news-detail-text">
+                  Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có
+                  sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào
+                  thực tiễn, tăng cường hiệu quả, hiệu lực quản lý Nhà nước của
+                  ngành Công Thương. Các nhiệm vụ trong giai đoạn này tập trung
+                  vào hỗ trợ doanh nghiệp ứng dụng, đổi mới công nghệ, quản trị
+                  sản xuất, phát triển sản phẩm theo chuỗi giá trị để tạo ra sản
+                  phẩm, hàng hóa thương hiệu Việt Nam có giá trị gia tăng và
+                  tính cạnh tranh cao trên thị trường. Nhiều công trình nghiên
+                  cứu KH&CN đã đạt được những giải thưởng cao và ứng dụng nhanh
+                  chóng vào thực tiễn của ngành, lĩnh vực, mang tới tác động
+                  tích cực, tạo cơ hội phát triển, mở rộng sản xuất kinh doanh
+                  cho các doanh nghiệp. Góp phần vào sự thành công này, các tổ
+                  chức KH&CN của ngành Công Thương đã có những điều chỉnh quan
+                  trọng về phương thức hoạt động, gắn với yêu cầu nghiên cứu,
+                  ứng dụng đổi mới công nghệ của các doanh nghiệp. Từ đó, có
+                  những đóng góp có ý nghĩa trong kết quả hoạt động KH&CN cũng
+                  như những thành tựu phát triển chung của ngành. Đồng thời,
+                  cùng với chủ trương về cổ phần hóa các doanh nghiệp nhà nước,
+                  đẩy mạnh thực hiện cơ chế tự chủ trong các đơn vị KH&CN công
+                  lập, trong hơn 10 năm qua, hệ thống các tổ chức KH&CN của
+                  ngành Công Thương đã liên tục thực hiện đổi mới, tái cơ cấu về
+                  quy mô tổ chức và phạm vi hoạt động.
+                </div>
+                <div class="news-detail-img">
+                  <img src="../../assets/images/news-detail-img.svg" alt />
+                </div>
+                <div class="news-detail-text">
+                  Để triển khai có hiệu quả Nghị quyết Đại hội đại biểu toàn
+                  quốc lần thứ XIII của Đảng và Chiến lược phát triển kinh tế -
+                  xã hội 10 năm 2021-2030, KH&CN và đổi mới sáng tạo cùng với
+                  phát triển nguồn nhân lực chất lượng cao được xác định là một
+                  trong ba đột phá chiến lược để hiện thực hóa các mục tiêu đề
+                  ra. KH&CN cũng được khẳng định là nền tảng quan trọng thúc đẩy
+                  quá trình tái cơ cấu ngành Công Thương giai đoạn 2021-2030,
+                  tầm nhìn 2045. Điều này đặt ra những nhiệm vụ, yêu cầu mới đối
+                  với hoạt động KH&CN ngành Công Thương nói chung và đặc biệt là
+                  hệ thống các tổ chức KH&CN nói riêng. Hội thảo là một trong
+                  những hoạt động quan trọng trong tiến trình hoàn thiện báo cáo
+                  “Định hướng phát triển các tổ chức KH&CN công lập ngành Công
+                  Thương giai đoạn đến năm 2030, tầm nhìn đến 2045” do Vụ Khoa
+                  học và Công nghệ soạn thảo, nhằm tạo sự đồng thuận, thống nhất
+                  về định hướng, giải pháp phát triển các Viện trong giai đoạn
+                  tiếp theo. Điều hành Hội thảo, ông Trần Việt Hòa – Vụ trưởng
+                  Vụ KH&CN đề nghị các đại biểu tập trung thảo luận vào 3 vấn đề
+                  chính: Vai trò và sứ mệnh của các tổ chức KH&CN công lập, đồng
+                  thời đánh giá những kết quả và đóng góp của tổ chức trong giai
+                  đoạn vừa qua; Yêu cầu về phát triển KH&CN phục vụ mục tiêu
+                  phát triển ngành, lĩnh vực gắn với mục tiêu chung của phát
+                  triển, tái cơ cấu ngành Công Thương giai đoạn 2021-2030, tầm
+                  nhìn đến 2045; Căn cứ khoa học và thực tiễn để xác định việc
+                  tồn tại, phát triển của một tổ chức KH&CN. Từ đó thảo luận,
+                  trao đổi về phương án đề xuất trong dự thảo Báo cáo.
+                </div>
+                <div class="news-detail-img">
+                  <img src="../../assets/images/news-detail-img.svg" alt />
+                </div>
+                <div class="news-detail-text">
+                  Những ý kiến trao đổi, thảo luận thẳng thắn và cởi mở tại Hội
+                  thảo sẽ được Vụ KH&CN tập hợp để hoàn thiện dự thảo Báo cáo
+                  định hướng phát triển cùng lộ trình tái cơ cấu hệ thống các tổ
+                  chức KH&CN trực thuộc Bộ giai đoạn 2021-2030, tầm nhìn đến năm
+                  2045. Đồng thời, là căn cứ đề xuất Lãnh đạo Bộ có những quyết
+                  sách phù hợp trong phát triển mạng lưới tổ chức KH&CN công lập
+                  của Bộ Công Thương trong giai đoạn tiếp theo.
+                </div>
+                <div
+                  class="news-detail-footer d-flex justify-content-end align-items-center">
+                  <div class="d-flex flex-column gap-1 justify-content-end">
+                    <p style="text-align: right;">Nguồn: <a href="#">https://www.vielina.com/</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="line mt-4"></div>
+              <div class="news-list mt-4">
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="../../assets/images/new-rice01.jpg" alt />
+                  </div>
+                  <div class="d-flex gap-2 flex-column">
+                    <div class="news-item-title">
+                      <a>Chính phủ ban hành Nghị định quy định Chức năng, nhiệm
+                        vụ
+                        và cơ cấu tổ chức mới của Bộ Công Thương
+                        Chính phủ ban hành Nghị định quy định Chức năng, nhiệm
+                        vụ
+                        và cơ cấu tổ chức mới của Bộ Công Thương
+                        Chính phủ ban hành Nghị định quy định Chức năng, nhiệm
+                        vụ
+                        và cơ cấu tổ chức mới của Bộ Công Thương</a>
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M6.75 7.5H5.25V9H6.75V7.5ZM9.75 7.5H8.25V9H9.75V7.5ZM12.75 7.5H11.25V9H12.75V7.5ZM14.25 2.25H13.5V0.75H12V2.25H6V0.75H4.5V2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V14.25C2.25 14.6478 2.40804 15.0294 2.68934 15.3107C2.97064 15.592 3.35218 15.75 3.75 15.75H14.25C14.6478 15.75 15.0294 15.592 15.3107 15.3107C15.592 15.0294 15.75 14.6478 15.75 14.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25ZM14.25 14.25H3.75V6H14.25V14.25Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M9 3.375C5.07487 3.375 1.67175 5.661 0 9C1.67175 12.339 5.07487 14.625 9 14.625C12.9251 14.625 16.3283 12.339 18 9C16.3283 5.661 12.9251 3.375 9 3.375ZM13.4381 6.3585C14.4956 7.0335 15.3923 7.93687 16.065 9C15.3943 10.063 14.4974 10.965 13.4381 11.6415C12.1129 12.4882 10.5732 12.9381 9.00056 12.9381C7.42796 12.9381 5.88819 12.4882 4.563 11.6415C3.50421 10.9643 2.60739 10.0625 1.93612 9C2.65094 7.86728 3.62207 6.9185 4.77113 6.23025C4.52384 6.91003 4.44406 7.6394 4.53857 8.35656C4.63308 9.07372 4.89908 9.75753 5.31403 10.35C5.72898 10.9425 6.28066 11.4263 6.9223 11.7603C7.56394 12.0942 8.27664 12.2686 9 12.2686C9.72336 12.2686 10.4361 12.0942 11.0777 11.7603C11.7193 11.4263 12.271 10.9425 12.686 10.35C13.1009 9.75753 13.3669 9.07372 13.4614 8.35656C13.5559 7.6394 13.4762 6.91003 13.2289 6.23025C13.2986 6.27188 13.3695 6.31463 13.4381 6.3585ZM9 7.3125C8.99985 7.7602 8.82186 8.18951 8.50518 8.50598C8.1885 8.82244 7.75908 9.00015 7.31138 9C6.86367 8.99985 6.43437 8.82186 6.1179 8.50518C5.80143 8.1885 5.62373 7.75908 5.62388 7.31138C5.62402 6.86367 5.80202 6.43437 6.11869 6.1179C6.43537 5.80143 6.8648 5.62373 7.3125 5.62388C7.7602 5.62402 8.18951 5.80202 8.50598 6.11869C8.82244 6.43537 9.00015 6.8648 9 7.3125Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content">
+                      Phó Thủ tướng Thường trực Chính phủ Phạm Bình Minh vừa ký
+                      Nghị định 96/2022/NĐ-CP ngày 29/11/2022 quy định chức
+                      năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Công
+                      Thương.
+                    </div>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="../../assets/images/new-rice01.jpg" alt />
+                  </div>
+                  <div class="d-flex gap-2 flex-column">
+                    <div class="news-item-title">
+                      Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công
+                      Thương
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M6.75 7.5H5.25V9H6.75V7.5ZM9.75 7.5H8.25V9H9.75V7.5ZM12.75 7.5H11.25V9H12.75V7.5ZM14.25 2.25H13.5V0.75H12V2.25H6V0.75H4.5V2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V14.25C2.25 14.6478 2.40804 15.0294 2.68934 15.3107C2.97064 15.592 3.35218 15.75 3.75 15.75H14.25C14.6478 15.75 15.0294 15.592 15.3107 15.3107C15.592 15.0294 15.75 14.6478 15.75 14.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25ZM14.25 14.25H3.75V6H14.25V14.25Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M9 3.375C5.07487 3.375 1.67175 5.661 0 9C1.67175 12.339 5.07487 14.625 9 14.625C12.9251 14.625 16.3283 12.339 18 9C16.3283 5.661 12.9251 3.375 9 3.375ZM13.4381 6.3585C14.4956 7.0335 15.3923 7.93687 16.065 9C15.3943 10.063 14.4974 10.965 13.4381 11.6415C12.1129 12.4882 10.5732 12.9381 9.00056 12.9381C7.42796 12.9381 5.88819 12.4882 4.563 11.6415C3.50421 10.9643 2.60739 10.0625 1.93612 9C2.65094 7.86728 3.62207 6.9185 4.77113 6.23025C4.52384 6.91003 4.44406 7.6394 4.53857 8.35656C4.63308 9.07372 4.89908 9.75753 5.31403 10.35C5.72898 10.9425 6.28066 11.4263 6.9223 11.7603C7.56394 12.0942 8.27664 12.2686 9 12.2686C9.72336 12.2686 10.4361 12.0942 11.0777 11.7603C11.7193 11.4263 12.271 10.9425 12.686 10.35C13.1009 9.75753 13.3669 9.07372 13.4614 8.35656C13.5559 7.6394 13.4762 6.91003 13.2289 6.23025C13.2986 6.27188 13.3695 6.31463 13.4381 6.3585ZM9 7.3125C8.99985 7.7602 8.82186 8.18951 8.50518 8.50598C8.1885 8.82244 7.75908 9.00015 7.31138 9C6.86367 8.99985 6.43437 8.82186 6.1179 8.50518C5.80143 8.1885 5.62373 7.75908 5.62388 7.31138C5.62402 6.86367 5.80202 6.43437 6.11869 6.1179C6.43537 5.80143 6.8648 5.62373 7.3125 5.62388C7.7602 5.62402 8.18951 5.80202 8.50598 6.11869C8.82244 6.43537 9.00015 6.8648 9 7.3125Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content">
+                      Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương
+                      có sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng
+                      dụng vào thực tiễn, tăng cường hiệu quả, hiệu lực quản lý
+                      Nhà nước của ngành Công Thương.
+                    </div>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="../../assets/images/new-rice01.jpg" alt />
+                  </div>
+                  <div class="d-flex gap-2 flex-column">
+                    <div class="news-item-title">
+                      Các viện nghiên cứu thuộc Bộ Công Thương: Thành công trong
+                      phát triển công nghệ tự động hóa
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M6.75 7.5H5.25V9H6.75V7.5ZM9.75 7.5H8.25V9H9.75V7.5ZM12.75 7.5H11.25V9H12.75V7.5ZM14.25 2.25H13.5V0.75H12V2.25H6V0.75H4.5V2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V14.25C2.25 14.6478 2.40804 15.0294 2.68934 15.3107C2.97064 15.592 3.35218 15.75 3.75 15.75H14.25C14.6478 15.75 15.0294 15.592 15.3107 15.3107C15.592 15.0294 15.75 14.6478 15.75 14.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25ZM14.25 14.25H3.75V6H14.25V14.25Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M9 3.375C5.07487 3.375 1.67175 5.661 0 9C1.67175 12.339 5.07487 14.625 9 14.625C12.9251 14.625 16.3283 12.339 18 9C16.3283 5.661 12.9251 3.375 9 3.375ZM13.4381 6.3585C14.4956 7.0335 15.3923 7.93687 16.065 9C15.3943 10.063 14.4974 10.965 13.4381 11.6415C12.1129 12.4882 10.5732 12.9381 9.00056 12.9381C7.42796 12.9381 5.88819 12.4882 4.563 11.6415C3.50421 10.9643 2.60739 10.0625 1.93612 9C2.65094 7.86728 3.62207 6.9185 4.77113 6.23025C4.52384 6.91003 4.44406 7.6394 4.53857 8.35656C4.63308 9.07372 4.89908 9.75753 5.31403 10.35C5.72898 10.9425 6.28066 11.4263 6.9223 11.7603C7.56394 12.0942 8.27664 12.2686 9 12.2686C9.72336 12.2686 10.4361 12.0942 11.0777 11.7603C11.7193 11.4263 12.271 10.9425 12.686 10.35C13.1009 9.75753 13.3669 9.07372 13.4614 8.35656C13.5559 7.6394 13.4762 6.91003 13.2289 6.23025C13.2986 6.27188 13.3695 6.31463 13.4381 6.3585ZM9 7.3125C8.99985 7.7602 8.82186 8.18951 8.50518 8.50598C8.1885 8.82244 7.75908 9.00015 7.31138 9C6.86367 8.99985 6.43437 8.82186 6.1179 8.50518C5.80143 8.1885 5.62373 7.75908 5.62388 7.31138C5.62402 6.86367 5.80202 6.43437 6.11869 6.1179C6.43537 5.80143 6.8648 5.62373 7.3125 5.62388C7.7602 5.62402 8.18951 5.80202 8.50598 6.11869C8.82244 6.43537 9.00015 6.8648 9 7.3125Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content">
+                      Bộ Công Thương hiện quản lý mạng lưới 13 viện nghiên cứu,
+                      trong đó bao gồm 01 viện đã thực hiện cổ phần hóa. Mặc dù
+                      có phạm vi, lĩnh vực hoạt động tương đối chuyên biệt, độc
+                      lập nhưng hoạt động của các viện thuộc Bộ Công Thương đều
+                      được thực hiện theo...
+                    </div>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="../../assets/images/new-rice01.jpg" alt />
+                  </div>
+                  <div class="d-flex gap-2 flex-column">
+                    <div class="news-item-title">
+                      VIELINA làm chủ nhiều công nghệ 4.0 trong lĩnh vực Điện
+                      tử, Tin học, Tự động hoá
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M6.75 7.5H5.25V9H6.75V7.5ZM9.75 7.5H8.25V9H9.75V7.5ZM12.75 7.5H11.25V9H12.75V7.5ZM14.25 2.25H13.5V0.75H12V2.25H6V0.75H4.5V2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V14.25C2.25 14.6478 2.40804 15.0294 2.68934 15.3107C2.97064 15.592 3.35218 15.75 3.75 15.75H14.25C14.6478 15.75 15.0294 15.592 15.3107 15.3107C15.592 15.0294 15.75 14.6478 15.75 14.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25ZM14.25 14.25H3.75V6H14.25V14.25Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M9 3.375C5.07487 3.375 1.67175 5.661 0 9C1.67175 12.339 5.07487 14.625 9 14.625C12.9251 14.625 16.3283 12.339 18 9C16.3283 5.661 12.9251 3.375 9 3.375ZM13.4381 6.3585C14.4956 7.0335 15.3923 7.93687 16.065 9C15.3943 10.063 14.4974 10.965 13.4381 11.6415C12.1129 12.4882 10.5732 12.9381 9.00056 12.9381C7.42796 12.9381 5.88819 12.4882 4.563 11.6415C3.50421 10.9643 2.60739 10.0625 1.93612 9C2.65094 7.86728 3.62207 6.9185 4.77113 6.23025C4.52384 6.91003 4.44406 7.6394 4.53857 8.35656C4.63308 9.07372 4.89908 9.75753 5.31403 10.35C5.72898 10.9425 6.28066 11.4263 6.9223 11.7603C7.56394 12.0942 8.27664 12.2686 9 12.2686C9.72336 12.2686 10.4361 12.0942 11.0777 11.7603C11.7193 11.4263 12.271 10.9425 12.686 10.35C13.1009 9.75753 13.3669 9.07372 13.4614 8.35656C13.5559 7.6394 13.4762 6.91003 13.2289 6.23025C13.2986 6.27188 13.3695 6.31463 13.4381 6.3585ZM9 7.3125C8.99985 7.7602 8.82186 8.18951 8.50518 8.50598C8.1885 8.82244 7.75908 9.00015 7.31138 9C6.86367 8.99985 6.43437 8.82186 6.1179 8.50518C5.80143 8.1885 5.62373 7.75908 5.62388 7.31138C5.62402 6.86367 5.80202 6.43437 6.11869 6.1179C6.43537 5.80143 6.8648 5.62373 7.3125 5.62388C7.7602 5.62402 8.18951 5.80202 8.50598 6.11869C8.82244 6.43537 9.00015 6.8648 9 7.3125Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content">
+                      Cách mạng công nghiệp lần thứ tư (CMCN 4.0) với một số
+                      công nghệ nền tảng như internet kết nối vạn vật (IoT), trí
+                      tuệ nhân tạo (AI), điện toán đám mây (Cloud computing), dữ
+                      liệu lớn (big data), chuỗi khối (blockchain), in 3D,
+                      robotic, … đang phát triển mạnh mẽ,
+                    </div>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <div class="news-item-img">
+                    <img src="../../assets/images/new-rice01.jpg" alt />
+                  </div>
+                  <div class="d-flex gap-2 flex-column">
+                    <div class="news-item-title">
+                      Quyết định về việc ban hành Quy trình quản lý, lưu trữ và
+                      cấp phát phôi bằng tiến sĩ
+                    </div>
+                    <div class="news-item-info">
+                      <div class="news-item-date news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M6.75 7.5H5.25V9H6.75V7.5ZM9.75 7.5H8.25V9H9.75V7.5ZM12.75 7.5H11.25V9H12.75V7.5ZM14.25 2.25H13.5V0.75H12V2.25H6V0.75H4.5V2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V14.25C2.25 14.6478 2.40804 15.0294 2.68934 15.3107C2.97064 15.592 3.35218 15.75 3.75 15.75H14.25C14.6478 15.75 15.0294 15.592 15.3107 15.3107C15.592 15.0294 15.75 14.6478 15.75 14.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25ZM14.25 14.25H3.75V6H14.25V14.25Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Ngày: 08/12/2022 11:06
+                      </div>
+                      <div class="news-item-view news-item-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                          height="18" viewBox="0 0 18 18" fill="none">
+                          <path
+                            d="M9 3.375C5.07487 3.375 1.67175 5.661 0 9C1.67175 12.339 5.07487 14.625 9 14.625C12.9251 14.625 16.3283 12.339 18 9C16.3283 5.661 12.9251 3.375 9 3.375ZM13.4381 6.3585C14.4956 7.0335 15.3923 7.93687 16.065 9C15.3943 10.063 14.4974 10.965 13.4381 11.6415C12.1129 12.4882 10.5732 12.9381 9.00056 12.9381C7.42796 12.9381 5.88819 12.4882 4.563 11.6415C3.50421 10.9643 2.60739 10.0625 1.93612 9C2.65094 7.86728 3.62207 6.9185 4.77113 6.23025C4.52384 6.91003 4.44406 7.6394 4.53857 8.35656C4.63308 9.07372 4.89908 9.75753 5.31403 10.35C5.72898 10.9425 6.28066 11.4263 6.9223 11.7603C7.56394 12.0942 8.27664 12.2686 9 12.2686C9.72336 12.2686 10.4361 12.0942 11.0777 11.7603C11.7193 11.4263 12.271 10.9425 12.686 10.35C13.1009 9.75753 13.3669 9.07372 13.4614 8.35656C13.5559 7.6394 13.4762 6.91003 13.2289 6.23025C13.2986 6.27188 13.3695 6.31463 13.4381 6.3585ZM9 7.3125C8.99985 7.7602 8.82186 8.18951 8.50518 8.50598C8.1885 8.82244 7.75908 9.00015 7.31138 9C6.86367 8.99985 6.43437 8.82186 6.1179 8.50518C5.80143 8.1885 5.62373 7.75908 5.62388 7.31138C5.62402 6.86367 5.80202 6.43437 6.11869 6.1179C6.43537 5.80143 6.8648 5.62373 7.3125 5.62388C7.7602 5.62402 8.18951 5.80202 8.50598 6.11869C8.82244 6.43537 9.00015 6.8648 9 7.3125Z"
+                            fill="var(--style-color-dark)" />
+                        </svg>
+                        Lượt xem: 103
+                      </div>
+                    </div>
+                    <div class="news-item-content"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="footer__block">
+              <h3 class="footer__block-title">VỀ CHÚNG TÔI</h3>
+              <ul class="footer__menu">
+                <li>
+                  <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                  <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                  <a href="#">Sản phẩm</a>
+                </li>
+                <li>
+                  <a href="#">Tin tức</a>
+                </li>
+                <li>
+                  <a href="#">Khuyến mại</a>
+                </li>
+                <li>
+                  <a href="#">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h3 class="footer__block-title">HỖ TRỢ KHÁCH HÀNG</h3>
+              <ul class="footer__menu">
+                <li>
+                  <a href="#">Hướng dẫn mua hàng</a>
+                </li>
+                <li>
+                  <a href="#">Hướng dẫn thanh toán</a>
+                </li>
+                <li>
+                  <a href="#">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h3 class="footer__block-title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+              <div class="footer-company__info">
+                <span>Địa Chỉ: </span> Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+              </div>
+              <div class="footer-company__info">
+                <span>Hotline: </span>
+                <a href="tel:1900 1900">1900 1900</a>
+              </div>
+              <div class="footer-company__info">
+                <span>Mail hỗ trợ: </span>
+                <a href="mailto:demo@gmail.com">demo@gmail.com</a>
+              </div>
+              <div class="footer-company__info">
+                <span>Liên kết: </span>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M12.9151 0.79248H2.75073C1.58198 0.79248 0.625732 1.74873 0.625732 2.91748V13.0829C0.625732 14.2517 1.58198 15.2079 2.75073 15.2079H12.9162C14.0849 15.2079 15.0412 14.2517 15.0412 13.0829V2.91748C15.0401 1.74873 14.0849 0.79248 12.9151 0.79248ZM12.7786 8.48657H11.068V14.6756H8.50842V8.48657H7.22811V6.35307H8.50842V5.07276C8.50842 3.33239 9.23092 2.29698 11.2869 2.29698H12.9959V4.42995H11.927C11.128 4.42995 11.0749 4.72904 11.0749 5.28526L11.068 6.35307H13.0044L12.7786 8.48657Z"
+                      fill="var(--style-color-color-share)" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__block --last">
+              <a href="#" class="d-block mb-3">
+                <img src="../../assets/images/fanpage.png" alt>
+              </a>
+              <img class="bct" src="../../assets/images/bo-cong-thuong.png" alt>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bt">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-6 pb-1">
+                <div class="footer-bt__inner d-flex align-items-center">
+                  <h3 class="footer__block-title --title-register pb-0">ĐĂNG KÝ
+                    NHẬN BẢN TIN</h3>
+                  <form action>
+                    <div class="form-group__ft">
+                      <input type="text" class="form-control"
+                        placeholder="Email của bạn">
+                      <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                          height="24" viewBox="0 0 25 24" fill="none">
+                          <path
+                            d="M10.4999 14L21.4999 3M10.4999 14L13.9999 21C14.0438 21.0957 14.1143 21.1769 14.2029 21.2338C14.2915 21.2906 14.3946 21.3209 14.4999 21.3209C14.6053 21.3209 14.7084 21.2906 14.797 21.2338C14.8856 21.1769 14.9561 21.0957 14.9999 21L21.4999 3M10.4999 14L3.49995 10.5C3.40421 10.4561 3.32307 10.3857 3.26619 10.2971C3.20931 10.2084 3.17908 10.1053 3.17908 10C3.17908 9.89468 3.20931 9.79158 3.26619 9.70295C3.32307 9.61431 3.40421 9.54387 3.49995 9.5L21.4999 3"
+                            stroke="var(--style-color-btn-footer)"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 pb-1">
+                <p class="call-now">Gọi ngay cho chúng tôi để được hỗ trợ tốt
+                  nhất: <a href="tel:1900 1900">1900 1900</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+
+</html>
