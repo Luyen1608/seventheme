@@ -478,6 +478,7 @@ header {
 .header__right {
     flex: 1;
     align-self: stretch;
+    max-width: 100%;
 }
 
 .header__menu {

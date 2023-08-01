@@ -1,5 +1,7 @@
 /* style for content all page  */
-
+.wrapper{
+    overflow: hidden;
+}
 .txt-headling-5 {
     font-size: 16px !important;
     font-style: normal;
