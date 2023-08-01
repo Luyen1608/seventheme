@@ -34,7 +34,7 @@
     --style-color-in-bg: black;
     --style-color-input: rgba(139, 198, 63, 0.384);
     --style-color-in-bg-menu: black;
-    --style-color-in-bg-dark: rgb(255, 255, 255);
+    --style-color-in-bg-dark: #ffffff;
 
     /* footer */
     --style-color-bg-footer: #434a3d;

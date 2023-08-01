@@ -18,6 +18,10 @@
     color: var(--style-color-main) !important;
     opacity: 0.8;
 }
+.product__item:hover .p__text .__title:hover {
+    color: var(--style-color-in-bg-dark) !important;
+    opacity: 1!important;
+}
 
 @media (max-width: 480px) {
     .header__center .wrap-header__logo .wrap-header__form input::placeholder {
