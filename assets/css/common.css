@@ -599,7 +599,12 @@ header {
     padding: 16px 15px;
     white-space: nowrap;
 }
-
+.menu__sub li a:hover {
+    text-transform: none !important;
+}
+.menu__sub li a {
+    text-transform: none !important;
+}
 .menu-item>a:hover {
     color: #ee6055;
     opacity: 1;
