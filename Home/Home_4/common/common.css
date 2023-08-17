@@ -33,7 +33,7 @@
     --style-color-in-bg-footer: white;
 
     --style-color-in-bg: black;
-    --style-color-input: #E39792;
+    --style-color-input: #e8d1d1;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
@@ -52,6 +52,10 @@
     --style-color-menu-hover: #CA0C00;
     
     --style-color-filter-hover: #CA0C00;
+    
+    --style-color-btn-search-new: #ff8e01;
+    --style-color-bg-new: #f2e9e9;
+
 
 
 }
@@ -163,3 +167,16 @@ footer a:hover {
     color: var(--style-footer-color-hover) !important;
 }
 
+/* tin tuc */
+.news-menu {
+    background-color: var(--style-color-bg-new) !important;
+}
+.news-wrap .news-item {
+    background-color: var(--style-color-bg-new) !important;
+}
+.news-search .search-icon {
+    background: var(--style-color-btn-search-new)!important;
+}
+#homeStyle003 .p__text a:hover {
+    color: var(--style-color-in-bg-dark) !important;
+}

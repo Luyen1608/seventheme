@@ -49,10 +49,27 @@
 
     --style-footer-color-hover: #069628;
     --style-border-input-footer: #c4c4c4;
+    /* end footer */
     
-    --style-color-menu-hover: #f74239;
     --style-color-filter-hover: #069628;
+
+
+    
+
+    /* hover */
+    --style-color-bg-placehoder-footer: #7aa341;
     --style-color-btn-search-new: #8BC63F;
+    --style-color-bg-new: rgba(226, 239, 212, 0.28); 
+
+    --style-color-menu-hover: #f74239;
+    --hover-dark: white;
+    --hover-white:#ff8e01;
+    --hover-light: #ff8e01;
+
+    --home-hover-title: white;
+    --pre-header-hover-title: #4b6328;
+    
+    /* end hover */
 
 
 }
