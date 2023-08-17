@@ -23,131 +23,51 @@
 }
 
 :root {
-    --style-color-main: #5EA700  ;
-    --style-color-dark: #2E9F3C ;
-    --style-color-light: #ddeacf;
-    --style-color-light-2: rgba(139, 198, 63, 0.1);
+    --style-color-main: #162570;
+    --style-color-dark: #0A1344;
+    --style-color-light: rgba(22, 37, 112, 0.62);
+    --style-color-light-2: rgba(22, 37, 112, 0.20);;
     --style-color-btn-contrast: #ff8e01;
-
-    --style-color-bg-footer: #434a3d;
-    --style-color-in-bg-footer: #434a3d;
-
-    --style-color-in-bg: black;
-    --style-color-input: #8bc63f59;
-    --style-color-in-bg-menu: black;
-    --style-color-bg-footer-light: white;
+    --style-color-bg-footer: #162570;
+    --style-color-in-bg: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
-    /* footer */
-    --style-color-bg-footer: white;
-    --style-color-color-footer: #2f3235;
-    --style-color-bg-btn-footer: #5EA700;
-    --style-color-bg-color-hover: white;
-    --style-color-color-share: #2f3235;
-    --style-color-bg-placehoder-footer: #2f323586;
-    --style-color-call: #f74239;
-    --style-color-btn-footer:white;
-    --style-footer-color-hover:#2E9F3C;
-    
-    --style-color-menu-active: white;
-    --style-color-menu-hover: white;
-    
-    --style-color-filter-hover: #2E9F3C;
-
-
+    --style-color-input: rgb(169 175 207 / 71%);
+    --style-color-in-bg-menu: #162570;
 }
-
-footer .form-group__ft button {
-    background-color: var(--style-color-bg-btn-footer)!important;
-}
-.footer-company__info {
-    color: var(--style-color-color-footer)!important;
-}
-footer .footer-company__info span {
-    color: var(--style-color-color-footer)!important;
-}
-footer {
-    background-color: var(--style-color-bg-footer)!important;
-    color: var(--style-color-color-footer)!important;
-}
-footer input::placeholder{
-    color: var(--style-color-bg-placehoder-footer)!important;
-}
-#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
-    color: var(--style-color-color-footer) !important;
-}
-.footer__menu li a:hover {
-    color: var(--style-footer-color-hover) !important;
-}
-footer a:hover {
-    color: var(--style-footer-color-hover) !important;
-}
-.footer__menu li a{
-    color: var(--style-color-color-footer) !important;
-}
-#homeStyle01 a:hover {
-    color: var(--style-color-bg-color-hover) !important;
-}
-footer .call-now a {
-    color: var(--style-color-call) !important;
-}
-
 input:focus textarea:focus {
     outline: none !important;
     border: 1px solid var(--style-color-main) !important;
 }
-
 .header-top {
     width: 100%;
-    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2));
+    background: linear-gradient( 0deg, var(--style-color-main), var(--style-color-main));
 }
-
 #homeStyle01 .nav__left-title {
     background-color: var(--style-color-light-2) !important;
-    color: var(--style-color-light-2);
+    color: var(--style-color-in-bg-menu) !important;
 }
-
 .nav__left-title {
-    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
+    background: linear-gradient( 0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
 }
-
-.news-menu input::placeholder {
+.news-menu input::placeholder{
     color: rgba(0, 0, 0, 0.405) !important;
 }
-#homeStyle01 .change-ship a:hover{
-    color: var(--style-color-dark)!important;
-    opacity: 0.6;
+footer input::placeholder{
+    color: rgba(255, 255, 255, 0.76) !important;
 }
-
-/* home */
-@media only screen and (max-width: 768px) {
-    .section-title img {
-        height: 10px !important;
-        width: 150px !important;
-    }
+.header__company-name{
+    color: white;
 }
-.wrap__header-user {
-    gap: 10px;
+.header__account{
+    color: white;
 }
-.header__info .__item.--ct {
-    gap: 10px;
+.account-item:hover {
+    color: white !important;
 }
-footer input {
+footer a:hover {
     color: var(--style-color-in-bg) !important;
 }
-.p-product__list02 .product__item:hover .p__text span {
-    color: var(--style-color-dark) !important
-}
-#homeStyle03 .shopping-cart {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid var(--style-color-main);
-}
-@media only screen and (max-width: 1024px) {
-    #homeStyle03 .shopping-cart {
-        width: inherit;
-        height: inherit;
-        border: none;
-    }
+.news-search input{
+    background-color: var(--style-color-input);
 }
 

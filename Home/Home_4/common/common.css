@@ -23,41 +23,39 @@
 }
 
 :root {
-    --style-color-main: #0096C7  ;
-    --style-color-dark: #0287B2 ;
-    --style-color-light: #5DBAD8;
-    --style-color-light-2: #C4E2EC;
-    --style-color-btn-contrast: #ffb300;
+    --style-color-main: #CA0C00  ;
+    --style-color-dark: #8F0B02 ;
+    --style-color-light: #DA645D;
+    --style-color-light-2: #ECC6C4;
+    --style-color-btn-contrast: #ff8e01;
 
     --style-color-bg-footer: #434a3d;
-    --style-color-in-bg-footer: #2f3235;
+    --style-color-in-bg-footer: white;
 
     --style-color-in-bg: black;
-    --style-color-input: #B1DBE9;
+    --style-color-input: #E39792;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
     /* footer */
-    --style-color-bg-footer: white;
-    --style-color-color-footer: #2f3235;
-    --style-color-bg-btn-footer: #0096C7;
-    --style-color-bg-color-hover: white;
-    --style-color-color-share: #2f3235;
-    --style-color-bg-placehoder-footer: #2f323586;
+    --style-color-bg-footer: #434a3d;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: white;
+    --style-color-bg-color-hover: #CA0C00;
+    --style-color-color-share: white;
+    --style-color-bg-placehoder-footer: #ddeacf;
     --style-color-call: #f74239;
-    --style-color-btn-footer:white;
-    --style-footer-color-hover:#ffb300;
+    --style-color-btn-footer:#8F0B02;
+    --style-footer-color-hover: #ECC6C4;
+
+    --style-color-menu-active: #CA0C00;
+    --style-color-menu-hover: #CA0C00;
     
-    --style-color-menu-active: white;
-    --style-color-menu-hover: white;
-    
-    --style-color-filter-hover: #0096C7;
+    --style-color-filter-hover: #CA0C00;
 
 
 }
-.form-group__ft input {
-    border: 1px solid var(--style-color-main);
-}
+
 footer .form-group__ft button {
     background-color: var(--style-color-bg-btn-footer)!important;
 }
@@ -74,7 +72,7 @@ footer {
 footer input::placeholder{
     color: var(--style-color-bg-placehoder-footer)!important;
 }
-#homeStyle04 footer .footer__block-title, #homeStyle04 footer .call-now{
+#homeStyle01 footer .footer__block-title, #homeStyle01 footer .call-now{
     color: var(--style-color-color-footer) !important;
 }
 .footer__menu li a:hover {
@@ -86,8 +84,11 @@ footer a:hover {
 .footer__menu li a{
     color: var(--style-color-color-footer) !important;
 }
-#homeStyle01 a:hover {
+#homeStyle003 a:hover {
     color: var(--style-color-bg-color-hover) !important;
+}
+#homeStyle003 footer a:hover {
+    color: var(--style-footer-color-hover) !important;
 }
 footer .call-now a {
     color: var(--style-color-call) !important;
@@ -109,7 +110,7 @@ input:focus textarea:focus {
 }
 
 .nav__left-title {
-    background: linear-gradient(0deg, var(--style-color-main), var(--style-color-main)) !important;
+    background: linear-gradient(0deg, var(--style-color-light-2), var(--style-color-light-2)) !important;
 }
 
 .news-menu input::placeholder {
@@ -134,7 +135,7 @@ input:focus textarea:focus {
     gap: 10px;
 }
 footer input {
-    color: var(--style-color-in-bg) !important;
+    color: var(--style-color-in-bg-footer) !important;
 }
 .p-product__list02 .product__item:hover .p__text span {
     color: var(--style-color-dark) !important
@@ -152,44 +153,13 @@ footer input {
         border: none;
     }
 }
-.form-group-header button {
-    background-color: var(--style-color-main);
+.home3 .header-top {
+    background: var(--style-color-main);
 }
-input.--style01 {
-    border-color: var(--style-color-main);
+.section-line .view-more:hover a {
+    color: #fff!important;
 }
-footer .style04-footer {
-    margin-bottom: 40px;
-    width: 100%;
+footer a:hover {
+    color: var(--style-footer-color-hover) !important;
 }
-#homeStyle04 .header__menu li>a:hover {
-    background-color: var(--style-color-btn-contrast);
-}
-#homeStyle04 .menu__sub li a {
-    border-radius: 10px;
-    padding: 12px 15px;
-    width: 100%;
-}
-#homeStyle04 .menu__sub li a:hover>svg>path  {
-    fill: var(--style-color-menu-hover);
-}
-.wrap-nav___left .nav__left-title{
-    height: 45px;
-    padding: 0px;
-}
-.header__right .home-banner, .header__right .home-banner img{
-    height: 100%;
-}
-footer .footer__block-title {
-    color: var(--style-color-in-bg-footer) !important;
-}
-footer .style03-footer {
-    margin-bottom: 40px!important;
-    width: 100% !important;
-}
-footer .call-now {
-    color: #fff;
-}
-#homeStyle04 .shopping-cart {
-    border: 1px solid var(--style-color-main);
-}
+
