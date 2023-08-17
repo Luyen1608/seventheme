@@ -26,13 +26,14 @@
     --style-color-main: #7aa341;
     --style-color-dark: #4b6328;
     --style-color-light: #ddeacf;
-    --style-color-light-2: #E8F4D9;  
+    --style-color-light-2: rgba(226, 239, 212, 0.28); 
     --style-color-btn-contrast: #ff8e01;
 
     
 
     --style-color-in-bg: black;
-    --style-color-input: rgba(139, 198, 63, 0.384);
+    --style-color-input: #E2EFD4;
+    
     --style-color-in-bg-menu: black;
     --style-color-in-bg-dark: #ffffff;
 
@@ -51,6 +52,7 @@
     
     --style-color-menu-hover: #f74239;
     --style-color-filter-hover: #069628;
+    --style-color-btn-search-new: #8BC63F;
 
 
 }
@@ -94,4 +96,12 @@ input:focus textarea:focus {
 }
 .side-nav li a:hover{
     color: var(--style-color-main) !important;
+}
+
+/* tin tuc */
+.news-wrap .news-item {
+    background-color: var(--style-color-light-2);
+}
+.news-search .search-icon {
+    background: var(--style-color-btn-search-new) !important;
 }
