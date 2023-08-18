@@ -33,15 +33,22 @@
     --style-color-in-bg-dark: rgb(255, 255, 255);
     --style-color-in-bg-menu: #162570;
 
-    --style-color-menu-hover: #f74239;
     --style-color-filter-hover: #162570;
-    --style-color-btn-search-new: #162570;
-    --style-color-bg-new: rgb(205 210 234 / 20%);
-    --style-color-input: rgb(205 210 234 / 50%);
+    
     /* hover */
+    --style-color-bg-placehoder-footer: #7aa341;
+    --style-color-btn-search-new: #162570;
+    --style-color-input: rgb(205 210 234 / 50%);
+    --style-color-bg-new: rgb(205 210 234 / 20%);
+
+    --style-color-menu-hover: #f74239;
     --hover-dark: white;
     --hover-white:#ff8e01;
     --hover-light: #ff8e01;
+
+    --home-hover-title: white;
+    --pre-header-hover-title: white;
+    
     /* end hover */
 }
 input:focus textarea:focus {

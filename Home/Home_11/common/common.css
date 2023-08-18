@@ -33,7 +33,20 @@
 
     --style-color-in-bg: white;
     --style-color-input: rgba(32, 156, 90, 0.62);;
+   /* hover */
+   --style-color-bg-placehoder-footer: #cce0af;
+   --style-color-btn-search-new: #8BC63F;
+   --style-color-bg-new: rgba(226, 239, 212, 0.28);
 
+   --style-color-menu-hover: #f74239;
+   --hover-dark: white;
+   --hover-white: #ff8e01;
+   --hover-light: #ff8e01;
+
+   --home-hover-title: white;
+   --pre-header-hover-title: #ccdfb0;
+
+   /* end hover */
 }
 
 input:focus textarea:focus {
@@ -46,9 +59,9 @@ input:focus textarea:focus {
 .header__account{
     color: white;
 }
-.account-item:hover {
+/* .account-item:hover {
     color: white !important;
-}
+} */
 footer a:hover {
     color: var(--style-color-in-bg) !important;
 }

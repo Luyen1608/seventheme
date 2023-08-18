@@ -25,7 +25,8 @@
 :root {
     --style-color-main: #6BD329;
     --style-color-dark: #54A422;
-    --style-color-light: rgba(107, 211, 41, 0.62);;
+    --style-color-light: rgba(107, 211, 41, 0.62);
+    ;
     --style-color-light-2: rgba(107, 211, 41, 0.20);
     --style-color-btn-contrast: #ff8e01;
 
@@ -33,29 +34,47 @@
 
     --style-color-in-bg: white;
     --style-color-input: #2a8b0930;
+    /* hover */
+    --style-color-bg-placehoder-footer: #7aa341;
+    --style-color-btn-search-new: #8BC63F;
+    --style-color-bg-new: rgba(226, 239, 212, 0.28);
 
+    --style-color-menu-hover: #f74239;
+    --hover-dark: white;
+    --hover-white: #ff8e01;
+    --hover-light: #ff8e01;
+
+    --home-hover-title: white;
+    --pre-header-hover-title: #ecf3e1;
+
+    /* end hover */
 }
 
 input:focus textarea:focus {
     outline: none !important;
     border: 1px solid var(--style-color-main) !important;
 }
-.header__company-name{
+
+.header__company-name {
     color: white;
 }
-.header__account{
+
+.header__account {
     color: white;
 }
-.account-item:hover {
+
+/* .account-item:hover {
     color: white !important;
-}
+} */
+
 footer a:hover {
     color: var(--style-color-in-bg) !important;
 }
+
 .cart-ship {
     background: var(--green-light, linear-gradient(90deg, var(--style-color-light-2) 0%, #FFF 100%)) !important;
 }
-footer input::placeholder{
+
+footer input::placeholder {
     color: rgba(255, 255, 255, 0.76) !important;
 }
-

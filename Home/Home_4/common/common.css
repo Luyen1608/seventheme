@@ -56,6 +56,21 @@
     --style-color-btn-search-new: #ff8e01;
     --style-color-bg-new: #f2e9e9;
 
+    /* hover */
+    --style-color-bg-placehoder-footer: #e5ecda;
+    --style-color-btn-search-new: #ff8e01;
+    --style-color-bg-new: rgb(247 245 245);
+
+    --style-color-menu-hover: #f74239;
+    --hover-dark: white;
+    --hover-white:#ff8e01;
+    --hover-light: #ff8e01;
+
+    --home-hover-title: #ff8e01;
+    --pre-header-hover-title: #4b6328;
+    
+    /* end hover */
+
 
 
 }
@@ -88,9 +103,9 @@ footer a:hover {
 .footer__menu li a{
     color: var(--style-color-color-footer) !important;
 }
-#homeStyle003 a:hover {
+/* #homeStyle003 a:hover {
     color: var(--style-color-bg-color-hover) !important;
-}
+} */
 #homeStyle003 footer a:hover {
     color: var(--style-footer-color-hover) !important;
 }

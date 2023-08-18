@@ -258,9 +258,9 @@ line-height: 20px;
     color: #fff;
 }
 
-#homeStyle07 .product__item:hover .p__text span {
+/* #homeStyle07 .product__item:hover .p__text span {
     color: #143b36;
-}
+} */
 
 .product__item:hover .p__text span.old {
     opacity: 0.6;

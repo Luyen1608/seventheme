@@ -11,6 +11,13 @@
 .menu__sub li a:hover>svg>path {
     fill: var(--style-color-menu-hover);
 }
+.news-item-date>svg>path, .news-item-view>svg>path{
+    fill: var(--hover-white);
+    opacity: 0.8;
+}
+.wrap__header-user a:hover {
+    color: var(--hover-white);
+}
 
 .menu-item a:hover>svg>path {
     fill: var(--style-color-menu-hover);
@@ -39,6 +46,9 @@
 footer input::placeholder{
     color: var(--style-color-bg-placehoder-footer)!important;
 }
+.pagination-site .__item:hover {
+    color: var(--hover-dark) !important;
+}
 @media (max-width: 480px) {
     .header__center .wrap-header__logo .wrap-header__form input::placeholder {
         font-size: 12px;
@@ -64,7 +74,7 @@ footer input::placeholder{
     color: var(--home-hover-title) !important;
 }
 
-.home .product__item:hover .p__text .__title:hover {
+.home .product__item:hover .__title:hover, .home .product__item:hover .p__text .__title:hover {
     color: var(--home-hover-title) !important;
     opacity: 1 !important;
 }
@@ -172,6 +182,9 @@ footer input::placeholder{
     color: var(--hover-dark) !important;
 }
 .header__info .__item:hover {
+    color: var(--hover-white) !important;
+}
+a.login-btn:hover,a.register-btn:hover {
     color: var(--hover-white) !important;
 }
 

@@ -33,7 +33,7 @@
     --style-color-in-bg-footer: #434a3d;
 
     --style-color-in-bg: black;
-    --style-color-input: #8bc63f59;
+    --style-color-input: #bfe39159;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
@@ -52,6 +52,21 @@
     --style-color-menu-hover: white;
     
     --style-color-filter-hover: #2E9F3C;
+
+     /* hover */
+     --style-color-bg-placehoder-footer: #7aa341;
+     --style-color-btn-search-new: #8BC63F;
+     --style-color-bg-new: rgba(226, 239, 212, 0.28); 
+ 
+     --style-color-menu-hover: white;
+     --hover-dark: white;
+     --hover-white:#2E9F3C;
+     --hover-light: #2E9F3C;
+ 
+     --home-hover-title: #2E9F3C;
+     --pre-header-hover-title: #4b6328;
+     
+     /* end hover */
 
 
 }

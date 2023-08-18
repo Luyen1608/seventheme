@@ -33,7 +33,6 @@
     --style-color-in-bg-footer: #434a3d;
 
     --style-color-in-bg: white;
-    --style-color-input: #BDC7C5;
     --style-color-in-bg-menu: black;
     --style-color-bg-footer-light: white;
     --style-color-in-bg-dark: rgb(255, 255, 255);
@@ -46,12 +45,28 @@
     --style-color-bg-placehoder-footer: #ddeacf;
     --style-color-call: #f74239;
     --style-color-btn-footer:#143B36;
-    --style-footer-color-hover:#2E9F3C;
+    --style-footer-color-hover:#ff8e01;
     
     --style-color-menu-active: white;
     --style-color-menu-hover: white;
     
     --style-color-filter-hover: #2E9F3C;
+
+     /* hover */
+     --style-color-bg-placehoder-footer: #e7eede;
+     --style-color-btn-search-new: #162570;
+     --style-color-input: rgb(20 59 54 / 15%);
+     --style-color-bg-new: rgb(20 59 54 / 11%);
+ 
+     --style-color-menu-hover: white;
+     --hover-dark: white;
+     --hover-white:#ff8e01;
+     --hover-light: #ff8e01;
+ 
+     --home-hover-title: #ff8e01;
+     --pre-header-hover-title: white;
+     
+     /* end hover */
 
 
 }
