@@ -170,7 +170,9 @@ footer input::placeholder{
 .register .form-header a:hover {
     color: var(--hover-white) !important;
 }
-
+.video-title:hover a{
+    color: var(--hover-light) !important;
+}
 .cart-detail-right a:hover {
     color: var(--hover-white) !important;
 }
