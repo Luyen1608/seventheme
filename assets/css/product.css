@@ -2415,7 +2415,7 @@ letter-spacing: 0px;
     font-size: 16px;
   }
   .news-wrap .news-menu a {
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   .news-wrap .news-item .news-item-title {
     line-height: 20px;
