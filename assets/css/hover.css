@@ -113,6 +113,9 @@ footer input::placeholder{
 .header__menu .menu-item a:hover {
     color: var(--style-color-menu-hover) !important;
 }
+.header__menu .menu-item.active>a>svg>path{
+    fill: var(--style-color-menu-hover)
+}
 
 .wrap__product-filter a:hover {
     color: var(--hover-white) !important;
