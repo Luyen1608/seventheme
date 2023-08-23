@@ -109,7 +109,7 @@ footer input::placeholder{
     color: var(--pre-header-hover-title)!important;
 }
 
-.header__menu .menu-item.active a,
+.header__menu .menu-item.active>a,
 .header__menu .menu-item a:hover {
     color: var(--style-color-menu-hover) !important;
 }

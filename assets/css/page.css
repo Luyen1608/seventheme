@@ -1378,10 +1378,14 @@ footer .call-now {
     color: #000;
 }
 
-#homeStyle01 .header__menu .menu-item.active a,
+#homeStyle01 .header__menu .menu-item.active>a,
 #homeStyle01 .header__menu .menu-item a:hover {
     color: #ee6055;
 }
+#homeStyle01 .header__menu .menu-item.active>a>svg>path{
+    fill: var(--style-color-menu-hover)
+}
+
 
 .header__menu .menu-item {
     display: inline-block;
