@@ -618,6 +618,7 @@ line-height: 20px;
     border: 1px solid var(--style-color-main);
     background: #fff;
     min-width: 210px;
+    max-width: 210px;
     transition: 0.3s ease;
 }
 
