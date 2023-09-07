@@ -297,3 +297,19 @@ footer .list {
     justify-content: center;
 }
 
+.slick-track{
+    max-height: 450px;
+    display: flex;
+}
+.swiper-slide.product__slider-item img {
+    object-fit: contain;
+    padding: 1px;
+    border-radius: 10px;
+}
+.swiper-slide.product__slider-item {
+    width: 100%;
+    height: 450px;
+}
+.slick-dots{
+    padding-top: 2px;
+}
