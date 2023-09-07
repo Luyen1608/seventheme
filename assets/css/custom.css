@@ -313,3 +313,10 @@ footer .list {
 .slick-dots{
     padding-top: 2px;
 }
+@media only screen and (max-width: 767px){
+.swiper-slide.product__slider-item {
+    height: 300px;
+}
+.slick-track{
+    max-height: 300px;
+}}
