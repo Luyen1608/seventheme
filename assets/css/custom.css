@@ -320,3 +320,6 @@ footer .list {
 .slick-track{
     max-height: 300px;
 }}
+#homeStyle03 .header__menu {
+    height: 56px;
+}

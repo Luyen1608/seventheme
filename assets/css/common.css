@@ -633,8 +633,15 @@ header {
     background: #bccade;
 }
 
-#homeStyle01 .header__menu {
+#homeStyle01 .header__menu,#homeStyle003 .header__menu {
     height: 56px;
+}
+#homeStyle003 .side-nav {
+    height: calc(100% - 76px) !important;
+}
+#homeStyle05 .side-nav {
+    /* height: calc(100% - 56px); */
+    height: 307px;
 }
 
 #homeStyle03 .home-banner {
