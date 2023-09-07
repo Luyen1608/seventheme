@@ -599,12 +599,15 @@ header {
     padding: 16px 15px;
     white-space: nowrap;
 }
+
 .menu__sub li a:hover {
     text-transform: none !important;
 }
+
 .menu__sub li a {
     text-transform: none !important;
 }
+
 .menu-item>a:hover {
     color: #ee6055;
     opacity: 1;
@@ -1122,10 +1125,11 @@ footer {
         max-height: 700px;
     }
 
-   
+
     .mobile-cate-btn {
         display: block;
     }
+
     .mobile-categories {
         display: block;
         overflow: scroll;
@@ -1139,10 +1143,12 @@ footer {
         width: fit-content;
         transition: 0.2s ease-in-out;
     }
+
     .mobile-categories.active {
         visibility: visible;
         opacity: 1;
     }
+
     .mobile-categories .mobile-categories-list {
         top: 0vh;
         height: 96vh;
@@ -1156,9 +1162,11 @@ footer {
         border-radius: 8px;
         max-width: 275px;
     }
+
     .mobile-categories .mobile-categories-list::-webkit-scrollbar {
         display: none;
     }
+
     .mobile-categories .mobile-categories-list>li {
         font-weight: 500;
         padding: 10px 15px;
@@ -1166,6 +1174,7 @@ footer {
         cursor: pointer;
         font-size: 15px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown {
         gap: 0px;
         display: flex;
@@ -1173,21 +1182,26 @@ footer {
         cursor: pointer;
         z-index: 99;
     }
+
     .mobile-categories .mobile-categories-list .dropdown span {
         display: flex;
         align-items: center;
         gap: 4px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown span i {
         transition: 0.1s;
     }
+
     .mobile-categories .mobile-categories-list .dropdown span i.active {
         rotate: 180deg;
     }
+
     .mobile-categories .mobile-categories-list .dropdown i {
         font-size: 8px;
         color: #959ead;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown {
         position: relative;
         display: flex;
@@ -1201,32 +1215,39 @@ footer {
         gap: 0px;
         transition: 0.2s ease;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown.active {
         visibility: visible;
         overflow: auto;
         max-height: 700px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown span {
         display: flex;
         align-items: center;
         gap: 5px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .dropdown .lv2-dropdown {
         max-height: 0;
         overflow: hidden;
         transition: 0.2s ease;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown {
         max-height: 0;
         overflow: hidden;
         transition: 0.2s ease;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown.active {
         max-height: 200px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown .lv2-sub-dropdown li {
         font-size: 12px;
     }
+
     .mobile-categories .mobile-categories-list .dropdown .sub-dropdown li {
         font-weight: 400;
         font-size: 12px;
@@ -1306,3 +1327,20 @@ footer {
 
 
 /* home 3 home 4 */
+@media (min-width: 915px) {
+    body {
+        margin: 0 0 361px;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+    }
+
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+}
