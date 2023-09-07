@@ -67,7 +67,7 @@
 line-height: 20px;
 
 .wrapper {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
