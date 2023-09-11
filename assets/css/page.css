@@ -1056,11 +1056,12 @@ line-height: 20px;
         grid-template-columns: repeat(5, 1fr);
     }
 
-    #homeStyle003 .header__menu {
+    #homeStyle003 .header__menu,#homeStyle05 .header__menu {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
+    
 }
 
 
