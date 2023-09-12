@@ -1361,3 +1361,7 @@ footer {
         min-height: 100%;
     }
 }
+
+#homeStyle03.wrapper {
+    padding-bottom: 50px;
+}
