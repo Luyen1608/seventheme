@@ -637,7 +637,7 @@ header {
     height: 56px;
 }
 #homeStyle003 .side-nav {
-    height: calc(100% - 76px) !important;
+    height: calc(100% - 56px) !important;
 }
 #homeStyle05 .home-banner img {
     width: 100%;
