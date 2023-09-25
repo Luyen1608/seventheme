@@ -396,8 +396,8 @@ header {
 #homeStyle07 .banner {
     background: url(../images/banner07.png);
     padding-top: 10px;
-    height: 384px;
-    background-size: cover;
+    height: 406px;
+    background-size: contain;
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -923,7 +923,7 @@ footer {
     }
 
     #homeStyle07 .banner {
-        height: 320px;
+        height: 362px;
     }
 
     .header__info {
@@ -1290,7 +1290,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     #homeStyle07 .banner {
-        height: 250px;
+        height: 271px;
     }
 
     .call-now {
