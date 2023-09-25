@@ -647,11 +647,11 @@ header {
     max-width: 225px;
 }
 #homeStyle05 .home-banner {
-    height: calc(100% - 62px) !important;
+    height: calc(100% - 56px) !important;
 }
 #homeStyle05 .side-nav {
     /* height: calc(100% - 56px); */
-    height: 307px;
+    /* height: 307px; */
 }
 
 #homeStyle03 .home-banner {

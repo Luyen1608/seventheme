@@ -70,7 +70,13 @@
 
 
 }
-
+/* home */
+@media only screen and (max-width: 1034) {
+   
+}
+html {
+    background-color: var(--style-color-main);
+}
 footer .form-group__ft button {
     background-color: var(--style-color-bg-btn-footer)!important;
 }
