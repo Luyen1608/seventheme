@@ -396,8 +396,8 @@ header {
 #homeStyle07 .banner {
     background: url(../images/banner07.png);
     padding-top: 10px;
-    height: 384px;
-    background-size: cover;
+    height: 406px;
+    background-size: contain;
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -637,7 +637,7 @@ header {
     height: 56px;
 }
 #homeStyle003 .side-nav {
-    height: calc(100% - 76px) !important;
+    height: calc(100% - 56px) !important;
 }
 #homeStyle05 .home-banner img {
     width: 100%;
@@ -647,11 +647,11 @@ header {
     max-width: 225px;
 }
 #homeStyle05 .home-banner {
-    height: calc(100% - 62px) !important;
+    height: calc(100% - 56px) !important;
 }
 #homeStyle05 .side-nav {
     /* height: calc(100% - 56px); */
-    height: 307px;
+    /* height: 307px; */
 }
 
 #homeStyle03 .home-banner {
@@ -923,7 +923,7 @@ footer {
     }
 
     #homeStyle07 .banner {
-        height: 320px;
+        height: 362px;
     }
 
     .header__info {
@@ -1290,7 +1290,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     #homeStyle07 .banner {
-        height: 250px;
+        height: 271px;
     }
 
     .call-now {

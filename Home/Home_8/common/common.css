@@ -70,7 +70,18 @@
 
 
 }
-
+/* home */
+@media (max-width: 1035px) {
+   .d-block-1035{
+    display: block !important;
+   }
+   .d-none-1035{
+    display: none !important;
+   }
+}
+html {
+    background-color: var(--style-color-main);
+}
 footer .form-group__ft button {
     background-color: var(--style-color-bg-btn-footer)!important;
 }
