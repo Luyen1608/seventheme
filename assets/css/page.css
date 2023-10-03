@@ -644,11 +644,11 @@ line-height: 20px;
 
 .p-product__list02 .product__item .p__text .__title {
     text-align: left;
-    padding: 8px 0px 12px;
+    margin: 8px 0px 12px;
     font-size: 14px;
     font-weight: 400;
     -webkit-line-clamp: 1;
-    min-height: 48px;
+    /* min-height: 48px; */
 }
 
 .p-product__list02 .p__price span.new {
