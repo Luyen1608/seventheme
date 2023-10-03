@@ -79,7 +79,7 @@
     display: none !important;
    }
 }
-html {
+body.home {
     background-color: var(--style-color-main);
 }
 footer .form-group__ft button {
