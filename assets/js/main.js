@@ -159,7 +159,10 @@ function addNavMenuMobile(){
     "<div class='mobile-overlay'></div>");
   }
   
- 
+  function switch_noti() {
+    var element = document.getElementById("notifi");
+    element.classList.toggle("notifi_show");
+    } 
 /* cart page */
 
 /* quantity handle */

@@ -36,7 +36,27 @@
     </head>
 
     <body>
-
+        <div id="notifi" class="overlay-notifi">
+            <div class="notifi content-noti">
+                <div class="noti-image">
+                    <img src="../../logo/notifi/1.png">
+                </div>
+                <div class="noti-content">
+                    <div class="noti-text">
+                        <span>Vui lòng xác nhận bạn đã trên 18 tuổi để tiếp tục xem mặt hàng này.</span>
+                    </div>
+                    <div class="noti-button-content">
+                        <div class="noti-button-exit" onclick="switch_noti()">
+                            <a>Thoát</a>
+                        </div>
+                        <div class="noti-button-done" onclick="switch_noti()">
+                            <a>Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="close" onclick="switch_noti()" >&times;</a>
+            </div>
+        </div>
         <div class="wrapper home3 home" id="homeStyle003">
             <!-- start header -->
             <header>

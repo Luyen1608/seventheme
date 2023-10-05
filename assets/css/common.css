@@ -1368,3 +1368,147 @@ footer {
 #homeStyle04.wrapper {
     padding-bottom: 120px;
 }
+
+/* Notification */
+
+.overlay-notifi {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    /* visibility: hidden;
+    opacity: 0; */
+    z-index:999;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  }
+  .notifi_show {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .notifi {
+    -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+    margin: 70px auto;
+    padding: 20px 20px 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 570px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .notifi .close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .notifi .close:hover {
+    color: var(--style-color-main);
+  }
+  .notifi .content-noti {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .notifi{
+      width: 70%;
+    }
+    .noti-button-done {
+        padding: 10px 15px !important;
+    }
+    .noti-button-exit {
+        padding: 12px 20px!important;
+    }
+  }
+  .noti-image{
+      display: flex;
+  padding: 0px 31px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  }
+  .noti-content{
+      display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  }
+  .noti-text{
+      color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .noti-text span{
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .noti-button-content{
+      display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  }
+  .noti-button-exit{
+    cursor: pointer;
+      display: flex;
+  height: 35px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  }
+  .noti-button-exit a{
+      color: var(--white, #6e6e6e)!important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 266.667% */
+  }
+  .noti-button-done{
+    cursor: pointer;
+      display: flex;
+  height: 35px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: var(--style-color-main);
+  
+  }
+  .noti-button-done a{
+      color: var(--white, #FFF) !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 266.667% */
+  }
