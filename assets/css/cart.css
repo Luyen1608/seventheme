@@ -510,6 +510,7 @@
     z-index: 100;
     position: fixed;
     visibility: hidden;
+    display: none;
     transition: 0.2s ease;
 }
 
@@ -519,6 +520,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: visible;
+    display: block;
 }
 
 .address-book-address-add-header {
@@ -885,7 +887,7 @@
     }
 
     .address-book.active {
-        top: 20%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         visibility: visible;
@@ -1044,7 +1046,7 @@
     }
 
     .address-book-address-add.active {
-        top: 20%;
+        top: 50%;
     }
 
     .address-book-address-add-header h2 {
@@ -1368,7 +1370,7 @@
     }
 
     .address-book-card-add.active {
-        top: 50%;
+        top: 60%;
     }
 
     .address-book-card-add>.d-flex {
