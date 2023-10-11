@@ -385,6 +385,7 @@
     z-index: 99;
     position: absolute;
     visibility: hidden;
+    display: none;
     transition: 0.2s ease;
 }
 
@@ -395,6 +396,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: visible;
+    display: block;
 }
 
 .address-book-card-add>.d-flex {
