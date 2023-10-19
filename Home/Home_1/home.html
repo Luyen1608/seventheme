@@ -30,12 +30,12 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <!-- swiper slider js -->
         <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-     
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
         <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../../assets/js/main.js"></script>
         <!-- link css style  -->
         <link rel="stylesheet" href="../../assets/css/common.css"
@@ -47,9 +47,34 @@
         <!-- link css style  -->
 
     </head>
-
+    <script>
+        function switch_noti() {
+        var element = document.getElementById("notifi");
+        element.classList.toggle("notifi_show");
+        }
+    </script>
     <body>
-
+        <div id="notifi" class="overlay-notifi">
+            <div class="notifi content-noti">
+                <div class="noti-image">
+                    <img src="../../logo/notifi/12.png">
+                </div>
+                <div class="noti-content">
+                    <div class="noti-text">
+                        <span>Vui lòng xác nhận bạn đã trên 18 tuổi để tiếp tục xem mặt hàng này.</span>
+                    </div>
+                    <div class="noti-button-content">
+                        <div class="noti-button-exit" onclick="switch_noti()">
+                            <a>Thoát</a>
+                        </div>
+                        <div class="noti-button-done" onclick="switch_noti()">
+                            <a>Xác nhận</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="close" onclick="switch_noti()" >&times;</a>
+            </div>
+        </div>
         <div class="wrapper" id="homeStyle01">
             <!-- start header -->
             <header>
@@ -249,31 +274,42 @@
                                     <a href="#">Giới thiệu</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#"
-                                      >Sản phẩm
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z" fill="var(--style-color-in-bg-menu)"/>
+                                    <a href="#">Sản phẩm
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="9" height="6"
+                                            viewBox="0 0 9 6" fill="none">
+                                            <path fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z"
+                                                fill="var(--style-color-in-bg-menu)" />
                                         </svg>
                                     </a>
                                     <ul class="menu__sub">
-                                      <li>
-                                        <a href="#">Tin mới nhất
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z" fill="var(--style-color-in-bg-menu)"/>
-                                            </svg>
-                                        </a>
-                                        <ul class="sub-dropdown" id="sd-1">
-                                          <li><a href="#">1 Hello world</a></li>
-                                          <li><a href="#">2 Hello world</a></li>
-                                          <li><a href="#">3 Hello world</a></li>
-                                        </ul>
-                                      </li>
-                                      <li>
-                                        <a href="#">Tin trong nước</a>
-                                      </li>
+                                        <li>
+                                            <a href="#">Tin mới nhất
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="9" height="6"
+                                                    viewBox="0 0 9 6"
+                                                    fill="none">
+                                                    <path fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M8.44469 1.13602C8.13266 0.825837 7.62872 0.825837 7.31669 1.13602L4.44469 3.96802L1.61269 1.13602C1.30066 0.825837 0.796715 0.825837 0.484686 1.13602C0.333235 1.28623 0.248047 1.49071 0.248047 1.70402C0.248047 1.91733 0.333235 2.1218 0.484686 2.27202L3.87669 5.66402C4.0269 5.81547 4.23138 5.90065 4.44469 5.90065C4.658 5.90065 4.86247 5.81547 5.01269 5.66402L8.44469 2.27202C8.59614 2.1218 8.68132 1.91733 8.68132 1.70402C8.68132 1.49071 8.59614 1.28623 8.44469 1.13602Z"
+                                                        fill="var(--style-color-in-bg-menu)" />
+                                                </svg>
+                                            </a>
+                                            <ul class="sub-dropdown" id="sd-1">
+                                                <li><a href="#">1 Hello world</a></li>
+                                                <li><a href="#">2 Hello world</a></li>
+                                                <li><a href="#">3 Hello world</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tin trong nước</a>
+                                        </li>
                                     </ul>
-                                    
-                                  </li>
+
+                                </li>
                                 <li class="menu-item">
                                     <a href="#">Tin tức
                                         <img
@@ -331,10 +367,9 @@
             </header>
             <!-- end header -->
 
-    <!-- overlay when open menu mobile -->
-    <div class="mobile-overlay"></div>
-    <!-- overlay when open menu mobile -->
-    
+            <!-- overlay when open menu mobile -->
+            <div class="mobile-overlay"></div>
+            <!-- overlay when open menu mobile -->
 
             <!-- start main -->
             <main>
@@ -811,7 +846,7 @@
         <script src="../../assets/js/menu_style.js"></script>
         <link rel="stylesheet" href="../../assets/css/menu_style.css"
             type="text/css">
-            <script> const productSlider = new Swiper(".swiper", {
+        <script> const productSlider = new Swiper(".swiper", {
                 loop: true,
                 slidesPerView: 1,
                 pagination: {
