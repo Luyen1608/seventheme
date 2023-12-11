@@ -7,11 +7,24 @@ const addressBookCloseBtn = document.querySelector(".address-book-close-btn");
 const addressBookOpenBtn = document.querySelector(".address-card-btn");
 console.log(addressBookOpenBtn);
 const shippingListCloseBtn = document.querySelector(".shipping-list-close-btn");
+const voucherListCloseBtn = document.querySelector(".voucher-list-close-btn");
 const shippingListOpenBtn = document.querySelector(
   ".change-ship.change"
 );
+const voucherListOpenBtn = document.querySelector(".choose-voucher");
+
 
 const mobileOverlayFilter = document.querySelector(".mobile-overlay-filter");
+
+
+voucherListOpenBtn.onclick = (e) => {
+  document.querySelector(".voucher-list").classList.add("active");
+  mobileOverlayFilter.classList.toggle("active");
+};
+voucherListCloseBtn.onclick = () => {
+  document.querySelector(".voucher-list").classList.remove("active");
+  mobileOverlayFilter.classList.toggle("active");
+};
 
 paymentCloseBtn.onclick = () => {
   document.querySelector(".payment-info").classList.remove("active");
@@ -48,6 +61,7 @@ shippingListOpenBtn.onclick = (e) => {
   document.querySelector(".shipping-list").classList.add("active");
   mobileOverlayFilter.classList.toggle("active");
 };
+
 
 const addressBookAddBtn = document.querySelector('.address-book-actions .btn')
 const addressCardAddBtn = document.querySelector('.add-card')

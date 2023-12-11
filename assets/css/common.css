@@ -1059,7 +1059,10 @@ footer {
         background-color: #000;
         transition: 0.2s ease;
     }
-
+    .mobile-overlay.active {
+        opacity: 0.5;
+        visibility: visible;
+    }
     .mobile-overlay-filter.active {
         opacity: 0.5;
         visibility: visible;
@@ -1079,10 +1082,7 @@ footer {
         transition: 0.2s ease;
     }
 
-    .mobile-overlay.active {
-        opacity: 0.5;
-        visibility: visible;
-    }
+    
 
     .mobile-categories-list {
         top: 0vh;

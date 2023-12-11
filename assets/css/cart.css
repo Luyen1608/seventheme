@@ -291,9 +291,87 @@
     color: #959ead;
 }
 
+.voucher-list {
+    background-color: #fff;
+    padding: 25px 24px 18px;
+    width: 725px;
+    z-index: 99;
+    position: fixed;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.voucher-list.active {
+    border-radius: 10px;
+    border: 1px solid #dddfe3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.voucher-list-header h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.voucher-list-header i {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.voucher-list h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #727272;
+    margin-top: 45px;
+}
+
+.voucher-list .shipping-item {
+    background: rgba(145, 234, 154, 0.1);
+    margin-top: 35px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.voucher-list .shipping-item.active {
+    border-left: 3px solid #de3618;
+}
+
+.voucher-list .shipping-item.active img {
+    display: block;
+}
+
+.voucher-list .shipping-item img {
+    display: none;
+}
+
+.voucher-list .shipping-item .shipping-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+}
+
+.voucher-list .shipping-item .price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #de3618;
+}
+
+.voucher-list .shipping-item+.shipping-item {
+    margin-top: 20px;
+}
 .shipping-list {
     background-color: #fff;
-    padding: 44px 24px 18px;
+    padding: 25px 24px 18px;
     width: 725px;
     z-index: 99;
     position: fixed;
@@ -587,15 +665,20 @@
 .address-book-address-add .input-row .large {
     height: 92px;
 }
+
 .address-book-address-add .input-row .large:focus {
     border: 1px solid #de3618;
 }
-.ctm-modal input:focus{
+
+.ctm-modal input:focus {
     border: 1px solid #de3618 !important;
 }
-.address-book-address-add .input-row input:focus, .address-book-address-add .input-row textarea:focus{
+
+.address-book-address-add .input-row input:focus,
+.address-book-address-add .input-row textarea:focus {
     border: 1px solid var(--style-color-main) !important;
 }
+
 .address-book-address-add>.d-flex {
     margin-top: 20px;
 }
@@ -690,11 +773,13 @@
     align-items: center;
     gap: 3px;
 }
- .cart-table-footer img{
+
+.cart-table-footer img {
     width: 32px;
     height: 32px;
 
 }
+
 .cart-content .cart-table-footer {
     display: flex;
     margin: 15px 0;
@@ -946,7 +1031,7 @@
         font-size: 12px;
     }
 
-    .shipping-list {
+    .shipping-list, .voucher-list {
         padding: 30px 15px 15px;
         width: 300px;
     }
@@ -2199,5 +2284,99 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.cart-voucher {
+    border-radius: 5px;
+    border: 1px dashed #5e5e5e61;
+    background: white !important;
+}
+
+.span-hanSD {
+    color: var(--gray-5, #5E5E5E);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+}
+
+.span-hanSD .date-sd {
+    color: var(--red-2, #F74239);
+}
+
+.name-voucher {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.name-voucher .voucher-title {
+    color: var(--neutral-1, #303030);
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    /* 128.571% */
+    letter-spacing: 0.14px;
+}
+
+.name-voucher .voucher-des {
+    color: var(--neutral-1, #303030);
+
+    /* Body 2 */
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+}
+
+.choose-voucher {
+    color: var(--Xanh-1, #0184D3);
+    font-size: 14px!important; 
+    font-weight: 400!important;
+    line-height: 18px!important;
+    /* 128.571% */
+}
+.info-order-title{
+    font-size: 18px;
+}
+.mobile-overlay {
+    display: block;
+    position: fixed;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #000;
+    transition: 0.2s ease;
+}
+.mobile-overlay.active {
+    opacity: 0.5;
+    visibility: visible;
+}
+.mobile-overlay-filter.active {
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.mobile-overlay-filter {
+    display: block;
+    position: fixed;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #000;
+    transition: 0.2s ease;
+}
 
 /*# sourceMappingURL=thanhtoan.css.map */
