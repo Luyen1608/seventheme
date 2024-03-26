@@ -10,7 +10,7 @@
   <link href="../../assets/styles.css" rel="stylesheet" />
 
   <style>
-    #chart {
+    #chart1 {
       max-width: 650px;
       min-height: 168px;
     }
@@ -96,7 +96,7 @@
 </head>
 
 <body>
-  <div id="chart"></div>
+  <div id="chart1"></div>
 
   <script>
 
@@ -106,7 +106,7 @@
       }],
       grid: {
         show: false,
-        padding: { left: 0, right: 0, top: 0, bottom: -15 },
+        padding: { left: -5, right: 0, top: 0, bottom: -15 },
       },
       tooltip: {
         enabled: false,
@@ -160,7 +160,7 @@
       },
     };
 
-    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    var chart = new ApexCharts(document.querySelector("#chart1"), options);
     chart.render();
 
 
