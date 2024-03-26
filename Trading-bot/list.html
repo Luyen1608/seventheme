@@ -1,0 +1,1085 @@
+<html lang="vi" dir="" class="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./assest/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./assest/css/index2.css">
+    <link rel="stylesheet" type="text/css" href="./assest/css/index3.css">
+    <link rel="stylesheet" type="text/css" href="./assest/css/index4.css">
+    <link rel="stylesheet" type="text/css" href="./assest/css/styles.css">
+    <style>
+        #chart {
+            max-width: 650px;
+            min-height: 168px;
+        }
+    </style>
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+            )
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        // Replace Math.random() with a pseudo-random number generator to get reproducible results in e2e tests
+        // Based on https://gist.github.com/blixt/f17b47c62508be59987b
+        var _seed = 42;
+        Math.random = function () {
+            _seed = _seed * 16807 % 2147483647;
+            return (_seed - 1) / 2147483646;
+        };
+    </script>
+    <script>
+        var lastDate = 0;
+        var data = []
+        var TICKINTERVAL = 86400000
+        let XAXISRANGE = 777600000
+        function getDayWiseTimeSeries(baseval, count, yrange) {
+            var i = 0;
+            while (i < count) {
+                var x = baseval;
+                var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+
+                data.push({
+                    x, y
+                });
+                lastDate = baseval
+                baseval += TICKINTERVAL;
+                i++;
+            }
+        }
+
+        getDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 10, {
+            min: 10,
+            max: 90
+        })
+
+        function getNewSeries(baseval, yrange) {
+            var newDate = baseval + TICKINTERVAL;
+            lastDate = newDate
+
+            for (var i = 0; i < data.length - 10; i++) {
+                // IMPORTANT
+                // we reset the x and y of the data which is out of drawing area
+                // to prevent memory leaks
+                data[i].x = newDate - XAXISRANGE - TICKINTERVAL
+                data[i].y = 0
+            }
+
+            data.push({
+                x: newDate,
+                y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+            })
+        }
+
+        function resetData() {
+            // Alternatively, you can also reset the data at certain intervals to prevent creating a huge series 
+            data = data.slice(data.length - 10, data.length);
+        }
+    </script>
+
+</head>
+
+<body id="body" class="theme-dark" broker-style="" data-responsive="true" data-nav="true">
+    <div class="home-container">
+        <div class="index_mp-main-box__7AOAv">
+            <h2 class="index_mp-main-title__e012v" id="bot-list">Thị trường Bot giao dịch<i
+                    class="icon iconfont okx-trading-information-circle index_question__v+b+K"></i></h2>
+            <div class="index_mp-main-filter__sI8i9">
+                <div class="index_main-filter-box__8Yu0w">
+                    <div class="index_main-filter-box-left__7x-Tr">
+                        <div class="okui-tabs ">
+                            <div
+                                class="okui-tabs-pane-list okui-tabs-pane-list-xl okui-tabs-pane-list-grey okui-tabs-pane-list-underline okui-tabs-pane-list-underline-no-line">
+                                <div class="okui-tabs-pane-list-wrapper">
+                                    <div class="okui-tabs-pane-list-nav">
+                                        <div
+                                            class="okui-tabs-pane-list-nav-icon icon-left index_navLeftClassName__a8RHJ icon-hide">
+                                            <i
+                                                class="icon iconfont okds-arrow-chevron-right-centered-sm icon-left-inner"></i>
+                                        </div>
+                                        <div
+                                            class="okui-tabs-pane-list-nav-icon icon-right index_navRightClassName__b+BvW ">
+                                            <i class="icon iconfont okds-arrow-chevron-right-centered-sm"></i>
+                                        </div>
+                                    </div>
+                                    <div class="okui-tabs-pane-list-container">
+                                        <div class="okui-tabs-pane-list-flex-shrink">
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Mục yêu thích</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s okui-tabs-pane-underline-active "
+                                                style="--okd-tabs-spacing: 24px;">Tất cả loại bot</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Bot người tạo</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Lưới giao ngay</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Lưới hợp đồng tương lai</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">DCA Hợp đồng tương lai</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">DCA giao ngay</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Lưới vô cực</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">Mua định kỳ</div>
+                                            <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-xl okui-tabs-pane-grey okui-tabs-pane-underline index_filterOrdTypeBtn__12S9s"
+                                                style="--okd-tabs-spacing: 24px;">D.mục đ.tư thông minh</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index_filter-box__LNg3n">
+                    <div class="index_filter-left__WQFrM">
+                        <div class="index_filter-left-left__cjbBK">
+                            <div class="okui-tabs index_mp-header-tabs__-2T-B">
+                                <div
+                                    class="okui-tabs-pane-list okui-tabs-pane-list-md okui-tabs-pane-list-blue okui-tabs-pane-list-underline okui-tabs-pane-list-underline-no-line">
+                                    <div class="okui-tabs-pane-list-wrapper">
+                                        <div class="okui-tabs-pane-list-nav">
+                                            <div
+                                                class="okui-tabs-pane-list-nav-icon icon-left index_navLeftClassName__g386M icon-hide">
+                                                <i
+                                                    class="icon iconfont okds-arrow-chevron-right-centered-sm icon-left-inner"></i>
+                                            </div>
+                                            <div
+                                                class="okui-tabs-pane-list-nav-icon icon-right index_navRightClassName__4s0PV ">
+                                                <i class="icon iconfont okds-arrow-chevron-right-centered-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="okui-tabs-pane-list-container">
+                                            <div class="okui-tabs-pane-list-flex-shrink">
+                                                <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-md okui-tabs-pane-blue okui-tabs-pane-underline okui-tabs-pane-underline-active  index_vip__AcLn5 index_tabpane__0ZORR"
+                                                    style="--okd-tabs-spacing:12px">
+                                                    <div class="index_selectWrapper__FUCYT">
+                                                        <div
+                                                            class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-ccy__77D+o">
+                                                            <div class="okui-select-value-box">
+                                                                <div class="okui-input okui-input-md okui-select-value">
+                                                                    <div
+                                                                        class="okui-input-box auto-size index_innerClassName__laP6S">
+                                                                        <span class="value"><i
+                                                                                class="icon iconfont okx-trading-coin index_allCcy__WMtZr index_weight__PzV8D"></i>Tất
+                                                                            cả tiền mã hóa</span>
+                                                                        <div class="okui-input-suffix"><i
+                                                                                class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="okd-popup"
+                                                                class="okui-popup select-popup-reference"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-md okui-tabs-pane-blue okui-tabs-pane-underline index_vip__AcLn5 index_tabpane__0ZORR"
+                                                    style="--okd-tabs-spacing: 12px;">
+                                                    <div class="index_selectWrapper__FUCYT">
+                                                        <div
+                                                            class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-running__-TuLy">
+                                                            <div class="okui-select-value-box">
+                                                                <div class="okui-input okui-input-md okui-select-value">
+                                                                    <div
+                                                                        class="okui-input-box auto-size index_innerClassName__laP6S">
+                                                                        <span class="value">Người tạo</span>
+                                                                        <div class="okui-input-suffix"><i
+                                                                                class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="okd-popup"
+                                                                class="okui-popup select-popup-reference"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-md okui-tabs-pane-blue okui-tabs-pane-underline index_vip__AcLn5 index_tabpane__0ZORR"
+                                                    style="--okd-tabs-spacing:12px">
+                                                    <div class="index_selectWrapper__FUCYT">
+                                                        <div
+                                                            class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-running__-TuLy">
+                                                            <div class="okui-select-value-box">
+                                                                <div class="okui-input okui-input-md okui-select-value">
+                                                                    <div
+                                                                        class="okui-input-box auto-size index_innerClassName__laP6S">
+                                                                        <span class="value">Thời gian hoạt động</span>
+                                                                        <div class="okui-input-suffix"><i
+                                                                                class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="okd-popup"
+                                                                class="okui-popup select-popup-reference"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-md okui-tabs-pane-blue okui-tabs-pane-underline index_vip__AcLn5 index_tabpane__0ZORR"
+                                                    style="--okd-tabs-spacing:12px">
+                                                    <div class="index_selectWrapper__FUCYT">
+                                                        <div
+                                                            class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-max__mLDfw">
+                                                            <div class="okui-select-value-box">
+                                                                <div class="okui-input okui-input-md okui-select-value">
+                                                                    <div
+                                                                        class="okui-input-box auto-size index_innerClassName__laP6S">
+                                                                        <span class="value">PNL%</span>
+                                                                        <div class="okui-input-suffix"><i
+                                                                                class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="okd-popup"
+                                                                class="okui-popup select-popup-reference"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="okui-tabs-pane okui-tabs-pane-spacing okui-tabs-pane-md okui-tabs-pane-blue okui-tabs-pane-underline index_vip__AcLn5 index_tabpane__0ZORR"
+                                                    style="--okd-tabs-spacing:12px">
+                                                    <div class="index_selectWrapper__FUCYT">
+                                                        <div
+                                                            class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-max__mLDfw">
+                                                            <div class="okui-select-value-box">
+                                                                <div class="okui-input okui-input-md okui-select-value">
+                                                                    <div
+                                                                        class="okui-input-box auto-size index_innerClassName__laP6S">
+                                                                        <span class="value">Mức sụt giảm tối đa trong 7
+                                                                            ngày</span>
+                                                                        <div class="okui-input-suffix"><i
+                                                                                class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-testid="okd-popup"
+                                                                class="okui-popup select-popup-reference"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="okui-tabs-panel-list">
+                                    <div class="okui-tabs-panel okui-tabs-panel-show"></div>
+                                    <div class="okui-tabs-panel"></div>
+                                    <div class="okui-tabs-panel"></div>
+                                    <div class="okui-tabs-panel"></div>
+                                    <div class="okui-tabs-panel"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index_filter-right__+UVur">
+                        <div class="okui-input okui-input-md okui-input-search index_search__gkJA1">
+                            <div class="okui-input-box index_searchInner__KPkRx index_weighting__Pr6Np"><span
+                                    class="okui-input-prefix"><i
+                                        class="icon iconfont okds-search okui-input-search-prefix-icon prefix-icon"></i></span><input
+                                    type="hidden" autocomplete="off" readonly="" style="display: none;"><input
+                                    placeholder="Tìm nhà giao dịch"
+                                    class="okui-input-input index_searchInputClassName__kswz6" autocapitalize="off"
+                                    autocorrect="off" value="" autocomplete="off" name="okd_1711376196689"></div>
+                        </div>
+                        <div class="index_selectWrapper__FUCYT">
+                            <div
+                                class="okui-select index_select__YMQcc index_selectIndex__2-FiR index_select-spe__8d5HF">
+                                <div class="okui-select-value-box">
+                                    <div class="okui-input okui-input-md okui-select-value">
+                                        <div class="okui-input-box auto-size index_innerClassName__laP6S"><span
+                                                class="value">Tổng quan</span>
+                                            <div class="okui-input-suffix"><i
+                                                    class="icon iconfont okx-trading-arrow-sort index_suffixIcon__5TGe8 index_select-up__XM3hs"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-testid="okd-popup" class="okui-popup select-popup-reference"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="index_main-card-container__yCoRT index_minHeight__+s2x6">
+                <div class="index_botsBox__PzjnC">
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-strategy-futures-grid index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu BTCUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">Lưới hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_long__NB5H4">Long</span><span
+                                            class="index_leverTag__cvsbx index_long__NB5H4">50.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+1.267,63%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div id="chart"></div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    154 ngày 4 giờ 19 phút<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0">Thời gian hoạt động</span>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA">
+                                    11,97%<div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColRight__lI2fd index_cardParams__sbDLA">
+                                    1.865.358,52<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0 index_scale__YuyPZ">AUM
+                                        (USDT)</span></div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <source
+                                                srcset="https://www.okx.com/cdn/oksupport/asset/currency/icon/btc.png?x-oss-process=image/format,webp">
+                                            <img class="okui-image-layout okui-image-layout-responsive"
+                                                src="https://www.okx.com/cdn/oksupport/asset/currency/icon/btc.png"
+                                                alt="btc logo">
+                                        </picture><span>BTC/USDT</span>
+                                    </div>
+                                </div>
+                                <div class="index_profitSharing__pRYsS">Tỷ lệ chia sẻ lợi nhuận 30%</div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <a href="/vi/copy-trading/account/C11FB4A4ED5C00D9?tab=bot" rel="noopener"
+                                                target="_blank" class="okui-hyperlink-text index_linkClassName__N3o1X">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <picture class="okui-image">
+                                                        <source class="okui-image-picture-sizer"
+                                                            style="padding-top: 100%;">
+                                                        <source
+                                                            srcset="https://www.okx.com/cdn/okex/users/headimages/20230728/1e6387f25d104d0380085427c91095c4?x-oss-process=image/format,webp">
+                                                        <img class="okui-image-layout okui-image-layout-responsive"
+                                                            src="https://static.coinall.ltd/cdn/okex/users/headimages/20230728/1e6387f25d104d0380085427c91095c4"
+                                                            alt="Bot giao dịch OKX">
+                                                    </picture>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">958***@qq.com</span>
+                                            </a>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Theo dõi</span></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-futuresdca index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu ORDIUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">DCA Hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_long__NB5H4">Long</span><span
+                                            class="index_leverTag__cvsbx index_long__NB5H4">5.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>658</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+1.820,80%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div class="index_profitChartWrapper__a2E2g">
+                                    <div class="index_chartWrapper__B+xKb">
+                                        <div class="chart-ref index_profitChart__Nsxyq"
+                                            _echarts_instance_="ec_1711376215181"
+                                            style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                                            <div
+                                                style="position: relative; width: 168px; height: 68px; padding: 0px; margin: 0px; border-width: 0px;">
+                                                <canvas data-zr-dom-id="zr_0" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas
+                                                    data-zr-dom-id="zr_1" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                            </div>
+                                            <div class="index_echarts-tooltip__NsZ3L"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    118 ngày 1 giờ 40 phút<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0">Thời gian hoạt động</span>
+                                </div>
+                                <div
+                                    class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA index_alignRight__shv+f">
+                                    15,63%<div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <source
+                                                srcset="https://www.okx.com/cdn/oksupport/asset/currency/icon/ordi.png?x-oss-process=image/format,webp">
+                                            <img class="okui-image-layout okui-image-layout-responsive"
+                                                src="https://www.okx.com/cdn/oksupport/asset/currency/icon/ordi.png"
+                                                alt="ordi logo">
+                                        </picture><span>ORDI/USDT</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <span
+                                                class="okui-hyperlink-text index_linkClassName__N3o1X index_cursor__Y9f9o">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <div class="index_userImg__LFN1p"><span> 1</span></div>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">150***6994</span>
+                                            </span>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Sao chép</span></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-strategy-futures-grid index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu ORDIUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">Lưới hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_long__NB5H4">Long</span><span
+                                            class="index_leverTag__cvsbx index_long__NB5H4">50.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>1.797</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+2.402,96%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div class="index_profitChartWrapper__a2E2g">
+                                    <div class="index_chartWrapper__B+xKb">
+                                        <div class="chart-ref index_profitChart__Nsxyq"
+                                            _echarts_instance_="ec_1711376215182"
+                                            style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                                            <div
+                                                style="position: relative; width: 168px; height: 68px; padding: 0px; margin: 0px; border-width: 0px;">
+                                                <canvas data-zr-dom-id="zr_0" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas
+                                                    data-zr-dom-id="zr_1" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                            </div>
+                                            <div class="index_echarts-tooltip__NsZ3L"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    110 ngày 2 giờ 22 phút<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0">Thời gian hoạt động</span>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA">
+                                    6,69%<div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColRight__lI2fd index_cardParams__sbDLA">
+                                    471.519,15<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0 index_scale__YuyPZ">AUM
+                                        (USDT)</span></div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <source
+                                                srcset="https://www.okx.com/cdn/oksupport/asset/currency/icon/ordi.png?x-oss-process=image/format,webp">
+                                            <img class="okui-image-layout okui-image-layout-responsive"
+                                                src="https://www.okx.com/cdn/oksupport/asset/currency/icon/ordi.png"
+                                                alt="ordi logo">
+                                        </picture><span>ORDI/USDT</span>
+                                    </div>
+                                </div>
+                                <div class="index_profitSharing__pRYsS">Tỷ lệ chia sẻ lợi nhuận 30%</div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <a href="/vi/copy-trading/account/E3E3F40AE51DDE82?tab=bot" rel="noopener"
+                                                target="_blank" class="okui-hyperlink-text index_linkClassName__N3o1X">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <picture class="okui-image">
+                                                        <source class="okui-image-picture-sizer"
+                                                            style="padding-top: 100%;">
+                                                        <source
+                                                            srcset="https://www.okx.com/cdn/okex/users/headimages/20230927/fc41e426d868478e93ef5166c49c2895?x-oss-process=image/format,webp">
+                                                        <img class="okui-image-layout okui-image-layout-responsive"
+                                                            src="https://static.coinall.ltd/cdn/okex/users/headimages/20230927/fc41e426d868478e93ef5166c49c2895"
+                                                            alt="Bot giao dịch OKX">
+                                                    </picture>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">emi***@yahoo.com</span>
+                                            </a>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Theo dõi</span></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-strategy-futures-grid index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu SOLUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">Lưới hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_long__NB5H4">Long</span><span
+                                            class="index_leverTag__cvsbx index_long__NB5H4">50.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>86</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+1.625,70%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div class="index_profitChartWrapper__a2E2g">
+                                    <div class="index_chartWrapper__B+xKb">
+                                        <div class="chart-ref index_profitChart__Nsxyq"
+                                            _echarts_instance_="ec_1711376215183"
+                                            style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                                            <div
+                                                style="position: relative; width: 168px; height: 68px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+                                                <canvas data-zr-dom-id="zr_0" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas
+                                                    data-zr-dom-id="zr_1" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                            </div>
+                                            <div class="index_echarts-tooltip__NsZ3L"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    61 ngày 9 giờ 35 phút<span class="index_filedName__u6NnT index_infoName__IY4B0">Thời
+                                        gian hoạt động</span></div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA">
+                                    15,61%<div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColRight__lI2fd index_cardParams__sbDLA">
+                                    254.536,16<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0 index_scale__YuyPZ">AUM
+                                        (USDT)</span></div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <div class="okui-image-placeholder"><img alt="sol logo"
+                                                    style="display: none;"></div>
+                                        </picture><span>SOL/USDT</span>
+                                    </div>
+                                </div>
+                                <div class="index_profitSharing__pRYsS">Tỷ lệ chia sẻ lợi nhuận 30%</div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <a href="/vi/copy-trading/account/C11FB4A4ED5C00D9?tab=bot" rel="noopener"
+                                                target="_blank" class="okui-hyperlink-text index_linkClassName__N3o1X">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <picture class="okui-image">
+                                                        <source class="okui-image-picture-sizer"
+                                                            style="padding-top: 100%;">
+                                                        <div class="okui-image-placeholder"><img alt="Bot giao dịch OKX"
+                                                                style="display: none;"></div>
+                                                    </picture>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">958***@qq.com</span>
+                                            </a>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Theo dõi</span></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-futuresdca index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu SHIBUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">DCA Hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_short__aJrkv">Short</span><span
+                                            class="index_leverTag__cvsbx index_short__aJrkv">50.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>653</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+2.044,44%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div class="index_profitChartWrapper__a2E2g">
+                                    <div class="index_chartWrapper__B+xKb">
+                                        <div class="chart-ref index_profitChart__Nsxyq"
+                                            _echarts_instance_="ec_1711376215184"
+                                            style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                                            <div
+                                                style="position: relative; width: 168px; height: 68px; padding: 0px; margin: 0px; border-width: 0px;">
+                                                <canvas data-zr-dom-id="zr_0" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas
+                                                    data-zr-dom-id="zr_1" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                            </div>
+                                            <div class="index_echarts-tooltip__NsZ3L"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    19 ngày 5 giờ 33 phút<span class="index_filedName__u6NnT index_infoName__IY4B0">Thời
+                                        gian hoạt động</span></div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA">
+                                    7,43%<div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColRight__lI2fd index_cardParams__sbDLA">
+                                    77.643,04<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0 index_scale__YuyPZ">AUM
+                                        (USDT)</span></div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <div class="okui-image-placeholder"><img alt="shib logo"
+                                                    style="display: none;"></div>
+                                        </picture><span>SHIB/USDT</span>
+                                    </div>
+                                </div>
+                                <div class="index_profitSharing__pRYsS">Tỷ lệ chia sẻ lợi nhuận 30%</div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <a href="/vi/copy-trading/account/2FB55D09755FB486?tab=bot" rel="noopener"
+                                                target="_blank" class="okui-hyperlink-text index_linkClassName__N3o1X">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <picture class="okui-image">
+                                                        <source class="okui-image-picture-sizer"
+                                                            style="padding-top: 100%;">
+                                                        <div class="okui-image-placeholder"><img alt="Bot giao dịch OKX"
+                                                                style="display: none;"></div>
+                                                    </picture>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">Used-WebSocket-Lilac</span>
+                                            </a>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Theo dõi</span></button>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-medium index_cardItem__KromG">
+                        <a href="/vi/account/login?forward=%2Fvi%2Ftrading-bot" rel="noopener" target="_self"
+                            class="okui-hyperlink-text index_linkClassName__K2uHU">
+                            <div
+                                class="index_cardHeader__TCRQK index_cardHeaderContent__QrpbG index_cardColFlex__DQYJQ">
+                                <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC">
+                                    <div class="index_cardHeaderTitle__Rpqqe"><i
+                                            class="icon iconfont index_addWeight__Jgcgd okx-trading-strategy-futures-grid index_iconStyle__jKaoO"></i>
+                                        <p class="index_botName__jb8QG">Hợp đồng vĩnh cửu UMAUSDT</p>
+                                    </div>
+                                    <div data-testid="okd-popup"
+                                        class="okui-popup okui-popover okui-popover-sm   index_collectTooltip__vgoOU">
+                                        <div><i
+                                                class="icon iconfont okds-star-filled index_addStyleWeight__mIetz index_itemNoCollect__3Pv3k"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardRowFlex__rCmsM index_tagBox__fPfYa">
+                                    <div class="index_cardRowFlex__rCmsM index_tagFlexWrap__wpe65"><span
+                                            class="index_botType__-mEys index_labelItem__tVxUe">Lưới hợp đồng tương
+                                            lai</span><span
+                                            class="index_direction__VLWtT index_long__NB5H4">Long</span><span
+                                            class="index_leverTag__cvsbx index_long__NB5H4">50.00x</span></div>
+                                    <div class="index_cardRowFlex__rCmsM index_copyInfo__1MXmR">
+                                        <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                            <div class="index_copyInfoMain__t-Dt7"><i
+                                                    class="icon iconfont okx-trading-user index_copyUserIcon__upkeS"></i><span>11.756</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_center__O4F0l index_pnl__tzTEI">
+                                <div class="index_cardColFlex__DQYJQ index_pnlWrapper__pjNcM"><span
+                                        class="index_pnlRatio__ugTgr index_up__9ikiT index_pnlRatioNum__Bpd4S">+2.334,16%</span><span
+                                        class="index_filedName__u6NnT">PNL%</span></div>
+                                <div class="index_profitChartWrapper__a2E2g">
+                                    <div class="index_chartWrapper__B+xKb">
+                                        <div class="chart-ref index_profitChart__Nsxyq"
+                                            _echarts_instance_="ec_1711376215185"
+                                            style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                                            <div
+                                                style="position: relative; width: 168px; height: 68px; padding: 0px; margin: 0px; border-width: 0px; cursor: pointer;">
+                                                <canvas data-zr-dom-id="zr_0" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><canvas
+                                                    data-zr-dom-id="zr_1" width="168" height="68"
+                                                    style="position: absolute; left: 0px; top: 0px; width: 168px; height: 68px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                                            </div>
+                                            <div class="index_echarts-tooltip__NsZ3L"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_spaceBetween__9R-cC index_info__udxxE">
+                                <div class="index_cardColFlex__DQYJQ index_cardColLeft__rE0jx index_cardParams__sbDLA">
+                                    66 ngày 13 giờ 51 phút<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0">Thời gian hoạt động</span>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColMid__cmVtM index_cardParams__sbDLA">
+                                    7,94%<div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
+                                        <div class="index_popoverInnerClassName__nEJXc">
+                                            <div><span
+                                                    class="index_filedName__u6NnT index_infoName__IY4B0 index_hasToolTip__zYHJy">Mức
+                                                    sụt giảm tối đa trong 7 ngày</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="index_cardColFlex__DQYJQ index_cardColRight__lI2fd index_cardParams__sbDLA">
+                                    1.312.708,27<span
+                                        class="index_filedName__u6NnT index_infoName__IY4B0 index_scale__YuyPZ">AUM
+                                        (USDT)</span></div>
+                            </div>
+                            <div class="index_ccyAndProfitSharing__eUz53">
+                                <div class="index_ccyGroupContainer__6JM0o">
+                                    <div class="index_ccyItem__DBG-L">
+                                        <picture class="okui-image tc-ccy-img-box index_ccyItemImg__nV4RF">
+                                            <source class="okui-image-picture-sizer" style="padding-top: 100%;">
+                                            <div class="okui-image-placeholder"><img alt="uma logo"
+                                                    style="display: none;"></div>
+                                        </picture><span>UMA/USDT</span>
+                                    </div>
+                                </div>
+                                <div class="index_profitSharing__pRYsS">Tỷ lệ chia sẻ lợi nhuận 30%</div>
+                            </div>
+                            <div class="index_cardRowFlex__rCmsM index_botCardFooter__hQ5sb">
+                                <div class="index_avatarWrapper__D37ax"><object class="index_linkWrapper__iEON6">
+                                        <div
+                                            class="okui-hyperlink okui-hyperlink-secondary okui-hyperlink-no-hover-underline okui-hyperlink-md okui-hyperlink-muted index_content__-Yio2 index_userAvatar__d9QRD">
+                                            <a href="/vi/copy-trading/account/FA5B742CE18A3495?tab=bot" rel="noopener"
+                                                target="_blank" class="okui-hyperlink-text index_linkClassName__N3o1X">
+                                                <div class="index_img__+Xu3h index_userAvatarImg__aRj4w">
+                                                    <picture class="okui-image">
+                                                        <source class="okui-image-picture-sizer"
+                                                            style="padding-top: 100%;">
+                                                        <div class="okui-image-placeholder"><img alt="Bot giao dịch OKX"
+                                                                style="display: none;"></div>
+                                                    </picture>
+                                                </div><span
+                                                    class="index_userName__KX1xz index_nameClassName__ItYoD">Odometer</span>
+                                            </a>
+                                        </div>
+                                    </object></div><button type="button"
+                                    class="okui-btn btn-md btn-fill-grey index_addWeight__Jgcgd index_addWight2__1Gpqb index_btn__m1IoE index_btnActive__mKKnN"><span
+                                        class="btn-content">Theo dõi</span></button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="index_PaginationContainer__Xak+h">
+                <ul class="okui-pagination okui-pagination-center" unselectable="unselectable">
+                    <li class="okui-pagination-prev okui-pagination-disabled" aria-disabled="true"><i
+                            class="icon iconfont okds-arrow-chevron-left-centered-md"></i></li>
+                    <div class="okui-pagination-item okui-pagination-item-active" tabindex="0">1</div>
+                    <div class="okui-pagination-item" tabindex="0">2</div>
+                    <div class="okui-pagination-item" tabindex="0">3</div>
+                    <div class="okui-pagination-item" tabindex="0">4</div>
+                    <div class="okui-pagination-item okui-pagination-item-after-jump-prev" tabindex="0">5</div>
+                    <li tabindex="0" class="okui-pagination-jump-next"><i
+                            class="icon iconfont okds-more jump-icon icon-atom"></i></li>
+                    <div class="okui-pagination-item" tabindex="0">100</div>
+                    <li tabindex="0" class="okui-pagination-next" aria-disabled="false"><i
+                            class="icon iconfont okds-arrow-chevron-right-centered-md"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    var options = {
+        series: [{
+            data: data.slice()
+        }],
+        grid: {
+            show: true,
+            borderColor: '#90A4AE',
+            strokeDashArray: 0,
+            position: 'back',
+            xaxis: {
+                lines: {
+                    show: false
+                }
+            },
+            yaxis: {
+                lines: {
+                    show: false
+                }
+            },
+            row: {
+                colors: undefined,
+                opacity: 0.5
+            },
+            column: {
+                colors: undefined,
+                opacity: 0.5
+            },
+            padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
+            },
+        },
+        chart: {
+            background: '#000000',
+            id: 'realtime',
+            height: 68,
+            type: 'area',
+
+            animations: {
+                enabled: true,
+                easing: 'linear',
+                dynamicAnimation: {
+                    speed: 1000
+                }
+            },
+            toolbar: {
+                show: false
+            },
+            zoom: {
+                enabled: false
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth'
+        },
+        markers: {
+            size: 0
+        },
+        xaxis: {
+            type: 'datetime',
+            range: XAXISRANGE,
+            labels: {
+                show: false
+            }
+        },
+        yaxis: {
+            max: 90,
+            labels: {
+                show: false
+            }
+        },
+        legend: {
+            show: false
+        },
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+
+    window.setInterval(function () {
+        getNewSeries(lastDate, {
+            min: 50,
+            max: 90
+        })
+
+        chart.updateSeries([{
+            data: data
+        }])
+    }, 1000)
+
+</script>
+
+</html>
