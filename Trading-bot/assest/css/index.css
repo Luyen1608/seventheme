@@ -18555,7 +18555,8 @@
 
 .index_direction__VLWtT.index_long__NB5H4,.index_leverTag__cvsbx.index_long__NB5H4 {
     background-color: rgba(var(--color-up-bg-rgb),15%);
-    color: var(--color-up-text)
+    color: var(--color-up-text);
+    padding: 4px 6px;
 }
 
 .index_direction__VLWtT.index_short__aJrkv,.index_leverTag__cvsbx.index_short__aJrkv {
