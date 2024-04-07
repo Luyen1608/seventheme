@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("#popup1").css('display', 'none');
         $("#popup1layout").css('display', 'none');
         isShowChart = false;
-        clearInterval(renderChart);
+        // clearInterval(renderChart);
     });
 
     $("#bot1").click(function () {
@@ -14,14 +14,17 @@ $(document).ready(function () {
         isShowChart = true;
         var lastDate = 0;
         var data1 = []
+        var dataDB = [1,2,3,4,5,6,7,8,9,10];
         var TICKINTERVAL1 = 86400000
         let XAXISRANGE1 = 777600000
         function getDayWiseTimeSeries1(baseval, count, yrange) {
             var i = 0;
+            var baseval = new Date() - XAXISRANGE1;
+            // baseval.setDate(baseval.getDate() - 9);
             while (i < count) {
                 var x = baseval;
                 var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-
+                var y = dataDB[i];
                 data1.push({
                     x, y
                 });
@@ -36,23 +39,23 @@ $(document).ready(function () {
             max: 90
         })
 
-        function getNewSeries1(baseval, yrange) {
-            var newDate = baseval + TICKINTERVAL1;
-            lastDate = newDate
+        // function getNewSeries1(baseval, yrange) {
+        //     var newDate = baseval + TICKINTERVAL1;
+        //     lastDate = newDate
 
-            for (var i = 0; i < data1.length - 10; i++) {
-                // IMPORTANT
-                // we reset the x and y of the data which is out of drawing area
-                // to prevent memory leaks
-                data1[i].x = newDate - XAXISRANGE1 - TICKINTERVAL1
-                data1[i].y = 0
-            }
+        //     for (var i = 0; i < data1.length - 10; i++) {
+        //         // IMPORTANT
+        //         // we reset the x and y of the data which is out of drawing area
+        //         // to prevent memory leaks
+        //         data1[i].x = newDate - XAXISRANGE1 - TICKINTERVAL1
+        //         data1[i].y = 0
+        //     }
 
-            data1.push({
-                x: newDate,
-                y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
-            })
-        }
+        //     data1.push({
+        //         x: newDate,
+        //         y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+        //     })
+        // }
 
         function resetData() {
             // Alternatively, you can also reset the data at certain intervals to prevent creating a huge series 
@@ -62,6 +65,7 @@ $(document).ready(function () {
         var optionsBig = {
             series: [{
                 data: data1.slice()
+                // data:[31, 40, 28, 51, 42, 109, 100,52,32]
             }],
             grid: {
                 show: false,
@@ -158,7 +162,7 @@ $(document).ready(function () {
                 clearInterval(renderChart);
             }
         }
-        var renderChart = window.setInterval(timeoutChart, 3000)
+        // var renderChart = window.setInterval(timeoutChart, 3000)
 
     });
 });
