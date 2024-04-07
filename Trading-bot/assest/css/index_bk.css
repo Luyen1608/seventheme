@@ -24598,6 +24598,13 @@ html[dir=rtl] .index_inlandBg__0jdvr {
     white-space: nowrap
 }
 
+a {
+    text-decoration: none
+}
+
+a,a:active,a:hover,a:link,a:visited {
+    color: var(--okd-color-gray-900)
+}
 
 .index_mp-main-filter__sI8i9 {
     -webkit-box-sizing: border-box;
@@ -28957,12 +28964,12 @@ body,html {
     min-height: 500px
 }
 
-/* .menu-wrap {
+.menu-wrap {
     background: #eee;
     display: inline-block;
     height: 100%;
     width: 200px
-} */
+}
 
 .menu-wrap a {
     display: block;

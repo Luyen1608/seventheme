@@ -10,7 +10,7 @@ a,b,body,button,dd,div,dl,dt,em,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,ht
     padding: 0
 }
 
-/* body,html {
+body,html {
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -25,7 +25,7 @@ a,b,body,button,dd,div,dl,dt,em,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,ht
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text
-} */
+}
 
 img,video {
     height: auto;
@@ -41,7 +41,7 @@ table {
     border-spacing: 0
 }
 
-/* h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     font-size: 1em;
     font-weight: 400
 }
@@ -60,7 +60,7 @@ a:active,a:hover {
 
 li,ol,ul {
     list-style: none
-} */
+}
 
 button,input,select,textarea {
     -webkit-appearance: none;
@@ -274,6 +274,33 @@ b,em,i,strong {
     font-size: 14px
 }
 
+.pisces-container {
+    background: rgba(69,157,245,.6);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    bottom: 80px;
+    color: #fff;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px 2px;
+    position: fixed;
+    right: 0;
+    z-index: 1000000
+}
+
+.pisces-container .ghost-btn {
+    background: #f1e9e9;
+    border-radius: 2px;
+    color: #459df5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    padding: 1px 5px
+}
 
 body,html {
     background: #fff;
@@ -287,7 +314,19 @@ body,html {
     }
 }
 
+body ::-webkit-scrollbar {
+    background-color: initial;
+    height: 0;
+    width: 4px
+}
 
+body ::-webkit-scrollbar-track {
+    background-color: initial
+}
+
+body ::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd
+}
 
 body.theme-dark ::-webkit-scrollbar {
     background-color: initial
