@@ -66,15 +66,17 @@
     </script>
     <script>
         var lastDate = 0;
-        var data = []
+        var data = [];
+        var dataDB = [99,88,77,66,55,44,33,22,11];
         var TICKINTERVAL = 86400000
         let XAXISRANGE = 777600000
         function getDayWiseTimeSeries(baseval, count, yrange) {
             var i = 0;
+            var baseval = new Date() - XAXISRANGE;
             while (i < count) {
                 var x = baseval;
                 var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
-
+                var y = dataDB[i];
                 data.push({
                     x, y
                 });
@@ -1399,16 +1401,16 @@
 
 
 
-    window.setInterval(function () {
-        getNewSeries(lastDate, {
-            min: 2,
-            max: 100
-        })
+    // window.setInterval(function () {
+    //     getNewSeries(lastDate, {
+    //         min: 2,
+    //         max: 100
+    //     })
 
-        chart.updateSeries([{
-            data: data
-        }])
-    }, 3000)
+    //     chart.updateSeries([{
+    //         data: data
+    //     }])
+    // }, 3000)
 
 </script>
 
