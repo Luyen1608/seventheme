@@ -16,26 +16,65 @@
     .detail-block-title {
         display: flex;
         padding-bottom: 1rem;
+        font-weight: 700;
+        font-size: 24px;
     }
 
     .detail-block-summary {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .detail-block-content {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity));
+        padding: 1rem;
+        justify-content: center;
+        display: grid;
+        border-radius: 0.5rem;
+    }
+
+    .detail-sp-title {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: #898585;
+        padding-bottom: .5rem;
+    }
+
+    .detail-sp-value {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
     }
 </style>
 
 <body id="body" class="theme-dark" broker-style="" data-responsive="true" data-nav="true">
-    <div class="home-detail">
+    <div class="home-detail" style="padding: 30px">
         <div class="border d-inline-block p-4 rounded-3 sumary-detail title">
             <div class="detail-block-title">Tổng quan</div>
+           
             <div class="detail-block-summary">
-                <div class="bg-body-tertiary d-grid justify-content-center sumary-basic p-3">
-                    <span>PNL của người đăng ký (USDT)</span>
-                    <span style="text-align: center;">+64.359,93</span>
+                <div class="detail-block-content">
+                    <span class="detail-sp-title">PNL của người đăng ký (USDT)</span>
+                    <span class="detail-sp-value">+64.359,93</span>
                 </div>
-                <div class="bg-body-tertiary d-grid justify-content-center sumary-basic p-3">
-                    <span>PNL của người đăng ký (USDT)</span>
-                    <span style="text-align: center;">+64.359,93</span>
+                <div class="detail-block-content">
+                    <span class="detail-sp-title">PNL của người đăng ký (USDT)</span>
+                    <span class="detail-sp-value">+64.359,93</span>
+                </div>
+            </div>
+            <div class="detail-block-summary">
+                <div class="detail-block-content">
+                    <span class="detail-sp-title">PNL của người đăng ký (USDT)</span>
+                    <span class="detail-sp-value">+64.359,93</span>
+                </div>
+                <div class="detail-block-content">
+                    <span class="detail-sp-title">PNL của người đăng ký (USDT)</span>
+                    <span class="detail-sp-value">+64.359,93</span>
                 </div>
             </div>
         </div>

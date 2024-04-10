@@ -5,23 +5,12 @@ get_header();
 ?>
 <div class="container luyendv" style="background:#00150f">
 <!-- add luyendv -->
-<div class="" >
+<div class=" " style="width: 800px;" >
     <div class="okui-dialog-title-container okui-dialog-header-line">
         <div class="okui-dialog-top-l okui-dialog-top-action-hidden"><i
                 class="icon iconfont okui-dialog-top-action-hidden okds-arrow-chevron-left-centered-sm okui-dialog-b-btn"
                 id="okdDialogBackBtn"></i></div>
-        <div class="okui-dialog-title-block "><span class="modal-title">
-                <div class="index_titleWrapper__9cUTU">
-                    <div class="index_name__d1uXP">Sao chép hợp đồng giao dịch Forex</div>
-                    <div data-testid="okd-popup" class="okui-popup okui-popover okui-popover-sm  ">
-                        <div class="index_info__5aL-s"><i
-                                class="icon iconfont okds-academy index_infoIcon__rPbSG"></i><span>Hướng dẫn</span>
-                        </div>
-                    </div>
-                </div>
-            </span></div>
-        <div class="okui-dialog-top-r"><i class="icon iconfont okds-close okui-dialog-c-btn"
-                id="okdDialogCloseBtn1"></i></div>
+      
     </div>
     <div class="index_main__CeYkl">
         <div class="index_topWrapper__J3H1X">
@@ -50,9 +39,9 @@ get_header();
                         <picture class="okui-image">
                             <source class="okui-image-picture-sizer" style="padding-top: 100%;">
                             <source
-                                srcset="../wp-content/uploads/2024/04/trophy-svgrepo-com.svg">
+                                srcset="../../wp-content/uploads/2024/04/trophy-svgrepo-com.svg">
                             <img class="okui-image-layout okui-image-layout-responsive"
-                                src="../wp-content/uploads/2024/04/trophy-svgrepo-com.svg"
+                                src="../../wp-content/uploads/2024/04/trophy-svgrepo-com.svg"
                                 alt="Bot giao dịch OKX">
                         </picture>
                     </div><span>Tỉ lệ
@@ -70,9 +59,9 @@ get_header();
                                         <picture class="okui-image">
                                             <source class="okui-image-picture-sizer" style="padding-top: 100%;">
                                             <source
-                                                srcset="../wp-content/uploads/2024/04/money-cash-business-cart-finance-svgrepo-com.svg">
+                                                srcset="../../wp-content/uploads/2024/04/money-cash-business-cart-finance-svgrepo-com.svg">
                                             <img class="okui-image-layout okui-image-layout-responsive"
-                                                src="../wp-content/uploads/2024/04/money-cash-business-cart-finance-svgrepo-com.svg"
+                                                src="../../wp-content/uploads/2024/04/money-cash-business-cart-finance-svgrepo-com.svg"
                                                 alt="Bot giao dịch OKX">
                                         </picture>
                                     </div><span
@@ -172,25 +161,21 @@ get_header();
                                                     <div class="index_field__ChY21"><span
                                                             class="index_fieldLabel__FqYJE">Thời gian hoạt
                                                             động</span><span
-
-                                                            <?php //echo get_post_meta($id, 'thong_tin_co_ban', true)?>
-                                                       
                                                             class="index_fieldValue__1BeeA">
                                                             <?php 
-                                                               $basic_info = get_field($id, 'thong_tin_co_ban', true);
-                                                                echo $basic_info['thoi_gian_hoat_dong']
+                                                                echo get_field('thong_tin_co_ban', $id)['thoi_gian_hoat_dong']
                                                             ?></span>
                                                     </div>
                                                     <div class="index_field__ChY21"><span
                                                             class="index_fieldLabel__FqYJE">Mức sụt giảm tối đa
                                                             trong 7 ngày</span><span
-                                                            class="index_fieldValue__1BeeA"><?php echo $basic_info['muc_sut_giam_toi_da_trong_7_ngay']?></span>
+                                                            class="index_fieldValue__1BeeA"><?php echo get_field('thong_tin_co_ban', $id)['muc_sut_giam_toi_da_trong_7_ngay']?></span>
                                                     </div>
                                                     <div class="index_field__ChY21"><span
                                                             class="index_fieldLabel__FqYJE">Hướng | Đòn
                                                             bẩy</span><span class="index_fieldValue__1BeeA">
                                                             <div class="index_up__glSfD">
-                                                                <?php echo $basic_info['huong_don_bay']?></div>
+                                                                <?php echo get_field('thong_tin_co_ban', $id)['huong_don_bay']?></div>
                                                         </span></div>
                                                     <div class="index_field__ChY21"><span
                                                             class="index_fieldLabel__FqYJE">Số tiền ban
