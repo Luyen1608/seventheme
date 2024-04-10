@@ -1,0 +1,30 @@
+#chart1 {
+    max-width: 650px;
+    min-height: 68px;
+}
+
+#chart11 {
+    width: -webkit-fill-available !important;
+}
+
+.index_cardItem__KromG {
+    background: linear-gradient(45deg, rgba(0, 21, 15, 1) 0%, rgba(1, 48, 35, 1) 76%, rgba(1, 113, 81, 1) 100%) !important;
+}
+
+.index_botType__-mEys,
+.index_titleWrapper__9cUTU .index_info__5aL-s,
+.index_botType__T0OCi {
+    background-color: #626f61;
+    color: white;
+}
+
+.index_botType__T0OCi.index_short__yuai7 {
+    background-color: #b42121;
+}
+
+.okui-dialog .okui-dialog-window {
+    background: linear-gradient(149deg, rgba(0, 21, 15, 1) 0%, rgba(1, 48, 35, 1) 76%, rgba(1, 113, 81, 1) 100%);
+}
+
+
+/** Custom Select **/
