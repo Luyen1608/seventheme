@@ -1,0 +1,98 @@
+
+
+/* Author Box Css Start */
+.exad-author-box.exad_author_left .exad-author-box-wrapper,
+.exad-author-box.exad_author_right .exad-author-box-wrapper{
+    display: flex;
+}
+.exad-author-box.exad_author_right .exad-author-box-wrapper {
+    text-align: right;
+}
+.exad-author-box.exad_author_right .exad-author-box-wrapper .exad-author-box-thumb{
+    order: 2;
+}
+.exad-author-box.exad_author_top.left .exad-author-box-wrapper{
+    text-align: left;
+}
+.exad-author-box.exad_author_top.center .exad-author-box-wrapper{
+    text-align: center;
+}
+.exad-author-box.exad_author_top.right .exad-author-box-wrapper{
+    text-align: right;
+}
+.exad-author-box.exad_author_top.left .exad-author-box-wrapper .exad-author-box-thumb{
+    margin-right: auto;
+}
+.exad-author-box.exad_author_top.center .exad-author-box-wrapper .exad-author-box-thumb{
+    margin: 0 auto;
+}
+.exad-author-box.exad_author_top.right .exad-author-box-wrapper .exad-author-box-thumb{
+    margin-left: auto;
+}
+.exad-author-box-wrapper .exad-author-box-thumb{
+    overflow: hidden;
+    background: #fff;
+}
+.exad-author-box-wrapper .exad-author-box-thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-name{
+    line-height: 1;
+    text-decoration: none;
+    display: block;
+    transition: all .3s ease;
+}
+.exad-author-box .exad-author-social{
+    margin: 0;
+    padding: 0;
+}
+.exad-author-box .exad-author-social li{
+    list-style: none;
+    display: inline-block;
+}
+.exad-author-box .exad-author-social li a{
+    position: relative;
+    display: block;
+    transition: all .3s ease;
+}
+.exad-author-box .exad-author-social li a i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-email{
+    line-height: 1;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-email-text{
+    display: inline-block;
+    line-height: 1;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-email-address{
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s ease;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-website{
+    line-height: 1;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-website-text{
+    display: inline-block;
+    line-height: 1;
+}
+.exad-author-box-wrapper .exad-author-box-content .exad-author-website-address{
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s ease;
+}
+
+.exad-author-login {
+    display: block;
+    transition: all .3s ease;
+}
+
+/* Author Box Css End */

@@ -1,0 +1,56 @@
+/* mailchimp css start */
+.exad-mailchimp-container.exad-mailchimp-type-horizontal .exad-mailchimp-form-container {
+	display: flex;
+    flex-wrap: nowrap;
+    /* align-items: flex-end; */
+}
+.exad-mailchimp-container.exad-mailchimp-type-vertical.exad-mailchimp-item-vertical-left .exad-mailchimp-form-container .exad-mailchimp-item{
+    margin-right: auto;
+}
+.exad-mailchimp-container.exad-mailchimp-type-vertical.exad-mailchimp-item-vertical-center .exad-mailchimp-form-container .exad-mailchimp-item{
+    margin-right: auto;
+    margin-left: auto;
+}
+.exad-mailchimp-container.exad-mailchimp-type-vertical.exad-mailchimp-item-vertical-right .exad-mailchimp-form-container .exad-mailchimp-item{
+    margin-left: auto;
+}
+.exad-mailchimp-container.exad-mailchimp-type-horizontal .exad-mailchimp-item:not(:last-child) {
+	margin-right: 10px;
+}
+.exad-mailchimp-container label {
+	display: block;
+}
+.exad-mailchimp-container input:focus {
+	outline: none;
+}
+
+.exad-mailchimp-container .exad-mailchimp-input-field {
+	width: 100%;
+    display: block;
+    height: 100%;
+}
+.exad-mailchimp-container.button-align-center .exad-mailchimp-submit-btn {
+    display: block;
+    float: none;
+    text-align: center;
+}
+.exad-mailchimp-container.button-align-center .exad-mailchimp-submit-btn .exad-mailchimp-subscribe-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+.exad-mailchimp-container.button-align-left .exad-mailchimp-submit-btn {
+    float: left;
+    width: auto;
+}
+.exad-mailchimp-container.button-align-right .exad-mailchimp-submit-btn {
+    float: right;
+    width: auto;
+}
+.exad-mailchimp-subscribe-btn{
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* mailchimp css end */
+

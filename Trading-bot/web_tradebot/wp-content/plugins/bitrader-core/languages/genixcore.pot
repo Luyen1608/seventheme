@@ -1,0 +1,2050 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bitrader Core\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-10 09:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.3.1\n"
+"X-Domain: genixcore"
+
+#. 1: Plugin name 2: Elementor
+#: tg-core-helper.php:187
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#. 1: Plugin name 2: Elementor 3: Required Elementor version
+#. 1: Plugin name 2: PHP 3: Required PHP version
+#: tg-core-helper.php:210 tg-core-helper.php:234
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: include/elementor/hero-banner.php:411 include/elementor/hero-banner.php:424
+#: include/elementor/team.php:210 include/elementor/team.php:300
+#: include/elementor/team.php:314 include/elementor/team.php:328
+#: include/elementor/team.php:342 include/elementor/contact.php:188
+#: include/elementor/contact.php:204 include/elementor/brand.php:143
+#: include/elementor/services-sidebar.php:219
+#: include/elementor/services-sidebar.php:235
+#: include/elementor/social-list.php:179 include/elementor/social-list.php:195
+msgid "#"
+msgstr ""
+
+#: include/elementor/hero-banner.php:545
+msgid "/7"
+msgstr ""
+
+#: include/elementor/hero-banner.php:506 include/elementor/hero-banner.php:539
+msgid "10"
+msgstr ""
+
+#: include/elementor/offer-tab.php:263
+msgid "10M"
+msgstr ""
+
+#: include/elementor/team.php:152
+msgid "2 Column"
+msgstr ""
+
+#: include/elementor/hero-banner.php:544
+msgid "24"
+msgstr ""
+
+#: include/elementor/pricing.php:286
+msgid "24/7 technical support"
+msgstr ""
+
+#: include/elementor/hero-banner.php:549
+msgid "25"
+msgstr ""
+
+#: include/widgets/genix-service-cat-list.php:55
+#: include/widgets/genix-latest-posts-footer-2.php:59
+#: include/widgets/genix-service-list.php:56
+#: include/widgets/genix-blog-post-sidebar.php:81
+#: include/widgets/genix-latest-posts-footer.php:54
+msgid "3"
+msgstr ""
+
+#: include/elementor/team.php:153
+msgid "3 Column"
+msgstr ""
+
+#: include/elementor/team.php:154
+msgid "4 Column"
+msgstr ""
+
+#: include/elementor/contact.php:279
+msgid "[Enter ShortCode Here]"
+msgstr ""
+
+#: include/elementor/faq.php:137
+msgid "Accordion"
+msgstr ""
+
+#: include/elementor/faq.php:163
+msgid "Accordion Title"
+msgstr ""
+
+#: include/custom-post-project.php:39 include/custom-post-services.php:39
+msgid "Add New"
+msgstr ""
+
+#: include/custom-post-project.php:38
+msgid "Add New Project"
+msgstr ""
+
+#: include/custom-post-project.php:89
+msgid "Add New Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:38
+msgid "Add New Service"
+msgstr ""
+
+#: include/custom-post-services.php:89
+msgid "Add New Service Category"
+msgstr ""
+
+#: include/custom-post-project.php:94 include/custom-post-services.php:94
+msgid "Add or remove items"
+msgstr ""
+
+#: include/elementor/team.php:421
+msgid "Add your dribbble link"
+msgstr ""
+
+#: include/elementor/team.php:274
+msgid "Add your email link"
+msgstr ""
+
+#: include/elementor/team.php:301
+msgid "Add your facebook link"
+msgstr ""
+
+#: include/elementor/team.php:382
+msgid "Add your flickr link"
+msgstr ""
+
+#: include/elementor/team.php:447
+msgid "Add your github link"
+msgstr ""
+
+#: include/elementor/team.php:369
+msgid "Add your Google Plus link"
+msgstr ""
+
+#: include/elementor/team.php:408
+msgid "Add your hehance link"
+msgstr ""
+
+#: include/elementor/team.php:329
+msgid "Add your instagram link"
+msgstr ""
+
+#: include/elementor/team.php:343
+msgid "Add your linkedin link"
+msgstr ""
+
+#: include/elementor/team.php:287
+msgid "Add your phone link"
+msgstr ""
+
+#: include/elementor/team.php:434
+msgid "Add your pinterest link"
+msgstr ""
+
+#: include/elementor/team.php:261
+msgid "Add your profile link"
+msgstr ""
+
+#: include/elementor/team.php:315
+msgid "Add your twitter link"
+msgstr ""
+
+#: include/elementor/team.php:395
+msgid "Add your vimeo link"
+msgstr ""
+
+#: include/elementor/team.php:356
+msgid "Add your youtube link"
+msgstr ""
+
+#: include/class-ocdi-importer.php:38 include/class-ocdi-importer.php:49
+msgid "After you import this demo, you will get a demo like Our Live Website"
+msgstr ""
+
+#: include/elementor/heading.php:176 include/elementor/tg-btn.php:231
+#: include/elementor/social-list.php:204
+msgid "Alignment"
+msgstr ""
+
+#: include/custom-post-project.php:37 include/custom-post-services.php:37
+msgid "All Items"
+msgstr ""
+
+#: include/elementor/services-box.php:182
+msgid "All Post List"
+msgstr ""
+
+#: include/custom-post-project.php:85
+msgid "All Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:85
+msgid "All Service Category"
+msgstr ""
+
+#: include/elementor/faq.php:145
+msgid "Animation Direction"
+msgstr ""
+
+#: include/elementor/hero-banner.php:198
+msgid ""
+"Anyone can invest money to different currency to increase their earnings by "
+"the help of Bitrader through online."
+msgstr ""
+
+#: include/elementor/blog-post.php:224
+msgid "Ascending"
+msgstr ""
+
+#: include/elementor/image-box.php:385
+msgid "Author"
+msgstr ""
+
+#: include/elementor/image-box.php:174
+msgid "Author Info"
+msgstr ""
+
+#: include/elementor/offer-tab.php:276
+msgid "Available for loan"
+msgstr ""
+
+#: include/elementor/tg-btn.php:314
+msgid "Background Color"
+msgstr ""
+
+#: controls/genixgradient.php:144 controls/genixbggradient.php:150
+msgctxt "Background Control"
+msgid "Angle"
+msgstr ""
+
+#: controls/genixgradient.php:176 controls/genixbggradient.php:182
+msgctxt "Background Control"
+msgid "Bottom Center"
+msgstr ""
+
+#: controls/genixgradient.php:177 controls/genixbggradient.php:183
+msgctxt "Background Control"
+msgid "Bottom Left"
+msgstr ""
+
+#: controls/genixgradient.php:178 controls/genixbggradient.php:184
+msgctxt "Background Control"
+msgid "Bottom Right"
+msgstr ""
+
+#: controls/genixgradient.php:170 controls/genixbggradient.php:176
+msgctxt "Background Control"
+msgid "Center Center"
+msgstr ""
+
+#: controls/genixgradient.php:171 controls/genixbggradient.php:177
+msgctxt "Background Control"
+msgid "Center Left"
+msgstr ""
+
+#: controls/genixgradient.php:172 controls/genixbggradient.php:178
+msgctxt "Background Control"
+msgid "Center Right"
+msgstr ""
+
+#: controls/genixgradient.php:79 controls/genixbggradient.php:81
+msgctxt "Background Control"
+msgid "Color"
+msgstr ""
+
+#: controls/genixbggradient.php:63
+msgctxt "Background Control"
+msgid ""
+"Gradient color not work editor mode. If you set gradient color please view "
+"the result live preview page."
+msgstr ""
+
+#: controls/genixgradient.php:133 controls/genixbggradient.php:138
+msgctxt "Background Control"
+msgid "Linear"
+msgstr ""
+
+#: controls/genixgradient.php:92 controls/genixgradient.php:116
+#: controls/genixbggradient.php:94 controls/genixbggradient.php:120
+msgctxt "Background Control"
+msgid "Location"
+msgstr ""
+
+#: controls/genixgradient.php:167 controls/genixbggradient.php:173
+msgctxt "Background Control"
+msgid "Position"
+msgstr ""
+
+#: controls/genixgradient.php:134 controls/genixbggradient.php:139
+msgctxt "Background Control"
+msgid "Radial"
+msgstr ""
+
+#: controls/genixbggradient.php:109
+msgctxt "Background Control"
+msgid "Second Color"
+msgstr ""
+
+#: controls/genixgradient.php:106
+msgctxt "Background Control"
+msgid "Second Color (No effect for custom SVG)"
+msgstr ""
+
+#: controls/genixgradient.php:62 controls/genixbggradient.php:62
+msgctxt "Background Control"
+msgid "Select Color Type"
+msgstr ""
+
+#: controls/genixbggradient.php:84
+msgctxt "Background Control"
+msgid "Start Color"
+msgstr ""
+
+#: controls/genixgradient.php:82
+msgctxt "Background Control"
+msgid "Text Color"
+msgstr ""
+
+#: controls/genixgradient.php:173 controls/genixbggradient.php:179
+msgctxt "Background Control"
+msgid "Top Center"
+msgstr ""
+
+#: controls/genixgradient.php:174 controls/genixbggradient.php:180
+msgctxt "Background Control"
+msgid "Top Left"
+msgstr ""
+
+#: controls/genixgradient.php:175 controls/genixbggradient.php:181
+msgctxt "Background Control"
+msgid "Top Right"
+msgstr ""
+
+#: controls/genixgradient.php:130 controls/genixbggradient.php:135
+msgctxt "Background Control"
+msgid "Type"
+msgstr ""
+
+#: include/elementor/background-shapes.php:49
+msgid "Background Shapes"
+msgstr ""
+
+#: include/elementor/hero-banner.php:141
+msgid "Banner Background"
+msgstr ""
+
+#: include/elementor/hero-banner.php:209
+msgid "Banner Button"
+msgstr ""
+
+#: include/elementor/hero-banner.php:165
+msgid "Banner Content"
+msgstr ""
+
+#: include/elementor/hero-banner.php:480
+msgid "Banner Fun Fact"
+msgstr ""
+
+#: include/elementor/hero-banner.php:436
+msgid "Banner Image"
+msgstr ""
+
+#: include/elementor/hero-banner.php:563
+msgid "Banner Shapes"
+msgstr ""
+
+#: include/elementor/hero-banner.php:349
+msgid "Banner Social"
+msgstr ""
+
+#: include/elementor/hero-banner.php:299
+msgid "Banner Video Button"
+msgstr ""
+
+#: include/elementor/pricing.php:147
+msgid "Basic"
+msgstr ""
+
+#: include/elementor/team.php:407
+msgid "Behance"
+msgstr ""
+
+#: include/elementor/testimonial.php:216
+msgid "Belal Hossain"
+msgstr ""
+
+#: include/elementor/offer-tab.php:128
+msgid "Benefits We Offer"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:41
+msgid "Bitrader"
+msgstr ""
+
+#: plugin.php:53
+msgid "Bitrader Addons"
+msgstr ""
+
+#: include/elementor/tg-btn.php:50
+msgid "Bitrader Button"
+msgstr ""
+
+#. Name of the plugin
+#: tg-core-helper.php:188 tg-core-helper.php:211 tg-core-helper.php:235
+msgid "Bitrader Core"
+msgstr ""
+
+#. Description of the plugin
+msgid "Bitrader elementor core plugin."
+msgstr ""
+
+#: plugin.php:232
+msgid "Bitrader Feather Icons"
+msgstr ""
+
+#: plugin.php:324
+msgid "Bitrader Flat Icons"
+msgstr ""
+
+#: plugin.php:393
+msgid "Bitrader Fontawesome Pro"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:21
+msgid "Bitrader Info"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:22
+msgid "Bitrader Info Widget"
+msgstr ""
+
+#: include/elementor/heading.php:131
+msgid "Bitrader Title Here"
+msgstr ""
+
+#: include/elementor/blog-post.php:47
+msgid "Blog Post"
+msgstr ""
+
+#: include/elementor/background-shapes.php:129
+msgid "Blog Post Shape"
+msgstr ""
+
+#: include/elementor/blog-post.php:137
+msgid "Blog Query"
+msgstr ""
+
+#: include/elementor/hero-banner.php:628 include/elementor/hero-banner.php:669
+#: include/elementor/heading.php:248
+msgid "Bottom Spacing"
+msgstr ""
+
+#: include/elementor/brand.php:49
+msgid "Brand"
+msgstr ""
+
+#: include/elementor/brand.php:116 include/elementor/brand.php:157
+msgid "Brand Item"
+msgstr ""
+
+#: include/elementor/team.php:196 include/elementor/team.php:469
+msgid "Brooklyn Simmons"
+msgstr ""
+
+#: include/elementor/team.php:477
+msgid "Business Eng."
+msgstr ""
+
+#: include/elementor/pricing.php:302 include/elementor/tg-btn.php:141
+msgid "Button"
+msgstr ""
+
+#: include/elementor/pricing.php:431
+msgid "Button Color"
+msgstr ""
+
+#: include/elementor/pricing.php:442
+msgid "Button Hover Color"
+msgstr ""
+
+#: include/elementor/hero-banner.php:259 include/elementor/pricing.php:352
+#: include/elementor/tg-btn.php:194
+msgid "Button link"
+msgstr ""
+
+#: include/elementor/hero-banner.php:242 include/elementor/pricing.php:335
+#: include/elementor/tg-btn.php:177
+msgid "Button Link Type"
+msgstr ""
+
+#: include/elementor/tg-btn.php:302
+msgid "Button Padding"
+msgstr ""
+
+#: include/elementor/hero-banner.php:228 include/elementor/hero-banner.php:318
+#: include/elementor/pricing.php:321 include/elementor/tg-btn.php:163
+#: include/elementor/tg-btn.php:165 include/elementor/tg-btn.php:271
+msgid "Button Text"
+msgstr ""
+
+#: include/elementor/offer-tab.php:352 include/elementor/services-box.php:209
+#: include/elementor/background-shapes.php:158 include/elementor/team.php:532
+#: include/elementor/tg-popup-video.php:165 include/elementor/roadmap.php:227
+#: include/elementor/icon-list.php:202 include/elementor/image-box.php:323
+#: include/elementor/contact.php:305 include/elementor/testimonial.php:246
+#: include/elementor/blog-post.php:312 include/elementor/icon-box.php:200
+#: include/elementor/services-sidebar.php:262 include/elementor/tg-btn.php:369
+#: include/elementor/social-list.php:250 include/elementor/faq.php:222
+msgid "Capitalize"
+msgstr ""
+
+#: include/elementor/hero-banner.php:514
+msgid "Caption"
+msgstr ""
+
+#: include/elementor/heading.php:184 include/elementor/tg-btn.php:239
+#: include/elementor/social-list.php:212
+msgid "Center"
+msgstr ""
+
+#: include/elementor/offer-tab.php:235
+msgid "Chart Title"
+msgstr ""
+
+#: include/elementor/hero-banner.php:151
+msgid "Choose Background"
+msgstr ""
+
+#: include/custom-post-project.php:95 include/custom-post-services.php:95
+msgid "Choose from the most used"
+msgstr ""
+
+#: include/elementor/hero-banner.php:172 include/elementor/hero-banner.php:443
+#: include/elementor/image-box.php:149 include/elementor/image-box.php:184
+#: include/elementor/contact.php:136
+msgid "Choose Image"
+msgstr ""
+
+#: include/elementor/pricing.php:323
+msgid "Choose Plan"
+msgstr ""
+
+#: include/elementor/hero-banner.php:463 include/elementor/hero-banner.php:573
+#: include/elementor/hero-banner.php:584
+msgid "Choose Shape"
+msgstr ""
+
+#: include/elementor/hero-banner.php:854 include/elementor/hero-banner.php:975
+msgid "Coin icon"
+msgstr ""
+
+#: controls/genixbggradient.php:73
+msgctxt "Color Control"
+msgid "Gradient"
+msgstr ""
+
+#: controls/genixbggradient.php:69
+msgctxt "Color Control"
+msgid "Solid"
+msgstr ""
+
+#: include/elementor/contact.php:50
+msgid "Contact"
+msgstr ""
+
+#: include/elementor/contact.php:277
+msgid "Contact ShortCode"
+msgstr ""
+
+#: include/elementor/contact.php:270
+msgid "Contact Shortcode"
+msgstr ""
+
+#: include/elementor/blog-post.php:257
+msgid "Content"
+msgstr ""
+
+#: include/elementor/hero-banner.php:598
+msgid "Content & Typography"
+msgstr ""
+
+#: include/elementor/blog-post.php:269
+msgid "Content Limit"
+msgstr ""
+
+#: include/elementor/heading.php:215
+msgid "Content Padding"
+msgstr ""
+
+#: include/elementor/roadmap.php:146
+msgid "Control all the style settings from Style tab"
+msgstr ""
+
+#: include/elementor/roadmap.php:166
+msgid "Count"
+msgstr ""
+
+#: include/elementor/hero-banner.php:504
+msgid "Counter Digit"
+msgstr ""
+
+#: include/elementor/offer-tab.php:262
+msgid "Counter Number"
+msgstr ""
+
+#: include/elementor/offer-tab.php:275
+msgid "Counter Text"
+msgstr ""
+
+#: include/elementor/pricing.php:168
+msgid "Currency"
+msgstr ""
+
+#: include/elementor/pricing.php:173
+msgctxt "Currency Symbol"
+msgid "Baht"
+msgstr ""
+
+#: include/elementor/pricing.php:174
+msgctxt "Currency Symbol"
+msgid "BD Taka"
+msgstr ""
+
+#: include/elementor/pricing.php:175
+msgctxt "Currency Symbol"
+msgid "Dollar"
+msgstr ""
+
+#: include/elementor/pricing.php:176
+msgctxt "Currency Symbol"
+msgid "Euro"
+msgstr ""
+
+#: include/elementor/pricing.php:177
+msgctxt "Currency Symbol"
+msgid "Franc"
+msgstr ""
+
+#: include/elementor/pricing.php:178
+msgctxt "Currency Symbol"
+msgid "Guilder"
+msgstr ""
+
+#: include/elementor/pricing.php:179
+msgctxt "Currency Symbol"
+msgid "Krona"
+msgstr ""
+
+#: include/elementor/pricing.php:180
+msgctxt "Currency Symbol"
+msgid "Lira"
+msgstr ""
+
+#: include/elementor/pricing.php:181
+msgctxt "Currency Symbol"
+msgid "Peseta"
+msgstr ""
+
+#: include/elementor/pricing.php:182
+msgctxt "Currency Symbol"
+msgid "Peso"
+msgstr ""
+
+#: include/elementor/pricing.php:183
+msgctxt "Currency Symbol"
+msgid "Pound Sterling"
+msgstr ""
+
+#: include/elementor/pricing.php:184
+msgctxt "Currency Symbol"
+msgid "Real"
+msgstr ""
+
+#: include/elementor/pricing.php:185
+msgctxt "Currency Symbol"
+msgid "Ruble"
+msgstr ""
+
+#: include/elementor/pricing.php:186
+msgctxt "Currency Symbol"
+msgid "Rupee"
+msgstr ""
+
+#: include/elementor/pricing.php:187
+msgctxt "Currency Symbol"
+msgid "Rupee (Indian)"
+msgstr ""
+
+#: include/elementor/pricing.php:188
+msgctxt "Currency Symbol"
+msgid "Shekel"
+msgstr ""
+
+#: include/elementor/pricing.php:189
+msgctxt "Currency Symbol"
+msgid "Won"
+msgstr ""
+
+#: include/elementor/pricing.php:190
+msgctxt "Currency Symbol"
+msgid "Yen/Yuan"
+msgstr ""
+
+#: include/elementor/pricing.php:191
+msgid "Custom"
+msgstr ""
+
+#: include/elementor/pricing.php:200
+msgid "Custom Symbol"
+msgstr ""
+
+#: include/elementor/icon-box.php:169
+msgid "Customer support"
+msgstr ""
+
+#: include/elementor/pricing.php:135 include/elementor/pricing.php:404
+msgid "Default"
+msgstr ""
+
+#: include/widgets/genix-service-cat-list.php:56
+#: include/widgets/genix-latest-posts-footer-2.php:60
+#: include/widgets/genix-service-list.php:57
+#: include/widgets/genix-blog-post-sidebar.php:82
+#: include/widgets/genix-latest-posts-footer.php:55
+msgid "DESC"
+msgstr ""
+
+#: include/elementor/blog-post.php:225
+msgid "Descending"
+msgstr ""
+
+#: include/elementor/hero-banner.php:196 include/elementor/hero-banner.php:524
+#: include/elementor/hero-banner.php:661 include/elementor/offer-tab.php:138
+#: include/elementor/icon-list.php:152 include/elementor/image-box.php:205
+#: include/elementor/icon-box.php:151 include/elementor/faq.php:173
+msgid "Description"
+msgstr ""
+
+#: include/elementor/roadmap.php:199
+msgid "Design First Draft"
+msgstr ""
+
+#: include/elementor/hero-banner.php:117 include/elementor/services-box.php:118
+#: include/elementor/background-shapes.php:117 include/elementor/team.php:117
+#: include/elementor/roadmap.php:123 include/elementor/image-box.php:118
+#: include/elementor/testimonial.php:117 include/elementor/blog-post.php:115
+#: include/elementor/tg-btn.php:118 include/elementor/social-list.php:118
+#: include/elementor/faq.php:113
+msgid "Design Layout"
+msgstr ""
+
+#: include/elementor/team.php:224
+msgid "Designation"
+msgstr ""
+
+#: include/elementor/team.php:491
+msgid "Developer"
+msgstr ""
+
+#: include/elementor/team.php:420
+msgid "Dribbble"
+msgstr ""
+
+#: include/elementor/pricing.php:226
+msgid "Duration"
+msgstr ""
+
+#: include/elementor/icon-list.php:143 include/elementor/icon-list.php:168
+msgid "Easy to lend"
+msgstr ""
+
+#: include/custom-post-project.php:41 include/custom-post-services.php:41
+msgid "Edit Item"
+msgstr ""
+
+#: include/custom-post-project.php:90
+msgid "Edit Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:90
+msgid "Edit Service Category"
+msgstr ""
+
+#: tg-core-helper.php:189 tg-core-helper.php:212
+msgid "Elementor"
+msgstr ""
+
+#: include/elementor/team.php:273
+msgid "Email"
+msgstr ""
+
+#: include/elementor/hero-banner.php:231 include/elementor/hero-banner.php:321
+#: include/elementor/pricing.php:324 include/elementor/tg-btn.php:166
+#: include/elementor/tg-btn.php:274
+msgid "Enter button text"
+msgstr ""
+
+#: include/elementor/hero-banner.php:335
+msgid "Enter button url"
+msgstr ""
+
+#: include/elementor/icon-list.php:171
+msgid "Exchange money"
+msgstr ""
+
+#: include/elementor/blog-post.php:169
+msgid "Exclude Categories"
+msgstr ""
+
+#: include/elementor/blog-post.php:181
+msgid "Exclude Item"
+msgstr ""
+
+#: include/elementor/team.php:299
+msgid "Facebook"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:142
+msgid "Facebook:"
+msgstr ""
+
+#: include/elementor/hero-banner.php:534
+msgid "Fact Lists"
+msgstr ""
+
+#: include/elementor/pricing.php:407
+msgid "Fade Left"
+msgstr ""
+
+#: include/elementor/pricing.php:406
+msgid "Fade Right"
+msgstr ""
+
+#: include/elementor/pricing.php:405
+msgid "Fade Up"
+msgstr ""
+
+#: include/elementor/faq.php:45
+msgid "FAQ"
+msgstr ""
+
+#: include/elementor/offer-tab.php:437 include/elementor/offer-tab.php:444
+msgid "Feature image"
+msgstr ""
+
+#: include/custom-post-project.php:47 include/custom-post-services.php:47
+msgid "Featured Image"
+msgstr ""
+
+#: include/custom-post-project.php:55 include/custom-post-services.php:55
+msgid "Filter items list"
+msgstr ""
+
+#: include/elementor/team.php:225 include/elementor/team.php:470
+msgid "Finance Advisor"
+msgstr ""
+
+#: include/elementor/team.php:381
+msgid "Flickr"
+msgstr ""
+
+#: include/elementor/hero-banner.php:373
+msgid "Follow Us"
+msgstr ""
+
+#: include/elementor/background-shapes.php:131
+msgid "Footer Shape"
+msgstr ""
+
+#: include/widgets/genix-sidebar-form-widget.php:68
+msgid "Form Shortcode:"
+msgstr ""
+
+#: include/elementor/roadmap.php:195
+msgid "Framing Idea"
+msgstr ""
+
+#: include/widgets/genix-portfolio-info-widget.php:21
+msgid "Genix Project Info"
+msgstr ""
+
+#: include/widgets/genix-portfolio-info-widget.php:22
+msgid "Genix Project Info Widget"
+msgstr ""
+
+#: include/widgets/genix-sidebar-form-widget.php:21
+msgid "Genix Sidebar Form"
+msgstr ""
+
+#: include/widgets/genix-sidebar-form-widget.php:22
+msgid "Genix Sidebar Form Widget by ThemeGenix"
+msgstr ""
+
+#: include/elementor/hero-banner.php:230
+msgid "Get Started"
+msgstr ""
+
+#: include/elementor/team.php:446
+msgid "Github"
+msgstr ""
+
+#: include/elementor/team.php:368
+msgid "Google Plus"
+msgstr ""
+
+#: include/elementor/testimonial.php:213
+msgid "Guy Hawkins"
+msgstr ""
+
+#: include/elementor/heading.php:144
+msgid "H1"
+msgstr ""
+
+#: include/elementor/heading.php:148
+msgid "H2"
+msgstr ""
+
+#: include/elementor/heading.php:152
+msgid "H3"
+msgstr ""
+
+#: include/elementor/heading.php:156
+msgid "H4"
+msgstr ""
+
+#: include/elementor/heading.php:160
+msgid "H5"
+msgstr ""
+
+#: include/elementor/heading.php:164
+msgid "H6"
+msgstr ""
+
+#: include/elementor/pricing.php:123
+msgid "Header"
+msgstr ""
+
+#: include/elementor/heading.php:54
+msgid "Heading"
+msgstr ""
+
+#: include/elementor/hero-banner.php:49
+msgid "Hero Banner"
+msgstr ""
+
+#: include/elementor/hero-banner.php:219 include/elementor/hero-banner.php:309
+#: include/elementor/hero-banner.php:362 include/elementor/hero-banner.php:493
+#: include/elementor/pricing.php:312 include/elementor/blog-post.php:260
+#: include/elementor/tg-btn.php:154
+msgid "Hide"
+msgstr ""
+
+#: include/elementor/icon-box.php:172
+msgid "Higher security"
+msgstr ""
+
+#: include/elementor/tg-btn.php:338
+msgid "Hover Background Color"
+msgstr ""
+
+#: include/elementor/tg-btn.php:351
+msgid "Hover Text Color"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/thetork"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://thetork.com/"
+msgstr ""
+
+#: include/elementor/hero-banner.php:334 include/elementor/tg-btn.php:284
+msgid "https://www.youtube.com/watch?v=6mkoGSqTqFI"
+msgstr ""
+
+#: include/elementor/tg-popup-video.php:138
+msgid "https://www.youtube.com/watch?v=uJSgaPIvgKk&ab_channel=FreeTemplates"
+msgstr ""
+
+#: include/elementor/hero-banner.php:264 include/elementor/pricing.php:357
+#: include/elementor/tg-btn.php:199
+msgid "https://your-link.com"
+msgstr ""
+
+#: include/elementor/services-box.php:284 include/elementor/icon-list.php:240
+#: include/elementor/contact.php:379 include/elementor/contact.php:404
+#: include/elementor/pricing.php:541 include/elementor/icon-box.php:240
+msgid "Icon"
+msgstr ""
+
+#: include/elementor/icon-box.php:50
+msgid "Icon Box"
+msgstr ""
+
+#: include/elementor/icon-list.php:128 include/elementor/icon-box.php:128
+msgid "Icon Image"
+msgstr ""
+
+#: include/elementor/icon-list.php:50 include/elementor/icon-list.php:118
+msgid "Icon List"
+msgstr ""
+
+#: include/elementor/icon-box.php:118
+msgid "IconBox Group"
+msgstr ""
+
+#: include/elementor/blog-post.php:235
+msgid "Ignore Sticky Posts"
+msgstr ""
+
+#: include/elementor/image-box.php:142 include/elementor/brand.php:127
+msgid "Image"
+msgstr ""
+
+#: include/elementor/image-box.php:50
+msgid "Image Box"
+msgstr ""
+
+#: include/elementor/offer-tab.php:189
+msgid "Images"
+msgstr ""
+
+#: include/class-ocdi-importer.php:123
+msgid "Import Demo Data"
+msgstr ""
+
+#: include/elementor/blog-post.php:157
+msgid "Include Categories"
+msgstr ""
+
+#: include/elementor/image-box.php:218
+msgid "Info Box"
+msgstr ""
+
+#: include/elementor/image-box.php:275
+msgid "Info Box 02"
+msgstr ""
+
+#: include/elementor/image-box.php:238 include/elementor/image-box.php:295
+msgid "Info Description"
+msgstr ""
+
+#: include/elementor/contact.php:216
+msgid "Info List"
+msgstr ""
+
+#: include/elementor/image-box.php:228 include/elementor/image-box.php:285
+msgid "Info Title"
+msgstr ""
+
+#: include/elementor/team.php:172
+msgid "Information"
+msgstr ""
+
+#: include/custom-post-project.php:51 include/custom-post-services.php:51
+msgid "Insert into item"
+msgstr ""
+
+#: include/elementor/team.php:327
+msgid "Instagram"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:153
+msgid "Instagram:"
+msgstr ""
+
+#: include/elementor/offer-tab.php:236
+msgid "Interest Rate For Loan"
+msgstr ""
+
+#: include/elementor/hero-banner.php:188
+msgid "Invest your money with higher return"
+msgstr ""
+
+#: include/elementor/faq.php:194
+msgid "Is online trading safe?"
+msgstr ""
+
+#: include/elementor/icon-list.php:154
+msgid ""
+"It's easy to lend a helping hand to those in need, especially when we all "
+"stick together."
+msgstr ""
+
+#: include/custom-post-project.php:35 include/custom-post-services.php:35
+msgid "Item Archives"
+msgstr ""
+
+#: include/elementor/icon-box.php:161
+msgid "Item Box Lists"
+msgstr ""
+
+#: include/elementor/icon-list.php:163 include/elementor/contact.php:199
+#: include/elementor/contact.php:247 include/elementor/services-sidebar.php:230
+#: include/elementor/social-list.php:190
+msgid "Item Lists"
+msgstr ""
+
+#: include/custom-post-project.php:53 include/custom-post-services.php:53
+msgid "Items list"
+msgstr ""
+
+#: include/custom-post-project.php:54 include/custom-post-services.php:54
+msgid "Items list navigation"
+msgstr ""
+
+#: include/elementor/team.php:476
+msgid "Jenny Wilson"
+msgstr ""
+
+#: include/elementor/hero-banner.php:550
+msgid "K+"
+msgstr ""
+
+#: include/elementor/hero-banner.php:126 include/elementor/services-box.php:128
+#: include/elementor/team.php:127 include/elementor/roadmap.php:132
+#: include/elementor/image-box.php:127 include/elementor/testimonial.php:126
+#: include/elementor/blog-post.php:124 include/elementor/tg-btn.php:127
+#: include/elementor/social-list.php:127 include/elementor/faq.php:123
+msgid "Layout 1"
+msgstr ""
+
+#: include/elementor/hero-banner.php:127 include/elementor/services-box.php:129
+#: include/elementor/team.php:128 include/elementor/roadmap.php:133
+#: include/elementor/image-box.php:128 include/elementor/testimonial.php:127
+#: include/elementor/blog-post.php:125 include/elementor/tg-btn.php:128
+#: include/elementor/social-list.php:128 include/elementor/faq.php:124
+msgid "Layout 2"
+msgstr ""
+
+#: include/elementor/hero-banner.php:128 include/elementor/image-box.php:129
+#: include/elementor/faq.php:125
+msgid "Layout 3"
+msgstr ""
+
+#: include/elementor/image-box.php:130
+msgid "Layout 4"
+msgstr ""
+
+#: include/elementor/blog-post.php:148
+#: include/elementor/services-sidebar.php:163
+msgid "Leave blank or enter -1 for all."
+msgstr ""
+
+#: include/elementor/heading.php:180 include/elementor/tg-btn.php:235
+#: include/elementor/social-list.php:208 include/elementor/faq.php:149
+msgid "Left"
+msgstr ""
+
+#: include/elementor/offer-tab.php:175
+msgid "Lending money for investment of your new projects"
+msgstr ""
+
+#: include/elementor/contact.php:127
+msgid "Let’s Get In Touch With Us"
+msgstr ""
+
+#: include/elementor/team.php:341
+msgid "LinkedIn"
+msgstr ""
+
+#: include/elementor/team.php:238
+msgid "Links"
+msgstr ""
+
+#: include/elementor/pricing.php:263
+msgid "List Item"
+msgstr ""
+
+#: include/elementor/offer-tab.php:351 include/elementor/services-box.php:208
+#: include/elementor/background-shapes.php:157 include/elementor/team.php:531
+#: include/elementor/tg-popup-video.php:164 include/elementor/roadmap.php:226
+#: include/elementor/icon-list.php:201 include/elementor/image-box.php:322
+#: include/elementor/contact.php:304 include/elementor/testimonial.php:245
+#: include/elementor/blog-post.php:311 include/elementor/icon-box.php:199
+#: include/elementor/services-sidebar.php:261 include/elementor/tg-btn.php:368
+#: include/elementor/social-list.php:249 include/elementor/faq.php:221
+msgid "lowercase"
+msgstr ""
+
+#: include/elementor/team.php:484
+msgid "Marketing"
+msgstr ""
+
+#: include/elementor/team.php:490
+msgid "Marvin McKinney"
+msgstr ""
+
+#: include/elementor/team.php:141
+msgid "Members"
+msgstr ""
+
+#: include/elementor/testimonial.php:187 include/elementor/testimonial.php:210
+msgid "Mobarok Hossain"
+msgstr ""
+
+#: include/custom-post-project.php:40 include/custom-post-services.php:40
+msgid "New Item"
+msgstr ""
+
+#: include/custom-post-project.php:88
+msgid "New Project Category Name"
+msgstr ""
+
+#: include/custom-post-services.php:88
+msgid "New Service Category Name"
+msgstr ""
+
+#: page-settings/manager.php:24
+msgid "New Tab"
+msgstr ""
+
+#: include/elementor/offer-tab.php:210 include/elementor/offer-tab.php:251
+#: include/elementor/team.php:248 include/elementor/blog-post.php:238
+msgid "No"
+msgstr ""
+
+#: include/custom-post-project.php:99
+msgid "No Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:99
+msgid "No Service Category"
+msgstr ""
+
+#: include/elementor/offer-tab.php:349 include/elementor/services-box.php:206
+#: include/elementor/background-shapes.php:155 include/elementor/team.php:529
+#: include/elementor/tg-popup-video.php:162 include/elementor/roadmap.php:224
+#: include/elementor/icon-list.php:199 include/elementor/image-box.php:320
+#: include/elementor/contact.php:302 include/elementor/pricing.php:172
+#: include/elementor/testimonial.php:243 include/elementor/blog-post.php:309
+#: include/elementor/icon-box.php:197
+#: include/elementor/services-sidebar.php:259 include/elementor/tg-btn.php:366
+#: include/elementor/social-list.php:247 include/elementor/faq.php:219
+msgid "None"
+msgstr ""
+
+#: include/custom-post-project.php:98 include/custom-post-services.php:98
+msgid "Not Found"
+msgstr ""
+
+#: include/custom-post-project.php:45 include/custom-post-services.php:45
+msgid "Not found"
+msgstr ""
+
+#: include/custom-post-project.php:46 include/custom-post-services.php:46
+msgid "Not found in Trash"
+msgstr ""
+
+#: include/elementor/offer-tab.php:50
+msgid "Offer Tab"
+msgstr ""
+
+#: include/elementor/offer-tab.php:152
+msgid "Offer Tabs"
+msgstr ""
+
+#: include/elementor/blog-post.php:192
+msgid "Offset"
+msgstr ""
+
+#: include/class-ocdi-importer.php:122
+msgid "One Click Demo Import"
+msgstr ""
+
+#: include/elementor/hero-banner.php:546
+msgid "Online Support"
+msgstr ""
+
+#: include/elementor/faq.php:176
+msgid ""
+"Online trading’s primary advantages are that it allows you to manage your "
+"trades at your convenience."
+msgstr ""
+
+#: include/elementor/icon-list.php:174
+msgid "Online wallet"
+msgstr ""
+
+#: include/elementor/blog-post.php:221
+msgid "Order"
+msgstr ""
+
+#: include/elementor/blog-post.php:201
+msgid "Order By"
+msgstr ""
+
+#: include/elementor/roadmap.php:168 include/elementor/roadmap.php:192
+msgid "P1"
+msgstr ""
+
+#: include/elementor/roadmap.php:196
+msgid "P2"
+msgstr ""
+
+#: include/elementor/roadmap.php:200
+msgid "P3"
+msgstr ""
+
+#: include/elementor/pricing.php:144
+msgid "Package Name"
+msgstr ""
+
+#: include/custom-post-project.php:86 include/custom-post-services.php:86
+msgid "Parent Item"
+msgstr ""
+
+#: include/custom-post-project.php:36 include/custom-post-project.php:87
+#: include/custom-post-services.php:36 include/custom-post-services.php:87
+msgid "Parent Item:"
+msgstr ""
+
+#: include/elementor/pricing.php:289
+msgid "Personal training"
+msgstr ""
+
+#: include/elementor/team.php:286
+msgid "Phone"
+msgstr ""
+
+#: tg-core-helper.php:236
+msgid "PHP"
+msgstr ""
+
+#: include/elementor/team.php:433
+msgid "Pinterest"
+msgstr ""
+
+#: include/elementor/pricing.php:136
+msgid "Popular"
+msgstr ""
+
+#: include/custom-post-project.php:96
+msgid "Popular Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:96
+msgid "Popular Service Category"
+msgstr ""
+
+#: include/elementor/tg-popup-video.php:50
+#: include/elementor/tg-popup-video.php:118
+msgid "Popup Video"
+msgstr ""
+
+#: include/custom-post-project.php:31
+msgctxt "Post Type General Name"
+msgid "Projects"
+msgstr ""
+
+#: include/custom-post-services.php:31
+msgctxt "Post Type General Name"
+msgid "Services"
+msgstr ""
+
+#: include/custom-post-project.php:32
+msgctxt "Post Type Singular Name"
+msgid "Project"
+msgstr ""
+
+#: include/custom-post-services.php:32
+msgctxt "Post Type Singular Name"
+msgid "Service"
+msgstr ""
+
+#: include/elementor/blog-post.php:147
+#: include/elementor/services-sidebar.php:162
+msgid "Posts Per Page"
+msgstr ""
+
+#: include/elementor/pricing.php:214
+msgid "Price"
+msgstr ""
+
+#: include/elementor/pricing.php:55 include/elementor/pricing.php:160
+msgid "Pricing"
+msgstr ""
+
+#: include/elementor/pricing.php:241
+msgid "Pricing List"
+msgstr ""
+
+#: include/elementor/pricing.php:416
+msgid "Pricing Primary Color"
+msgstr ""
+
+#: include/elementor/background-shapes.php:128
+msgid "Pricing Shapes 01"
+msgstr ""
+
+#: include/elementor/background-shapes.php:130
+msgid "Pricing Shapes 02"
+msgstr ""
+
+#: include/elementor/image-box.php:248
+msgid "Progress Bar"
+msgstr ""
+
+#: include/custom-post-project.php:33 include/custom-post-project.php:34
+#: include/custom-post-project.php:59
+msgid "Project"
+msgstr ""
+
+#: include/custom-post-project.php:84
+msgid "Project Categories"
+msgstr ""
+
+#: include/custom-post-project.php:100
+msgid "Project Category list"
+msgstr ""
+
+#: include/custom-post-project.php:101
+msgid "Project Category list navigation"
+msgstr ""
+
+#: include/elementor/roadmap.php:158 include/elementor/roadmap.php:191
+msgid "Project Research"
+msgstr ""
+
+#: include/elementor/roadmap.php:178
+msgid ""
+"Project research is the backbone of any successful project. It involves "
+"gathering information, setting objectives, and analyzing data to ensure the "
+"project is achievable. Without proper research, projects can fail due to "
+"lack of knowledge."
+msgstr ""
+
+#: include/elementor/blog-post.php:471
+msgid "Read more"
+msgstr ""
+
+#: include/elementor/icon-box.php:143 include/elementor/icon-box.php:166
+msgid "Real-time data"
+msgstr ""
+
+#: include/elementor/icon-box.php:154
+msgid ""
+"Real-time data is like having a magic crystal ball that tells you what's "
+"happening now."
+msgstr ""
+
+#: include/custom-post-project.php:49 include/custom-post-services.php:49
+msgid "Remove featured image"
+msgstr ""
+
+#: include/elementor/faq.php:183
+msgid "Repeater Accordion"
+msgstr ""
+
+#: include/elementor/testimonial.php:149
+msgid "Review Content"
+msgstr ""
+
+#: include/elementor/testimonial.php:205
+msgid "Review List"
+msgstr ""
+
+#: include/elementor/testimonial.php:195
+msgid "Reviewer Designation"
+msgstr ""
+
+#: include/elementor/testimonial.php:160
+msgid "Reviewer Image"
+msgstr ""
+
+#: include/elementor/testimonial.php:185
+msgid "Reviewer Name"
+msgstr ""
+
+#: include/elementor/heading.php:188 include/elementor/tg-btn.php:243
+#: include/elementor/social-list.php:216 include/elementor/faq.php:148
+msgid "Right"
+msgstr ""
+
+#: include/elementor/roadmap.php:55
+msgid "Roadmap"
+msgstr ""
+
+#: include/elementor/roadmap.php:176
+msgid "Roadmap Description"
+msgstr ""
+
+#: include/elementor/roadmap.php:145
+msgid "Roadmap List"
+msgstr ""
+
+#: include/elementor/roadmap.php:186
+msgid "Roadmap Lists"
+msgstr ""
+
+#: include/elementor/background-shapes.php:127
+msgid "Roadmap Shapes"
+msgstr ""
+
+#: include/elementor/team.php:483
+msgid "Ronald Richards"
+msgstr ""
+
+#: include/elementor/hero-banner.php:551
+msgid "satisfied Customers"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:352
+msgid "Search articles"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:152
+msgid "Search Here"
+msgstr ""
+
+#: include/custom-post-project.php:44 include/custom-post-services.php:44
+msgid "Search Item"
+msgstr ""
+
+#: include/custom-post-project.php:97
+msgid "Search Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:97
+msgid "Search Service Category"
+msgstr ""
+
+#: include/elementor/hero-banner.php:606 include/elementor/contact.php:316
+#: include/elementor/brand.php:210
+msgid "Section Padding"
+msgstr ""
+
+#: include/elementor/hero-banner.php:842 include/elementor/hero-banner.php:962
+msgid "section-bg-element"
+msgstr ""
+
+#: include/elementor/blog-post.php:170
+msgid "Select a category to exclude"
+msgstr ""
+
+#: include/elementor/blog-post.php:158
+msgid "Select a category to include or leave blank for all."
+msgstr ""
+
+#: include/elementor/services-box.php:150
+msgid "Select a Post"
+msgstr ""
+
+#: include/elementor/pricing.php:400
+msgid "Select Animation Type"
+msgstr ""
+
+#: include/elementor/hero-banner.php:282 include/elementor/pricing.php:376
+#: include/elementor/tg-btn.php:217
+msgid "Select Button Page"
+msgstr ""
+
+#: include/elementor/team.php:149
+msgid "Select Column"
+msgstr ""
+
+#: include/elementor/hero-banner.php:123 include/elementor/services-box.php:125
+#: include/elementor/background-shapes.php:123 include/elementor/team.php:124
+#: include/elementor/roadmap.php:129 include/elementor/image-box.php:124
+#: include/elementor/testimonial.php:123 include/elementor/blog-post.php:121
+#: include/elementor/tg-btn.php:124 include/elementor/social-list.php:124
+#: include/elementor/faq.php:120
+msgid "Select Layout"
+msgstr ""
+
+#: include/elementor/pricing.php:131
+msgid "Select Pricing Type"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:125
+msgid "Select Widget"
+msgstr ""
+
+#: include/custom-post-project.php:93 include/custom-post-services.php:93
+msgid "Separate items with commas"
+msgstr ""
+
+#: include/custom-post-services.php:33 include/custom-post-services.php:34
+#: include/custom-post-services.php:59
+msgid "Service"
+msgstr ""
+
+#: include/custom-post-services.php:84
+msgid "Service Categories"
+msgstr ""
+
+#: include/custom-post-services.php:100
+msgid "Service Category list"
+msgstr ""
+
+#: include/custom-post-services.php:101
+msgid "Service Category list navigation"
+msgstr ""
+
+#: include/elementor/services-box.php:50
+msgid "Services Box"
+msgstr ""
+
+#: include/elementor/services-box.php:141
+msgid "Services Group"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:129
+msgid "Services List"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:128
+msgid "Services Search"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:50
+msgid "Services Sidebar"
+msgstr ""
+
+#: include/custom-post-project.php:48 include/custom-post-services.php:48
+msgid "Set featured image"
+msgstr ""
+
+#: include/elementor/blog-post.php:248
+msgid "Set how many word you want to display!"
+msgstr ""
+
+#: page-settings/manager.php:42
+msgid "Settings"
+msgstr ""
+
+#: include/elementor/offer-tab.php:314
+msgid "Shape"
+msgstr ""
+
+#: include/elementor/hero-banner.php:932 include/elementor/hero-banner.php:936
+#: include/elementor/hero-banner.php:1053
+msgid "shape icon"
+msgstr ""
+
+#: include/elementor/services-box.php:172
+msgid "Short Description"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:136
+msgid "Short Description:"
+msgstr ""
+
+#: include/elementor/hero-banner.php:218 include/elementor/hero-banner.php:308
+#: include/elementor/hero-banner.php:361 include/elementor/hero-banner.php:492
+#: include/elementor/pricing.php:311 include/elementor/blog-post.php:259
+#: include/elementor/tg-btn.php:153
+msgid "Show"
+msgstr ""
+
+#: include/elementor/offer-tab.php:248
+msgid "Show bottom box?"
+msgstr ""
+
+#: include/elementor/hero-banner.php:216 include/elementor/hero-banner.php:306
+#: include/elementor/pricing.php:309 include/elementor/tg-btn.php:151
+msgid "Show Button"
+msgstr ""
+
+#: include/elementor/hero-banner.php:490
+msgid "Show Fact List"
+msgstr ""
+
+#: include/elementor/team.php:245
+msgid "Show Options?"
+msgstr ""
+
+#: include/elementor/hero-banner.php:359
+msgid "Show Social"
+msgstr ""
+
+#: include/elementor/offer-tab.php:207
+msgid "Show top box?"
+msgstr ""
+
+#: include/elementor/contact.php:150 include/elementor/services-sidebar.php:130
+#: include/elementor/social-list.php:50 include/elementor/social-list.php:141
+msgid "Social List"
+msgstr ""
+
+#: include/elementor/hero-banner.php:419
+msgid "Social Lists"
+msgstr ""
+
+#: include/elementor/hero-banner.php:371
+msgid "Social Title"
+msgstr ""
+
+#: include/elementor/hero-banner.php:409
+msgid "Social URL"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:178
+msgid "Social Widget"
+msgstr ""
+
+#: include/elementor/tg-popup-video.php:202
+msgid "story-image"
+msgstr ""
+
+#: include/elementor/offer-tab.php:337 include/elementor/services-box.php:194
+#: include/elementor/background-shapes.php:143 include/elementor/team.php:517
+#: include/elementor/tg-popup-video.php:150 include/elementor/roadmap.php:212
+#: include/elementor/icon-list.php:187 include/elementor/image-box.php:308
+#: include/elementor/contact.php:290 include/elementor/pricing.php:392
+#: include/elementor/testimonial.php:231 include/elementor/blog-post.php:297
+#: include/elementor/brand.php:202 include/elementor/icon-box.php:185
+#: include/elementor/services-sidebar.php:247 include/elementor/tg-btn.php:294
+#: include/elementor/social-list.php:235 include/elementor/faq.php:207
+msgid "Style"
+msgstr ""
+
+#: include/widgets/genix-latest-posts-footer-2.php:61
+#: include/widgets/genix-blog-post-sidebar.php:83
+#: include/widgets/genix-latest-posts-footer.php:56
+msgid "style_1"
+msgstr ""
+
+#: include/elementor/offer-tab.php:166
+msgid "Tab Title"
+msgstr ""
+
+#: include/custom-post-project.php:82
+msgctxt "Taxonomy General Name"
+msgid "Project Categories"
+msgstr ""
+
+#: include/custom-post-services.php:82
+msgctxt "Taxonomy General Name"
+msgid "Service Categories"
+msgstr ""
+
+#: include/custom-post-project.php:83
+msgctxt "Taxonomy Singular Name"
+msgid "Project Categories"
+msgstr ""
+
+#: include/custom-post-services.php:83
+msgctxt "Taxonomy Singular Name"
+msgid "Service Categories"
+msgstr ""
+
+#: include/elementor/team.php:49
+msgid "Team"
+msgstr ""
+
+#: include/elementor/team.php:180
+msgid "Team Image"
+msgstr ""
+
+#: include/elementor/team.php:195
+msgid "Team Name"
+msgstr ""
+
+#: include/elementor/team.php:209
+msgid "Team URL"
+msgstr ""
+
+#: include/elementor/testimonial.php:49
+msgid "Testimonial"
+msgstr ""
+
+#: include/elementor/testimonial.php:139
+msgid "Testimonial List"
+msgstr ""
+
+#: include/elementor/hero-banner.php:640 include/elementor/hero-banner.php:681
+#: include/elementor/heading.php:260 include/elementor/tg-btn.php:327
+msgid "Text Color"
+msgstr ""
+
+#: controls/genixgradient.php:71
+msgctxt "Text Color Control"
+msgid "Gradient"
+msgstr ""
+
+#: controls/genixgradient.php:67
+msgctxt "Text Color Control"
+msgid "Solid"
+msgstr ""
+
+#: include/elementor/offer-tab.php:345 include/elementor/services-box.php:202
+#: include/elementor/background-shapes.php:151 include/elementor/team.php:525
+#: include/elementor/tg-popup-video.php:158 include/elementor/roadmap.php:220
+#: include/elementor/icon-list.php:195 include/elementor/image-box.php:316
+#: include/elementor/contact.php:298 include/elementor/testimonial.php:239
+#: include/elementor/blog-post.php:305 include/elementor/icon-box.php:193
+#: include/elementor/services-sidebar.php:255 include/elementor/tg-btn.php:362
+#: include/elementor/social-list.php:243 include/elementor/faq.php:215
+msgid "Text Transform"
+msgstr ""
+
+#: include/elementor/testimonial.php:152
+msgid ""
+"The above testimonial is about Martha Chumo, who taught herself to code in "
+"one summer. This testimonial example works because it allows prospective "
+"customers to see themselves in Codeacademy’s current customer base."
+msgstr ""
+
+#. Author of the plugin
+msgid "TheTork"
+msgstr ""
+
+#: include/elementor/services-box.php:173
+msgid "This Field for short Description"
+msgstr ""
+
+#: include/common-functions.php:181
+#, php-format
+msgid "This input field has support for the following HTML tags: %1$s"
+msgstr ""
+
+#: page-settings/manager.php:50 page-settings/manager.php:52
+#: include/elementor/hero-banner.php:186 include/elementor/hero-banner.php:620
+#: include/elementor/offer-tab.php:127 include/elementor/offer-tab.php:174
+#: include/elementor/roadmap.php:156 include/elementor/icon-list.php:141
+#: include/elementor/image-box.php:195 include/elementor/contact.php:118
+#: include/elementor/contact.php:125 include/elementor/contact.php:236
+#: include/elementor/icon-box.php:141 include/elementor/heading.php:128
+#: include/elementor/heading.php:240 include/elementor/services-sidebar.php:151
+msgid "Title"
+msgstr ""
+
+#: include/elementor/offer-tab.php:118 include/elementor/heading.php:121
+msgid "Title & Content"
+msgstr ""
+
+#: include/elementor/heading.php:207
+msgid "Title / Content"
+msgstr ""
+
+#: include/elementor/heading.php:140
+msgid "Title HTML Tag"
+msgstr ""
+
+#: include/elementor/blog-post.php:247
+msgid "Title Word Count"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:98
+#: include/widgets/genix-sidebar-form-widget.php:63
+#: include/widgets/genix-portfolio-info-widget.php:82
+msgid "Title:"
+msgstr ""
+
+#: include/elementor/testimonial.php:197
+msgid "Trade Master"
+msgstr ""
+
+#: include/elementor/hero-banner.php:526 include/elementor/hero-banner.php:541
+msgid "Trading experience"
+msgstr ""
+
+#: include/elementor/team.php:313
+msgid "Twitter"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:148
+msgid "Twitter:"
+msgstr ""
+
+#: include/elementor/team.php:226
+msgid "Type designation here"
+msgstr ""
+
+#: include/elementor/heading.php:132
+msgid "Type Heading Text"
+msgstr ""
+
+#: include/elementor/icon-list.php:155
+msgid "Type list desc"
+msgstr ""
+
+#: include/elementor/icon-list.php:144 include/elementor/contact.php:128
+#: include/elementor/contact.php:239
+msgid "Type list text"
+msgstr ""
+
+#: include/elementor/team.php:197
+msgid "Type name here"
+msgstr ""
+
+#: include/elementor/offer-tab.php:177 include/elementor/offer-tab.php:238
+msgid "Type Tab Title"
+msgstr ""
+
+#: include/elementor/offer-tab.php:130 include/elementor/offer-tab.php:141
+msgid "Type Title Here"
+msgstr ""
+
+#: include/elementor/tg-popup-video.php:139
+msgid "Type URL Here"
+msgstr ""
+
+#: include/elementor/team.php:211 include/elementor/contact.php:189
+#: include/elementor/brand.php:144 include/elementor/services-sidebar.php:220
+#: include/elementor/social-list.php:180
+msgid "Type url here"
+msgstr ""
+
+#: include/elementor/testimonial.php:153
+msgid "Type your review content here"
+msgstr ""
+
+#: include/elementor/pricing.php:283
+msgid "Unlimited learning access"
+msgstr ""
+
+#: include/elementor/offer-tab.php:139
+msgid ""
+"Unlock the full potential of our product with our amazing features and top-"
+"notch."
+msgstr ""
+
+#: include/custom-post-project.php:42 include/custom-post-services.php:42
+msgid "Update Item"
+msgstr ""
+
+#: include/custom-post-project.php:91
+msgid "Update Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:91
+msgid "Update Service Category"
+msgstr ""
+
+#: include/elementor/offer-tab.php:220
+msgid "Upload Chart Image"
+msgstr ""
+
+#: include/elementor/services-box.php:161 include/elementor/contact.php:225
+#: include/elementor/pricing.php:251
+msgid "Upload Icon"
+msgstr ""
+
+#: include/elementor/offer-tab.php:196 include/elementor/tg-popup-video.php:125
+msgid "Upload Image"
+msgstr ""
+
+#: include/elementor/offer-tab.php:322
+msgid "Upload Shape"
+msgstr ""
+
+#: include/custom-post-project.php:52 include/custom-post-services.php:52
+msgid "Uploaded to this item"
+msgstr ""
+
+#: include/elementor/offer-tab.php:350 include/elementor/services-box.php:207
+#: include/elementor/background-shapes.php:156 include/elementor/team.php:530
+#: include/elementor/tg-popup-video.php:163 include/elementor/roadmap.php:225
+#: include/elementor/icon-list.php:200 include/elementor/image-box.php:321
+#: include/elementor/contact.php:303 include/elementor/testimonial.php:244
+#: include/elementor/blog-post.php:310 include/elementor/icon-box.php:198
+#: include/elementor/services-sidebar.php:260 include/elementor/tg-btn.php:367
+#: include/elementor/social-list.php:248 include/elementor/faq.php:220
+msgid "UPPERCASE"
+msgstr ""
+
+#: include/elementor/contact.php:187 include/elementor/brand.php:142
+#: include/elementor/services-sidebar.php:218
+#: include/elementor/social-list.php:178
+msgid "URL"
+msgstr ""
+
+#: include/custom-post-project.php:50 include/custom-post-services.php:50
+msgid "Use as featured image"
+msgstr ""
+
+#: include/elementor/tg-btn.php:129 include/elementor/tg-btn.php:261
+msgid "Video Button"
+msgstr ""
+
+#: include/elementor/hero-banner.php:332
+#: include/elementor/tg-popup-video.php:136 include/elementor/tg-btn.php:282
+msgid "Video URL"
+msgstr ""
+
+#: include/custom-post-project.php:43 include/custom-post-services.php:43
+msgid "View Item"
+msgstr ""
+
+#: include/custom-post-project.php:92
+msgid "View Project Category"
+msgstr ""
+
+#: include/custom-post-services.php:92
+msgid "View Service Category"
+msgstr ""
+
+#: include/elementor/team.php:394
+msgid "Vimeo"
+msgstr ""
+
+#: include/elementor/hero-banner.php:320 include/elementor/tg-btn.php:273
+msgid "Watch Video"
+msgstr ""
+
+#: include/elementor/team.php:260
+msgid "Website Address"
+msgstr ""
+
+#: include/elementor/pricing.php:264 include/elementor/pricing.php:280
+msgid "Weekly online meeting"
+msgstr ""
+
+#: include/elementor/faq.php:191
+msgid "What are the disadvantages of online trading?"
+msgstr ""
+
+#: include/elementor/faq.php:165 include/elementor/faq.php:188
+msgid "What does this tool do?"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:142
+msgid "Widget Group"
+msgstr ""
+
+#: include/elementor/services-sidebar.php:118
+msgid "Widget Layout"
+msgstr ""
+
+#: include/elementor/hero-banner.php:516 include/elementor/hero-banner.php:540
+msgid "Years"
+msgstr ""
+
+#: include/elementor/offer-tab.php:209 include/elementor/offer-tab.php:250
+#: include/elementor/team.php:247 include/elementor/blog-post.php:237
+msgid "Yes"
+msgstr ""
+
+#: include/elementor/team.php:355
+msgid "Youtube"
+msgstr ""
+
+#: include/widgets/genix-info-widget.php:157
+msgid "Youtube:"
+msgstr ""

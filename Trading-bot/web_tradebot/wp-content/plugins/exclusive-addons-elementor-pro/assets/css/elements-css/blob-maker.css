@@ -1,0 +1,19 @@
+/* Blob maker css start */
+
+.exad-blob-maker.yes{
+    position: absolute;
+    z-index: -1;
+}
+.exad-blob-maker .exad-blob-shape.exad-blob-shape-current-position-yes{
+    position: absolute;
+    z-index: -1;
+}
+.exad-blob-maker{
+    display: flex;
+    flex-wrap: wrap;
+}
+.exad-blob-maker .exad-blob-shape img{
+    height: 100%;
+    width: 100%;
+}
+/* Blob maker css end */

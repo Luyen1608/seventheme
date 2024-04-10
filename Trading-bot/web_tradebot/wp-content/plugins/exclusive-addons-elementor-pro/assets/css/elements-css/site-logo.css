@@ -1,0 +1,11 @@
+
+/* Site Logo CSS Starts */
+
+.exad-site-logo img{
+    transition: all .3s ease;
+}
+.exad-site-logo .custom-logo-link:focus{
+    outline: 0;
+}
+
+/* Site Logo CSS Ends */

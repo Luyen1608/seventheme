@@ -1,0 +1,410 @@
+/* Image Hotspot Start */
+
+.exad-hotspot.exad-hotspot-slack-animation .exad-hotspot-item .exad-hotspot-dot::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: block;
+  box-shadow: inset 0 0 4px 2px rgba(255,255,255, .2), 0 0 4px 2px rgba(255,255,255, .2);
+  animation: slack 600ms linear infinite;
+  animation-direction: alternate;
+  z-index: -1;
+  opacity: .8;
+}
+.exad-hotspot.exad-hotspot-egg-animation .exad-hotspot-item .exad-hotspot-dot::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.3);
+  height: 100%;
+  width: 100%;
+  content: "";
+  display: block;
+  animation: egg 600ms linear infinite;
+  animation-direction: alternate;
+}
+
+.exad-hotspot.exad-hotspot-glow-animation .exad-hotspot-item .exad-hotspot-dot::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+  z-index: 1;
+  -webkit-animation: pulse-one 3s infinite;
+          animation: pulse-one 3s infinite;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: -1;
+}
+
+.exad-hotspot.exad-hotspot-glowing-border .exad-hotspot-dot-icon{
+  position: relative;
+}
+
+.exad-hotspot.exad-hotspot-glowing-border .exad-hotspot-dot-icon::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  -webkit-animation: hotspot_pulse 2s infinite;
+          animation: hotspot_pulse 2s infinite;
+  transition: all .3s ease;
+}
+
+.exad-hotspot.exad-hotspot-glowing-border .exad-hotspot-dot-icon::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  width: 70%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  -webkit-animation: hotspot_pulse 2s infinite;
+          animation: hotspot_pulse 2s infinite;
+  transition: all .3s ease;
+}
+
+.exad-hotspot.exad-hotspot-moving-animation .exad-hotspot-dot .exad-hotspot-dot-icon i {
+  font-size: 36px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+  -webkit-animation: tag-rotate 4s infinite;
+          animation: tag-rotate 4s infinite;
+}
+
+.exad-hotspot .exad-hotspot-item .exad-hotspot-dot {
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.exad-hotspot .exad-hotspot-item .exad-hotspot-dot-icon{
+  position: relative;
+}
+.exad-hotspot .exad-hotspot-item .exad-hotspot-dot-icon i, .exad-hotspot .exad-hotspot-item .exad-hotspot-dot-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.exad-hotspot .exad-hotspot-item .exad-hotspot-dot-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.exad-hotspot.exad-hotspot-hover-scale .exad-hotspot-item .exad-hotspot-dot:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.exad-hotspot.exad-hotspot-tooltip-indicator-yes .exad-hotspot-item .exad-hotspot-tooltip::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #fff transparent transparent transparent;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.exad-hotspot.style-2.exad-hotspot-tooltip-indicator-yes .exad-hotspot-item .exad-hotspot-tooltip::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 8px 7.5px 0;
+  border-color: transparent #007bff transparent transparent;
+  top: 19px;
+  left: -4px;
+}
+
+.exad-hotspot .exad-hotspot-item .exad-hotspot-tooltip .exad-hotspot-tooltip-content {
+  margin: 0;
+}
+.exad-hotspot .exad-hotspot-image{
+  overflow: hidden;
+}
+.exad-hotspot .exad-hotspot-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.exad-hotspot .exad-hotspot-image {
+  position: relative;
+}
+.exad-hotspot .exad-hotspot-image::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.exad-hotspot-tooltip-content .exad-hotspot-tooltip-content-button{
+  text-decoration: none;
+  transition: all .3s ease;
+  display: inline-block;
+}
+
+.exad-hotspot-tooltip-content .exad-hotspot-tooltip-content-image{
+  width: 100%;
+  overflow: hidden;
+}
+.exad-hotspot-tooltip-content .exad-hotspot-tooltip-content-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+/* On Hover */
+.exad-hotspot.default.tooltip-on-hover .exad-hotspot-item .exad-hotspot-dot:hover .exad-hotspot-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.exad-hotspot.default.tooltip-on-hover .exad-hotspot-item .exad-hotspot-tooltip {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+.exad-hotspot.style-1.tooltip-on-hover .exad-hotspot-item .exad-hotspot-dot .exad-hotspot-dot-icon{
+  transition: all 0.3s ease 0.3, border-radius 0.1s ease 0.3;
+}
+.exad-hotspot.style-1.tooltip-on-hover .exad-hotspot-item .exad-hotspot-dot:hover .exad-hotspot-dot-icon{
+  border-radius: 0;
+}
+.exad-hotspot.style-1.tooltip-on-hover .exad-hotspot-item .exad-hotspot-dot:hover .exad-hotspot-tooltip {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.exad-hotspot.style-1.tooltip-on-hover .exad-hotspot-item .exad-hotspot-tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  transition: all .3s ease;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.exad-hotspot.style-2.tooltip-on-hover .exad-hotspot-item .exad-hotspot-tooltip{
+  position: absolute;
+  top: 0;
+  left: 60px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  transition: -webkit-transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  transition: transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  transition: transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91), -webkit-transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.exad-hotspot.style-2.tooltip-on-hover .exad-hotspot-item .exad-hotspot-dot:hover .exad-hotspot-tooltip {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* On click  */
+
+.exad-hotspot.default.tooltip-on-click .exad-hotspot-item .exad-hotspot-tooltip{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+}
+.exad-hotspot.default.tooltip-on-click .exad-hotspot-item.exad-hotspot-open-default-tooltip .exad-hotspot-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.exad-hotspot.style-1.tooltip-on-click .exad-hotspot-item .exad-hotspot-dot .exad-hotspot-dot-icon{
+  transition: all 0.3s ease 0.3, border-radius 0.1s ease 0.3;
+}
+.exad-hotspot.style-1.tooltip-on-click .exad-hotspot-item.exad-hotspot-open-tooltip .exad-hotspot-dot .exad-hotspot-dot-icon{
+  border-radius: 0;
+}
+.exad-hotspot.style-1.tooltip-on-click .exad-hotspot-item .exad-hotspot-tooltip{
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  transition: all .3s ease;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.exad-hotspot.style-1.tooltip-on-click .exad-hotspot-item.exad-hotspot-open-tooltip .exad-hotspot-tooltip {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.exad-hotspot.style-2.tooltip-on-click .exad-hotspot-item .exad-hotspot-tooltip{
+  position: absolute;
+  top: 0;
+  left: 60px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  transition: -webkit-transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  transition: transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  transition: transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91), -webkit-transform 0.5s cubic-bezier(0.36, 0.03, 0, 0.91);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+.exad-hotspot.style-2.tooltip-on-click .exad-hotspot-item.exad-hotspot-open-style-2-tooltip .exad-hotspot-tooltip {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* Keyframe for hotspot animation */
+
+@-webkit-keyframes hotspot_pulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(5);
+            transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+  }
+}
+
+
+@keyframes hotspot_pulse {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(5);
+            transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes tag-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes tag-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes pulse-one {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-one {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes slack {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  to {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+@keyframes egg {
+  from { box-shadow: inset 0 0 12px 6px #7b56ff94; }
+  to { box-shadow: inset 0 0 4px 2px #7b56ff94; }
+}
+/* Image Hotspot End */

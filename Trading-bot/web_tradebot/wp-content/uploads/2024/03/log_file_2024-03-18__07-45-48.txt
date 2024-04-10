@@ -1,0 +1,63 @@
+
+---Downloaded files---
+The import files for: Home Dark were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = http://tradebot365.com
+Data file = /home/qnkdilnvhosting/public_html/tradebot365.com/wp-content/themes/bitrader/sample-data/dark/contents-demo.xml
+Widget file = /home/qnkdilnvhosting/public_html/tradebot365.com/wp-content/themes/bitrader/sample-data/dark/widget-settings.json
+Customizer file = /home/qnkdilnvhosting/public_html/tradebot365.com/wp-content/themes/bitrader/sample-data/dark/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - Search Here - Imported
+Categories - Categories - Imported
+Bitrader Sidebar Posts - Recent Post - Imported
+Tag Cloud - Popular Tag - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

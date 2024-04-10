@@ -1,0 +1,325 @@
+.exad-promo-box-container {
+	position: relative;
+}
+.exad-promo-box-container .exad-promo-logo {
+	width: 150px;
+	overflow: hidden;
+	display: table;
+} 
+.exad-promo-box-container .exad-promo-logo img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+} 
+.exad-promo-box-container.exad-promo-content-type-horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal,
+.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-content-container,
+.exad-promo-box-container.exad-promo-content-type-horizontal .exad-countdown-content-container,
+.exad-promo-box-container.exad-promo-content-type-horizontal .exad-mailchimp-container {
+	/* flex: 1 1 auto; */
+}
+.exad-promo-box-container .exad-countdown-content-container .exad-countdown-count {
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+}
+.exad-promo-box-container .exad-countdown-content-container .exad-countdown-title {
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+}
+
+.exad-promo-box-container.exad-promo-content-type-horizontal .exad-mailchimp-container.exad-mailchimp-type-horizontal .exad-mailchimp-form-container .exad-mailchimp-item {
+	flex: inherit;
+}
+
+.exad-promo-box-container .exad-countdown.exad-countdown-title-visibility-no .exad-countdown-container .exad-countdown-timer-wrapper>span.exad-countdown-title {
+	display: none;
+}
+
+.exad-mailchimp-submit-btn button {
+  border: 0;
+  outline: none;
+}
+.exad-promo-box-container.exad-promo-content-type-vertical {
+  display: block;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-start .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-logo {
+  margin-right: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-start .exad-promo-box-container.exad-promo-content-type-vertical .exad-countdown {
+  justify-content: flex-start;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-start .exad-promo-box-container.exad-promo-content-type-vertical .exad-mailchimp-input-field {
+	margin-right: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-start .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-box-item {
+  text-align: left;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-center .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-logo {
+	margin-left: auto;
+	margin-right: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-center .exad-promo-box-container.exad-promo-content-type-vertical .exad-countdown {
+  justify-content: center;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-center .exad-promo-box-container.exad-promo-content-type-vertical .exad-mailchimp-input-field {
+	margin-left: auto;
+	margin-right: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-center .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-box-item {
+  text-align: center;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-end .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-logo {
+	margin-left: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-end .exad-promo-box-container.exad-promo-content-type-vertical .exad-countdown {
+  justify-content: flex-end;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-end .exad-promo-box-container.exad-promo-content-type-vertical .exad-mailchimp-input-field {
+  margin-left: auto;
+}
+.exad-promo-box-wrapper.exad-promo-allignment-flex-end .exad-promo-box-container.exad-promo-content-type-vertical .exad-promo-box-item {
+  text-align: right;
+}
+.exad-promo-box-container.exad-promo-content-type-vertical a.exad-promo-button-link {
+	display: inline-block;
+}
+
+.exad-promo-box-container .exad-promo-box-dismiss-icon {
+    position: absolute;
+    transform: translateY(-50%);
+    line-height: 0;
+}
+
+.exad-promo-box-container .exad-promo-box-dismiss-icon svg {
+    cursor: pointer;
+}
+
+.exad-promo-box-wrapper.exad-promo-position-top,
+.exad-promo-box-wrapper.exad-promo-position-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.exad-promo-box-wrapper.exad-promo-align-type-horizontal.exad-promo-position-top,
+.exad-promo-box-wrapper.exad-promo-align-type-horizontal.exad-promo-position-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exad-promo-box-wrapper.exad-promo-position-bottom {
+	top: inherit;
+}
+
+body.admin-bar .exad-promo-box-wrapper.exad-promo-position-top {
+    top: 32px;
+}
+
+.exad-promo-box-wrapper.exad-promo-position-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-responsive-heading,
+.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-responsive-heading {
+	display: none;
+}
+.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-wrapper,
+.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-wrapper {
+    height: 100px;
+    background: #34495e;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.exad-promo-box-wrapper.exad-promo-position-top .show-menu-btn,
+.exad-promo-box-wrapper.exad-promo-position-top .hide-menu-btn,
+.exad-promo-box-wrapper.exad-promo-position-bottom .show-menu-btn,
+.exad-promo-box-wrapper.exad-promo-position-bottom .hide-menu-btn {
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+.exad-promo-box-wrapper.exad-promo-position-top .show-menu-btn i,
+.exad-promo-box-wrapper.exad-promo-position-bottom .show-menu-btn i {
+	line-height: 1;
+}
+.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container a:hover,
+.exad-promo-box-wrapper.exad-promo-position-top .show-menu-btn:hover,
+.exad-promo-box-wrapper.exad-promo-position-top .hide-menu-btn:hover,
+.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container a:hover,
+.exad-promo-box-wrapper.exad-promo-position-bottom .show-menu-btn:hover,
+.exad-promo-box-wrapper.exad-promo-position-bottom .hide-menu-btn:hover {
+	color: #3498db;
+}
+
+.exad-promo-box-wrapper.exad-promo-position-top #exad-promo-responsive-menu,
+.exad-promo-box-wrapper.exad-promo-position-bottom #exad-promo-responsive-menu {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+.exad-promo-box-wrapper .exad-countdown{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.exad-promo-box-wrapper .exad-countdown .exad-countdown-container{
+	margin: 0;
+	width: auto;
+}
+
+@media screen and (max-width:767px) {
+	.exad-promo-box-wrapper.exad-promo-position-top,
+	.exad-promo-box-wrapper.exad-promo-position-bottom {
+		z-index: 9;
+		padding: 0 10px;
+	}
+  .exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-top,
+  .exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-responsive-heading,
+  .exad-promo-box-wrapper.exad-promo-position-top .show-menu-btn,
+  .exad-promo-box-wrapper.exad-promo-position-top .hide-menu-btn,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-responsive-heading,
+  .exad-promo-box-wrapper.exad-promo-position-bottom .show-menu-btn,
+  .exad-promo-box-wrapper.exad-promo-position-bottom .hide-menu-btn {
+  	display: block;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #e6e2ff;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container a,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container a {
+ 		display: block;
+  	padding: 20px;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .hide-menu-btn,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .hide-menu-btn {
+  	position: absolute;
+  	top: 80px;
+  	right: 20px;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top #exad-promo-responsive-menu:checked ~ .exad-promo-box-container,
+	.exad-promo-box-wrapper.exad-promo-position-bottom #exad-promo-responsive-menu:checked ~ .exad-promo-box-container {
+  	right: 0;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container .exad-promo-logo,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container .exad-promo-logo {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container .exad-promo-logo img,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container .exad-promo-logo img {
+    max-width: 150px;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal {
+		flex-direction: column;
+		align-items: inherit;
+		justify-content: center;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-content-container,
+ 	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal .exad-countdown-content-container,
+ 	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal .exad-mailchimp-container,
+	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-content-container,
+ 	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal .exad-countdown-content-container,
+ 	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal .exad-mailchimp-container {
+ 		flex: inherit;
+ 	}
+ 	.exad-promo-box-wrapper.exad-promo-position-top .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-box-item:not(:last-child),
+ 	.exad-promo-box-wrapper.exad-promo-position-bottom .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-box-item:not(:last-child) {
+ 		margin: 0 15px !important;
+ 	}
+	.exad-promo-box-wrapper.exad-promo-position-top.exad-responsive-promo-box .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-inner-content,
+	.exad-promo-box-wrapper.exad-promo-position-bottom.exad-responsive-promo-box .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-inner-content {
+		margin: 20px 0 !important;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-top.exad-responsive-promo-box .exad-countdown.exad-countdown-divider .exad-countdown-container::after {
+		top: 22% !important;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-none .exad-promo-box-container.exad-promo-content-type-horizontal {
+		flex-direction: column;
+	}
+	.exad-promo-box-wrapper.exad-promo-position-none .exad-promo-box-container.exad-promo-content-type-horizontal .exad-promo-content-inside-wrapper {
+		margin: 15px 0;
+	}
+ 	body.admin-bar .exad-promo-box-wrapper.exad-promo-position-top {
+ 		top: 46px;
+ 	}
+}
+
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-bottom-right{
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-bottom-left{
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-top-left{
+    width: 350px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-top-right{
+    width: 350px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-left-center{
+    width: 350px;
+    position: fixed;
+    top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.exad-promo-box-wrapper.exad-promo-align-type-vertical.exad-promo-position-right-center{
+    width: 350px;
+    position: fixed;
+    top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.exad-mailchimp-container .exad-mailchimp-input-field{
+	border: none;
+}

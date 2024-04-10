@@ -1,0 +1,12 @@
+
+/* Site Title style starts */
+.exad-site-link {
+	display: flex;
+	margin: 0;
+}
+.exad-site-title {
+	color: #000;
+	font-size: 22px;
+	margin: 0;
+}
+/* Site Title style ends */

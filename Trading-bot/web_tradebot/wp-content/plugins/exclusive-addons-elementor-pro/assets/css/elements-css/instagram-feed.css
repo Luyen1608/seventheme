@@ -1,0 +1,151 @@
+/* Instagram feed style start */
+
+.exad-instagram-feed-item{
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+.exad-instagram-feed-item .exad-instagram-feed-wrapper a.exad-instagram-feed-thumb{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.exad-instagram-feed-item .exad-instagram-feed-wrapper{
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.exad-instagram-feed-item .exad-instagram-feed-wrapper a.exad-instagram-feed-thumb::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 1;
+}
+.exad-instagram-feed-thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.exad-instagram-feed-item .exad-instagram-feed-wrapper:hover a.exad-instagram-feed-thumb::before{
+    opacity: 1;
+}
+.exad-instagram-feed-item.over-image .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide .exad-instagram-feed-wrapper .exad-instagram-feed-caption {
+    transform: translateY(-100%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption {
+    transform: translateY(0);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.over-image.animate-slide .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    transform: translate(-50%,-90%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.over-image.animate-slide .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption{
+    transform: translate(-50%, -50%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    transform: translateY(100%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption{
+    transform: translateY(0);
+}
+
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide-with-image .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    transform: translateY(100%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide-with-image .exad-instagram-feed-wrapper .exad-instagram-feed-thumb img{
+    transform: translateY(0px);
+    transition: all .3s ease;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide-with-image .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption{
+    transform: translateY(0);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image.animate-slide-with-image .exad-instagram-feed-wrapper:hover .exad-instagram-feed-thumb img{
+    transform: translateY(-30px);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide-with-image .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    transform: translateY(-100%);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide-with-image .exad-instagram-feed-wrapper .exad-instagram-feed-thumb img{
+    transform: translateY(0px);
+    transition: all .3s ease;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide-with-image .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption{
+    transform: translateY(0);
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.top-of-image.animate-slide-with-image .exad-instagram-feed-wrapper:hover .exad-instagram-feed-thumb img{
+    transform: translateY(30px);
+}
+
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes.bottom-of-image .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes .exad-instagram-feed-wrapper .exad-instagram-feed-caption{
+    opacity: 0;
+    transition: all .3s ease;
+}
+.exad-instagram-feed-item.exad-insta-feed-show-caption-yes .exad-instagram-feed-wrapper:hover .exad-instagram-feed-caption{
+    opacity: 1;
+}
+.exad-instagram-feed-wrapper .exad-instagram-feed-thumb.image-zoom-in img{
+    transform: scale(1);
+    transition: all .3s ease;
+}
+.exad-instagram-feed-wrapper:hover .exad-instagram-feed-thumb.image-zoom-in img{
+    transform: scale(1.1);
+}
+.exad-instagram-feed-wrapper .exad-instagram-feed-thumb.image-zoom-out img{
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+.exad-instagram-feed-wrapper:hover .exad-instagram-feed-thumb.image-zoom-out img{
+    transform: scale(1);
+}
+.exad-instagram-user-profile{
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.exad-instagram-user-profile-image{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+.exad-instagram-user-profile-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.exad-instagram-user-profile-name{
+    transition: all .3s ease;
+}
+.exad-instagram-feed-user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Instagram feed style End */

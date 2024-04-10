@@ -1,0 +1,738 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bitrader\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-10 09:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.3.1\n"
+"X-Domain: bitrader"
+
+#: comments.php:26
+msgid " Comment "
+msgstr ""
+
+#: comments.php:26
+msgid " Comments"
+msgstr ""
+
+#: inc/kirki-customizer.php:317 inc/template-helper.php:169
+#: inc/template-helper.php:170 inc/template-helper.php:171
+#: inc/template-helper.php:191 inc/template-helper.php:192
+#: inc/template-helper.php:193 inc/template-helper.php:194
+#: inc/template-helper.php:238 inc/template-helper.php:239
+#: inc/template-helper.php:240 inc/template-helper.php:241
+#: inc/template-helper.php:242 template-parts/header/header-1.php:19
+#: template-parts/header/header-2.php:19 template-parts/header/header-3.php:19
+msgid "#"
+msgstr ""
+
+#: comments.php:53
+msgid "&larr; Older "
+msgstr ""
+
+#: inc/kirki-customizer.php:556
+msgid "404 Link Text"
+msgstr ""
+
+#: inc/kirki-customizer.php:108
+msgid "404 Page"
+msgstr ""
+
+#: inc/kirki-customizer.php:529
+msgid "404 Page Image"
+msgstr ""
+
+#: functions.php:251
+msgid "<i class=\"fas fa-reply\"></i> Reply"
+msgstr ""
+
+#: 404.php:18
+msgid "<span>ooops!</span> page not found"
+msgstr ""
+
+#: inc/kirki-customizer.php:257
+msgid "Adjust your logo size with px"
+msgstr ""
+
+#: inc/add_plugin.php:43
+msgid "Advanced Custom Fields"
+msgstr ""
+
+#: inc/add_plugin.php:145
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/kirki-customizer.php:558
+msgid "Back To Home"
+msgstr ""
+
+#: 404.php:20
+msgid "Back to home"
+msgstr ""
+
+#: inc/kirki-customizer.php:172
+msgid "Back to Top Switcher"
+msgstr ""
+
+#: inc/add_plugin.php:135
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:125
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:130
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Name of the theme
+msgid "Bitrader"
+msgstr ""
+
+#. Description of the theme
+msgid "Bitrader - Crypto, Stock and Forex Trading WordPress Theme"
+msgstr ""
+
+#: inc/add_plugin.php:37
+msgid "Bitrader Core"
+msgstr ""
+
+#: inc/kirki-customizer.php:21
+msgid "Bitrader Customizer"
+msgstr ""
+
+#: inc/kirki-customizer.php:28
+msgid "Bitrader Default Setting"
+msgstr ""
+
+#: inc/kirki-customizer.php:417 inc/common/bitrader-breadcrumb.php:21
+#: inc/common/bitrader-breadcrumb.php:24
+msgid "Blog"
+msgstr ""
+
+#: inc/kirki-customizer.php:376
+msgid "Blog Author Meta Switcher"
+msgstr ""
+
+#: inc/kirki-customizer.php:389
+msgid "Blog Date Meta Switcher"
+msgstr ""
+
+#: inc/kirki-customizer.php:426
+msgid "Blog Details"
+msgstr ""
+
+#: inc/kirki-customizer.php:424
+msgid "Blog Details Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:84
+msgid "Blog Setting"
+msgstr ""
+
+#: inc/common/bitrader-widgets.php:16
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/kirki-customizer.php:415
+msgid "Blog Title"
+msgstr ""
+
+#: inc/kirki-customizer.php:574
+msgid "Body Font"
+msgstr ""
+
+#: inc/kirki-customizer.php:332
+msgid "Breadcrumb Background Image"
+msgstr ""
+
+#: inc/kirki-customizer.php:341
+msgid "Breadcrumb Hide by Default"
+msgstr ""
+
+#: inc/kirki-customizer.php:354
+msgid "Breadcrumb Nav Hide"
+msgstr ""
+
+#: inc/add_plugin.php:73
+msgid "Breadcrumb NavXT"
+msgstr ""
+
+#: inc/kirki-customizer.php:76
+msgid "Breadcrumb Setting"
+msgstr ""
+
+#: comments.php:118
+msgid "Cancel reply"
+msgstr ""
+
+#: inc/kirki-customizer.php:441
+msgid "Choose Footer Style"
+msgstr ""
+
+#: inc/kirki-customizer.php:100
+msgid "Color Setting"
+msgstr ""
+
+#: comments.php:50
+msgid "Comment navigation"
+msgstr ""
+
+#: inc/add_plugin.php:53
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/kirki-customizer.php:483
+msgid "CopyRight"
+msgstr ""
+
+#: inc/kirki-customizer.php:485 inc/template-helper.php:430
+msgid "Copyright © Bitrader 2023. All Rights Reserved"
+msgstr ""
+
+#: inc/kirki-customizer.php:185
+msgid "Dark mode Switcher"
+msgstr ""
+
+#: inc/kirki-customizer.php:149 inc/kirki-customizer.php:178
+#: inc/kirki-customizer.php:191 inc/kirki-customizer.php:215
+#: inc/kirki-customizer.php:284 inc/kirki-customizer.php:347
+#: inc/kirki-customizer.php:360 inc/kirki-customizer.php:382
+#: inc/kirki-customizer.php:395 inc/kirki-customizer.php:408
+msgid "Disable"
+msgstr ""
+
+#: inc/add_plugin.php:146
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/add_plugin.php:32
+msgid "Elementor Header & Footer Builder"
+msgstr ""
+
+#: inc/add_plugin.php:27
+msgid "Elementor Page Builder"
+msgstr ""
+
+#: inc/kirki-customizer.php:148 inc/kirki-customizer.php:177
+#: inc/kirki-customizer.php:190 inc/kirki-customizer.php:214
+#: inc/kirki-customizer.php:283 inc/kirki-customizer.php:346
+#: inc/kirki-customizer.php:359 inc/kirki-customizer.php:381
+#: inc/kirki-customizer.php:394 inc/kirki-customizer.php:407
+msgid "Enable"
+msgstr ""
+
+#: inc/template-helper.php:73
+msgid "English"
+msgstr ""
+
+#: inc/kirki-customizer.php:291
+msgid "Enter Button Text"
+msgstr ""
+
+#: inc/kirki-customizer.php:307
+msgid "Enter Button URL"
+msgstr ""
+
+#: comments.php:82
+msgid "Enter Email"
+msgstr ""
+
+#: comments.php:81
+msgid "Enter Name"
+msgstr ""
+
+#: comments.php:83
+msgid "Enter Website"
+msgstr ""
+
+#: comments.php:96
+msgid "Enter Your Comment"
+msgstr ""
+
+#: inc/kirki-customizer.php:629
+msgid "Event Slug"
+msgstr ""
+
+#: inc/kirki-customizer.php:473
+msgid "Footer BG Color"
+msgstr ""
+
+#: inc/common/bitrader-widgets.php:32
+#, php-format
+msgid "Footer Column %1$s"
+msgstr ""
+
+#: functions.php:50
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/kirki-customizer.php:92
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/kirki-customizer.php:445
+msgid "Footer settings will not work if you are using Elementor Footer"
+msgstr ""
+
+#: inc/common/bitrader-widgets.php:30
+#, php-format
+msgid "Footer widget no. %1$s"
+msgstr ""
+
+#: inc/kirki-customizer.php:52
+msgid "Header Info Setting"
+msgstr ""
+
+#: inc/kirki-customizer.php:238
+msgid "Header Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:247
+msgid "Header Secondary Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:36
+msgid "Header Setting"
+msgstr ""
+
+#: inc/kirki-customizer.php:44
+msgid "Header Top Setting"
+msgstr ""
+
+#: inc/kirki-customizer.php:596
+msgid "Heading Fonts"
+msgstr ""
+
+#: inc/class-navwalker.php:366
+msgid "Home"
+msgstr ""
+
+#. URI of the theme
+msgid "https://bitrader.thetork.com/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://themeforest.net/user/thetork"
+msgstr ""
+
+#: 404.php:31 inc/common/bitrader-breadcrumb.php:91
+msgid "Image"
+msgstr ""
+
+#: inc/template-functions.php:89
+msgid "Image Alt Text"
+msgstr ""
+
+#: inc/add_plugin.php:91
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/add_plugin.php:90
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/add_plugin.php:92
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: template-parts/content-none.php:43
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: inc/kirki-customizer.php:301 template-parts/header/header-1.php:18
+#: template-parts/header/header-2.php:18 template-parts/header/header-3.php:18
+msgid "Join Now"
+msgstr ""
+
+#: inc/add_plugin.php:68
+msgid "Kirki Customizer Framework"
+msgstr ""
+
+#: comments.php:116
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:117
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:111
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:111
+msgid "Log out?"
+msgstr ""
+
+#: comments.php:105
+msgid "logged in"
+msgstr ""
+
+#: comments.php:111
+msgid "Logged in as"
+msgstr ""
+
+#: inc/template-helper.php:127 inc/template-helper.php:131
+#: inc/template-helper.php:144 inc/template-helper.php:158
+msgid "Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:256
+msgid "Logo Size Height"
+msgstr ""
+
+#: inc/add_plugin.php:63
+msgid "Mailchimp For WP"
+msgstr ""
+
+#: functions.php:49
+msgid "Main Menu"
+msgstr ""
+
+#: inc/kirki-customizer.php:68
+msgid "Mobile Menu Setting"
+msgstr ""
+
+#: comments.php:56
+msgid "Newer &rarr;"
+msgstr ""
+
+#: single.php:52
+msgid "Next Post"
+msgstr ""
+
+#: inc/add_plugin.php:143
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/kirki-customizer.php:547
+msgid "Not Found Description"
+msgstr ""
+
+#: inc/kirki-customizer.php:538
+msgid "Not Found Title"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/kirki-customizer.php:60
+msgid "Offcanvas Setting"
+msgstr ""
+
+#: inc/add_plugin.php:58
+msgid "One Click Demo Import"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"Oops! It looks like you're lost. The page you were looking for couldn't be "
+"found. Don't worry, it happens to the best of us."
+msgstr ""
+
+#: inc/kirki-customizer.php:631
+msgid "ourevent"
+msgstr ""
+
+#: inc/kirki-customizer.php:640
+msgid "ourportfolio"
+msgstr ""
+
+#: template-parts/content-page.php:9
+msgid "Page"
+msgstr ""
+
+#: inc/common/bitrader-breadcrumb.php:36
+msgid "Page not Found"
+msgstr ""
+
+#. Name of the template
+msgid "Page Sidebar"
+msgstr ""
+
+#: template-parts/content-gallery.php:43 template-parts/content-page.php:5
+#: template-parts/content-image.php:40 template-parts/content-search.php:40
+#: template-parts/content.php:40 template-parts/content-audio.php:42
+#: template-parts/content-video.php:45
+msgid "Pages:"
+msgstr ""
+
+#: inc/add_plugin.php:148
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/add_plugin.php:141
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/add_plugin.php:144
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/kirki-customizer.php:638
+msgid "Portfolio Slug"
+msgstr ""
+
+#: comments.php:100 comments.php:119
+msgid "Post Comment"
+msgstr ""
+
+#: inc/template-functions.php:38
+msgid "Post Tags :"
+msgstr ""
+
+#: header.php:46
+msgid "Preloader"
+msgstr ""
+
+#: inc/kirki-customizer.php:156
+msgid "Preloader Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:143
+msgid "Preloader Switcher"
+msgstr ""
+
+#: single.php:41
+msgid "Prev Post"
+msgstr ""
+
+#: inc/kirki-customizer.php:500
+msgid "Primary Color"
+msgstr ""
+
+#: template-parts/blog/blog-btn.php:11
+msgid "Read More"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/add_plugin.php:140
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:280
+msgid "Search"
+msgstr ""
+
+#: inc/common/bitrader-breadcrumb.php:34
+msgid "Search Results for : "
+msgstr ""
+
+#: search.php:27
+msgid "Search Results For:"
+msgstr ""
+
+#: inc/kirki-customizer.php:511
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/kirki-customizer.php:224 inc/kirki-customizer.php:444
+#: inc/kirki-customizer.php:460
+msgid "Select an option..."
+msgstr ""
+
+#: inc/kirki-customizer.php:222
+msgid "Select Header Style"
+msgstr ""
+
+#: inc/kirki-customizer.php:402
+msgid "Show Blog Share"
+msgstr ""
+
+#: inc/kirki-customizer.php:278
+msgid "Show Header Button"
+msgstr ""
+
+#: inc/kirki-customizer.php:209
+msgid "Show Sticky Header"
+msgstr ""
+
+#: inc/kirki-customizer.php:124
+msgid "Slug Settings"
+msgstr ""
+
+#: template-parts/content-gallery.php:61 template-parts/content-image.php:58
+#: template-parts/content-search.php:58 template-parts/content.php:58
+#: template-parts/content-audio.php:60 template-parts/content-video.php:63
+msgid "Social Share :"
+msgstr ""
+
+#: inc/add_plugin.php:94
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/add_plugin.php:105
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:142
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/add_plugin.php:120
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:115
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:147
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/add_plugin.php:110
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. Author of the theme
+msgid "TheTork"
+msgstr ""
+
+#: inc/kirki-customizer.php:474
+msgid "This is a Footer bg color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:501
+msgid "This is a Primary color control."
+msgstr ""
+
+#: inc/kirki-customizer.php:512
+msgid "This is a Secondary color control."
+msgstr ""
+
+#: inc/add_plugin.php:100
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/add_plugin.php:95
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:105
+msgid "to post a comment."
+msgstr ""
+
+#: inc/kirki-customizer.php:116
+msgid "Typography Setting"
+msgstr ""
+
+#: inc/add_plugin.php:93
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/kirki-customizer.php:333 inc/kirki-customizer.php:530
+msgid "Upload Image"
+msgstr ""
+
+#: inc/kirki-customizer.php:157
+msgid "Upload Preloader Logo."
+msgstr ""
+
+#: inc/kirki-customizer.php:239 inc/kirki-customizer.php:248
+msgid "Upload Your Logo"
+msgstr ""
+
+#: inc/kirki-customizer.php:457
+msgid "Widget Number"
+msgstr ""
+
+#: inc/kirki-customizer.php:466
+msgid "Widget Number 2"
+msgstr ""
+
+#: inc/kirki-customizer.php:465
+msgid "Widget Number 3"
+msgstr ""
+
+#: inc/kirki-customizer.php:464
+msgid "Widget Number 4"
+msgstr ""
+
+#: inc/add_plugin.php:48
+msgid "WP Classic Editor"
+msgstr ""
+
+#: comments.php:105
+msgid "You must be"
+msgstr ""
+
+#: inc/template-helper.php:106
+msgid "🇫🇷 France"
+msgstr ""
+
+#: inc/template-helper.php:104
+msgid "🇮🇳 India"
+msgstr ""
+
+#: inc/template-helper.php:103
+msgid "🇷🇺 Russia"
+msgstr ""
+
+#: inc/template-helper.php:105
+msgid "🇹🇷 Turkey"
+msgstr ""

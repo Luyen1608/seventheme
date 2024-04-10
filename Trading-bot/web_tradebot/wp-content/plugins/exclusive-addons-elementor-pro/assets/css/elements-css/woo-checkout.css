@@ -1,0 +1,109 @@
+
+/* Woo checkout css Start */
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-form-coupon .form-row-first,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-form-coupon .form-row-last{
+    width: 100% !important;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table.shop_table{
+    overflow: hidden;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table td,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table th{
+    border: none;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table caption+thead tr:first-child td,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table caption+thead tr:first-child th,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table colgroup+thead tr:first-child td,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table colgroup+thead tr:first-child th,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table thead:first-child tr:first-child td,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout table thead:first-child tr:first-child th{
+    border-top: none;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table.shop_table tbody th,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table.shop_table tfoot td,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce table.shop_table tfoot th{
+    border-top: none;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-checkout-payment{
+    background: none;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-checkout-payment li label {
+    margin-top: -5px;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 .woocommerce form.woocommerce-checkout{
+    display: grid;
+    grid-template-areas:
+    "customer-details title"
+    "customer-details review";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+@media (max-width: 991px){
+    .exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 .woocommerce form.woocommerce-checkout{
+        display: block;
+    }
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce form .form-row label {
+    line-height: 1;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce form .form-row-first,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce form .form-row-last,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-page form .form-row-first,
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce-page form .form-row-last{
+    width: 50%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout .woocommerce form .form-row{
+    padding: 0;
+    margin: 0;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 .woocommerce #customer_details{
+    grid-area: customer-details;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 .woocommerce #order_review_heading{
+    grid-area: title;
+    width: 100%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 .woocommerce #order_review{
+    grid-area: review;
+    width: 100%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 #customer_details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 #customer_details .col-1{
+    width: 100%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-2 #customer_details .col-2{
+    width: 100%;
+}
+.exad-woo-checkout .woocommerce .select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout form #customer_details.col2-set {
+    width: 100%;
+}
+
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-1 .woocommerce-checkout #order_review{
+    width: 100%;
+}
+.exclusive-addons-elementor.woocommerce-page.woocommerce-checkout .exad-woo-checkout.layout-1 .woocommerce-checkout #order_review_heading{
+    width: 100%;
+}
+
+/* Woo checkout css End */

@@ -1,0 +1,26 @@
+/* Image Mask Style Start */
+.exad-image-mask-figure{
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+}
+.exad-image-mask-figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.exad-selector-wrapper input{
+    display: none;
+}
+.exad-image-mask-figure.exad-image-mask-flip-shape-vertical{
+    transform: scaleY(-1);
+}
+.exad-image-mask-figure.exad-image-mask-flip-shape-vertical img{
+    transform: scaleY(-1);
+}
+.exad-image-mask-figure.exad-image-mask-flip-shape-horizontal{
+    transform: scaleX(-1);
+}
+.exad-image-mask-figure.exad-image-mask-flip-shape-horizontal img{
+    transform: scaleX(-1);
+}
+/* Image Mask Style End */

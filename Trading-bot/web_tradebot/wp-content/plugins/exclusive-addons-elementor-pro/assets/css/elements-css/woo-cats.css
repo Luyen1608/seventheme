@@ -1,0 +1,80 @@
+/* woo categories css starts here */
+.exad-woo-product-cat-items figure {
+    position: relative;
+}
+figcaption{
+    margin: 0;
+}
+.exad-woo-product-cat-items .exad-woo-cat-item .exad-wc-cat-link {
+    display: block;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+    overflow: hidden;
+}
+.exad-woo-product-cat-items a {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.exad-woo-product-cat-items .exad-woo-cat-item a.exad-cat-btn.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.exad-woo-product-cat-items .exad-woo-cat-item a.exad-cat-btn.default{
+    display: block;
+}
+.exad-woo-product-cat-items .exad-woo-cat-item a.exad-cat-btn i {
+    margin-right: 8px;
+}
+
+.exad-woo-product-cat-items .exad-woo-cat-item a.exad-cat-btn span.exad-woo-cat-item-count {
+    margin-left: 8px;
+}
+
+.exad-wc-cat-link.exad-woo-product-cat-item-overlay-yes{
+    position: relative;
+}
+.exad-wc-cat-link.exad-woo-product-cat-item-overlay-yes::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.exad-wc-cat-link.zoom-in img, .exad-wc-cat-link.zoom-out img{
+    transition: all .3s ease;
+}
+.exad-wc-cat-link.zoom-out img{
+    transform: scale(1.1);
+}
+.exad-woo-cat-item:hover .exad-wc-cat-link.zoom-in img{
+    transform: scale(1.1);
+}
+.exad-woo-cat-item:hover .exad-wc-cat-link.zoom-out img{
+    transform: scale(1);
+}
+
+.exad-woo-product-cat-items .exad-woo-cat-item .exad-wc-cat-link img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+/* woo categories css ends here */

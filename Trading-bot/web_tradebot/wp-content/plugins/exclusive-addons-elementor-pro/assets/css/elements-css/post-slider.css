@@ -1,0 +1,14 @@
+.exad-post-slider .slick-prev:before, .exad-post-slider .slick-next:before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exad-slide-content a{
+    transition: all .3s ease;
+}
+
+.exad-post-slider .exad-slide-bg{
+    background-size: cover;
+}

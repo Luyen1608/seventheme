@@ -1,0 +1,129 @@
+
+/* Moving Lines Section Start */
+.exad-moving-lines {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+}
+
+.exad-moving-lines .line:nth-child(1) {
+    margin-left: -25%;
+}
+.exad-moving-lines .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+}
+
+.exad-moving-lines .line:nth-child(3) {
+    margin-left: 25%;
+}
+
+.exad-moving-lines .line:nth-child(1)::after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.exad-moving-lines .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    -webkit-animation: exadmovingline 7s 0s infinite;
+    animation: exadmovingline 7s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.exad-moving-lines .line:nth-child(3)::after {
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+@keyframes exadmovingline {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+/* Moving Lines Section End */
+
+
+/* Cube Background*/
+
+.exad-moving-cube {
+    overflow: hidden;
+}
+.exad-moving-cube .cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+.exad-moving-cube .cube:nth-child(2n) {
+    border-color: #0051f4;
+}
+.exad-moving-cube .cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+.exad-moving-cube .cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+.exad-moving-cube .cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+.exad-moving-cube .cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+
+.exad-moving-cube .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #003298;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: exadmovingcube 12s ease-in forwards infinite;
+    animation: exadmovingcube 12s ease-in forwards infinite;
+}
+
+@keyframes exadmovingcube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);   
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%); 
+        opacity: 0;
+    }
+}

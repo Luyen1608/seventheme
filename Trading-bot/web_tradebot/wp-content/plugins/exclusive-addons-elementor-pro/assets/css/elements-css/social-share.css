@@ -1,0 +1,35 @@
+/* Social Share CSS Start */
+.exad-social-share-icons.exad-social-share-display-horizontal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+    overflow: hidden; 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.exad-social-share-icons.exad-social-share-display-vertical {
+    display: flex;
+    flex-direction: column;
+}
+.exad-social-share-icons a {
+    display: inline-flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.exad-social-share-icons a svg path {
+    transition: all .3s ease;
+}
+.exad-social-share-icons.exad-social-share-box-yes a{
+    position: relative;
+}
+.exad-social-share-icons.exad-social-share-box-yes a i,
+.exad-social-share-icons.exad-social-share-box-yes a svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Social Share CSS End */

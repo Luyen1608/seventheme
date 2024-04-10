@@ -1,0 +1,61 @@
+/* Counter Style Start */
+.exad-counter-item.exad-counter-left {
+  text-align: left;
+}
+.exad-counter-item.exad-counter-center {
+  text-align: center;
+}
+.exad-counter-data.yes{
+  text-align: center;
+}
+.exad-counter-item.exad-counter-left .exad-counter-data.yes {
+  margin-right: auto;
+}
+.exad-counter-item.exad-counter-center .exad-counter-data.yes {
+  margin: 0 auto;
+}
+.exad-counter-item.exad-counter-right .exad-counter-data.yes {
+  margin-left: auto;
+}
+.exad-counter-item.exad-counter-right {
+  text-align: right;
+}
+.exad-counter-wrapper .exad-counter-item .exad-counter-icon {
+  line-height: 0;
+  display: inline-block;
+}
+.exad-counter-wrapper .exad-counter-item .exad-counter-data {
+  line-height: 1;
+}
+.exad-counter-wrapper .exad-counter-item .exad-counter-content h4 {
+  margin: 0;
+}
+.exad-counter-item.layout-3,.exad-counter-item.layout-4{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.exad-counter-item.layout-4 .exad-counter-icon{
+  order: 2;
+}
+.exad-counter-item.layout-4 .exad-counter-content-wrapper{
+  order: 1;
+}
+.exad-counter-icon.yes{
+  position: relative;
+}
+.exad-counter-icon.yes i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.exad-counter-icon.yes{
+  position: relative;
+}
+.exad-counter-icon.yes svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Counter Style End */

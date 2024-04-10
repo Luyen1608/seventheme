@@ -1,0 +1,125 @@
+/* Off Canvas CSS Start */
+
+body.excluisve-addons-elementor {
+    transition: all .3s ease;
+}
+
+.exad-offcanvas-content-inner{
+    position: fixed;
+    background: #f4f4f4;
+    transition: all .3s ease;
+    z-index: 9999;
+    visibility: hidden;
+    overflow: auto;
+}
+.exad-offcanvas-content-inner::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .exad-offcanvas-content-inner {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.exad-offcanvas-content.offcanvas-top .exad-offcanvas-content-inner,
+.exad-offcanvas-content.offcanvas-bottom .exad-offcanvas-content-inner {
+    width: 100%;
+    left: 0;
+}
+
+.exad-offcanvas-content.offcanvas-left .exad-offcanvas-content-inner,
+.exad-offcanvas-content.offcanvas-right .exad-offcanvas-content-inner {
+    height: 100%;
+    top: 0;
+}
+
+.exad-offcanvas-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+.exad-offcanvas-overlay.offcanvas-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.exad-offcanvas-content-body{
+    padding: 50px 20px;
+}
+
+.exad-offcanvas-content-inner.offcanvas-active{
+    visibility: visible;
+}
+
+.exad-offcanvas-close-button{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: 30px;
+    width: 30px;
+}
+.exad-offcanvas-close-button span{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.exad-offcanvas-close-button span::before,
+.exad-offcanvas-close-button span::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 1px;
+    background: #000;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+.exad-offcanvas-close-button span::after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.exad-offcanvas-content-inner .list-inline-item{
+    display: block;
+}
+
+.exad-offcanvas-open-button{
+    display: inline-block;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.exad-offcanvas-open-button-wrapper.align-left{
+    text-align: left;
+}
+.exad-offcanvas-open-button-wrapper.align-center{
+    text-align: center;
+}
+.exad-offcanvas-open-button-wrapper.align-right{
+    text-align: right;
+}
+
+.exad-offcanvas-open-button-wrapper.absolute .exad-offcanvas-open-button{
+    position: absolute;
+}
+
+.exad-offcanvas-menu{
+    margin: 0;
+    padding: 0;
+}
+.exad-offcanvas-menu li{
+    list-style: none;
+    transition: all .3s ease;
+}
+.exad-offcanvas.exad-offcanvas-button-fixed .exad-offcanvas-open-button-wrapper {
+    position: fixed;
+    z-index: 111;
+}
+/* Off Canvas CSS End */

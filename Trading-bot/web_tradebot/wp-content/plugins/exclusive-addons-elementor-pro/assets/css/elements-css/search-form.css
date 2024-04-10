@@ -1,0 +1,113 @@
+/* Search Form style starts */
+.exad-search-form-container {
+    display: flex;
+    overflow: hidden;
+}
+.exad-search-button-wrapper input[type=search] {
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all .5s;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.exad-search-button-wrapper button {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.exad-search-button-wrapper input[type=search]:focus {
+    cursor: auto;
+    border: none;
+    box-shadow: none;
+}
+
+.exad-search-icon-toggle input:-moz-placeholder,
+.exad-search-icon-toggle input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.exad-search-button-wrapper.exad-input-focus {
+    display: flex;
+}
+
+.exad-search-form-container .exad-search-submit {
+    min-width: 3%;
+    position:relative;
+}
+
+.exad-search-form-container button#clear,
+.exad-search-icon-toggle button#clear {
+    visibility: hidden;
+    position: absolute;
+    right:0; 
+    top:0;
+    padding: 0 8px;
+    font-style: normal;
+    user-select: none;
+    cursor: pointer;
+    bottom:0;
+    margin-right:10px;
+    background-color: transparent;
+}
+
+.exad-search-button-wrapper input[type="search"]::-webkit-search-decoration,
+.exad-search-button-wrapper input[type="search"]::-webkit-search-cancel-button,
+.exad-search-button-wrapper input[type="search"]::-webkit-search-results-button,
+.exad-search-button-wrapper input[type="search"]::-webkit-search-results-decoration { 
+    display: none; 
+}
+
+.exad-search-form-container button#clear-with-button{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    padding: 0 8px;
+    font-style: normal;
+    font-size: 1.2em;
+    user-select: none;
+    cursor: pointer;
+    bottom:0;
+    background-color: transparent;
+}
+
+.exad-search-button-wrapper, 
+.exad-search-form-container,
+.exad-search-icon-toggle,
+.exad-search-button-wrapper .exad-search-icon-toggle i,
+.exad-search-button-wrapper .exad-search-icon-toggle i:before {
+    position: relative;
+}
+
+.exad-search-button-wrapper .exad-search-icon-toggle .exad-search-form-input {
+    position: absolute;
+    width: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.exad-search-icon-toggle {
+    width: 100%!important;
+}
+
+.exad-search-button-wrapper.exad-input-focus .exad-search-icon-toggle .exad-search-form-input{
+    position: absolute;
+    width: 250px;
+    right: 0;
+}
+
+.exad-search-type-text .exad-search-form-container,
+.exad-search-type-icon_text .exad-search-form-container,
+.exad-search-type-text .exad-search-form-container .exad-search-form-input,
+.exad-search-type-icon_text .exad-search-form-container .exad-search-form-input {
+    width: 100%;
+}
+
+.exad-search-icon-toggle {
+    line-height: 1.5;
+}
+
+/* Search Form style ends */

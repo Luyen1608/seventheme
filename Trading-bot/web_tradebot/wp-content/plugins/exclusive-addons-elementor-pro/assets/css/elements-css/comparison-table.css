@@ -1,0 +1,151 @@
+/* Comparison Table style starts */
+tr.table-heading th{
+    position: relative;
+}
+.exad-table-container table {
+    overflow: inherit;
+}
+@media( max-width: 768px ){
+    .exad-table-container{
+        overflow-x: scroll;
+    }
+}
+.exad-main-table thead tr th {
+    position: relative;
+}
+.exad-main-table {
+    border-spacing: 0;
+    border-collapse: initial;
+}
+.exad-table-container tr.table-heading td span.exad-table-heading {
+    font-weight: 600;
+    font-size: 20px;
+}
+.exad-table-ribbon-content span {
+    color: #ffffff;
+    background-color: #46b812;
+    padding: 4px 0 4px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+}
+.exad-table-ribbon-content.exad-table-ribbon-top {
+    transform: translateY(-100%);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.exad-table-ribbon-content.exad-table-ribbon-top span {
+    width: 100%;
+    display: block;
+}
+.exad-table-ribbon-content.exad-table-ribbon-left {
+    transform: rotate(0deg);
+    left: 0px;
+    right: auto;
+}
+.exad-table-ribbon-content.exad-table-ribbon-left {
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    z-index: 998;
+    overflow: hidden;
+}
+.exad-table-ribbon-content.exad-table-ribbon-left .exad-table-ribbon-wrapper {
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    width: 200%;
+    transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    margin-top: 35px;
+    line-height: 2;
+}
+.exad-table-ribbon-content.exad-table-ribbon-right {
+    -webkit-transform: rotate(90);
+    -ms-transform: rotate(90);
+    transform: rotate(90deg);
+    left: auto;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    overflow: hidden;
+    height: 100px;
+    z-index: 998;
+}
+.exad-table-ribbon-content.exad-table-ribbon-right .exad-table-ribbon-wrapper {
+    margin-top: 30px;
+    transform: translateY(-50%) translateX(-50%) translateX(30px) rotate(-45deg);
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 200%;
+    -webkit-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    -ms-transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+    margin-top: 30px;
+    line-height: 2;
+}
+.exad-td-tooltip {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    position: relative;
+    margin-left: auto;
+}
+.eicon-info-circle {
+    position: relative;
+}
+.exad-td-tooltip .exad-tooltip-text {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 137%;
+    left: calc( 50% - 60px );
+    transition: .3s;
+}
+.exad-td-tooltip .exad-tooltip-text::before {
+    content: '';
+    border-width: 5px 5px 0 5px;
+    border-color: #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: #000000;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    left: 42%;
+}
+.exad-td-tooltip:hover .exad-tooltip-text {
+    visibility: visible;
+}
+.exad-heading-pricing-duration,
+.exad-heading-pricing-wrapper {
+    display: block;
+}
+.exad-heading-regular-price {
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+.exad-table-container tr.table-heading td {
+    position: relative;
+}
+.exad-heading-current-price {
+    font-size: 28px;
+}
+/* Comparison Table style ends */
+

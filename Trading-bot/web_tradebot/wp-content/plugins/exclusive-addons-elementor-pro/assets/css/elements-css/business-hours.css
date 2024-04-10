@@ -1,0 +1,30 @@
+/* Business Hours style start */
+
+.exad-businesshours-container .business-date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.exad-businesshours-container .business-date span.single-business-date {
+    flex: 1;
+	-webkit-box-flex: 1; 
+	-webkit-flex-grow: 1; 
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	-webkit-flex-basis: 0;
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+}
+
+.exad-businesshours-container .business-date span.single-business-time {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+	-webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    padding-left: 15px;
+}
+/* Business Hours style ends 

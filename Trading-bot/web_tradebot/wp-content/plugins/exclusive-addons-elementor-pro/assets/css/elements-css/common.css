@@ -1,0 +1,231 @@
+/* common css starts here */
+
+/* carousel style */
+.exad-carousel-item .exad-carousel-nav-prev,
+.exad-carousel-item .exad-carousel-nav-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  z-index: 1;
+}
+
+.exad-carousel-item .exad-carousel-nav-prev i,
+.exad-carousel-item .exad-carousel-nav-next i {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.exad-carousel-item .exad-carousel-nav-prev:hover,
+.exad-carousel-item .exad-carousel-nav-next:hover {
+  color: #0a1724;
+}
+
+.exad-carousel-item .exad-carousel-nav-prev {
+  left: -70px;
+}
+
+.exad-carousel-item .exad-carousel-nav-next {
+  right: -70px;
+}
+
+.exad-carousel-item .slick-dots {
+  position: relative;
+  width: auto;
+  display: table;
+}
+
+.exad-carousel-item .slick-dots li {
+  list-style: none;
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+.exad-carousel-item .slick-dots li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.exad-carousel-item .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #8a8d91;
+  -webkit-text-fill-color: transparent;
+  transition: .3s ease;
+  padding: 0;
+  align-items: center;
+  display: flex;
+}
+
+.exad-carousel-item.exad-team-carousel-dots-left .slick-dots {
+    margin-right: auto;
+}
+.exad-carousel-item.exad-team-carousel-dots-center .slick-dots {
+    margin-left: auto;
+    margin-right: auto;
+}
+.exad-carousel-item.exad-team-carousel-dots-right .slick-dots {
+    margin-left: auto;
+}
+.exad-carousel-item.exad-testimonial-carousel-dots-left .slick-dots {
+    margin-right: auto;
+}
+.exad-carousel-item.exad-testimonial-carousel-dots-center .slick-dots {
+    margin-left: auto;
+    margin-right: auto;
+}
+.exad-carousel-item.exad-testimonial-carousel-dots-right .slick-dots {
+    margin-left: auto;
+}
+.exad-instagram-row-wrapper.exad-instagram-carousel-dots-left .slick-dots {
+  margin-right: auto;
+}
+.exad-instagram-row-wrapper.exad-instagram-carousel-dots-center .slick-dots {
+  margin-left: auto;
+  margin-right: auto;
+}
+.exad-instagram-row-wrapper.exad-instagram-carousel-dots-right .slick-dots {
+  margin-left: auto;
+}
+/* Woo-product category */
+.exad-woo-product-cat-items.exad-woo-product-cat-carousel-dots-left .slick-dots {
+  margin-right: auto;
+}
+.exad-woo-product-cat-items.exad-woo-product-cat-carousel-dots-center .slick-dots {
+  margin-left: auto;
+  margin-right: auto;
+}
+.exad-woo-product-cat-items.exad-woo-product-cat-carousel-dots-right .slick-dots {
+  margin-left: auto;
+}
+
+/* post-carousel */
+.exad-post-carousel.exad-post-carousel-dots-left .slick-dots {
+  margin-right: auto;
+}
+.exad-post-carousel.exad-post-carousel-dots-center .slick-dots {
+  margin-left: auto;
+  margin-right: auto;
+}
+.exad-post-carousel.exad-post-carousel-dots-right .slick-dots {
+  margin-left: auto;
+}
+  
+/* grid style */ 
+.exad-element-row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -20px;
+}
+
+.exad-slider-gap-default {
+  margin: 0 -10px;
+}
+
+.exad-element-row-grid .exad-col-grid {
+  padding: 0 10px 20px;
+}
+
+.exad-slider-gap-default .exad-col-slider {
+  margin: 0 10px;
+}
+
+.exad-element-row-grid.exad-col-1 .exad-col-grid {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.exad-element-row-grid.exad-col-2 .exad-col-grid {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.exad-element-row-grid.exad-col-3 .exad-col-grid {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.exad-element-row-grid.exad-col-4 .exad-col-grid {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.exad-element-row-grid.exad-col-5 .exad-col-grid {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.exad-element-row-grid.exad-col-6 .exad-col-grid {
+  flex: 0 0 16.66666%;
+  max-width: 16.666666%;
+}
+
+@media (max-width: 767px) {
+  .exad-element-row-grid.exad-col-2 .exad-col-grid,
+  .exad-element-row-grid.exad-col-3 .exad-col-grid,
+  .exad-element-row-grid.exad-col-4 .exad-col-grid,
+  .exad-element-row-grid.exad-col-5 .exad-col-grid,
+  .exad-element-row-grid.exad-col-6 .exad-col-grid {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .exad-element-row-grid .exad-col-grid {
+    padding: 10px 10px;    
+  }
+}
+
+.exad-post-carousel.exad-carousel-item .slick-dots{
+  position: absolute;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin: 0;
+}
+
+.exad-row-wrapper .exad-post-grid-container .exad-post-grid-thumbnail{
+  position: relative;
+}
+.exad-row-wrapper .exad-post-grid-container .exad-post-grid-thumbnail::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slick-slide:focus{
+  outline: 0;
+}
+
+.exad-post-carousel .slick-slide a:focus{
+  outline: 0;
+}
+
+/* section snap scroll  */
+/* .exad-moving-snapscroll{
+  scroll-snap-align: start;
+}
+
+.elementor-section-wrap{
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+} */
+/* common css ends here */

@@ -1,0 +1,148 @@
+
+/* Exclusive gravity form starts */
+
+.exad-gravity-form.form-align-center, .exad-gravity-form.button-align-center input.gform_button.button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    float: none;
+}
+.exad-gravity-form.form-align-left, .exad-gravity-form.button-align-left input.gform_button.button {
+    float: left;
+    width: auto;
+}
+.exad-gravity-form.form-align-right, .exad-gravity-form.button-align-right input.gform_button.button {
+    float: right;
+    width: auto;
+}
+.exad-gravity-form.placeholder-no textarea::placeholder,
+.exad-gravity-form.placeholder-no input[type=text]::placeholder,
+.exad-gravity-form.placeholder-no input[type=search]::placeholder,
+.exad-gravity-form.placeholder-no input[type=number]::placeholder,
+.exad-gravity-form.placeholder-no input[type=tel]::placeholder,
+.exad-gravity-form.placeholder-no input[type=url]::placeholder,
+.exad-gravity-form.placeholder-no input[type=password]::placeholder,
+.exad-gravity-form.placeholder-no input[type=email]::placeholder {
+    opacity:0;
+    visibility:hidden;    
+}
+.exad-gravity-form .gform_wrapper textarea:focus,
+.exad-gravity-form .gform_wrapper input[type=text]:focus,
+.exad-gravity-form .gform_wrapper input[type=search]:focus,
+.exad-gravity-form .gform_wrapper input[type=number]:focus,
+.exad-gravity-form .gform_wrapper input[type=tel]:focus,
+.exad-gravity-form .gform_wrapper input[type=url]:focus,
+.exad-gravity-form .gform_wrapper input[type=password]:focus,
+.exad-gravity-form .gform_wrapper select:focus,
+.exad-gravity-form .gform_wrapper input[type=email]:focus {
+    outline: none;  
+}
+.exad-gravity-form.label-no .gform_wrapper .top_label .gfield_label, 
+.exad-gravity-form.label-no .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+    display: none;
+}
+.exad-gravity-form.show-error-no .validation_message {
+    display: none !important;
+}
+.exad-gravity-form.show-valid-no .validation_error {
+    display: none !important;
+}
+.exad-gravity-form.field-desc-no .gfield_description {
+    display: none !important;
+}
+.exad-gravity-form .gform_wrapper ul.gfield_checkbox li input[type=checkbox], 
+.exad-gravity-form .gform_wrapper ul.gfield_radio li input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    border-width: 0;
+    outline: none;
+    min-width: 1px;
+    width: 15px !important;
+    height: 15px !important;
+    background: #ddd;
+    padding: 3px;
+}
+.exad-gravity-form input[type=radio] {
+    border-radius: 50%;
+}
+.exad-gravity-form input[type=checkbox]:checked, 
+.exad-gravity-form input[type=radio]:checked {
+    position: relative;
+}
+.exad-gravity-form input[type=checkbox]:checked:before, 
+.exad-gravity-form input[type=radio]:checked:before {
+    background: #999;
+    -webkit-transition: all 0.25s linear 0s;
+    transition: all 0.25s linear 0s;
+}
+.exad-gravity-form input[type=checkbox]:before, 
+.exad-gravity-form input[type=radio]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.exad-gravity-form input[type=radio]:before {
+    border-radius: 50%;
+}
+
+.exad-gravity-form .gform_wrapper select {
+    height: inherit;   
+    line-height: inherit;
+}
+/*only for twentytwenty theme */
+.theme-twentytwenty .exad-gravity-form .gform_wrapper select {
+    font-family: sans-serif;
+}
+.theme-twentytwenty .exad-gravity-form .gform_wrapper input[type=submit].button:hover {
+    text-decoration: none;
+}
+
+.exad-gravity-form .gform_wrapper .gform_footer{
+    display: inline-block;
+    padding: 0;
+}
+.exad-gravity-form .gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type=text],
+.exad-gravity-form .gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container select{
+    margin: 0;
+}
+.exad-gravity-form .gform_wrapper ul li.gfield{
+    margin: 0;
+}
+.exad-gravity-form .gform_wrapper .top_label div.ginput_container{
+    margin: 0;
+}
+.exad-gravity-form .gform_wrapper .exad-gform-select select{
+    width: 100%;
+}
+.exad-gravity-form .gform_wrapper .exad-gform-select select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.exad-gravity-form .gform_wrapper .exad-gform-select{
+    position: relative;
+    display: inline-table;
+}
+.exad-gravity-form .gform_wrapper .exad-gform-select::before{
+    position: absolute;
+    content: '>';
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(90deg);
+    font-family: "Consolas", monospace !important;
+    font-size: 20px;
+}
+/*To remove button from IE11, thank you Matt */
+.exad-gravity-form .gform_wrapper .exad-gform-select select::-ms-expand {
+    display: none;
+}
+
+.exad-gravity-form .gform_wrapper .exad-gform-select{
+    display: block;
+}
+/* Exclusive gravity form ends */
+

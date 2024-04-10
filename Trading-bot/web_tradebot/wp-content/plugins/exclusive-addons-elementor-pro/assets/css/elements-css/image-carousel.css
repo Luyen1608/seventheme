@@ -1,0 +1,150 @@
+/* Image Carousel CSS Start */
+
+.exad-image-carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    transition: all .3s ease;
+}
+.exad-image-carousel-item{
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.exad-image-carousel-item:focus{
+    outline: 0;
+}
+
+.exad-image-carousel-slider{
+    position: relative;
+}
+.exad-image-carousel-prev, .exad-image-carousel-next{
+    position: absolute;
+    z-index: 1;
+    transition: all .3s ease;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.exad-image-carousel-prev i, .exad-image-carousel-next i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.exad-image-carousel-slider .slick-dots{
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    bottom: 0;
+    margin: 0;
+}
+.exad-image-carousel-slider.exad-image-carousel-dot-bullet .slick-dots{
+    position: absolute;
+    transform: translateX(-50%);
+}
+.exad-image-carousel-slider.exad-image-carousel-dots-left .slick-dots,
+.exad-image-carousel-slider.exad-image-carousel-dots-image-left .slick-dots{
+    justify-content: flex-start;
+}
+.exad-image-carousel-slider.exad-image-carousel-dots-center .slick-dots,
+.exad-image-carousel-slider.exad-image-carousel-dots-image-center .slick-dots{
+    justify-content: center;
+}
+.exad-image-carousel-slider.exad-image-carousel-dots-right .slick-dots,
+.exad-image-carousel-slider.exad-image-carousel-dots-image-right .slick-dots{
+    justify-content: flex-end;
+}
+.exad-image-carousel-slider.exad-image-carousel-dots-image-justify .slick-dots{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.exad-image-carousel-slider.exad-image-carousel-dots-image-justify .slick-dots li{
+    width: auto;
+}
+.exad-image-carousel-slider .slick-dots li{
+    list-style: none;
+    display: inline-table;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 0;
+    height: auto;
+    width: auto;
+}
+.exad-image-carousel-slider .slick-dots li:not(:last-child){
+    margin-right: 10px;
+}
+.exad-image-carousel-slider .slick-dots li button{
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    -webkit-text-fill-color: transparent;
+    transition: .3s ease;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+.exad-image-carousel-slider .slick-dots li a {
+    display: block;
+    overflow: hidden;
+}
+.exad-image-carousel-slider .slick-dots li a img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.exad-image-carousel-slider.style-2 .slick-slide {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+.exad-image-carousel-slider.style-2 .exad-image-carousel-item.slick-slide.slick-active:nth-child(0) img {
+    transform: rotateY(30deg) scale(0.9);
+}
+
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-left .exad-image-carousel-slider,
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-right .exad-image-carousel-slider {
+    display: flex;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-right .exad-image-carousel-slider .slick-list {
+    width: 80%;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-right .exad-image-carousel-slider .slick-dots{
+    width: 20%;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-right .exad-image-carousel-slider .slick-dots::-webkit-scrollbar{
+    display: none;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-left .exad-image-carousel-slider .slick-list {
+    width: 80%;
+    order: 2;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-left .exad-image-carousel-slider .slick-dots{
+    width: 20%;
+    flex-direction: column;
+    order: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.exad-image-carousel-wrapper.exad-image-carousel-dots-image-left .exad-image-carousel-slider .slick-dots::-webkit-scrollbar{
+    display: none;
+}
+@media (max-width: 768px){
+    .exad-image-carousel-wrapper.exad-image-carousel-dots-image-right .exad-image-carousel-slider .slick-list {
+        width: 100% !important;
+    }
+    .exad-image-carousel-prev, .exad-image-carousel-next{
+        display: none;
+    }
+    .exad-image-carousel-wrapper.exad-image-carousel-dots-image-left .exad-image-carousel-slider .slick-list {
+        width: 100%;
+    }
+}
+/* Image Carousel CSS End */
