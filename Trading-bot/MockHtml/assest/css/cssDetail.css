@@ -1,0 +1,92 @@
+.detail .flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px 0px;
+    margin: 127px auto 49px;
+    width: 1170px;
+}
+.detail .flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+}
+.detail .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background: var(--src) center center / 100% 100% no-repeat;
+    border-radius: 12px 12px 12px 12px;
+    filter: drop-shadow(0px 8px 20px rgba(69, 69, 69, 0.149));
+}
+.detail .medium_title {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 121px;
+    height: 28px;
+    font: 600 24px / 1.16 "Open Sans", Helvetica, Arial, serif;
+    color: #303030;
+}
+.detail .highlight {
+    position: relative;
+    margin: 72px auto 60px;
+    width: 252px;
+    font: 600 16px / 1.75 "Open Sans", Helvetica, Arial, serif;
+    color: #827d7d;
+}
+.detail .item2 {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background: var(--src) center center / 100% 100% no-repeat;
+    border-radius: 12px 12px 12px 12px;
+    filter: drop-shadow(0px 8px 20px rgba(255, 255, 255, 0.149));
+}
+.detail .flex_col12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px 0px;
+    margin: 24px 35px 24px 15px;
+}
+.detail .medium_title1 {
+    width: 100%;
+    font: 600 24px / 1.16 "Open Sans", Helvetica, Arial, serif;
+    color: #303030;
+}
+.detail .flex_row4 {
+    display: flex;
+    align-items: center;
+    gap: 0px 30px;
+    width: 93.55%;
+}
+.detail .flex_col13 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0px;
+    width: 154px;
+}
+.detail .flex_col16 {
+    display: flex;
+    flex-direction: column;
+    width: 106px;
+}
+.detail .flex_col14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0px;
+    width: 100px;
+}
+.detail .highlight2 {
+    width: 100%;
+    font: 600 16px / 1.75 "Open Sans", Helvetica, Arial, serif;
+    color: black;
+}
+.detail .highlight1 {
+    font: 600 16px / 1.75 "Open Sans", Helvetica, Arial, serif;
+    color: #827d7d;
+}
