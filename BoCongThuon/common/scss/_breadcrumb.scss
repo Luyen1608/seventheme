@@ -1,0 +1,47 @@
+.breadcrumb {
+    padding: 10px 0 10px 15px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 6px;
+        height: 65%;
+        background-color: #3379B3;
+        border-radius: 3px;
+    }
+    &-item {
+        color: var(--style-color-primary);
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease-out;
+        + .breadcrumb-item {
+            margin-left: 10px;
+            @media (min-width: 768px) {
+            }
+            &::before {
+                content: '' !important;
+                background: url(../images/ico-arrow.png);
+                background-size: cover;
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+        }
+        img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        a {
+            color: var(--style-color-secondary);
+            cursor: pointer;
+            &:hover {
+                color: var(--style-color-third) !important;
+            }
+        }
+
+    }
+
+}
