@@ -1,0 +1,7 @@
+.image-input-wrapper {
+    background-image: url('/wwwroot/assets/media/svg/avatars/blank.svg');
+}
+
+[data-bs-theme="dark"] .image-input-wrapper {
+    background-image: url('/wwwroot/assets/media/svg/avatars/blank-dark.svg');
+}
