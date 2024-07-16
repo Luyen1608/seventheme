@@ -33,6 +33,32 @@
         .nav>li:hover .dropdown-menu {
             display: block;
         }
+
+        .btn-login {
+            background-color: #316426;
+            color: white;
+        }
+
+        .btn-login:hover {
+            background-color: #619456;
+            color: white;
+        }
+
+        .txt-title-login {
+            font-weight: 600;
+        }
+
+        .txt-title-company {
+            color: #316426;
+            max-width: 450px;
+            padding-left: 13px;
+        }
+
+        @media (min-width: 992px) {
+            .txt-title-company {
+                max-width: auto;
+            }
+        }
     </style>
     <script type="text/javascript">
         var ctx = '/';
@@ -56,7 +82,7 @@
                     <a href="index.html" class="mb-7">
                         <img alt="Logo" style="height:110px;" src="../metronic/media/logos/logo-ver.png" />
                     </a>
-                    <h2 class=" fs-2 fw-bold m-0 text-uppercase">
+                    <h2 class=" fs-2 fw-bold m-0 text-uppercase txt-title-company">
                         Công ty CP Supe Phốt phát & Hóa chất Lâm Thao
                     </h2>
                 </div>
@@ -64,23 +90,24 @@
             <div
                 class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 p-lg-20">
                 <div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
-                    <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
+                    <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10">
                         <form class="form w-100" id="form">
                             <div class="text-center mb-11">
-                                <h1 class="text-gray-900 fw-bolder mb-3">Đăng nhập</h1>
-                                <div class="text-gray-500 fw-semibold fs-6">
+                                <div class="text-gray-500 txt-title-login fs-2 mb-8">
                                     HỆ THỐNG QUẢN LÝ THIẾT BỊ SẢN XUẤT<br />
                                     VÀ BẢO TRÌ, BẢO DƯỠNG
                                 </div>
+                                <!-- <p class="text-gray-900 fw-bolder ">Đăng nhập</p> -->
+
                             </div>
-                            <div class="separator separator-content my-14">
-                                <span class="w-125px text-gray-500 fw-semibold fs-7">&nbsp;</span>
+                            <div class="separator separator-content my-10">
+                                <span class="w-125px fw-semibold fs-4" style="color: #6a716a;">Đăng nhập</span>
                             </div>
                             <div class="fv-row mb-8">
                                 <input type="text" placeholder="Tài khoản đăng nhập" id="userName" name="userName"
                                     col="UserName" autocomplete="off" class="form-control bg-transparent" />
                             </div>
-                            <div class="fv-row mb-3">
+                            <div class="fv-row mb-8">
                                 <input type="password" placeholder="Mật khẩu đăng nhập" id="password" name="password"
                                     col="Password" autocomplete="off" class="form-control bg-transparent" />
                             </div>
@@ -91,14 +118,18 @@
                                 </div>
                                 <div class="d-flex fw-semibold text-primary fs-base gap-5">
                                     <a href="javascript:void(0);" title="Nhấn để thay đổi">
-                                        <img id="imgCaptchaCode" src='/Home/GetCaptchaImage' height="34" />
+                                        <img id="imgCaptchaCode" src='http://bizpro.ddns.net:40289/Home/GetCaptchaImage'
+                                            height="34" />
                                     </a>
+
                                 </div>
                             </div>
                             <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
-                                <label class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe" name="rememberMe">
-                                    <span class="form-check-label fw-semibold text-gray-700 fs-base ms-1">
+                                <label class="form-check form-check-inline" style="display: flex;padding-left: 0px;">
+                                    <input class="form-check-input" style="margin: auto 0px;" type="checkbox"
+                                        id="rememberMe" name="rememberMe">
+                                    <span class="form-check-label fw-semibold text-gray-700 fs-base ms-1"
+                                        style="display: flex;margin: auto;">
                                         Ghi nhớ đăng nhập
                                     </span>
                                 </label>
@@ -106,7 +137,7 @@
                                     mật khẩu ?</a>
                             </div>
                             <div class="d-grid mb-10">
-                                <button type="submit" id="kt_sign_in_submit" class="btn btn-primary"
+                                <button type="submit" id="kt_sign_in_submit" class="btn btn-login"
                                     onclick="loginForm(); return false;">
                                     <span class="indicator-label">Đăng nhập</span>
 
@@ -119,7 +150,7 @@
         </div>
     </div>
 
-  
+
 
 
 
