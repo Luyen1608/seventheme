@@ -301,7 +301,7 @@ h2 {
         &.next {
             background-color: transparent;
             border-color: var(--style-color-primary);
-            transtion: 0.2s ease;
+            transition: 0.2s ease;
             i {
                 -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
                 -moz-transform: rotate(90deg);    /* Firefox */
@@ -324,3 +324,65 @@ h2 {
 }
   
 /* pagination */
+
+.mw-868 {
+    max-width: 868px;
+}
+.form {
+    .form-control {
+        padding: 10px 24px;
+        color: var(--style-color-gray-3);
+        border: 1px solid var(--style-color-boder-gray);
+    }
+    .form-input {
+        margin-top: 20px;
+    }
+}
+.register {
+    &-ttl {
+        font-size: calc(var(--style-body-font-size) + 5px);
+    }
+    &-name {
+        font-size: calc(var(--style-body-font-size) + 2px);
+        color: var(--style-color-bg-aqua);
+        background: linear-gradient(90deg, var(--style-color-bg-nav) 0%, #2F80ED 50%, #2D9EE0 100%);
+        padding: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+.label-wrap {
+    width: 288px;
+}
+
+.input-wrap {
+    width: calc(100% - 288px);
+}
+.description {
+    color: var(--style-color-gray-3);
+    margin-top: 5px;
+}
+.required {
+    color: var(--style-color-danger);
+    font-size: calc(var(--style-body-font-size) + 5px);
+    font-weight: 600;
+    margin-left: 24px;
+}
+input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.input-group-text {
+    background-color: #EBEEF2;
+    border-color: var(--style-color-boder-gray);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    z-index: 1;
+    background: url(../images/uiw_date.svg);
+}
+select.form-select {
+    background: url(../images/ico-arrow-bottom.svg) no-repeat;
+    background-position: 97% 50%;
+    background-size: 13px auto;
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Đăng ký</title>
+   <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./common/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start gap-3">
+                    <div class="header-logo">
+                        <img src="./common/images/logo.png" alt="">
+                    </div>
+                    <div class="header-text text-center text-md-start text-uppercase">
+                        <span>Bộ Công Thương Việt Nam</span>
+                        <h1>hệ thống thông tin quản lý tổ chức đánh giá sự phù hợp</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center justify-content-between">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu flex-wrap list-style-none">
+                        <li class="menu-item active">
+                            <a href="/" class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M18.4863 9.86327L10.9394 2.3203L10.4336 1.81444C10.3183 1.69994 10.1625 1.63568 9.99999 1.63568C9.83752 1.63568 9.68165 1.69994 9.56639 1.81444L1.51366 9.86327C1.39556 9.98091 1.30222 10.121 1.23915 10.2753C1.17609 10.4296 1.14458 10.595 1.14647 10.7617C1.15429 11.4492 1.72655 11.998 2.41405 11.998H3.24413V18.3594H16.7558V11.998H17.6035C17.9375 11.998 18.2519 11.8672 18.4883 11.6308C18.6046 11.5149 18.6968 11.3769 18.7595 11.2251C18.8222 11.0732 18.8542 10.9104 18.8535 10.7461C18.8535 10.4141 18.7226 10.0996 18.4863 9.86327ZM11.0937 16.9531H8.90624V12.9687H11.0937V16.9531ZM15.3496 10.5918V16.9531H12.3437V12.5C12.3437 12.0683 11.9941 11.7187 11.5625 11.7187H8.43749C8.00585 11.7187 7.65624 12.0683 7.65624 12.5V16.9531H4.65038V10.5918H2.77538L10.0019 3.37108L10.4531 3.82225L17.2266 10.5918H15.3496Z" fill="#033A67"/>
+                                </svg>Trang chủ
+                            </a>
+                        </li>
+                        <li class="menu-item"><a href="#">Giới thiệu</a></li>
+                        <li class="menu-item"><a href="./blog.html">Tin tức</a></li>
+                        <li class="menu-item"><a href="./law.html">Văn bản pháp luật</a></li>
+                    </ul>
+                    <div class="header-account d-flex align-items-center">
+                        <a href="/register.html" class="acc-register account-item">
+                            Đăng ký
+                        </a>
+                        <a href="#" class="acc-login account-item">
+                            Đăng nhập
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="container">
+            <div class="breadcrumb mx-lg-3">
+                <ul class="breadcrumb-list d-flex align-items-center">
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-link" href="/">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        Đăng ký
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mw-868">
+            <h2 class="register-ttl text-center text-uppercase mb-4">ĐĂNG KÝ TÀI KHOẢN TỔ CHỨC ĐÁNH GIÁ SỰ PHÙ HỢP</h2>
+            <form action="" class="form">
+                <h3 class="register-name title-bg">Thông tin Đơn vị</h3>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Tên đơn vị</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Ví dụ: Công Ty TNHH xyz hoặc Hộ kinh doanh xyz</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Tên viết tắt</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block invisible">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Mã số thuế/Mã số doanh nghiệp</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="number">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Sử dụng mã mã số thuế và số đăng ký kinh doanh khác nhau</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Tải lên đăng ký kinh doanh</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile">
+                                <label class="input-group-text" for="inputGroupFile">Choose file</label>
+                            </div>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Đăng tải đăng ký kinh doanh, định dạng png, jpg, jpeg, doc, docx, pdf</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Ngày cấp</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="date" class="form-control form-control-date" placeholder="Chọn ngày cấp">
+                            </div>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Địa chỉ trên đăng ký kinh doanh</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Điện thoại</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="number">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Fax</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="number">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Website công ty</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="url">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Địa chỉ giao dịch</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Ví dụ: 25 Ngô Quyền, Phường Tràng Tiền, Hoàn Kiếm, Hà Nội</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Tỉnh</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <select class="form-select form-control" id="inputGroupSelect01">
+                                <option selected>Chọn tỉnh thành</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Hãy chọn theo thứ tự Tỉnh > Huyện > Xã</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Huyện</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <select class="form-select form-control" id="inputGroupSelect01">
+                                <option selected>Chọn Quận Huyện</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Xã</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <select class="form-select form-control" id="inputGroupSelect01">
+                                <option selected>Chọn Xã Phường</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="register-name title-bg mt-4">Thông tin người đại diện pháp luật</h3>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Họ và tên</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Chức vụ</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Ngày sinh</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="date" class="form-control form-control-date" placeholder="Chọn ngày sinh">
+                            </div>
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Địa chỉ liên lạc</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Điện thoại di động</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="number">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="email">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="register-name title-bg mt-4">Thông tin đăng nhập</h3>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Tài khoản</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="text">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">Tài khoản tự động lấy theo Mã số thuế/Mã số doanh nghiệp</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Mật khẩu</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="password">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Nhập lại mật khẩu</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input-wrap">
+                            <div class="input d-flex align-items-center">
+                                <input class="form-control" type="password">
+                                <span class="required d-inline-block">*</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="email">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">E-mail này được dùng để nhận mọi thông tin phản hồi từ Bộ Công Thương</span>
+                    </div>
+                </div>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3">
+                        <label for="">Mã xác nhận</label>
+                    </div>
+                    <div class="input-wrap">
+                        <div class="input d-flex align-items-center">
+                            <input class="form-control" type="email">
+                            <span class="required d-inline-block">*</span>
+                        </div>
+                        <span class="description d-inline-block">E-mail này được dùng để nhận mọi thông tin phản hồi từ Bộ Công Thương</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo d-flex align-items-center">
+                        <img src="./common/images/logo.png" alt="">
+                        <span class="text-uppercase">Bộ Công Thương Việt Nam</span>
+                    </div>
+                    <div class="footer-text">
+                        <h2 class="text-uppercase mb-0">hệ thống thông tin <br class="d-none d-md-block"> quản lý tổ chức đánh giá sự phù hợp</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-nav mt-2 mt-lg-0 d-flex flex-wrap align-items-center">
+                        <li class="footer-item">
+                            <a class="footer-link" href="/">Trang chủ</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="./blog.html">Tin tức</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="./law.html">Văn bản pháp luật</a>
+                        </li>
+                    </ul>
+                    <div class="info">
+                        <h3 class="text-uppercase">Vụ Khoa học và Công nghệ - Bộ Công Thương</h3>
+                        <div>Địa chỉ: 54 Hai Bà Trưng, Hoàn Kiếm, Hà Nội, Việt Nam</div>
+                        <div>Điện thoại: 84-24-2.2202.438</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
