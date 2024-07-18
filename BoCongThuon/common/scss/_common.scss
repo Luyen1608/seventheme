@@ -375,7 +375,13 @@ h2 {
     margin-left: 24px !important;
 }
 input[type=file]::-webkit-file-upload-button {
-    visibility: hidden;
+    display: none;
+}
+input[type=file] {
+    text-align: left !important;
+}
+::placeholder {
+    text-align: left !important;
 }
 .input-group-text {
     background-color: #EBEEF2;

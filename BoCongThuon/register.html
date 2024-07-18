@@ -126,8 +126,8 @@
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
                             <div class="input-group">
-                                <input type="file" class="form-control" id="inputGroupFile">
-                                <label class="input-group-text" for="inputGroupFile">Choose file</label>
+                                <input class="form-control" type="file" id="formFile">
+                                <label class="input-group-text" for="formFile">Choose file</label>
                             </div>
                             <span class="required d-inline-block">*</span>
                         </div>
@@ -141,7 +141,7 @@
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
                             <div class="input-group">
-                                <input type="date" class="form-control form-control-date" placeholder="Chọn ngày cấp">
+                                <input type="date" class="form-control form-control-date" id="datepicker" placeholder="Chọn ngày cấp">
                             </div>
                             <span class="required d-inline-block">*</span>
                         </div>
@@ -176,7 +176,7 @@
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
                             <input class="form-control" type="number">
-                            <span class="required d-inline-block">*</span>
+                            <span class="required d-inline-block invisible">*</span>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
                             <input class="form-control" type="url">
-                            <span class="required d-inline-block">*</span>
+                            <span class="required d-inline-block invisible">*</span>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                     </div>
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
-                            <select class="form-select form-control" id="inputGroupSelect01">
+                            <select class="form-select form-control" id="inputGroupSelect02">
                                 <option selected>Chọn Quận Huyện</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -242,7 +242,7 @@
                     </div>
                     <div class="input-wrap">
                         <div class="input d-flex align-items-center">
-                            <select class="form-select form-control" id="inputGroupSelect01">
+                            <select class="form-select form-control" id="inputGroupSelect03">
                                 <option selected>Chọn Xã Phường</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -387,20 +387,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 d-flex align-items-center justify-content-center">
-                    <a class="btn btn-sm btn-reset me-3" href="#">
-                        <svg class="ico" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                            <path d="M2.078 4.48696C3.05072 2.80817 4.6004 1.5401 6.43848 0.918854C8.27657 0.297611 10.2778 0.365539 12.0695 1.10999C13.8613 1.85444 15.3214 3.22467 16.178 4.96555C17.0347 6.70644 17.2294 8.69931 16.7261 10.5731C16.2227 12.4469 15.0556 14.0739 13.4419 15.1512C11.8282 16.2285 9.878 16.6826 7.95441 16.4291C6.03082 16.1755 4.26494 15.2315 2.98557 13.7728C1.70621 12.3141 1.00055 10.4402 1 8.49996" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 4.5H2V0.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Làm lại
-                    </a>
-                    <a class="btn btn-sm btn-send" href="#">
-                        <svg class="ico" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-                            <path d="M17.735 2.68597C18.167 1.49097 17.009 0.332968 15.814 0.765968L1.20904 6.04797C0.0100421 6.48197 -0.134958 8.11797 0.968042 8.75697L5.63004 11.456L9.79304 7.29297C9.98164 7.11081 10.2342 7.01002 10.4964 7.01229C10.7586 7.01457 11.0095 7.11974 11.1949 7.30515C11.3803 7.49056 11.4854 7.74137 11.4877 8.00357C11.49 8.26576 11.3892 8.51837 11.207 8.70697L7.04404 12.87L9.74404 17.532C10.382 18.635 12.018 18.489 12.452 17.291L17.735 2.68597Z" fill="#EFF8FF"/>
-                        </svg>
-                        Đăng ký
-                    </a>
+                <div class="d-flex form-input flex-wrap">
+                    <div class="label-wrap mt-3 mb-3 mb-lg-0 d-none d-lg-block">
+                    </div>
+                    <div class="input-wrap mt-5 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <a class="btn btn-sm btn-reset me-3" href="#">
+                            <svg class="ico" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                                <path d="M2.078 4.48696C3.05072 2.80817 4.6004 1.5401 6.43848 0.918854C8.27657 0.297611 10.2778 0.365539 12.0695 1.10999C13.8613 1.85444 15.3214 3.22467 16.178 4.96555C17.0347 6.70644 17.2294 8.69931 16.7261 10.5731C16.2227 12.4469 15.0556 14.0739 13.4419 15.1512C11.8282 16.2285 9.878 16.6826 7.95441 16.4291C6.03082 16.1755 4.26494 15.2315 2.98557 13.7728C1.70621 12.3141 1.00055 10.4402 1 8.49996" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 4.5H2V0.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Làm lại
+                        </a>
+                        <a class="btn btn-sm btn-send" href="#">
+                            <svg class="ico" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                <path d="M17.735 2.68597C18.167 1.49097 17.009 0.332968 15.814 0.765968L1.20904 6.04797C0.0100421 6.48197 -0.134958 8.11797 0.968042 8.75697L5.63004 11.456L9.79304 7.29297C9.98164 7.11081 10.2342 7.01002 10.4964 7.01229C10.7586 7.01457 11.0095 7.11974 11.1949 7.30515C11.3803 7.49056 11.4854 7.74137 11.4877 8.00357C11.49 8.26576 11.3892 8.51837 11.207 8.70697L7.04404 12.87L9.74404 17.532C10.382 18.635 12.018 18.489 12.452 17.291L17.735 2.68597Z" fill="#EFF8FF"/>
+                            </svg>
+                            Đăng ký
+                        </a>
+                    </div>
                 </div>
             </form>
         </div>
