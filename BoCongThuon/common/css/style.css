@@ -492,18 +492,6 @@ input[type=file]::-webkit-file-upload-button {
   display: none;
 }
 
-input[type=file] {
-  text-align: left !important;
-}
-
-::-moz-placeholder {
-  text-align: left !important;
-}
-
-::placeholder {
-  text-align: left !important;
-}
-
 .input-group-text {
   background-color: #EBEEF2;
   border-color: var(--style-color-boder-gray);
