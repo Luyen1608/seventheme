@@ -318,6 +318,11 @@ h2.title {
   color: var(--style-color-black-2);
   font-size: calc(var(--style-body-font-size) + 2px);
   font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .news-item-title a:hover {
   color: var(--style-color-bg-blue);
@@ -333,6 +338,11 @@ h2.title {
 .news-item-text {
   margin-top: 15px;
   color: var(--style-color-black-2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .news-item-info img {
   width: 18px;
@@ -352,6 +362,11 @@ h2.title {
 .news-menu .featured-news a {
   font-weight: 600;
   font-size: calc(var(--style-body-font-size) + 2px);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .news-menu .featured-item {
   padding: 15px 0;

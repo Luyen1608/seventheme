@@ -207,6 +207,11 @@ h2 {
             color: var(--style-color-black-2);
             font-size: calc(var(--style-body-font-size) + 2px);
             font-weight: 600;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; 
+            overflow: hidden;
+            text-overflow: ellipsis;
             &:hover {
                 color: var(--style-color-bg-blue);
             }
@@ -221,6 +226,11 @@ h2 {
     &-text {
         margin-top: 15px;
         color: var(--style-color-black-2);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; 
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &-info {
         img {
@@ -244,6 +254,11 @@ h2 {
         a {
             font-weight: 600;
             font-size: calc(var(--style-body-font-size) + 2px);
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; 
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     .featured-item {
