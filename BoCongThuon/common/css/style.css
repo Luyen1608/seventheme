@@ -874,3 +874,46 @@ select.form-select {
 .breadcrumb-item a:hover {
   color: var(--style-color-third) !important;
 }/*# sourceMappingURL=style.css.map */
+
+
+.news-detail .news-detail-subheading {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 32px;
+  color: #303030;
+}
+
+.news-detail .news-detail-footer p {
+  font-weight: 600;
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #303030;
+}
+
+.news-detail .news-detail-footer p a {
+  color: #303030;
+  text-decoration: none;
+}
+
+.news-detail .news-detail-footer a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0184d3;
+}
+.news-detail .news-detail-text {
+  font-size: 15px;
+  line-height: 28px;
+}.news-detail .news-detail-img {
+  margin: 10px auto;
+  width: 80%;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
