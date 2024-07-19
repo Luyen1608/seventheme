@@ -148,8 +148,8 @@ h2 {
     }
 }
 .table {
-    @media (max-width: 992px) {
-        min-width: 900px;
+    @media (max-width: 991px) {
+        min-width: 950px;
     }
     thead {
         background-color: var(--style-color-bg-blue);
