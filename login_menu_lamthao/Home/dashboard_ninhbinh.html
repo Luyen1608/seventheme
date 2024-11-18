@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <meta name="keywords" content="CMMS">
+    <meta name="description" content="CMMS">
+
+    <link rel="bookmark" href='/favicon.ico' />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel='stylesheet' href='../lib/bootstrap/3.3.7/css/bootstrap.min.css?v=638566582583397854' />
+    <link rel='stylesheet' href='../lib/fontawesome/4.7.0/css/fontawesome.min.css?v=638566582583397854' />
+    <script src='../lib/jquery/2.1.4/jquery.min.js?v=638566582583397854' type='text/javascript'></script>
+
+    <script src='../lib/bootstrap/3.3.7/js/bootstrap.min.js?v=638566582583397854' type='text/javascript'></script>
+    <script src='../lib/layer/3.1.1/layer.min.js?v=638566582583397854' type='text/javascript'></script>
+
+    <link rel='stylesheet' href='../cmms/css/style.min.css?v=638566582583397854' />
+
+    <script src='../cmms/js/cmms.min.js?v=638566582583397854' type='text/javascript'></script>
+
+    <script src='../cmms/js/cmms-index.min.js?v=638566582583397854' type='text/javascript'></script>
+    <script type="text/javascript" src='../lib/jquery.metisMenu/1.1.3/jquery.metisMenu.js'></script>
+    <script type="text/javascript" src='../lib/jquery.slimscroll/1.3.8/jquery.slimscroll.min.js'></script>
+
+    <script src='../cmms/js/moment.js?v=638566582583397854' type='text/javascript'></script>
+    <script src='../cmms/js/moment-with-locales.js?v=638566582583397854' type='text/javascript'></script>
+    <script src='../cmms/js/n2vi.js?v=638566582583397854' type='text/javascript'></script>
+    <script src='../cmms/js/numeral.min.js?v=638566582583397854' type='text/javascript'></script>
+
+    <title>CMMS</title>
+    <style type="text/css">
+        .nav>li:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+        var ctx = '/';
+    </script>
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg login">
+    <script src='../cmms/js/cmms-data.min.js?v=638566582583397854' type='text/javascript'></script>
+    <link rel='stylesheet' href='../lib/zTree/v3/css/metroStyle/metroStyle.min.css?v=638566582583397854' />
+    <script src='../lib/zTree/v3/js/ztree.min.js?v=638566582583397854' type='text/javascript'></script>
+    <style>
+        .minimalize-styl-2>input {
+            background: initial !important;
+            color: #fff;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            /* Đảm bảo hình ảnh không vượt quá khung của thẻ li */
+            height: auto;
+        }
+
+        .skin-blue .navbar {
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(1, #006634));
+        }
+
+        .minimalize-styl-2:visited {
+            color: #006634;
+        }
+        img.logo-img.toggleImg {
+            content: url('../metronic/media/logos/logo-rutgon.png'); /* Đường dẫn đến hình ảnh thay thế */
+        }
+        li.toggleImg{
+            padding: 0px 5px !important;
+        }
+    </style>
+
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close">
+                <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="logo" style="height:56px">
+                        <!-- <img class="logo-light logo-img" src="../metronic/media/logos/logo-admin-ver.png"
+                            srcset="../metronic/media/logos/logo-admin-ver.png 2x" alt="logo"> -->
+                            <img style="max-height: 55px;margin-top: 2px;" class="logo-small logo-img logo-img-small" src="../metronic/media/logos/logo_damninhbinh.png"
+                            srcset="../metronic/media/logos/logo_damninhbinh.png 2x" alt="logo-small">
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-battery-full"></i>
+                            <span class="nav-label">Quản lý thiết bị</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Device/DeviceIndex'>
+                                    <i class="fa fa-automobile"></i>
+                                    <span class="nav-label">Danh sách thiết bị</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Component/ComponentIndex'>
+                                    <i class="fa fa-video-camera"></i>
+                                    <span class="nav-label">Linh kiện / Vật tư</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-cloud"></i>
+                            <span class="nav-label">Quản lý kho</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#"
+                                    data-url='/SystemManage/WarehouseComponent/WarehouseComponentIndex'>
+                                    <i class="fa fa-server"></i>
+                                    <span class="nav-label">Tồn đầu kỳ</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Warehouse/WarehouseIndex'>
+                                    <i class="fa fa-archive"></i>
+                                    <span class="nav-label">Danh mục kho</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a href="#">Chứng từ<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level" data-type="menu">
+                                    <li data-type="menu">
+                                        <a class="menuItem" href="#" data-url='/SystemManage/Document/ImportIndex'>
+                                            <i class="fa fa-folder"></i>
+                                            <span class="nav-label">Phiếu nhập kho</span>
+                                        </a>
+                                    </li>
+                                    <li data-type="menu">
+                                        <a class="menuItem" href="#" data-url='/SystemManage/Document/ExportIndex'>
+                                            <i class="fa fa-folder"></i>
+                                            <span class="nav-label">Phiếu xuất kho</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#"
+                                    data-url='/SystemManage/WarehouseInfor/WarehouseInforIndex&#x9;'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Sổ kho</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a href="#">Kiểm kê kho<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level" data-type="menu">
+                                    <li data-type="menu">
+                                        <a class="menuItem" href="#"
+                                            data-url='/SystemManage/InventoryDocument/InventoryDocumentIndex'>
+                                            <i class="fa fa-folder"></i>
+                                            <span class="nav-label">Phiếu kiểm kê kho</span>
+                                        </a>
+                                    </li>
+                                    <li data-type="menu">
+                                        <a class="menuItem" href="#"
+                                            data-url='/SystemManage/InventoryPeriod/InventoryPeriodIndex'>
+                                            <i class="fa fa-address-book"></i>
+                                            <span class="nav-label">Đợt kiểm kê kho</span>
+                                        </a>
+                                    </li>
+                                    <li data-type="menu">
+                                        <a class="menuItem" href="#"
+                                            data-url='/SystemManage/WarehouseInfor/WarehouseCheckInventoryInforIndex'>
+                                            <i class="fa fa-folder"></i>
+                                            <span class="nav-label">Tổng hợp kiểm kê</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-balance-scale"></i>
+                            <span class="nav-label">Lập kế hoạch</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Task/TaskIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Công việc bảo dưỡng</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/JobPlan/JobPlanIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Hạng mục bảo dưỡng</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Plan/PlanIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Lập kế hoạch</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/WorkOrder/WorkOrderIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Thực hiện kế hoạch</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-navicon"></i>
+                            <span class="nav-label">Danh mục</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#"
+                                    data-url='/SystemManage/ComponentCategory/ComponentCategoryIndex'>
+                                    <i class="fa fa-folder-o"></i>
+                                    <span class="nav-label">Loại linh kiện</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/StatusLabel/StatusLabelIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhãn trạng thái</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/ModelCategory/ModelCategoryIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Loại Model</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Manufacturer/ManufacturerIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhà sản xuất</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Supplier/SupplierIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhà cung cấp</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Field/FieldIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Thuộc tính</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/FieldSet/FieldSetIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhóm thuộc tính</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/DeviceModel/DeviceModelIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Model</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Location/LocationIndex'>
+                                    <i class="fa fa-bomb"></i>
+                                    <span class="nav-label">Khu vực</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Depreciation/DepreciationIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Khấu hao</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#"
+                                    data-url='/SystemManage/DocumentReason/DocumentReasonIndex'>
+                                    <i class="fa fa-clone"></i>
+                                    <span class="nav-label">Lý do chứng từ</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/TemplateType/TemplateTypeIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nghiệp vụ</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Units/UnitsIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Đơn vị tính</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/DeviceGroup/DeviceGroupIndex'>
+                                    <i class="fa fa-battery-full"></i>
+                                    <span class="nav-label">Nhóm thiết bị</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/AutoNumber/AutoNumberIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Số chứng từ</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/PurchaseUnit/PurchaseUnitIndex'>
+                                    <i class="fa fa-address-book-o"></i>
+                                    <span class="nav-label">Đơn vị xuất nhập kho</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">Tổ chức</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/OrganizationManage/User/UserIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhân sự</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/OrganizationManage/Department/DepartmentIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Đơn vị, phòng ban</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/OrganizationManage/Position/PositionIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Chức danh</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-type="menu">
+                        <a href="#">
+                            <i class="fa fa-gear"></i>
+                            <span class="nav-label">Quản trị hệ thống</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level collapse" data-type="menu">
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Role/RoleIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Vai trò hệ thống</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Menu/MenuIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Chức năng hệ thống</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/DataDict/DataDictIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Tham số chung</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/Database/DatatableIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Cơ sở dữ liệu</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/LogLogin/LogLoginIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhật ký tài khoản</span>
+                                </a>
+                            </li>
+                            <li data-type="menu">
+                                <a class="menuItem" href="#" data-url='/SystemManage/LogOperate/LogOperateIndex'>
+                                    <i class="fa fa-folder"></i>
+                                    <span class="nav-label">Nhật ký sử dụng</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; display: flex;">
+                    <a class="navbar-minimalize minimalize-styl-2" href="#" title="Menu">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="minimalize-styl-2" style="color: #066a39;
+                    width: 40%;
+                    font-weight: 500;
+                    position: relative;" id="BaseOrganizationId" col="BaseOrganizationId">HỆ THỐNG QUẢN LÝ THIẾT BỊ SẢN XUẤT
+                        VÀ BẢO TRÌ, BẢO DƯỠNG
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right welcome-message" style="    margin-left: auto;">
+                        <li><a id="fullScreen"><i class="fa fa-arrows-alt"></i></a></li>
+                        <li class="dropdown user-menu">
+                            <a href="javascript:void(0)" class="dropdown-toggle" data-hover="dropdown">
+                                <img src="/image/portrait.png" class="user-image">
+                                <span class="hidden-xs">Nguyễn Chi</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="mt5">
+                                    <a class="menuItem" href="#"
+                                        data-url='/OrganizationManage/User/UserDetail?id=730810894560268288'>
+                                        <i class="fa fa-user"></i> Hồ sơ cá nhân
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="showChangePasswordForm()">
+                                        <i class="fa fa-key"></i> Đổi mật khẩu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a onclick="showSwitchSkinForm()">
+                                        <i class="fa fa-dashboard"></i> Giao diện
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#" onclick="loginOff()">
+                                        <i class="fa fa-sign-out"></i> Đăng xuất
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left tabLeft">
+                    <i class="fa fa-backward"></i>
+                </button>
+                <nav class="page-tabs menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="javascript:;" class="active menuTab" data-id="/system/main">Bàn làm việc</a>
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right tabRight">
+                    <i class="fa fa-forward"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown">
+                        Tab<span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li><a class="tabCloseCurrent" href="#">Đóng tab hiện tại</a></li>
+                        <li><a class="tabCloseOther" href="#">Đóng tab khác</a></li>
+                        <li><a class="tabCloseAll" href="#">Đóng tất cả</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="roll-nav roll-right tabReload"><i class="fa fa-refresh"></i> Tải lại</a>
+            </div>
+            <div class="row mainContent" id="content-main">
+                <iframe class="cmms_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main"
+                    src="/Home/Welcome" frameborder="0" seamless></iframe>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var departmentId = '725299638315257856';
+        if (!ys.isNullOrEmpty($.cookie('Skin'))) {
+            var skin = decodeURIComponent($.cookie('Skin'));
+            $("body").addClass(skin.split('|')[0]);
+            $("body").addClass(skin.split('|')[1]);
+        } else {
+            var sideTheme = "theme-dark";
+            var skinName = "skin-blue";
+            $("body").addClass(sideTheme);
+            $("body").addClass(skinName);
+        }
+        $('#BaseOrganizationId').ysComboBoxTree({ url: '/OrganizationManage/Department/GetDepartmentTreeListJson' });
+        $('#BaseOrganizationId').ysComboBoxTree("setValue", departmentId);
+        function showChangePasswordForm() {
+            ys.openDialog({
+                title: "Thay đổi mật khẩu",
+                content: '/OrganizationManage/User/ChangePassword' + '?id=730810894560268288',
+                height: "500px",
+                callback: function (index, layero) {
+                    var iframeWin = window[layero.find('iframe')[0]['name']];
+                    iframeWin.saveForm(index);
+                }
+            });
+        }
+
+        function showSwitchSkinForm() {
+            ys.openDialog({
+                title: "Thay đổi giao diện",
+                content: '/Home/Skin',
+                width: '530px',
+                height: '390px',
+                btn: null,
+                maxmin: false
+            });
+        }
+
+        function loginOff() {
+            ys.ajax({
+                url: '/Home/LoginOffJson',
+                type: "post",
+                success: function (obj) {
+                    if (obj.Tag == 1) {
+                        location.href = '/Home/Index';
+                    }
+                    else {
+                        ys.msgError(obj.Message);
+                    }
+                }
+            });
+        }
+        $(".navbar-minimalize").click(function () {
+            debugger;
+            this.src = '../metronic/media/logos/logo-rutgon.png';
+        });
+    </script>
+
+
+
+    <link rel='stylesheet' href='../cmms/css/cmms.min.css?v=638566582583397854' />
+    <script src='../cmms/js/cmms-init.min.js' type='text/javascript'></script>
+    <script src='../cmms/js/numeral.min.js' type='text/javascript'></script>
+
+</body>
+
+</html>

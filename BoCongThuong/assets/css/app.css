@@ -1,0 +1,75 @@
+/*======= common style =======*/
+
+
+/* font roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font roboto */
+
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --style-color-main: #7aa341;
+    --style-color-dark: #4b6328;
+    --style-color-light: #ddeacf;
+    --style-color-light-2: rgba(134, 190, 76, 0.24);
+    --style-color-btn-contrast: #ff8e01;
+
+    
+
+    --style-color-in-bg: black;
+    --style-color-input: #E2EFD4;
+    
+    --style-color-in-bg-menu: black;
+    --style-color-in-bg-dark: #ffffff;
+
+    /* footer */
+    --style-color-bg-footer: #434a3d;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: #7aa341;
+    --style-color-bg-color-hover: #ddeacf;
+    --style-color-color-share: white;
+    --style-color-bg-placehoder-footer: #ddeacf;
+    --style-color-call: #f74239;
+    --style-color-btn-footer:white;
+
+    --style-footer-color-hover: #069628;
+    --style-border-input-footer: #c4c4c4;
+    /* end footer */
+    
+    --style-color-filter-hover: #069628;
+
+
+    
+
+    /* hover */
+    --style-color-bg-placehoder-footer: #f1f7e9;
+    --style-color-btn-search-new: #8BC63F;
+    --style-color-bg-new: rgba(226, 239, 212, 0.28); 
+
+    --style-color-menu-hover: #f74239;
+    --hover-dark: white;
+    --hover-white:#ff8e01;
+    --hover-light: #ff8e01;
+
+    --home-hover-title: white;
+    --pre-header-hover-title: #4b6328;
+    
+    /* end hover */
+
+
+}

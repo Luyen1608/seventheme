@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="banner-wrapper">
+      <div class="image">
+        <img
+          src="./assets/image/Rectangle 272.png"
+          alt=""
+          width="100%"
+          height="139px"
+          class="responsive-image"
+        />
+      </div>
+
+      <div class="content-banner">
+        <div class="infomation">
+          <p class="name-company">Sàn Thương mại điện tử tỉnh Bạc Liêu</p>
+          <div class="info-company">
+            <div class="hotline">
+              <div class="icon-phone">
+                <img src="./assets/icon/Group 435.png" alt="" />
+              </div>
+              <div class="number-phone">
+                Hotline: <span>(84) 2913.392626</span>
+              </div>
+            </div>
+            <div class="email">
+              <div class="icon-email">
+                <img src="./assets/icon/icon-email.png" alt="" />
+              </div>
+              <div class="email-contact">
+                Email: <span>caonguyen5974@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid py-2 px-4">
+          <div class="d-flex align-items-center flex-column flex-md-row">
+            <!-- Logo -->
+            <div class="image-logo mb-2">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+
+            <!-- Search Bar -->
+            <div class="frame mb-2 w-100">
+              <div class="div">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-dropdown">
+                    <div class="text-wrapper">Sản phẩm</div>
+                    <img class="polygon" src="./assets/icon/Polygon 1.png" />
+                    <img class="img" src="./assets/icon/Polygon 2.png" />
+                  </div>
+                </div>
+                <div class="text-wrapper-2">Tìm kiếm</div>
+              </div>
+              <img class="vector" src="./assets/icon/Vector.png" />
+            </div>
+
+            <!-- Icons -->
+            <div
+              class="icons d-flex align-items-center justify-content-around wrapper-login-cart w-100"
+            >
+              <!-- Shopping Cart Icon -->
+              <div class="box">
+                <div class="group">
+                  <div class="overlap">
+                    <img class="img" src="./assets/icon/Group 429.png" />
+                    <div class="overlap-group-wrapper">
+                      <div class="overlap-group">
+                        <div class="text-wrapper">1</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Login/Register Button -->
+              <div class="frame-login">
+                <img class="image-user" src="./assets/icon/icon-user.png" />
+                <p class="text-wrapper-login">ĐĂNG NHẬP / ĐĂNG KÝ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MENU -->
+    <div class="box-menu">
+      <div class="main-navbar">
+        <div class="navbar-product-button">
+          <div class="text-wrapper-product">DANH MỤC SẢN PHẨM</div>
+          <img src="./assets/icon/burger.png" alt="" class="icon-burger" />
+        </div>
+        <div class="navbar-wrapper">
+          <div class="navbar-item">Trang chủ</div>
+          <div class="navbar-item">Sản phẩm</div>
+          <div class="navbar-item">Chào hàng</div>
+          <div class="navbar-item">Doanh nghiệp</div>
+          <div class="navbar-item">Quảng cáo</div>
+          <div class="navbar-item">Tin tức, sự kiện</div>
+          <div class="navbar-item">Liên hệ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wrapper">
+      <div class="main-wrapper">
+        <div class="cover-wrapper">
+          <div class="menu-toggle">
+            <button id="toggle-menu" class="btn-toggle">Menu</button>
+          </div>
+          <div class="category-product" id="category-menu">
+            <div class="category-product-wrapper" >
+              <p class="category-product-item">
+                Sản phẩm Công nghiệp nông thôn tiêu biểu tỉnh Bạc Liêu
+              </p>
+              <p class="category-product-item">Sản phẩm OCOP tỉnh Bạc Liêu</p>
+              <p class="category-product-item">Đặc sản Bạc Liêu</p>
+              <p class="category-product-item">Thực phẩm chế biển, Đồ uống</p>
+              <p class="category-product-item">Thủ công mỹ nghệ - Quà tặng</p>
+              <p class="category-product-item">Nông - Lâm - Thuỷ sản</p>
+              <p class="category-product-item">
+                Vật liệu xây dựng, Nội, Ngoại thất
+              </p>
+              <p class="category-product-item">
+                Sản phẩm đặc trưng địa phương khác
+              </p>
+            </div>
+          </div>
+          <div class="cover-food">
+            <img
+              src="./assets/image/Blue White Modern Frozen Food Banner (4) 1.png"
+              alt=""
+              class="responsive-cover-image"
+            />
+          </div>
+        </div>
+
+        <div class="product-container">
+          <div class="product-container-left">
+            <div class="product-offer">
+              <div class="product-offer-left">
+                <div class="header-wrapper">
+                  <div class="heading-po-item">SẢN PHẨM CHÀO BÁN</div>
+                  <div class="watch-all">Xem tất cả</div>
+                </div>
+
+                <div class="rectangle-green mb-4 mt-2"></div>
+
+                <div class="product-wrapper">
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product1.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Bánh phồng rau củ</div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Giá bán: 450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product2.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Rượu cần jrai 2,5 lit
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <div class="overlap">
+                      <img
+                        src="./assets/image/product3.png"
+                        alt=""
+                        width="216px"
+                        height="184px"
+                        class="image-product"
+                      />
+
+                      <div class="group-sale">
+                        <div class="overlap-group-wrapper">
+                          <div class="overlap-group">
+                            <div class="text-overlap">12%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="description-product">
+                      <div class="title-product-item">Khô cá khoai</div>
+                      <p class="ingredient-product-item">
+                        Rượu cần được làm từ men<br />
+                        rể cây thiên nhiên, cùng với<br />
+                        gạo lúa rẫy nấu chín thành<br />
+                        cơm hòa trộn...
+                      </p>
+                      <div class="price-sale">350.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product4.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Rau cần nước</div>
+                      <p class="ingredient-product-item">
+                        Bò một nắng Hưng Lê được<br />
+                        chọn từ những chú Bò cỏ<br />
+                        Krông Pa chăn thả tự nhiên,<br />
+                        ăn...
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <div class="overlap">
+                      <img
+                        src="./assets/image/product5.png"
+                        alt=""
+                        width="216px"
+                        height="184px"
+                        class="image-product"
+                      />
+
+                      <div class="group-sale">
+                        <div class="overlap-group-wrapper">
+                          <div class="overlap-group">
+                            <div class="text-overlap">12%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 100g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">150.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product6.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 50g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product7.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Bột gia vị ớt tỏi cốt chanh (3 in 1)
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product8.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Ngũ cốc ORGANIC (OGN) 500g
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-ocp">
+              <div class="product-offer-left">
+                <div class="header-wrapper">
+                  <div class="heading-po-item">SẢN PHẨM OCP</div>
+                  <div class="watch-all">Xem tất cả</div>
+                </div>
+
+                <div class="rectangle-green mb-4 mt-2"></div>
+
+                <div class="product-wrapper">
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product1.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Bánh phồng rau củ</div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Giá bán: 450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product2.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Rượu cần jrai 2,5 lit
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <div class="overlap">
+                      <img
+                        src="./assets/image/product3.png"
+                        alt=""
+                        width="216px"
+                        height="184px"
+                        class="image-product"
+                      />
+
+                      <div class="group-sale">
+                        <div class="overlap-group-wrapper">
+                          <div class="overlap-group">
+                            <div class="text-overlap">12%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="description-product">
+                      <div class="title-product-item">Khô cá khoai</div>
+                      <p class="ingredient-product-item">
+                        Rượu cần được làm từ men<br />
+                        rể cây thiên nhiên, cùng với<br />
+                        gạo lúa rẫy nấu chín thành<br />
+                        cơm hòa trộn...
+                      </p>
+                      <div class="price-sale">350.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product4.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Rau cần nước</div>
+                      <p class="ingredient-product-item">
+                        Bò một nắng Hưng Lê được<br />
+                        chọn từ những chú Bò cỏ<br />
+                        Krông Pa chăn thả tự nhiên,<br />
+                        ăn...
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product5.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 100g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">150.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product6.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 50g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product7.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Bột gia vị ớt tỏi cốt chanh (3 in 1)
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product8.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Ngũ cốc ORGANIC (OGN) 500g
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-offer-right"></div>
+            </div>
+
+            <div class="product-representative">
+              <div class="product-offer-left">
+                <div class="header-wrapper">
+                  <div class="heading-po-item">SẢN PHẨM OCP</div>
+                  <div class="watch-all">Xem tất cả</div>
+                </div>
+
+                <div class="rectangle-green mb-4 mt-2"></div>
+
+                <div class="product-wrapper">
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product1.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Bánh phồng rau củ</div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Giá bán: 450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product2.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Rượu cần jrai 2,5 lit
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <div class="overlap">
+                      <img
+                        src="./assets/image/product3.png"
+                        alt=""
+                        width="216px"
+                        height="184px"
+                        class="image-product"
+                      />
+
+                      <div class="group-sale">
+                        <div class="overlap-group-wrapper">
+                          <div class="overlap-group">
+                            <div class="text-overlap">12%</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="description-product">
+                      <div class="title-product-item">Khô cá khoai</div>
+                      <p class="ingredient-product-item">
+                        Rượu cần được làm từ men<br />
+                        rể cây thiên nhiên, cùng với<br />
+                        gạo lúa rẫy nấu chín thành<br />
+                        cơm hòa trộn...
+                      </p>
+                      <div class="price-sale">350.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product4.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">Rau cần nước</div>
+                      <p class="ingredient-product-item">
+                        Bò một nắng Hưng Lê được<br />
+                        chọn từ những chú Bò cỏ<br />
+                        Krông Pa chăn thả tự nhiên,<br />
+                        ăn...
+                      </p>
+                      <div class="price-sale">Liên hệ</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product5.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 100g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">150.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product6.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Hạt điều rang củi gói 50g
+                      </div>
+                      <p class="ingredient-product-item">
+                        - Sản phẩm OCOP đạt 4 sao<br />
+                        cấp Tỉnh năm 2019 - Sản<br />
+                        phẩm được tuyển chọn kỹ<br />
+                        lưỡng (100%) từ...
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product7.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Bột gia vị ớt tỏi cốt chanh (3 in 1)
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">250.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+
+                  <div class="product-item">
+                    <img
+                      src="./assets/image/product8.png"
+                      alt=""
+                      width="216px"
+                      height="184px"
+                      class="image-product"
+                    />
+                    <div class="description-product">
+                      <div class="title-product-item">
+                        Ngũ cốc ORGANIC (OGN) 500g
+                      </div>
+                      <p class="ingredient-product-item">
+                        Thành phần: Hạt Óc Chó,<br />
+                        Hạnh nhân, Yến mạch,<br />
+                        Macca, Hạt Điều, hạt Chia,<br />
+                        gạo Lứt, Mè đen, đậu..
+                      </p>
+                      <div class="price-sale">450.000</div>
+                      <div class="price-old">Giá cũ: 550.000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-offer-right"></div>
+            </div>
+
+            <div class="product-follow">
+              <div class="product-offer-left">
+                <div class="header-wrapper">
+                  <div class="heading-po-item">SẢN PHẨM QUAN TÂM</div>
+                </div>
+                <div class="rectangle-green mb-4 mt-2"></div>
+
+                <div class="slideshow-container">
+                  <div class="mySlides">
+                    <div class="product-wrapper">
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product1.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Bánh phồng rau củ
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">Giá bán: 450.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product2.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Rượu cần jrai 2,5 lit
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">Liên hệ</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <div class="overlap">
+                          <img
+                            src="./assets/image/product3.png"
+                            alt=""
+                            width="216px"
+                            height="184px"
+                            class="image-product"
+                          />
+
+                          <div class="group-sale">
+                            <div class="overlap-group-wrapper">
+                              <div class="overlap-group">
+                                <div class="text-overlap">12%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="description-product">
+                          <div class="title-product-item">Khô cá khoai</div>
+                          <p class="ingredient-product-item">
+                            Rượu cần được làm từ men<br />
+                            rể cây thiên nhiên, cùng với<br />
+                            gạo lúa rẫy nấu chín thành<br />
+                            cơm hòa trộn...
+                          </p>
+                          <div class="price-sale">350.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product4.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">Rau cần nước</div>
+                          <p class="ingredient-product-item">
+                            Bò một nắng Hưng Lê được<br />
+                            chọn từ những chú Bò cỏ<br />
+                            Krông Pa chăn thả tự nhiên,<br />
+                            ăn...
+                          </p>
+                          <div class="price-sale">Liên hệ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="product-wrapper">
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product5.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Hạt điều rang củi gói 100g
+                          </div>
+                          <p class="ingredient-product-item">
+                            - Sản phẩm OCOP đạt 4 sao<br />
+                            cấp Tỉnh năm 2019 - Sản<br />
+                            phẩm được tuyển chọn kỹ<br />
+                            lưỡng (100%) từ...
+                          </p>
+                          <div class="price-sale">150.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product6.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Hạt điều rang củi gói 50g
+                          </div>
+                          <p class="ingredient-product-item">
+                            - Sản phẩm OCOP đạt 4 sao<br />
+                            cấp Tỉnh năm 2019 - Sản<br />
+                            phẩm được tuyển chọn kỹ<br />
+                            lưỡng (100%) từ...
+                          </p>
+                          <div class="price-sale">250.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product7.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Bột gia vị ớt tỏi cốt chanh (3 in 1)
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">250.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product8.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Ngũ cốc ORGANIC (OGN) 500g
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">450.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="product-wrapper">
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product1.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Bánh phồng rau củ
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">Giá bán: 450.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product2.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">
+                            Rượu cần jrai 2,5 lit
+                          </div>
+                          <p class="ingredient-product-item">
+                            Thành phần: Hạt Óc Chó,<br />
+                            Hạnh nhân, Yến mạch,<br />
+                            Macca, Hạt Điều, hạt Chia,<br />
+                            gạo Lứt, Mè đen, đậu..
+                          </p>
+                          <div class="price-sale">Liên hệ</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <div class="overlap">
+                          <img
+                            src="./assets/image/product3.png"
+                            alt=""
+                            width="216px"
+                            height="184px"
+                            class="image-product"
+                          />
+
+                          <div class="group-sale">
+                            <div class="overlap-group-wrapper">
+                              <div class="overlap-group">
+                                <div class="text-overlap">12%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="description-product">
+                          <div class="title-product-item">Khô cá khoai</div>
+                          <p class="ingredient-product-item">
+                            Rượu cần được làm từ men<br />
+                            rể cây thiên nhiên, cùng với<br />
+                            gạo lúa rẫy nấu chín thành<br />
+                            cơm hòa trộn...
+                          </p>
+                          <div class="price-sale">350.000</div>
+                          <div class="price-old">Giá cũ: 550.000</div>
+                        </div>
+                      </div>
+
+                      <div class="product-item">
+                        <img
+                          src="./assets/image/product4.png"
+                          alt=""
+                          width="216px"
+                          height="184px"
+                          class="image-product"
+                        />
+                        <div class="description-product">
+                          <div class="title-product-item">Rau cần nước</div>
+                          <p class="ingredient-product-item">
+                            Bò một nắng Hưng Lê được<br />
+                            chọn từ những chú Bò cỏ<br />
+                            Krông Pa chăn thả tự nhiên,<br />
+                            ăn...
+                          </p>
+                          <div class="price-sale">Liên hệ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="text-align: center; margin-top: 40px">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-offer-right"></div>
+              <br />
+            </div>
+          </div>
+          <div class="product-container-right">
+            <img src="./assets/image/nhâtitro.png" alt="" />
+            <div class="btn-src">
+              <div class="text-button">LIÊN KẾT WEBSITE</div>
+            </div>
+            <div class="dropdow-select">
+              <div class="text-dropdown">-- Liên kết Website --</div>
+              <img
+                src="./assets/icon/substract.svg"
+                alt=""
+                class="icon-substract"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="new-person">
+          <div class="product-offer-left">
+            <div class="header-wrapper">
+              <div class="heading-po-item">THÀNH VIÊN MỚI</div>
+            </div>
+
+            <div class="rectangle-green mb-4 mt-2"></div>
+
+            <div class="slide-wrapper">
+              <div class="swiper mySwiper">
+                <div
+                  class="swiper-wrapper"
+                  style="margin-left: 15px; margin-top: 12px"
+                >
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person1.png" alt="" />
+                        <p class="text-image">Cơ sở nông sản Việt</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person2.png" alt="" />
+                        <p class="text-image">Cơ sở Kiều Hạnh</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person3.png" alt="" />
+                        <p class="text-image">Cơ sở sản xuất Kim Phương</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person4.png" alt="" />
+                        <p class="text-image">Cơ sở mắm không xương vị Quê</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person5.png" alt="" />
+                        <p class="text-image">Bánh phồng tôm Bách Phúc</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-wrapper">
+                      <div class="overlap-image">
+                        <img src="./assets/image/person5.png" alt="" />
+                        <p class="text-image">Bánh phồng tôm Bách Phúc</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-offer-right"></div>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <div class="news-wrapper">
+      <div class="box-title-news">
+        <div class="group-title-news">
+          <div class="text-news">TIN TỨC - SỰ KIỆN</div>
+        </div>
+      </div>
+
+      <div class="content-news">
+        <div class="box-content">
+          <div class="group-content">
+            <img src="./assets/image/news1.png" alt="" class="img-content" />
+            <div class="rectangular-content"></div>
+            <div class="frame-content">
+              <div class="content-text">
+                Mời tham gia Hội chợ Thương mại – Du lịch Quốc tế Nha Trang 2021
+              </div>
+              <div class="description-content">
+                Thực hiện Quyết định số 3538/QĐ-BCT ngày 30/12/2020 của Bộ
+                trưởng Bộ Công thương về việc phê duyệt Chương trình cấp quốc
+                gia về Xúc tiến Thương mại
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-content">
+          <div class="group-content">
+            <img src="./assets/image/news1.png" alt="" class="img-content" />
+            <div class="rectangular-content"></div>
+            <div class="frame-content">
+              <div class="content-text">
+                Mời tham gia Hội chợ Thương mại – Du lịch Quốc tế Nha Trang 2021
+              </div>
+              <div class="description-content">
+                Thực hiện Quyết định số 3538/QĐ-BCT ngày 30/12/2020 của Bộ
+                trưởng Bộ Công thương về việc phê duyệt Chương trình cấp quốc
+                gia về Xúc tiến Thương mại
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-content">
+          <div class="group-content">
+            <img src="./assets/image/news1.png" alt="" class="img-content" />
+            <div class="rectangular-content"></div>
+            <div class="frame-content">
+              <div class="content-text">
+                Mời tham gia Hội chợ Thương mại – Du lịch Quốc tế Nha Trang 2021
+              </div>
+              <div class="description-content">
+                Thực hiện Quyết định số 3538/QĐ-BCT ngày 30/12/2020 của Bộ
+                trưởng Bộ Công thương về việc phê duyệt Chương trình cấp quốc
+                gia về Xúc tiến Thương mại
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-content">
+          <div class="group-content">
+            <img src="./assets/image/news1.png" alt="" class="img-content" />
+            <div class="rectangular-content"></div>
+            <div class="frame-content">
+              <div class="content-text">
+                Mời tham gia Hội chợ Thương mại – Du lịch Quốc tế Nha Trang 2021
+              </div>
+              <div class="description-content">
+                Thực hiện Quyết định số 3538/QĐ-BCT ngày 30/12/2020 của Bộ
+                trưởng Bộ Công thương về việc phê duyệt Chương trình cấp quốc
+                gia về Xúc tiến Thương mại
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="container my-5">
+        <footer class="text-white text-center text-lg-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4 responsive-footer">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">THÔNG TIN LIÊN HỆ</h5>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 172px; background-color: #fff; height: 1px"
+                />
+
+                <p class="mb-2">SỞ CÔNG THƯƠNG TỈNH BẠC LIÊU</p>
+                <p class="mb-2">
+                  <span class="fw-bold">Địa chỉ:</span> Khu Hành chính, đường
+                  Nguyễn Tất Thành, phường 1, Tp Bạc Liêu, tỉnh Bạc Liêu
+                </p>
+
+                <p class="mb-2">
+                  <span class="fw-bold">Điện thoại:</span> (84) 2913.392626
+                </p>
+                <p>
+                  <span class="fw-bold">Email:</span>caonguyen5974@gmail.com
+                </p>
+
+                <div class="mt-4">
+                  <p class="fw-bold mb-1">Kết nối với chúng tôi</p>
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-light rounded-circle"
+                    ><i class="fab fa-facebook-f" style="color: #207cea"></i
+                  ></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-light rounded-circle"
+                    ><i class="fab fa-twitter" style="color: #207cea"></i
+                  ></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-light rounded-circle"
+                    ><i class="fab fa-instagram" style="color: #207cea"></i
+                  ></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-light rounded-circle"
+                    ><i class="fab fa-youtube" style="color: #207cea"></i
+                  ></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h6 class="text-uppercase">HỖ TRỢ KHÁCH HÀNG</h6>
+
+                <div class="form-outline form-white mb-4">
+                  <div
+                    class="d-flex align-items-center responsive--info-footer"
+                  >
+                    <div class="icon-phone">
+                      <img src="./assets/icon/Group 435.png" alt="" />
+                    </div>
+                    <div class="number-phone">
+                      <span class="fs-3 text-light">(84) 2913.392626</span>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="fw-bold mb-2">Hướng dẫn đăng ký thành viên</p>
+                <p>Hướng dẫn đăng nhập</p>
+                <p>Hướng dẫn mua hàng</p>
+
+                <p>Hướng dẫn bán hàng</p>
+                <p class="mb-5">Câu hỏi thường gặp</p>
+              </div>
+              <!--Grid column-->
+              <div
+                class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <h6 class="text-uppercase">Chính sách quy chế</h6>
+
+                  <p>Quy chế sử dụng</p>
+                  <p>Bảo mật thông tin</p>
+
+                  <p>Hướng dẫn tham gia sàn</p>
+                  <p>Hướng dẫn thanh toán</p>
+                </div>
+                <div class="img-degree d-flex justify-content-end mt-5">
+                  <img
+                    src="./assets/image/degree.png"
+                    alt=""
+                    width="211px"
+                    height="79px"
+                  />
+                </div>
+              </div>
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 custome-box">
+                <div class="box-opacity">
+                  <h6 class="mb-2 text-light text-center pt-3">
+                    THỐNG KÊ TRUY CẬP
+                  </h6>
+
+                  <div class="in-click px-4">
+                    <p class="mb-3">Online: 11</p>
+                    <p class="mb-3">Lượt truy cập: 1627651</p>
+                    <p class="mb-3">Sản phẩm: 169</p>
+                    <p class="mb-3">Chào hàng: 63</p>
+                    <p class="mb-3">Thành viên: 85</p>
+                    <p class="pb-4">
+                      Thành viên mới: <br />
+                      Cở sở bánh đậu xanh Hương đen
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/11a81f9151.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document
+        .getElementById("toggle-menu")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("category-menu");
+          if (menu.style.display === "block") {
+            menu.style.display = "none"; // Hide the menu
+          } else {
+            menu.style.display = "block"; // Show the menu
+          }
+        });
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
