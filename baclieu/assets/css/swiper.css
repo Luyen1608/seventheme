@@ -43,11 +43,11 @@
 
 .active,
 .dot:hover {
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgb(194, 27, 34) 0%,
     rgb(135, 11, 13) 100%
-  );
+  ); */
 }
 
 /* Fading animation */
@@ -84,7 +84,7 @@
 }
 
 .overlap-image img {
-  height: 75px;
+  height: 105px;
 }
 
 .text-image {

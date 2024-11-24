@@ -3,13 +3,12 @@
 }
 
 .main-wrapper {
-  width: 85%;
-  margin: 0 auto;
 }
 
 .product-container {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .product-container-left {
@@ -18,26 +17,33 @@
 
 .product-container-right {
   width: 20%;
-  margin-top: 20px;
+  margin-top: 61px;
 }
 
 .cover-wrapper {
   padding-top: 4px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.wrapper-navbar {
+  width: 100%;
+  position: relative;
 }
 
 .category-product {
-  width: 28%;
-  height: 357px;
+  width: 100%;
+  height: 370px;
   border: 1px solid #c6c6c6;
   border-radius: 11px;
+  position: absolute;
+  top: 67px;
 }
 
 .category-product-wrapper {
   display: flex;
   flex-direction: column;
-  width: 275px;
+  width: 100%;
   padding: 17px 0 17px 16px;
   box-sizing: border-box;
 }
@@ -54,18 +60,16 @@
 }
 
 .cover-food {
-  width: 71%;
+  width: 73.5%;
+}
+
+.cover-food img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .product-offer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   margin-top: 41.35px;
-}
-
-.product-offer-left {
-  width: 98%;
 }
 
 .header-wrapper {
@@ -88,15 +92,17 @@
 }
 
 .product-wrapper {
+  
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  gap: 40px 18px;
+  justify-content: space-between;
   flex: 0 0 auto;
 }
 
 .product-item {
   width: 222px;
-  height: 403px;
+  height: 395px;
   border-radius: 16px;
   border: 1px solid #dadada;
   position: relative;
@@ -138,6 +144,7 @@
 .product-item .image-product {
   object-fit: cover;
   position: absolute;
+  border-radius: 16px 16px 0 0;
   top: 2px;
   left: 3px;
 }
@@ -145,7 +152,7 @@
 .description-product {
   position: absolute;
   top: 185px;
-  margin: 22px auto 0 16px;
+  margin: 22px 16px 0 16px;
 }
 
 .title-product-item {
@@ -153,6 +160,13 @@
   color: var(--s-3s-2);
   font-size: 16px;
   margin-bottom: 20px;
+  display: -webkit-box; /* Use flexbox for the text container */
+  -webkit-box-orient: vertical; /* Set the orientation to vertical */
+  -webkit-line-clamp: 1; /* Limit to 2 lines */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis (...) */
+  line-height: 1.2; /* Adjust line height as needed */
+  max-height: 20;
 }
 
 .ingredient-product-item {
@@ -160,6 +174,13 @@
   color: #6f6b6b;
   font-size: 14px;
   margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  max-height: 20;
 }
 
 .price-sale {
@@ -179,8 +200,9 @@
 
 .btn-src {
   display: flex;
-  width: 91%;
+  /* width: 95%; */
   height: 44px;
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   background-color: var(--s-3s-1);
@@ -189,7 +211,7 @@
 }
 
 .dropdow-select {
-  width: 91%;
+  /* width: 95%; */
   height: 42px;
   display: flex;
   align-items: center;
@@ -213,7 +235,7 @@
 }
 .product-item:nth-child(8) > .description-product .title-product-item,
 .product-item:nth-child(7) > .description-product .title-product-item {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .product-ocp,
