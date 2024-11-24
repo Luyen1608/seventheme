@@ -66,31 +66,31 @@
         }
 
         .skin-blue .navbar {
-            background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(1, #006634));
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(1, #03720B));
         }
 
         .minimalize-styl-2:visited {
             color: #006634;
         }
         img.logo-img.toggleImg {
-            content: url('../metronic/media/logos/logo-rutgon.png'); /* Đường dẫn đến hình ảnh thay thế */
+            content: url('../metronic/media/logos/logo_damninhbinh.png'); /* Đường dẫn đến hình ảnh thay thế */
         }
         li.toggleImg{
             padding: 0px 5px !important;
         }
     </style>
 
-    <div id="wrapper">
-        <nav class="navbar-default navbar-static-side" role="navigation">
+    <div id="wrapper" style="background: white;">
+        <nav class="navbar-default navbar-static-side" role="navigation" style="background: white;" >
             <div class="nav-close">
                 <i class="fa fa-times-circle"></i>
             </div>
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
-                    <li class="logo" style="height:56px">
+                    <li class="logo" style="background: #03720B; height:56px">
                         <!-- <img class="logo-light logo-img" src="../metronic/media/logos/logo-admin-ver.png"
                             srcset="../metronic/media/logos/logo-admin-ver.png 2x" alt="logo"> -->
-                            <img style="max-height: 55px;margin-top: 2px;" class="logo-small logo-img logo-img-small" src="../metronic/media/logos/logo_damninhbinh.png"
+                            <img style="max-height: 56px;" class="logo-small logo-img logo-img-small" src="../metronic/media/logos/logo_damninhbinh.png"
                             srcset="../metronic/media/logos/logo_damninhbinh.png 2x" alt="logo-small">
                     </li>
                     <li data-type="menu">
@@ -485,7 +485,7 @@
             $("body").addClass(skin.split('|')[0]);
             $("body").addClass(skin.split('|')[1]);
         } else {
-            var sideTheme = "theme-dark";
+            var sideTheme = "";
             var skinName = "skin-blue";
             $("body").addClass(sideTheme);
             $("body").addClass(skinName);
