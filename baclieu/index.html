@@ -18,6 +18,39 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+<style>
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 20px;
+  }
+
+  .owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .owl-dot span {
+    font-size: 14px;
+    color: #000;
+  }
+
+  .owl-dot.active {
+    background-color: #0a19ec !important;
+    /* Dot đang hoạt động */
+  }
+</style>
 
 <body>
   <!-- HEADER -->
@@ -167,8 +200,11 @@
     <div class="main-wrapper">
       <div class="cover-wrapper">
         <div class="cover-food">
-          <img src="./assets/image/Blue White Modern Frozen Food Banner (4) 1.png" alt=""
-            class="responsive-cover-image" />
+          <div class="owl-carousel_banner owl-carousel owl-theme">
+            <img src="./assets/image/baclieu1.png" alt="" class="responsive-cover-image" />
+            <img src="./assets/image/baclieu2.png" alt="" class="responsive-cover-image" />
+            <img src="./assets/image/baclieu3.png" alt="" class="responsive-cover-image" />
+          </div>
         </div>
       </div>
     </div>
@@ -757,7 +793,7 @@
             <div class="rectangle-green mb-4 mt-2"></div>
 
             <div class="slideshow-container">
-              <div class="owl-carousel owl-theme">
+              <div class="owl-carousel-product owl-carousel owl-theme">
                 <!-- <div class="product-wrapper"> -->
                 <div class="product-item product-item-slider">
                   <img src="./assets/image/product5.png" alt="" width="216px" height="184px" class="image-product" />
@@ -1184,35 +1220,16 @@
     crossorigin="anonymous"></script>
   <script src="assets/owl-carousel/owl.carousel.min.js"></script>
   <style>
-    .owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.owl-dot span {
-  font-size: 14px;
-  color: #000;
-}
-
-.owl-dot.active {
-  background-color: #4CAF50 !important; /* Dot đang hoạt động */
-}
 
   </style>
   <script>
     $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
+      $(".owl-carousel_banner").owlCarousel({
+        items: 1,
+        dots: true,
+        loop: true
+      });
+      $(".owl-carousel-product").owlCarousel({
         items: 4,
         dots: true,
         loop: true,
