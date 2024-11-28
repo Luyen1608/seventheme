@@ -1,732 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/dc700a75c1.js"
-      crossorigin="anonymous"
-    ></script>
-   
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./assets/css/app.css" />
-    <link rel="stylesheet" href="./assets/css/thanhtoan.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="pre-header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" />
+
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/product.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="assets/css/rating.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<style>
+  .filter-btn {
+    height: 35px;
+  }
+
+  .filter-btn i {
+    padding-right: 5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cart-contact svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+</style>
+
+<body>
+  <!-- HEADER -->
+  <div class="banner-wrapper">
+    <div class="image">
+      <img src="assets/image/Rectangle 272.png" alt="" width="100%" height="139px" class="responsive-image" />
+    </div>
+    <div class="mobile-overlay"></div>
+    <div class="mobile-categories">
+      <div class="container-al">
+        <ul class="mobile-categories-list">
+          <li><span>Trang chủ</span></li>
+          <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+            <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+            <ul class="sub-dropdown" id="sd-1">
+              <li>1 Hello world</li>
+              <li>2 Hello world</li>
+              <li>3 Hello world</li>
+            </ul>
+          </li>
+          <li><span> Chào hàng </span></li>
+          <li><span> Doanh nghiệp </span></li>
+          <li class="dropdown">
+            <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+            <ul class="sub-dropdown">
+              <li class="lv2-dropdown">
+                <span>
+                  Giới thiệu tổng quan sàn<i class="fa-solid fa-chevron-down"></i>
+                </span>
+                <ul class="lv2-sub-dropdown">
+                  <li>Thị trường quốc tế</li>
+                  <li>Mỹ</li>
+                  <li>Nhật Bản</li>
+                </ul>
+              </li>
+              <li>2 Hello world</li>
+              <li>3 Hello world</li>
+            </ul>
+          </li>
+          <li><span> Quảng cáo </span></li>
+          <li class="dropdown">
+            <span>
+              Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <ul class="sub-dropdown">
+              <li class="lv2-dropdown">
+                <span>
+                  1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                </span>
+                <ul class="lv2-sub-dropdown">
+                  <li>1 Hello world</li>
+                  <li>2 Hello world</li>
+                  <li>3 Hello world</li>
+                </ul>
+              </li>
+              <li>2 Hello world</li>
+              <li>3 Hello world</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btns-wrap only-mobile">
+      <div class="mobile-cate-btn">
         <div class="container-al">
-          <div class="pre-header-contact">
-            <p class="text">Sàn thương mại điện tử các sản phẩm từ tre</p>
-            <p class="text">
-              <img src="./assets/img/Iconspace_Call_25px.svg" alt="" />
-              Liên hệ: 0123456789
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="cart-btn" data-content="1">
+        <img src="./assets/img/cart-2.svg" alt="" />
+      </div>
+      <a href="#" class="sign-in-btn"> Đăng nhập </a>
+      <a href="#" class="sign-up-btn"> Đăng ký </a>
+    </div>
+    <div class="content-banner">
+      <div class="container">
+        <div class="infomation">
+          <p class="name-company">Sàn Thương mại điện tử tỉnh Bạc Liêu</p>
+          <div class="info-company">
+            <div class="hotline">
+              <div class="icon-phone">
+                <img src="./assets/icon/Group 435.png" alt="" />
+              </div>
+              <div class="number-phone">
+                <span class="text-detail">Hotline:</span>
+                <span>(84)2913.392626</span>
+              </div>
+            </div>
+            <div class="email">
+              <div class="icon-email">
+                <img src="./assets/icon/icon-email.png" alt="" />
+              </div>
+              <div class="email-contact">
+                <span class="text-detail">Email:</span>
+                <span>caonguyen5974@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__center d-flex align-items-center justify-content-end">
+          <div class="wrap-header__logo d-flex align-items-center">
+            <div class="image-logo mb-2">
+              <img src="./assets/logo.png" alt="" />
+            </div>
+
+            <!-- Search Bar -->
+            <div class="wrap-header__form">
+              <form action>
+                <div class="form-group-header">
+                  <div class="frame">
+                    <div class="div">
+                      <div class="overlap-group-wrapper">
+                        <div class="overlap-group-dropdown">
+                          <div class="text-wrapper">Sản phẩm</div>
+                          <img class="polygon" src="./assets/icon/Polygon 1.png" />
+                          <img class="img" src="./assets/icon/Polygon 2.png" />
+                        </div>
+                      </div>
+                      <div class="text-wrapper-2">Tìm kiếm</div>
+                    </div>
+                    <img class="vector" src="./assets/icon/Vector.png" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="header__info d-flex align-items-center">
+            <!-- Icons -->
+            <div class="icons d-flex align-items-center justify-content-between wrapper-login-cart">
+              <!-- Shopping Cart Icon -->
+              <div class="box">
+                <div class="group">
+                  <a class="overlap">
+                    <img class="img" src="./assets/icon/Group 429.png" />
+                    <div class="overlap-group-wrapper">
+                      <div class="overlap-group">
+                        <div class="text-wrapper">2</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Login/Register Button -->
+            </div>
+            <a class="frame-login">
+              <img class="image-user" src="./assets/icon/icon-user.png" />
+              <p class="text-wrapper-login">ĐĂNG NHẬP / ĐĂNG KÝ</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- menu -->
+  <div class="nav-top-menu">
+    <div class="container">
+      <div class="row menu-wrapper">
+        <div class="col-lg-3 col-6-1024 g-pa-0">
+          <div class="wrapper-navbar">
+            <div class="navbar-product-button" id="toggle-menu">
+              <div class="text-wrapper-product">DANH MỤC SẢN PHẨM</div>
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="category-product" id="category-menu" style="display: none;">
+              <div class="category-product-wrapper">
+                <p class="category-product-item">
+                  Sản phẩm Công nghiệp nông thôn tiêu biểu tỉnh Bạc Liêu
+                </p>
+                <p class="category-product-item">
+                  Sản phẩm OCOP tỉnh Bạc Liêu
+                </p>
+                <p class="category-product-item">Đặc sản Bạc Liêu</p>
+                <p class="category-product-item">
+                  Thực phẩm chế biển, Đồ uống
+                </p>
+                <p class="category-product-item">
+                  Thủ công mỹ nghệ - Quà tặng
+                </p>
+                <p class="category-product-item">Nông - Lâm - Thuỷ sản</p>
+                <p class="category-product-item">
+                  Vật liệu xây dựng, Nội, Ngoại thất
+                </p>
+                <p class="category-product-item">
+                  Sản phẩm đặc trưng địa phương khác
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-6-1024 d-flex align-items-center">
+          <div class="main-navbar">
+            <div class="menu-toggle" id="btn-menu">
+              <button class="btn-toggle">Menu</button>
+            </div>
+            <div class="navbar-wrapper" id="navbar-menu">
+              <div class="navbar-item">Trang chủ</div>
+              <div class="navbar-item">Sản phẩm</div>
+              <div class="navbar-item">Chào hàng</div>
+              <div class="navbar-item">Doanh nghiệp</div>
+              <div class="navbar-item">Quảng cáo</div>
+              <div class="navbar-item">Tin tức, sự kiện</div>
+              <div class="navbar-item">Liên hệ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end menu -->
+  <!-- content -->
+  <div class="container pt-4">
+    <div class="cart-content">
+      <div class="">
+        <div class="cart-section cart-cart">
+          <div class="cart-section-heading">
+            <h2>
+              <img src="./assets/img/cart-2.svg" alt="" />
+              Giỏ hàng
+            </h2>
+            <p class="collapse-btn">
+              <span>Thu gọn</span>
+              <i class="fa-solid fa-chevron-down"></i>
             </p>
           </div>
-
-          <div class="select-language-btn">
-            <div class="text">
-              <img src="./assets/img/google.svg" alt="" />
-              Select language
-            </div>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-        </div>
-      </div>
-      <div class="banner">
-        <h1 class="banner-heading">bamboo from vietnam</h1>
-        <div class="bamboo-left">
-          <img src="./assets/img/bbl.png" alt="" />
-        </div>
-        <div class="bamboo-right">
-          <img src="./assets/img/bamboo.jpg" class="bamboo-right-img" alt="" />
-          <img src="./assets/img/bbrec.png" class="bamboo-right-rec" alt="" />
-        </div>
-      </div>
-      <header class="header">
-        <div class="container-al">
-          <div class="logo">
-            <img src="./assets/img/logo-full.png" alt="" />
-          </div>
-          <div class="search-bar">
-            <input
-              type="text"
-              id="header-search"
-              placeholder="Tìm kiếm sản phẩm"
-            />
-            <div class="search-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div class="btns-wrap">
-            <div class="cart-btn">
-              <img src="./assets/img/cart-2.svg" alt="" />
-            </div>
-            <a href="#" class="sign-in-btn"> Đăng nhập </a>
-            <a href="#" class="sign-up-btn"> Đăng ký </a>
-          </div>
-        </div>
-      </header>
-      <div class="mobile-overlay"></div>
-      <div class="mobile-categories">
-        <div class="container-al">
-          <ul class="mobile-categories-list">
-            <li><span>Trang chủ</span></li>
-            <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
-              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
-              <ul class="sub-dropdown" id="sd-1">
-                <li>1 Hello world</li>
-                <li>2 Hello world</li>
-                <li>3 Hello world</li>
-              </ul>
-            </li>
-            <li><span> Chào hàng </span></li>
-            <li><span> Doanh nghiệp </span></li>
-            <li class="dropdown">
-              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
-              <ul class="sub-dropdown">
-                <li class="lv2-dropdown">
-                  <span>
-                    Giới thiệu tổng quan sàn<i
-                      class="fa-solid fa-chevron-down"
-                    ></i>
-                  </span>
-                  <ul class="lv2-sub-dropdown">
-                    <li>Thị trường quốc tế</li>
-                    <li>Mỹ</li>
-                    <li>Nhật Bản</li>
-                  </ul>
-                </li>
-                <li>2 Hello world</li>
-                <li>3 Hello world</li>
-              </ul>
-            </li>
-            <li><span> Quảng cáo </span></li>
-            <li class="dropdown">
-              <span>
-                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
-              </span>
-              <ul class="sub-dropdown">
-                <li class="lv2-dropdown">
-                  <span>
-                    1 Hello world<i class="fa-solid fa-chevron-down"></i>
-                  </span>
-                  <ul class="lv2-sub-dropdown">
-                    <li>1 Hello world</li>
-                    <li>2 Hello world</li>
-                    <li>3 Hello world</li>
-                  </ul>
-                </li>
-                <li>2 Hello world</li>
-                <li>3 Hello world</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="btns-wrap only-mobile">
-        <div class="mobile-cate-btn">
-          <div class="container-al">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-
-        <div class="cart-btn">
-          <img src="./assets/img/cart-2.svg" alt="" />
-        </div>
-        <a href="#" class="sign-in-btn"> Đăng nhập </a>
-        <a href="#" class="sign-up-btn"> Đăng ký </a>
-      </div>
-      <div class="categories">
-        <div class="container-al">
-          <ul class="categories-list">
-            <li><span> Trang chủ </span></li>
-
-            <li class="dropdown">
-              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
-              <ul class="sub-dropdown">
-                <li class="line">1 Hello world 1 Hello world</li>
-
-                <li class="line">2 Hello world</li>
-
-                <li class="line">3 Hello world</li>
-              </ul>
-            </li>
-            <li><span> Chào hàng </span></li>
-
-            <li><span> Doanh nghiệp </span></li>
-
-            <li class="dropdown">
-              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
-              <ul class="sub-dropdown">
-                <li class="lv2-dropdown line">
-                  <span>
-                    Giới thiệu tổng quan sàn<i
-                      class="fa-solid fa-chevron-down"
-                    ></i>
-                  </span>
-                  <ul class="lv2-sub-dropdown">
-                    <li class="line">Thông thị trường quốc tế</li>
-
-                    <li class="line">Mỹ</li>
-
-                    <li class="line">
-                      Nhật Bả
-                      <nav></nav>
-                    </li>
-                  </ul>
-                </li>
-                <li class="line">2 Hello world</li>
-
-                <li class="line">3 Hello world</li>
-              </ul>
-            </li>
-            <li><span> Quảng cáo </span></li>
-
-            <li class="dropdown">
-              <span>
-                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
-              </span>
-              <ul class="sub-dropdown">
-                <li class="lv2-dropdown">
-                  <span class="line">
-                    1 Hello world <i class="fa-solid fa-chevron-down"></i>
-                  </span>
-                  <ul class="lv2-sub-dropdown mobile">
-                    <li class="line">1 Hello world</li>
-                    <li class="line">2 Hello world</li>
-                    <li class="line">3 Hello world</li>
-                  </ul>
-                </li>
-                <li class="line">2 Hello world</li>
-                <li class="line">3 Hello world</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="cart-content">
-        <div class="container-al">
-          <div class="cart-section cart-cart">
-            <div class="cart-section-heading">
-              <h2>
-                <img src="./assets/img/cart-2.svg" alt="" />
-                Giỏ hàng
-              </h2>
-              <p class="collapse-btn">
-                <span>Thu gọn</span>
-                <i class="fa-solid fa-chevron-down"></i>
-              </p>
-            </div>
-            <div class="row gx-3 cart-section-content active">
-              <div class="col-lg-9 col-md-12 col-12">
-                <div class="cart-table">
-                  <div class="cart-table-heading">
-                    <div class="left">
-                      <input type="checkbox" />
-                      <img src="./assets/img/logo-ref3.png" alt="" />
-                      <a href="#">
-                        <span>Công ty TNHH Hòa Phát</span>
-                      </a>
-                    </div>
-                    <div class="right">
-                      <a class="del-btn">
-                        <img src="./assets/img/trash.svg" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="line"></div>
-                  <div class="cart-table-list">
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/item1.png" alt="" /></div>
-                        <a href="#">
-                          <span
-                            >sang trọng</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/item1.png" alt="" /></div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/size1.png" alt="" />
-                        </div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/size3.png" alt="" />
-                        </div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/size4.png" alt="" />
-                        </div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                    <div class="cart-table-row row">
-                      <div class="left col-5">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/size2.png" alt="" />
-                        </div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp</span
-                          >
-                        </a>
-                      </div>
-                      <div class="right col-7">
-                        <div class="d-flex align-items-center gap-2 price-wrap">
-                          <div class="price">
-                            <span>đ</span>
-                            350.000
-                          </div>
-                          <div
-                            rel-script="quantity-change"
-                            class="quantity product-cotrol__quantity"
-                          >
-                            <a href="#" class="quantity__reduce">-</a>
-                            <input
-                              type="number"
-                              value="1"
-                              max="99"
-                              min="1"
-                              class="quantity__control"
-                            />
-                            <a href="#" class="quantity__augure">+</a>
-                          </div>
-                          <div class="price"><span>đ</span> 700.000</div>
-                        </div>
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-12">
-                <div class="cart-detail mt-lg-0 mt-3">
-                  <div class="cart-detail-header">
-                    <h2>Địa chỉ</h2>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="d-flex gap-2 align-items-center">
-                        <img src="./assets/img/location-icon.svg" alt="" />
-                        <span>Phường đống đa - hà nội</span>
-                      </div>
-                      <div class="cart-detail-collapse-btn">
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cart-detail-content active">
-                    <div
-                      class="cart-detail-row d-flex align-items-center justify-content-between"
-                    >
-                      <span>Tạm tính (21 sản phẩm)</span>
-                      <p>đ 2,500,000</p>
-                    </div>
-                    <div
-                      class="cart-detail-row d-flex align-items-center justify-content-between"
-                    >
-                      <span>Vận chuyển</span>
-                      <p>đ 20,000</p>
-                    </div>
-                    <div
-                      class="cart-detail-row d-flex align-items-center justify-content-between"
-                    >
-                      <h2>Tổng tiền</h2>
-                      <h3>đ 2,520,000</h3>
-                    </div>
-                    <div class="cart-btn">Mua hàng</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cart-section mt-5 mb-5 cart-contact">
-            <div class="cart-section-heading">
-              <h2>
-                <img src="./assets/img/phone-icon.svg" alt="" />
-                Liên hệ hỏi hàng
-              </h2>
-              <p class="collapse-btn">
-                <span>Thu gọn</span>
-                <i class="fa-solid fa-chevron-down"></i>
-              </p>
-            </div>
-            <div class="row gx-3 cart-section-content active">
-              <div class="col-lg-5 col-md-12 col-12">
-                <div class="cart-table">
-                  <div class="cart-table-heading">
-                    <div class="left">
-                      <input type="checkbox" />
-                      <img src="./assets/img/logo-ref3.png" alt="" />
+          <div class="row gx-3 cart-section-content active">
+            <div class="col-lg-9 col-md-12 col-12 p-common">
+              <div class="cart-table">
+                <div class="cart-table-heading">
+                  <div class="left">
+                    <input type="checkbox" />
+                    <img src="assets/image/logo.png" alt="" />
+                    <a href="#">
                       <span>Công ty TNHH Hòa Phát</span>
+                    </a>
+                  </div>
+                  <div class="right">
+                    <a class="del-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_1442_15860)">
+                          <path
+                            d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                            fill="#727272" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1442_15860">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="cart-table-list">
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/item1.png" alt="" />
+                      </div>
+                      <a href="#">
+                        <span>sang trọng</span>
+                      </a>
                     </div>
-                    <div class="right">
+                    <div class="right col-7">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000</div>
+                      </div>
                       <a class="del-btn">
-                        <img src="./assets/img/trash.svg" alt="" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
                       </a>
                     </div>
                   </div>
-                  <div class="line"></div>
-                  <div class="cart-table-list">
-                    <div class="cart-table-row justify-content-between">
-                      <div class="left">
-                        <input type="checkbox" />
-                        <div class="img-cart">
-                        <img src="./assets/img/item1.png" alt="" /></div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
-                          >
-                        </a>
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5 col-768-7">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/item1.png" alt="" />
                       </div>
-                      <div class="right">
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp thiết kế phong cách sang trọng</span>
+                      </a>
                     </div>
-                    <div class="cart-table-row justify-content-between">
-                      <div class="left">
-                        <input type="checkbox" /><div class="img-cart">
-                        <img src="./assets/img/item1.png" alt="" /></div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
-                          >
-                        </a>
+                    <div class="right col-7 col-768-5">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000.000</div>
                       </div>
-                      <div class="right">
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
-                      </div>
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
                     </div>
-                    <div class="cart-table-row justify-content-between">
-                      <div class="left">
-                        <input type="checkbox" /><div class="img-cart">
-                        <img src="./assets/img/item1.png" alt="" /></div>
-                        <a href="">
-                          <span
-                            >Đèn tròn 2 lớp thiết kế phong cách sang trọng</span
-                          >
-                        </a>
+                  </div>
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/size1.png" alt="" />
                       </div>
-                      <div class="right">
-                        <a class="del-btn">
-                          <img src="./assets/img/trash.svg" alt="" />
-                        </a>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp thiết kế phong cách sang trọng</span>
+                      </a>
+                    </div>
+                    <div class="right col-7">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000.000</div>
                       </div>
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/size3.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp</span>
+                      </a>
+                    </div>
+                    <div class="right col-7">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000</div>
+                      </div>
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/size4.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp</span>
+                      </a>
+                    </div>
+                    <div class="right col-7">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000.000</div>
+                      </div>
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cart-table-row row-ct">
+                    <div class="left col-5">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/size2.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp</span>
+                      </a>
+                    </div>
+                    <div class="right col-7">
+                      <div class="d-flex align-items-center gap-2 price-wrap">
+                        <div class="price">
+                          <span>đ</span>
+                          350.000
+                        </div>
+                        <div rel-script="quantity-change" class="quantity product-cotrol__quantity">
+                          <a href="#" class="quantity__reduce">-</a>
+                          <input type="number" value="1" max="99" min="1" class="quantity__control" />
+                          <a href="#" class="quantity__augure">+</a>
+                        </div>
+                        <div class="price"><span>đ</span> 700.000</div>
+                      </div>
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7 col-md-12 col-12 mt-3 mt-md-3 mt-lg-0">
-                <div class="cart-form">
-                  <div class="cart-form-header">
-                    <h2>Thông tin người liên hệ</h2>
-                  </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Tiêu đề <span>*</span></p>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="cart-detail mt-lg-0 mt-3">
+                <div class="cart-detail-header">
+                  <h2>Địa chỉ</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-2 align-items-center">
+                      <img src="./assets/img/location-icon.svg" alt="" />
+                      <span>Phường đống đa - hà nội</span>
                     </div>
-                    <div class="col-8 col-xxl-9">
-                      <input type="text" placeholder="Nhập tiêu đề tại đây" />
-                    </div>
-                  </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Nội dung liên hệ <span>*</span></p>
-                    </div>
-                    <div class="col-8 col-xxl-9">
-                      <input
-                        type="text"
-                        placeholder="Nhập nội dung liên hệ tại đây"
-                      />
+                    <div class="cart-detail-collapse-btn">
+                      <i class="fa-solid fa-chevron-down"></i>
                     </div>
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Họ tên người liên hệ <span>*</span></p>
+                </div>
+                <div class="cart-detail-content active">
+                  <div class="cart-detail-row d-flex align-items-center justify-content-between">
+                    <span>Tạm tính (21 sản phẩm)</span>
+                    <p>đ 2,500,000</p>
+                  </div>
+                  <div class="cart-detail-row d-flex align-items-center justify-content-between">
+                    <span>Vận chuyển</span>
+                    <p>đ 20,000</p>
+                  </div>
+                  <div class="cart-detail-row d-flex align-items-center justify-content-between">
+                    <h2>Tổng tiền</h2>
+                    <h3>đ 2,520,000</h3>
+                  </div>
+                  <div class="cart-btn">Mua hàng</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-section mt-5 mb-5 cart-contact">
+          <div class="cart-section-heading">
+            <h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                <path
+                  d="M16.0416 7.83281C19.2837 7.83281 20.6666 9.21568 20.6666 12.4578H23.7499C23.7499 7.48593 21.0135 4.74947 16.0416 4.74947V7.83281ZM21.3172 16.2241C21.021 15.9549 20.6317 15.8113 20.2316 15.8236C19.8314 15.836 19.4518 16.0034 19.1727 16.2904L15.4835 20.0844C14.5955 19.9148 12.8103 19.3583 10.9726 17.5253C9.13495 15.6861 8.57841 13.8962 8.41345 13.0143L12.2044 9.3236C12.4918 9.04475 12.6594 8.66503 12.6718 8.26479C12.6842 7.86455 12.5403 7.4752 12.2707 7.17914L6.57424 0.915348C6.30451 0.618357 5.92963 0.438209 5.52922 0.413165C5.12881 0.388122 4.73441 0.520155 4.42978 0.781223L1.08436 3.65027C0.817826 3.91777 0.658739 4.27379 0.63728 4.65081C0.614155 5.03622 0.173238 14.166 7.25257 21.2484C13.4285 27.4228 21.1646 27.8745 23.2952 27.8745C23.6066 27.8745 23.7977 27.8652 23.8486 27.8621C24.2256 27.841 24.5814 27.6812 24.8476 27.4135L27.7151 24.0666C27.9764 23.7621 28.1087 23.3678 28.0839 22.9674C28.0592 22.567 27.8793 22.192 27.5825 21.9221L21.3172 16.2241Z"
+                  fill="#207CEA" />
+              </svg>
+              Liên hệ hỏi hàng
+            </h2>
+            <p class="collapse-btn">
+              <span>Thu gọn</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </p>
+          </div>
+          <div class="row gx-3 cart-section-content active">
+            <div class="col-lg-5 col-md-12 col-12 p-common">
+              <div class="cart-table">
+                <div class="cart-table-heading">
+                  <div class="left">
+                    <input type="checkbox" />
+                    <img src="assets/image/logo.png" alt="" />
+                    <span>Công ty TNHH Hòa Phát</span>
+                  </div>
+                  <div class="right">
+                    <a class="del-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_1442_15860)">
+                          <path
+                            d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                            fill="#727272" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1442_15860">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="cart-table-list">
+                  <div class="cart-table-row justify-content-between">
+                    <div class="left">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/item1.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp thiết kế phong cách sang trọng</span>
+                      </a>
                     </div>
-                    <div class="col-8 col-xxl-9">
-                      <input
-                        type="text"
-                        placeholder="Nhập họ tên người liên hệ tại đây"
-                      />
+                    <div class="right">
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
                     </div>
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Giới tính <span>*</span></p>
+                  <div class="cart-table-row justify-content-between">
+                    <div class="left">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/item1.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp thiết kế phong cách sang trọng</span>
+                      </a>
                     </div>
-                    <div class="col-8 col-xxl-9">
-                      <div class="radio-group">
-                        <div class="radio-wrap">
-                          <input type="radio" name="gender" />
-                          <span>Nam</span>
-                        </div>
-                        <div class="radio-wrap">
-                          <input type="radio" name="gender" />
-                          <span>Nữ</span>
-                        </div>
+                    <div class="right">
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cart-table-row justify-content-between">
+                    <div class="left">
+                      <input type="checkbox" />
+                      <div class="img-cart">
+                        <img src="./assets/img/item1.png" alt="" />
+                      </div>
+                      <a href="">
+                        <span>Đèn tròn 2 lớp thiết kế phong cách sang trọng</span>
+                      </a>
+                    </div>
+                    <div class="right">
+                      <a class="del-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                          <g clip-path="url(#clip0_1442_15860)">
+                            <path
+                              d="M17.85 2.5C18.3747 2.50014 18.8861 2.66536 19.3116 2.97226C19.7372 3.27916 20.0554 3.71219 20.2213 4.21L20.9 6.25H25C25.3315 6.25 25.6495 6.3817 25.8839 6.61612C26.1183 6.85054 26.25 7.16848 26.25 7.5C26.25 7.83152 26.1183 8.14946 25.8839 8.38388C25.6495 8.6183 25.3315 8.75 25 8.75L24.9962 8.83875L23.9125 24.0175C23.8449 24.9633 23.4215 25.8483 22.7275 26.4944C22.0336 27.1406 21.1207 27.4999 20.1725 27.5H9.8275C8.87932 27.4999 7.96638 27.1406 7.27246 26.4944C6.57853 25.8483 6.15514 24.9633 6.0875 24.0175L5.00375 8.8375C5.00149 8.80839 5.00024 8.7792 5 8.75C4.66848 8.75 4.35054 8.6183 4.11612 8.38388C3.8817 8.14946 3.75 7.83152 3.75 7.5C3.75 7.16848 3.8817 6.85054 4.11612 6.61612C4.35054 6.3817 4.66848 6.25 5 6.25H9.1L9.77875 4.21C9.94462 3.71199 10.263 3.27881 10.6889 2.97189C11.1147 2.66497 11.6263 2.49987 12.1512 2.5H17.85ZM22.4962 8.75H7.50375L8.58125 23.8387C8.60369 24.154 8.74472 24.4491 8.97595 24.6645C9.20718 24.88 9.51145 24.9998 9.8275 25H20.1725C20.4886 24.9998 20.7928 24.88 21.0241 24.6645C21.2553 24.4491 21.3963 24.154 21.4188 23.8387L22.4962 8.75ZM12.5 12.5C12.8062 12.5 13.1017 12.6124 13.3305 12.8159C13.5593 13.0193 13.7054 13.2997 13.7413 13.6037L13.75 13.75V20C13.7496 20.3186 13.6277 20.625 13.4089 20.8567C13.1902 21.0884 12.8913 21.2278 12.5733 21.2465C12.2552 21.2651 11.942 21.1617 11.6977 20.9572C11.4534 20.7527 11.2964 20.4626 11.2587 20.1462L11.25 20V13.75C11.25 13.4185 11.3817 13.1005 11.6161 12.8661C11.8505 12.6317 12.1685 12.5 12.5 12.5ZM17.5 12.5C17.8315 12.5 18.1495 12.6317 18.3839 12.8661C18.6183 13.1005 18.75 13.4185 18.75 13.75V20C18.75 20.3315 18.6183 20.6495 18.3839 20.8839C18.1495 21.1183 17.8315 21.25 17.5 21.25C17.1685 21.25 16.8505 21.1183 16.6161 20.8839C16.3817 20.6495 16.25 20.3315 16.25 20V13.75C16.25 13.4185 16.3817 13.1005 16.6161 12.8661C16.8505 12.6317 17.1685 12.5 17.5 12.5ZM17.85 5H12.15L11.7338 6.25H18.2662L17.85 5Z"
+                              fill="#727272" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1442_15860">
+                              <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-12 mt-3 mt-md-3 mt-lg-0">
+              <div class="cart-form">
+                <div class="cart-form-header">
+                  <h2>Thông tin người liên hệ</h2>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Tiêu đề <span>*</span></p>
+                  </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập tiêu đề tại đây" />
+                  </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Nội dung liên hệ <span>*</span></p>
+                  </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập nội dung liên hệ tại đây" />
+                  </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Họ tên người liên hệ <span>*</span></p>
+                  </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập họ tên người liên hệ tại đây" />
+                  </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Giới tính <span>*</span></p>
+                  </div>
+                  <div class="col-8 col-xxl-9">
+                    <div class="radio-group">
+                      <div class="radio-wrap">
+                        <input type="radio" name="gender" />
+                        <span>Nam</span>
+                      </div>
+                      <div class="radio-wrap">
+                        <input type="radio" name="gender" />
+                        <span>Nữ</span>
                       </div>
                     </div>
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Địa chỉ email <span>*</span></p>
-                    </div>
-                    <div class="col-8 col-xxl-9">
-                      <input
-                        type="text"
-                        placeholder="Nhập địa chỉ email hệ tại đây"
-                      />
-                    </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Địa chỉ email <span>*</span></p>
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Số điện thoại</p>
-                    </div>
-                    <div class="col-8 col-xxl-9">
-                      <input
-                        type="text"
-                        placeholder="Nhập số điện thoại hệ tại đây"
-                      />
-                    </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập địa chỉ email hệ tại đây" />
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p>Địa chỉ</p>
-                    </div>
-                    <div class="col-8 col-xxl-9">
-                      <input
-                        type="text"
-                        placeholder="Nhập địa chỉ hệ tại đây"
-                      />
-                    </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Số điện thoại</p>
                   </div>
-                  <div class="captcha-wrap cart-form-row row">
-                    <div class="col-4 col-xxl-3"></div>
-                    <div class="col-md-8 col-12 gap-2 col-xxl-9">
-                      <img
-                        src="./assets/img/securimage_show 1.svg"
-                        alt=""
-                        class="captcha-img"
-                      />
-                      <img
-                        src="./assets/img/circle.svg"
-                        class="reload-img"
-                        alt=""
-                      />
-                      <img
-                        src="./assets/img/speaker.svg"
-                        class="speaker"
-                        alt=""
-                      />
-                      <input type="text" placeholder="Nhập mã xác nhận" />
-                    </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập số điện thoại hệ tại đây" />
                   </div>
-                  <div class="cart-form-row row">
-                    <div class="col-4 col-xxl-3">
-                      <p></p>
-                    </div>
-                    <div class="col-md-8 col-12 col-xxl-9">
-                      <div class="send-btn">
-                        <img src="./assets/img/send-icon.svg" alt="" />
-                        Gửi thông tin
-                      </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p>Địa chỉ</p>
+                  </div>
+                  <div class="col-8 col-xxl-9">
+                    <input type="text" placeholder="Nhập địa chỉ hệ tại đây" />
+                  </div>
+                </div>
+                <div class="captcha-wrap cart-form-row row">
+                  <div class="col-4 col-xxl-3"></div>
+                  <div class="col-md-8 col-12 gap-2 col-xxl-9">
+                    <img src="./assets/img/securimage_show 1.svg" alt="" class="captcha-img" />
+                    <img src="./assets/img/circle.svg" class="reload-img" alt="" />
+                    <img src="./assets/img/speaker.svg" class="speaker" alt="" />
+                    <input type="text" placeholder="Nhập mã xác nhận" />
+                  </div>
+                </div>
+                <div class="cart-form-row row">
+                  <div class="col-4 col-xxl-3">
+                    <p></p>
+                  </div>
+                  <div class="col-md-8 col-12 col-xxl-9">
+                    <div class="send-btn">
+                      <img src="./assets/img/send-icon.svg" alt="" />
+                      Gửi thông tin
                     </div>
                   </div>
                 </div>
@@ -735,119 +790,147 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- end content -->
+  <div class="footer-wrapper">
+    <div class="container my-5" style="margin-bottom: 0px !important;">
+      <footer class="text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4 responsive-footer">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w-100-500 pb-3">
+              <h5 class="text-uppercase mb-4">THÔNG TIN LIÊN HỆ</h5>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 172px; background-color: #fff; height: 1px" />
 
-      <footer class="footer">
-        <div class="container-al">
-          <div class="left flex-column d-flex">
-            <div class="logo-list">
-              <img src="./assets/img/logo-ref1.png" alt="" />
-              <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
-              <img src="./assets/img/logo-ref3.png" alt="" />
-              <img src="./assets/img/ft-vcci.png" alt="" />
-            </div>
-            <div class="d-flex align-items-center" style="gap: 10px">
-              <img src="./assets/img/logo2.png" class="logo-2" alt="" />
-              <p class="footer-text m-width">
-                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
-                tre tại Việt Nam
+              <p class="mb-2">SỞ CÔNG THƯƠNG TỈNH BẠC LIÊU</p>
+              <p class="mb-2">
+                <span class="fw-bold">Địa chỉ:</span> Khu Hành chính, đường
+                Nguyễn Tất Thành, phường 1, Tp Bạc Liêu, tỉnh Bạc Liêu
               </p>
+
+              <p class="mb-2">
+                <span class="fw-bold">Điện thoại:</span> (84) 2913.392626
+              </p>
+              <p>
+                <span class="fw-bold">Email:</span>caonguyen5974@gmail.com
+              </p>
+
+              <div class="mt-4">
+                <p class="fw-bold mb-1">Kết nối với chúng tôi</p>
+                <!-- Facebook -->
+                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-facebook-f"
+                    style="color: #207cea"></i></a>
+                <!-- Dribbble -->
+                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-twitter"
+                    style="color: #207cea"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-instagram"
+                    style="color: #207cea"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-youtube"
+                    style="color: #207cea"></i></a>
+                <!-- Linkedin -->
+              </div>
             </div>
-            <div class="social-list">
-              <a href="">
-                <img src="./assets/img/mdi_instagram.svg" alt="" />
-              </a>
-              <a href=""
-                ><img src="./assets/img/ic_baseline-facebook.svg" alt=""
-              /></a>
-              <a href=""
-                ><img src="./assets/img/mdi_google-plus.svg" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="right">
-            <div class="list">
-              <h2>Hướng dẫn mua bán</h2>
-              <ul>
-                <li><a class="footer-text">Hướng dẫn cho người mua</a></li>
-                <li>
-                  <a class="footer-text">Hướng dẫn cho người bán</a>
-                </li>
-                <li>
-                  <a class="footer-text">Bảo mật thông tin</a>
-                </li>
-              </ul>
-            </div>
-            <div class="list">
-              <h2>Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
-              <ul>
-                <li>
-                  <img src="./assets/img/map.svg" alt="" />
-                  <p class="footer-text">
-                    Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
-                  </p>
-                </li>
-                <li>
-                  <img src="./assets/img/Phone.svg" alt="" />
-                  <p class="footer-text">Điện Thoại: 123-4567-890</p>
-                </li>
-                <li>
-                  <img src="./assets/img/Message.svg" alt="" />
-                  <p class="footer-text">Email: contact@itb.com.vn</p>
-                </li>
-              </ul>
-            </div>
-            <div class="returns">
-              <div class="returns-link">
-                <p class="text">Liên kết website</p>
-                <i class="fa-solid fa-chevron-down"></i>
-                <div class="option-list">
-                  <div class="option-item">Liên kết website</div>
-                  <div class="option-item">lorem1</div>
-                  <div class="option-item">lorem2</div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w-100-500">
+              <h6 class="text-uppercase">HỖ TRỢ KHÁCH HÀNG</h6>
+
+              <div class="form-outline form-white mb-4 block-center">
+                <div class="d-flex align-items-center responsive--info-footer">
+                  <div class="icon-phone">
+                    <img src="./assets/icon/Group 435.png" alt="" />
+                  </div>
+                  <div class="number-phone">
+                    <span class="fs-3 text-light">(84) 2913.392626</span>
+                  </div>
                 </div>
               </div>
-              <div class="returns-visit">
-                <p class="text">Lượt truy cập</p>
-                <p class="text number">7398898</p>
+
+              <p class="fw-bold mb-2">Hướng dẫn đăng ký thành viên</p>
+              <p>Hướng dẫn đăng nhập</p>
+              <p>Hướng dẫn mua hàng</p>
+
+              <p>Hướng dẫn bán hàng</p>
+              <p class="mb-5">Câu hỏi thường gặp</p>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-between w-100-500">
+              <div>
+                <h6 class="text-uppercase">Chính sách quy chế</h6>
+
+                <p>Quy chế sử dụng</p>
+                <p>Bảo mật thông tin</p>
+
+                <p>Hướng dẫn tham gia sàn</p>
+                <p>Hướng dẫn thanh toán</p>
               </div>
-              <div class="dangky-img-wrap">
-                <img src="./assets/img/dk.svg" alt="" class="dangky-img" />
+              <div class="img-degree d-flex mt-5 block-center" style="   justify-content: flex-start;">
+                <img src="./assets/image/degree.png" alt="" width="211px" height="79px" />
               </div>
             </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 custome-box w-100-500 block-center">
+              <div class="box-opacity">
+                <h6 class="mb-2 text-light text-center pt-3">
+                  THỐNG KÊ TRUY CẬP
+                </h6>
+
+                <div class="in-click px-4">
+                  <p class="mb-3">Online: 11</p>
+                  <p class="mb-3">Lượt truy cập: 1627651</p>
+                  <p class="mb-3">Sản phẩm: 169</p>
+                  <p class="mb-3">Chào hàng: 63</p>
+                  <p class="mb-3">Thành viên: 85</p>
+                  <p class="pb-4">
+                    Thành viên mới: <br />
+                    Cở sở bánh đậu xanh Hương đen
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Grid column-->
           </div>
+          <!--Grid row-->
         </div>
+        <!-- Grid container -->
       </footer>
     </div>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"
-  ></script>
- <!--  <script src="./assets/js/app.js"></script> -->
-  <script src="./assets/js/cart.js"></script>
+  </div>
+  <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
   <script>
-    
-    const controls = document.querySelectorAll(".product-cotrol__quantity");
-    console.log(controls);
-    controls.forEach((item, i) => {
-      console.log(item);
-      item
+    // config slider
+
+    //productSlider.controller.control = productThumbSlider;
+    // productThumbSlider.controller.control = productSlider;
+    // config slider
+
+    // handle product quantity
+    // function productQuantityChange() {
+    $(document).ready(function () {
+      document
         .querySelector(".quantity__augure")
         .addEventListener("click", function (e) {
           e.preventDefault();
           const _this = this;
-          const input = item.querySelector(
-            '[rel-script="quantity-change"] input'
-          );
+          const input = document.querySelector('[rel-script="quantity-change"] input');
           const max = input.getAttribute("max");
           const value = input.value;
-    
+
           if (Number(max) > Number(value)) {
             let quantity = Number(value) + 1;
             input.setAttribute("value", quantity);
@@ -856,16 +939,18 @@
             else input.setAttribute("value", max);
           }
         });
-      item
+      document
         .querySelector(".quantity__reduce")
         .addEventListener("click", function (e) {
           e.preventDefault();
           const _this = this;
-          const input = item.querySelector('[rel-script="quantity-change"] input');
+          const input = document.querySelector(
+            '[rel-script="quantity-change"] input'
+          );
           const max = input.getAttribute("max");
           const min = input.getAttribute("min");
           const value = input.value;
-    
+
           if (Number(min) < Number(value)) {
             let quantity = Number(value) - 1;
             input.setAttribute("value", quantity);
@@ -875,11 +960,12 @@
           }
         });
     });
-    
-    /* document.addEventListener("DOMContentLoaded", function () {
+
+    document.addEventListener("DOMContentLoaded", function () {
       productQuantityChange();
-    }); */
-    // handle product quantity
-    
+    });
   </script>
+</body>
+<link rel="stylesheet" href="assets/css/main_detail.css" />
+
 </html>

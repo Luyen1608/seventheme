@@ -23,7 +23,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+<style>
+  .filter-btn {
+    height: 35px;
+}
+.filter-btn i {
+  padding-right: 5px;
+}
 
+</style>
 <body>
   <!-- HEADER -->
   <div class="banner-wrapper">
@@ -625,7 +633,7 @@
           <!--Grid row-->
           <div class="row mt-4 responsive-footer">
             <!--Grid column-->
-            <div class="col-lg-3 col-md-12 mb-4 mb-md-0 w-100-500 pb-3">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w-100-500 pb-3">
               <h5 class="text-uppercase mb-4">THÔNG TIN LIÊN HỆ</h5>
               <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 172px; background-color: #fff; height: 1px" />
 
@@ -736,56 +744,7 @@
     crossorigin="anonymous"></script>
   <script src="assets/owl-carousel/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <style>
-  </style>
   <script>
-    $(document).ready(function () {
-      $(".owl-carousel_banner").owlCarousel({
-        items: 1,
-        dots: true,
-        loop: true
-      });
-      $(".owl-carousel-product").owlCarousel({
-        items: 4,
-        dots: true,
-        loop: true,
-        responsive: {
-          0: {
-            items: 1 // Hiển thị 1 item trên màn hình nhỏ (0px - 599px)
-          },
-          730: {
-            items: 3 // Hiển thị 2 items trên màn hình vừa (600px - 999px)
-          },
-          1230: {
-            items: 4 // Hiển thị 4 items trên màn hình lớn (>=1000px)
-          }
-        }
-      });
-
-    });
-    document.addEventListener('touchstart', function (event) {
-      // Xử lý sự kiện nếu cần, nhưng không gọi preventDefault tại đây
-    }, { passive: false });
-
-
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 30,
-        },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
     $('.filter-btn').on('click', function (e) {
       $('.collection-filter').css("left", "-15px");
     });

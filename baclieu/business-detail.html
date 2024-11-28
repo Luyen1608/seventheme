@@ -1,64 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>business list</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-            rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-            crossorigin="anonymous" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./assets/css/app.css" />
-        <link rel="stylesheet" href="./assets/css/business.css" />
-        <link rel="stylesheet" href="./assets/css/custom.css" />
-        <link rel="stylesheet" href="./assets/css/menu_style.css" />
-    </head>
-    <body onresize="checkSize()">
-        <div class="wrapper">
-            <div class="pre-header">
-                <div class="container-al p-content">
-                    <div class="pre-header-contact">
-                        <p class="text">Sàn thương mại điện tử các sản phẩm từ tre</p>
-                        <p class="text">
-                            <img src="./assets/img/Iconspace_Call_25px.svg" alt="" />
-                            Liên hệ: 0123456789
-                        </p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" />
+
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/product.css" />
+
+    <link rel="stylesheet" href="assets/css/business.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/menu_style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/dc700a75c1.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+<style>
+    .my-5 {
+    margin-top: 0rem !important;
+}
+</style>
+<body>
+    <!-- HEADER -->
+    <div class="banner-wrapper">
+        <div class="image">
+            <img src="assets/image/Rectangle 272.png" alt="" width="100%" height="139px" class="responsive-image" />
+        </div>
+        <div class="mobile-overlay"></div>
+        <div class="mobile-categories">
+          <div class="container-al">
+            <ul class="mobile-categories-list">
+              <li><span>Trang chủ</span></li>
+              <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+                <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+                <ul class="sub-dropdown" id="sd-1">
+                  <li>1 Hello world</li>
+                  <li>2 Hello world</li>
+                  <li>3 Hello world</li>
+                </ul>
+              </li>
+              <li><span> Chào hàng </span></li>
+              <li><span> Doanh nghiệp </span></li>
+              <li class="dropdown">
+                <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+                <ul class="sub-dropdown">
+                  <li class="lv2-dropdown">
+                    <span>
+                      Giới thiệu tổng quan sàn<i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <ul class="lv2-sub-dropdown">
+                      <li>Thị trường quốc tế</li>
+                      <li>Mỹ</li>
+                      <li>Nhật Bản</li>
+                    </ul>
+                  </li>
+                  <li>2 Hello world</li>
+                  <li>3 Hello world</li>
+                </ul>
+              </li>
+              <li><span> Quảng cáo </span></li>
+              <li class="dropdown">
+                <span>
+                  Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+                </span>
+                <ul class="sub-dropdown">
+                  <li class="lv2-dropdown">
+                    <span>
+                      1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <ul class="lv2-sub-dropdown">
+                      <li>1 Hello world</li>
+                      <li>2 Hello world</li>
+                      <li>3 Hello world</li>
+                    </ul>
+                  </li>
+                  <li>2 Hello world</li>
+                  <li>3 Hello world</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btns-wrap only-mobile">
+          <div class="mobile-cate-btn">
+            <div class="container-al">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+    
+          <div class="cart-btn " data-content="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22" fill="none">
+              <path d="M1.9 4.73333L3.08557 13.275C3.22282 14.2638 4.06825 15 5.06658 15L15.8334 15C16.8317 15 17.6772 14.2638 17.8144 13.275L18.7632 6.43955C18.8883 5.53778 18.1878 4.73333 17.2774 4.73333L1.9 4.73333ZM1.9 4.73333L1.60486 2.4136C1.50205 1.60558 0.814537 1 0 1V1" stroke="#666C76" stroke-width="1.5"/>
+              <path d="M7 19.5C7 18.6716 6.32843 18 5.5 18C4.67157 18 4 18.6716 4 19.5C4 20.3284 4.67157 21 5.5 21C6.32843 21 7 20.3284 7 19.5Z" stroke="#666C76" stroke-width="1.5"/>
+              <path d="M17 19.5C17 18.6716 16.3284 18 15.5 18C14.6716 18 14 18.6716 14 19.5C14 20.3284 14.6716 21 15.5 21C16.3284 21 17 20.3284 17 19.5Z" stroke="#666C76" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <a href="#" class="sign-in-btn"> Đăng nhập </a>
+          <a href="#" class="sign-up-btn"> Đăng ký </a>
+        </div>
+        <div class="content-banner">
+            <div class="container">
+                <div class="infomation">
+                    <p class="name-company">Sàn Thương mại điện tử tỉnh Bạc Liêu</p>
+                    <div class="info-company">
+                        <div class="hotline">
+                            <div class="icon-phone">
+                                <img src="./assets/icon/Group 435.png" alt="" />
+                            </div>
+                            <div class="number-phone">
+                                <span class="text-detail">Hotline:</span>
+                                <span>(84)2913.392626</span>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="icon-email">
+                                <img src="./assets/icon/icon-email.png" alt="" />
+                            </div>
+                            <div class="email-contact">
+                                <span class="text-detail">Email:</span>
+                                <span>caonguyen5974@gmail.com</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="select-language-btn">
-                        <p class="text">
-                            <img src="./assets/img/google.svg" alt="" />
-                            Select language
-                        </p>
-                        <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="header__center d-flex align-items-center justify-content-end">
+                    <div class="wrap-header__logo d-flex align-items-center">
+                        <div class="image-logo mb-2">
+                            <img src="./assets/logo.png" alt="" />
+                        </div>
+
+                        <!-- Search Bar -->
+                        <div class="wrap-header__form">
+                            <form action>
+                                <div class="form-group-header">
+                                    <div class="frame">
+                                        <div class="div">
+                                            <div class="overlap-group-wrapper">
+                                                <div class="overlap-group-dropdown">
+                                                    <div class="text-wrapper">Sản phẩm</div>
+                                                    <img class="polygon" src="./assets/icon/Polygon 1.png" />
+                                                    <img class="img" src="./assets/icon/Polygon 2.png" />
+                                                </div>
+                                            </div>
+                                            <div class="text-wrapper-2">Tìm kiếm</div>
+                                        </div>
+                                        <img class="vector" src="./assets/icon/Vector.png" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header__info d-flex align-items-center">
+                        <!-- Icons -->
+                        <div class="icons d-flex align-items-center justify-content-between wrapper-login-cart">
+                            <!-- Shopping Cart Icon -->
+                            <div class="box">
+                                <div class="group">
+                                    <a class="overlap">
+                                        <img class="img" src="./assets/icon/Group 429.png" />
+                                        <div class="overlap-group-wrapper">
+                                            <div class="overlap-group">
+                                                <div class="text-wrapper">2</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Login/Register Button -->
+                        </div>
+                        <a class="frame-login">
+                            <img class="image-user" src="./assets/icon/icon-user.png" />
+                            <p class="text-wrapper-login">ĐĂNG NHẬP / ĐĂNG KÝ</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="banner">
-                <h1 class="banner-heading">bamboo from vietnam</h1>
-                <div class="bamboo-left">
-                    <img src="./assets/img/bbl.png" alt="" />
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="nav-top-menu">
+        <div class="container">
+            <div class="row menu-wrapper">
+                <div class="col-lg-3 col-6-1024 g-pa-0">
+                    <div class="wrapper-navbar">
+                        <div class="navbar-product-button" id="toggle-menu">
+                            <div class="text-wrapper-product">DANH MỤC SẢN PHẨM</div>
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <div class="category-product" id="category-menu" style="display: none;">
+                            <div class="category-product-wrapper">
+                                <p class="category-product-item">
+                                    Sản phẩm Công nghiệp nông thôn tiêu biểu tỉnh Bạc Liêu
+                                </p>
+                                <p class="category-product-item">
+                                    Sản phẩm OCOP tỉnh Bạc Liêu
+                                </p>
+                                <p class="category-product-item">Đặc sản Bạc Liêu</p>
+                                <p class="category-product-item">
+                                    Thực phẩm chế biển, Đồ uống
+                                </p>
+                                <p class="category-product-item">
+                                    Thủ công mỹ nghệ - Quà tặng
+                                </p>
+                                <p class="category-product-item">Nông - Lâm - Thuỷ sản</p>
+                                <p class="category-product-item">
+                                    Vật liệu xây dựng, Nội, Ngoại thất
+                                </p>
+                                <p class="category-product-item">
+                                    Sản phẩm đặc trưng địa phương khác
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bamboo-right">
-                    <img src="./assets/img/bamboo.jpg" class="bamboo-right-img" alt="" />
-                    <img src="./assets/img/bbrec.png" class="bamboo-right-rec" alt="" />
+                <div class="col-lg-9 col-6-1024 d-flex align-items-center">
+                    <div class="main-navbar">
+                        <div class="menu-toggle" id="btn-menu">
+                            <button class="btn-toggle">Menu</button>
+                        </div>
+                        <div class="navbar-wrapper" id="navbar-menu">
+                            <div class="navbar-item">Trang chủ</div>
+                            <div class="navbar-item">Sản phẩm</div>
+                            <div class="navbar-item">Chào hàng</div>
+                            <div class="navbar-item">Doanh nghiệp</div>
+                            <div class="navbar-item">Quảng cáo</div>
+                            <div class="navbar-item">Tin tức, sự kiện</div>
+                            <div class="navbar-item">Liên hệ</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- end menu -->
+    <!-- content -->
+    <div class="">
+        <div class="container-business container">
             <header class="header border-bottom-0">
-                <div class="p-content container-al" role="business">
+                <div class="container-al p-0" role="business">
                     <div class="business-logo">
-                        <div class="wrap-layout" style="background-image: url('./assets/img/la-dan-hcmtoplist 1.png')"></div>
+                        <div class="wrap-layout"
+                            style="background-image: url('./assets/image/la-dan-hcmtoplist 1.png')">
+                        </div>
                         <div class="wrap-info">
                             <div class="logo-ico">
-                                <img src="./assets/img/icon_logo.png" alt="" />
+                                <img src="./assets/image/logo.png" alt="" />
                             </div>
                             <div class="info-content">
                                 <p class="name">Công ty trách nghiệm hữu hạn Hòa Phát</p>
@@ -70,7 +268,12 @@
                         <div class="wrapper">
                             <div class="item">
                                 <div class="icon">
-                                    <img src="./assets/img/bx_store.png" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
+                                        fill="#207cea">
+                                        <path
+                                            d="M48.37 7.9275C47.9245 7.18881 47.2962 6.57738 46.5456 6.15218C45.7951 5.72698 44.9476 5.50237 44.085 5.5H16.915C15.17 5.5 13.5275 6.43 12.63 7.9275L5.8575 19.2125C5.62314 19.601 5.49951 20.0463 5.5 20.5C5.50999 22.913 6.39874 25.2398 8 27.045V48C8 50.7575 10.2425 53 13 53H48C50.7575 53 53 50.7575 53 48V27.045C54.6012 25.2398 55.49 22.913 55.5 20.5C55.5005 20.0463 55.3768 19.601 55.1425 19.2125L48.37 7.9275ZM50.46 21.1275C50.3057 22.3346 49.7171 23.4441 48.8043 24.2488C47.8915 25.0535 46.7168 25.4983 45.5 25.5C42.7425 25.5 40.5 23.2575 40.5 20.5C40.5 20.33 40.4375 20.18 40.4025 20.02L40.4525 20.01L38.55 10.5H44.085L50.46 21.1275ZM27.5475 10.5H33.45L35.4825 20.6625C35.395 23.3425 33.2 25.5 30.5 25.5C27.8 25.5 25.605 23.3425 25.5175 20.6625L27.5475 10.5ZM16.915 10.5H22.45L20.55 20.01L20.6 20.02C20.5625 20.18 20.5 20.33 20.5 20.5C20.5 23.2575 18.2575 25.5 15.5 25.5C14.2831 25.4983 13.1085 25.0535 12.1957 24.2488C11.2829 23.4441 10.6943 22.3346 10.54 21.1275L16.915 10.5ZM25.5 48V40.5H35.5V48H25.5ZM40.5 48V40.5C40.5 37.7425 38.2575 35.5 35.5 35.5H25.5C22.7425 35.5 20.5 37.7425 20.5 40.5V48H13V30.145C13.8025 30.3525 14.63 30.5 15.5 30.5C16.9195 30.5008 18.3229 30.1985 19.6163 29.6135C20.9096 29.0284 22.0632 28.1741 23 27.1075C24.8325 29.1875 27.5175 30.5 30.5 30.5C33.4825 30.5 36.1675 29.1875 38 27.1075C38.9367 28.1741 40.0903 29.0284 41.3837 29.6135C42.6771 30.1985 44.0804 30.5008 45.5 30.5C46.37 30.5 47.1975 30.3525 48 30.145V48H40.5Z"
+                                            fill="#207cea" />
+                                    </svg>
                                 </div>
                                 <div class="content">
                                     <h5>Thời gian tham gia</h5>
@@ -79,7 +282,17 @@
                             </div>
                             <div class="item">
                                 <div class="icon">
-                                    <img src="./assets/img/akar-icons_shipping-box-v2.png" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
+                                        fill="none">
+                                        <path
+                                            d="M28.0725 6.84952C28.8151 6.43711 29.6506 6.2207 30.5 6.2207C31.3494 6.2207 32.1849 6.43711 32.9275 6.84952L51.715 17.2845C52.1045 17.5011 52.429 17.8179 52.655 18.2021C52.8809 18.5863 53 19.0238 53 19.4695V40.057C52.9998 40.9486 52.7612 41.824 52.3088 42.5923C51.8565 43.3607 51.207 43.9941 50.4275 44.427L32.9275 54.152C32.1849 54.5644 31.3494 54.7808 30.5 54.7808C29.6506 54.7808 28.8151 54.5644 28.0725 54.152L10.5725 44.427C9.79339 43.9943 9.14408 43.3613 8.69179 42.5934C8.23949 41.8255 8.00066 40.9507 8 40.0595V19.4695C7.99998 19.0238 8.11911 18.5863 8.34504 18.2021C8.57097 17.8179 8.89549 17.5011 9.285 17.2845L28.0725 6.84952Z"
+                                            stroke="#207CEA" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M19.25 11.75L41.75 24.25V33M15.5 31.32L23 35.5" stroke="#207CEA"
+                                            stroke-width="2.91667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 18L30.5 30.5M30.5 30.5L53 18M30.5 30.5V54.25" stroke="#207CEA"
+                                            stroke-width="2.91667" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                                 <div class="content">
                                     <h5>Số lượng sản phẩm</h5>
@@ -88,7 +301,17 @@
                             </div>
                             <div class="item">
                                 <div class="icon">
-                                    <img src="./assets/img/lucide_boxes.png" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61"
+                                        fill="none">
+                                        <path
+                                            d="M30.5 48L20.575 53.95C19.7973 54.4172 18.9072 54.664 18 54.664C17.0928 54.664 16.2027 54.4172 15.425 53.95L7.925 49.45C7.18689 49.0065 6.57582 48.38 6.15097 47.631C5.72612 46.8821 5.50189 46.0361 5.5 45.175V37.075C5.50189 36.2139 5.72612 35.3679 6.15097 34.619C6.57582 33.87 7.18689 33.2435 7.925 32.8L18 26.75L30.5 34.25M30.5 48V34.25M30.5 48L40.425 53.95C41.2027 54.4172 42.0928 54.664 43 54.664C43.9072 54.664 44.7973 54.4172 45.575 53.95L53.075 49.45C53.8131 49.0065 54.4242 48.38 54.849 47.631C55.2739 46.8821 55.4981 46.0361 55.5 45.175V37.075C55.4981 36.2139 55.2739 35.3679 54.849 34.619C54.4242 33.87 53.8131 33.2435 53.075 32.8L43 26.75L30.5 34.25M30.5 34.25L18 41.75M30.5 34.25L43 41.75M18 41.75L6.15 34.625M18 41.75V54.675M43 41.75L54.85 34.625M43 41.75V54.675"
+                                            stroke="#207CEA" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M30.5 34.25L18 26.75V15.825C18.0019 14.9639 18.2261 14.1179 18.651 13.369C19.0758 12.62 19.6869 11.9934 20.425 11.55L27.925 7.04999C28.7027 6.58277 29.5928 6.33594 30.5 6.33594C31.4072 6.33594 32.2973 6.58277 33.075 7.04999L40.575 11.55C41.3131 11.9934 41.9242 12.62 42.349 13.369C42.7739 14.1179 42.9981 14.9639 43 15.825V26.75L30.5 34.25ZM30.5 34.25V20.5M30.5 20.5L18.65 13.375M30.5 20.5L42.35 13.375"
+                                            stroke="#207CEA" stroke-width="2.91667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                                 <div class="content">
                                     <h5>Ngành hàng</h5>
@@ -99,8 +322,8 @@
                     </div>
                 </div>
             </header>
-            <div class="p-content row-ct" id="menu-header">
-                <ul class="nav-tabs-ct">
+            <div class="row-ct" id="menu-header">
+                <ul class="nav-tabs-ct" style="overflow: auto;">
                     <li class="nav-item-ct">
                         <a class="nav-link-ct active txt-headling-3" data-toggle="tab" href="#tabItem9">Giới thiệu</a>
                     </li>
@@ -111,11 +334,11 @@
                         <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem11">Đồ bếp</a>
                     </li>
                     <!-- <li class="nav-item-ct">
-                        <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem12">Nội thất</a>
-                    </li>
-                    <li class="nav-item-ct">
-                        <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem12">Ngoại thất</a>
-                    </li> -->
+                <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem12">Nội thất</a>
+            </li>
+            <li class="nav-item-ct">
+                <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem12">Ngoại thất</a>
+            </li> -->
                     <li class="nav-item-ct">
                         <a class="nav-link-ct txt-headling-3" data-toggle="tab" href="#tabItem12">Mỹ nghệ</a>
                     </li>
@@ -125,258 +348,359 @@
 
                 </ul>
             </div>
-
-
-            <div class="content p-content bg-gray-2">
-                <div class="pt-5">
-                    <div class="row">
-                        <div class="col-xl-18 col-lg-4 pb-5">
-                            <aside class="wrap__business-filter bg-white">
+        </div>
+    </div>
+    <div class="bg-gray-2">
+        <div class="container-business container bg-gray-2">
+            <div class="bg-gray-2">
+                <div class="content bg-gray-2">
+                    <div class="pt-4">
+                        <div class="justify-content-between row-ct">
+                            <div class="col-xl-4 col-lg-4 pb-5 pr-4 col-991-12 pr-991-0">
+                                <aside class="wrap__business-filter bg-white">
                                     <div class="__inner info">
                                         <div class="info-wrapper logo">
                                             <a href="" class="business-logo" title="">
-                                                <img class="m-auto" src="./assets/img/logo-ref3 2.png" alt="" widt="278px" height="278px">
+                                                <img class="m-auto" src="./assets/image/logo.png" alt="" widt="278px"
+                                                    height="278px">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper inline">
-                                            <div class="info-icon"><img src="./assets/img/mdi_company.png" alt=""></div>
-                                            <div class="info-content">Tên Công ty<strong>Công ty TNHH Hòa Phát</strong></div>
+                                            <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                    height="18" viewBox="0 0 20 18" fill="#207cea">
+                                                    <path
+                                                        d="M16 12H14V14H16M16 8H14V10H16M18 16H10V14H12V12H10V10H12V8H10V6H18M8 4H6V2H8M8 8H6V6H8M8 12H6V10H8M8 16H6V14H8M4 4H2V2H4M4 8H2V6H4M4 12H2V10H4M4 16H2V14H4M10 4V0H0V18H20V4H10Z"
+                                                        fill="#207cea" />
+                                                </svg></div>
+                                            <div class="info-content">Tên Công ty<strong>Công ty TNHH Hòa Phát</strong>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper inline">
-                                            <div class="info-icon"><img src="./assets/img/ph_barcode-bold.png" alt=""></div>
+                                            <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="#207cea">
+                                                    <path
+                                                        d="M21.75 4.875V8.625C21.75 8.92337 21.6315 9.20952 21.4205 9.4205C21.2095 9.63147 20.9234 9.75 20.625 9.75C20.3266 9.75 20.0405 9.63147 19.8295 9.4205C19.6185 9.20952 19.5 8.92337 19.5 8.625V6H16.875C16.5766 6 16.2905 5.88147 16.0795 5.6705C15.8685 5.45952 15.75 5.17337 15.75 4.875C15.75 4.57663 15.8685 4.29048 16.0795 4.0795C16.2905 3.86853 16.5766 3.75 16.875 3.75H20.625C20.9234 3.75 21.2095 3.86853 21.4205 4.0795C21.6315 4.29048 21.75 4.57663 21.75 4.875ZM7.125 18H4.5V15.375C4.5 15.0766 4.38147 14.7905 4.1705 14.5795C3.95952 14.3685 3.67337 14.25 3.375 14.25C3.07663 14.25 2.79048 14.3685 2.5795 14.5795C2.36853 14.7905 2.25 15.0766 2.25 15.375V19.125C2.25 19.4234 2.36853 19.7095 2.5795 19.9205C2.79048 20.1315 3.07663 20.25 3.375 20.25H7.125C7.42337 20.25 7.70952 20.1315 7.9205 19.9205C8.13147 19.7095 8.25 19.4234 8.25 19.125C8.25 18.8266 8.13147 18.5405 7.9205 18.3295C7.70952 18.1185 7.42337 18 7.125 18ZM20.625 14.25C20.3266 14.25 20.0405 14.3685 19.8295 14.5795C19.6185 14.7905 19.5 15.0766 19.5 15.375V18H16.875C16.5766 18 16.2905 18.1185 16.0795 18.3295C15.8685 18.5405 15.75 18.8266 15.75 19.125C15.75 19.4234 15.8685 19.7095 16.0795 19.9205C16.2905 20.1315 16.5766 20.25 16.875 20.25H20.625C20.9234 20.25 21.2095 20.1315 21.4205 19.9205C21.6315 19.7095 21.75 19.4234 21.75 19.125V15.375C21.75 15.0766 21.6315 14.7905 21.4205 14.5795C21.2095 14.3685 20.9234 14.25 20.625 14.25ZM3.375 9.75C3.67337 9.75 3.95952 9.63147 4.1705 9.4205C4.38147 9.20952 4.5 8.92337 4.5 8.625V6H7.125C7.42337 6 7.70952 5.88147 7.9205 5.6705C8.13147 5.45952 8.25 5.17337 8.25 4.875C8.25 4.57663 8.13147 4.29048 7.9205 4.0795C7.70952 3.86853 7.42337 3.75 7.125 3.75H3.375C3.07663 3.75 2.79048 3.86853 2.5795 4.0795C2.36853 4.29048 2.25 4.57663 2.25 4.875V8.625C2.25 8.92337 2.36853 9.20952 2.5795 9.4205C2.79048 9.63147 3.07663 9.75 3.375 9.75ZM8.25 7.5C7.95163 7.5 7.66548 7.61853 7.4545 7.8295C7.24353 8.04048 7.125 8.32663 7.125 8.625V15.375C7.125 15.6734 7.24353 15.9595 7.4545 16.1705C7.66548 16.3815 7.95163 16.5 8.25 16.5C8.54837 16.5 8.83452 16.3815 9.0455 16.1705C9.25647 15.9595 9.375 15.6734 9.375 15.375V8.625C9.375 8.32663 9.25647 8.04048 9.0455 7.8295C8.83452 7.61853 8.54837 7.5 8.25 7.5ZM16.875 15.375V8.625C16.875 8.32663 16.7565 8.04048 16.5455 7.8295C16.3345 7.61853 16.0484 7.5 15.75 7.5C15.4516 7.5 15.1655 7.61853 14.9545 7.8295C14.7435 8.04048 14.625 8.32663 14.625 8.625V15.375C14.625 15.6734 14.7435 15.9595 14.9545 16.1705C15.1655 16.3815 15.4516 16.5 15.75 16.5C16.0484 16.5 16.3345 16.3815 16.5455 16.1705C16.7565 15.9595 16.875 15.6734 16.875 15.375ZM12 7.5C11.7016 7.5 11.4155 7.61853 11.2045 7.8295C10.9935 8.04048 10.875 8.32663 10.875 8.625V15.375C10.875 15.6734 10.9935 15.9595 11.2045 16.1705C11.4155 16.3815 11.7016 16.5 12 16.5C12.2984 16.5 12.5845 16.3815 12.7955 16.1705C13.0065 15.9595 13.125 15.6734 13.125 15.375V8.625C13.125 8.32663 13.0065 8.04048 12.7955 7.8295C12.5845 7.61853 12.2984 7.5 12 7.5Z"
+                                                        fill="#207cea" />
+                                                </svg>
+                                            </div>
                                             <div class="info-content">Mã số thuế<strong>012345678990</strong></div>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper inline">
-                                            <div class="info-icon"><img src="./assets/img/ri_user-3-line.svg" alt=""></div>
+                                            <div class="info-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M17.5 4.842C15.976 4.337 14.146 4 12 4C9.855 4 8.024 4.337 6.5 4.842M17.5 4.842C20.521 5.842 22.335 7.502 23 8.5L20.5 11L17.5 9V4.842ZM6.5 4.842C3.479 5.842 1.665 7.502 1 8.5L3.5 11L6.5 9V4.842ZM10 7V10M10 10L4.586 15.414C4.2109 15.789 4.00011 16.2976 4 16.828V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V16.828C19.9999 16.2976 19.7891 15.789 19.414 15.414L14 10M10 10H14M14 10V7"
+                                                        stroke="#207CEA" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M12 17C13.1046 17 14 16.1046 14 15C14 13.8954 13.1046 13 12 13C10.8954 13 10 13.8954 10 15C10 16.1046 10.8954 17 12 17Z"
+                                                        stroke="#207CEA" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
                                             <div class="info-content">Số điện thoại<strong>Phạm Công Danh</strong></div>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper">
-                                            <div class="info-icon"><img src="./assets/img/mingcute_mail-send-line.png" alt=""></div>
+                                            <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="#207cea">
+                                                    <g clip-path="url(#clip0_763_17614)">
+                                                        <path
+                                                            d="M20 4C20.5046 3.99984 20.9906 4.19041 21.3605 4.5335C21.7305 4.87659 21.9572 5.34684 21.995 5.85L22 6V18C22.0002 18.5046 21.8096 18.9906 21.4665 19.3605C21.1234 19.7305 20.6532 19.9572 20.15 19.995L20 20H4C3.49542 20.0002 3.00943 19.8096 2.63945 19.4665C2.26947 19.1234 2.04284 18.6532 2.005 18.15L2 18V17H4V18H20V7.414L13.06 14.354C12.7975 14.6165 12.447 14.7723 12.0763 14.7913C11.7056 14.8103 11.341 14.6912 11.053 14.457L10.939 14.354L4 7.414V8H2V6C1.99984 5.49542 2.19041 5.00943 2.5335 4.63945C2.87659 4.26947 3.34684 4.04284 3.85 4.005L4 4H20ZM6 13C6.26522 13 6.51957 13.1054 6.70711 13.2929C6.89464 13.4804 7 13.7348 7 14C7 14.2652 6.89464 14.5196 6.70711 14.7071C6.51957 14.8946 6.26522 15 6 15H1C0.734784 15 0.48043 14.8946 0.292893 14.7071C0.105357 14.5196 0 14.2652 0 14C0 13.7348 0.105357 13.4804 0.292893 13.2929C0.48043 13.1054 0.734784 13 1 13H6ZM18.586 6H5.414L12 12.586L18.586 6ZM5 10C5.25488 10.0003 5.50003 10.0979 5.68537 10.2728C5.8707 10.4478 5.98223 10.687 5.99717 10.9414C6.01211 11.1958 5.92933 11.4464 5.76574 11.6418C5.60214 11.8373 5.3701 11.9629 5.117 11.993L5 12H2C1.74512 11.9997 1.49997 11.9021 1.31463 11.7272C1.1293 11.5522 1.01777 11.313 1.00283 11.0586C0.987891 10.8042 1.07067 10.5536 1.23426 10.3582C1.39786 10.1627 1.6299 10.0371 1.883 10.007L2 10H5Z"
+                                                            fill="#207cea" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_763_17614">
+                                                            <rect width="24" height="24" fill="#207cea" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg></div>
                                             <div class="info-content">Email<strong>hoaphat@gmail.com</strong></div>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper">
-                                            <div class="info-icon"><img src="./assets/img/pajamas_earth.png" alt=""></div>
-                                            <div class="info-content">Website<strong><a href="#" title="">congtytnhhhoat.com.vn</a></strong></div>
+                                            <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="#207cea">
+                                                    <g clip-path="url(#clip0_763_17628)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M12 21.75C12.345 21.75 13.2645 21.411 14.2305 19.479C14.6895 18.561 15.075 17.424 15.3435 16.125H8.6565C8.925 17.424 9.3105 18.561 9.7695 19.479C10.7355 21.411 11.655 21.75 12 21.75ZM8.331 13.875C8.22262 12.6273 8.22262 11.3727 8.331 10.125H15.669C15.7773 11.3727 15.7773 12.6273 15.669 13.875H8.331ZM17.6355 16.125C17.2995 17.961 16.746 19.587 16.0365 20.877C18.1497 19.9128 19.8511 18.2284 20.8365 16.125H17.6355ZM21.57 13.875H17.925C18.0227 12.6269 18.0227 11.3731 17.925 10.125H21.5685C21.8099 11.3633 21.8099 12.6367 21.5685 13.875H21.57ZM6.0735 13.875H2.43C2.1886 12.6367 2.1886 11.3633 2.43 10.125H6.075C5.97716 11.3731 5.97716 12.6269 6.075 13.875H6.0735ZM3.1635 16.125H6.3645C6.7005 17.961 7.254 19.587 7.9635 20.877C5.85031 19.9128 4.14893 18.2284 3.1635 16.125ZM8.6565 7.875H15.3435C15.075 6.576 14.6895 5.439 14.2305 4.521C13.2645 2.589 12.345 2.25 12 2.25C11.655 2.25 10.7355 2.589 9.7695 4.521C9.3105 5.439 8.925 6.576 8.6565 7.875ZM17.6355 7.875H20.8365C19.851 5.77169 18.1496 4.08736 16.0365 3.123C16.746 4.413 17.2995 6.039 17.6355 7.875ZM7.965 3.123C7.2555 4.413 6.702 6.039 6.366 7.875H3.1635C4.14893 5.77161 5.85181 4.08725 7.965 3.123ZM12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12C24 15.1826 22.7357 18.2348 20.4853 20.4853C18.2348 22.7357 15.1826 24 12 24C8.8174 24 5.76516 22.7357 3.51472 20.4853C1.26428 18.2348 0 15.1826 0 12C0 8.8174 1.26428 5.76516 3.51472 3.51472C5.76516 1.26428 8.8174 0 12 0Z"
+                                                            fill="#207cea" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_763_17628">
+                                                            <rect width="24" height="24" fill="#207cea" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div class="info-content">Website<strong><a href="#"
+                                                        title="">congtytnhhhoat.com.vn</a></strong></div>
                                         </div>
                                     </div>
                                     <div class="__inner info">
                                         <div class="info-wrapper">
-                                            <div class="info-icon"><img src="./assets/img/material-symbols_location-on-rounded.png" alt=""></div>
-                                            <div class="info-content">Địa chỉ<strong>Ấp thới hòa, xã vĩnh thới Lai vung Đồng tháp</strong></div>
+                                            <div class="info-icon"><img
+                                                    src="./assets/img/material-symbols_location-on-rounded.png" alt="">
+                                            </div>
+                                            <div class="info-content">Địa chỉ<strong>Ấp thới hòa, xã vĩnh thới Lai vung
+                                                    Đồng
+                                                    tháp</strong></div>
                                         </div>
                                     </div>
-                            </aside>
-                        </div>
-                        
-                        <div class="col-xl-82 col-lg-8 pb-3 ">
-                            <div class="wrap__breadcrumbs boder-up">
-                                <ul class="breadcrumb-site d-flex align-items-center">
-                                    <li class="__item">
-                                        <a href="#"><img src="./assets/img/carbon_development.png" alt="">Thông tin công ty</a>
-                                    </li>
-                                </ul>
+                                </aside>
                             </div>
 
-                            <div class="l-business__detail boder-down">
-                                <div class="business-desc__block">
-                                    <ul class="wrap-info__business-detail">
-                                      <li class="business-info__row">
-                                        <h4>Người sáng lập:</h4>
-                                        <div class="__right">Nguyễn Công Chứ</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Quy mô lúc thành lập:</h4>
-                                        <div class="__right">30 nhân sự</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Năm thành lập:</h4>
-                                        <div class="__right">08/06/2019</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Nơi thành lập:</h4>
-                                        <div class="__right">Hà Đông - Hà Nội</div>
-                                      </li>
+                            <div class="col-xl-8 col-lg-8 pb-3 ">
+                                <div class="wrap__breadcrumbs boder-up">
+                                    <ul class="breadcrumb-site d-flex align-items-center">
+                                        <li class="__item">
+                                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                    viewBox="0 0 32 32" fill="none">
+                                                    <path
+                                                        d="M8 4V8H4V4H8ZM2 2V10H10V2H2ZM18 7V11H14V7H18ZM12 5V13H20V5H12ZM8 16V20H4V16H8ZM2 14V22H10V14H2Z"
+                                                        fill="#011a39" />
+                                                    <path
+                                                        d="M22 10V16H16V22H10V30H30V10H22ZM18 18H22V22H18V18ZM16 28H12V24H16V28ZM22 28H18V24H22V28ZM28 28H24V24H28V28ZM28 22H24V18H28V22ZM24 16V12H28V16H24Z"
+                                                        fill="#011a39" />
+                                                </svg>Thông tin công ty</a>
+                                        </li>
                                     </ul>
-                                  </div>
-                                  <div class="business-desc__block">
-                                    <h3>Các sản phẩm, Số lượng mặt hàng lúc thành lập</h3>
-                                      <ul class="wrap-info__business-detail">
-                                        <li class="business-info__row">Đồ bếp: 35 Sản phẩm</li>
-                                        <li class="business-info__row">Mỹ nghệ: 50 Sản phẩm</li>
-                                        <li class="business-info__row">Nội thất: 60 Sản phẩm</li>
-                                      </ul>
-                                    </div>
-                                  <div class="business-desc__block">
-                                    <h3>Mục tiêu, địnhh hướng phát triển lúc thành lập</h3>
-                                    <p class="__text">
-                                        Chúng tôi luôn cố gắng tìm tòi và tạo nên những sản phẩm từ thiên nhiên vừa không độc hại và hướng đến sức khỏe người tiêu dùng vừa nhằm bảo vệ môi trường sống quanh ta
-                                    </p>
-                                  </div>
+                                </div>
 
-                                <div class="business-desc__block">
-                                    <h3>Quy mô hiện tại</h3>
-                                    <ul class="wrap-info__business-detail">
-                                      <li class="business-info__row">
-                                        <h4>Cơ sở hạ tầng:</h4>
-                                        <div class="__right">Tòa nhà 3 tầng, rộng 60m2</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Vốn, Doanh số:</h4>
-                                        <div class="__right">1,305,700,000 VNĐ</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Thị trường:</h4>
-                                        <div class="__right">Trong nước</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Sản phẩm:</h4>
-                                        <div class="__right">124 Sản phẩm</div>
-                                      </li>
-                                      <li class="business-info__row">
-                                        <h4>Nhân lực:</h4>
-                                        <div class="__right">300 công nhân</div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="business-desc__block">
-                                      <h3>Định hướng và chiến lược phát triển</h3>
-                                      <ul class="wrap-info__business-detail">
-                                        <li class="business-info__row">
-                                          <h4>Quy mô:</h4>
-                                          <div class="__right">Xưởng 200m2</div>
-                                        </li>
-                                        <li class="business-info__row">
-                                          <h4>Vốn:</h4>
-                                          <div class="__right">3,000,000,000 VNĐ</div>
-                                        </li>
-                                        <li class="business-info__row">
-                                          <h4>Thị trường:</h4>
-                                          <div class="__right">Trong nước và Quốc tế</div>
-                                        </li>
-                                      </ul>
+                                <div class="l-business__detail boder-down">
+                                    <div class="business-desc__block">
+                                        <ul class="wrap-info__business-detail">
+                                            <li class="business-info__row">
+                                                <h4>Người sáng lập:</h4>
+                                                <div class="__right">Nguyễn Công Chứ</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Quy mô lúc thành lập:</h4>
+                                                <div class="__right">30 nhân sự</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Năm thành lập:</h4>
+                                                <div class="__right">08/06/2019</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Nơi thành lập:</h4>
+                                                <div class="__right">Hà Đông - Hà Nội</div>
+                                            </li>
+                                        </ul>
                                     </div>
-                    
-                                  <div class="business-desc__block">
-                                    <h3>Mặt hàng</h3>
-                                    <p class="__text">
-                                        Chúng tôi luôn cố gắng tìm tòi và tạo nên những sản phẩm từ thiên nhiên vừa không độc hại và hướng đến sức khỏe người tiêu dùng vừa nhằm bảo vệ môi trường sống quanh ta. TRE là sản phẩm quý báu và là biểu tượng của Đất nước Việt Nam
-                                    </p>
-                                  </div>
+                                    <div class="business-desc__block">
+                                        <h3>Các sản phẩm, Số lượng mặt hàng lúc thành lập</h3>
+                                        <ul class="wrap-info__business-detail">
+                                            <li class="business-info__row">Đồ bếp: 35 Sản phẩm</li>
+                                            <li class="business-info__row">Mỹ nghệ: 50 Sản phẩm</li>
+                                            <li class="business-info__row">Nội thất: 60 Sản phẩm</li>
+                                        </ul>
+                                    </div>
+                                    <div class="business-desc__block">
+                                        <h3>Mục tiêu, địnhh hướng phát triển lúc thành lập</h3>
+                                        <p class="__text">
+                                            Chúng tôi luôn cố gắng tìm tòi và tạo nên những sản phẩm từ thiên nhiên vừa
+                                            không độc hại và hướng đến sức khỏe người tiêu dùng vừa nhằm bảo vệ môi
+                                            trường
+                                            sống quanh ta
+                                        </p>
+                                    </div>
+
+                                    <div class="business-desc__block">
+                                        <h3>Quy mô hiện tại</h3>
+                                        <ul class="wrap-info__business-detail">
+                                            <li class="business-info__row">
+                                                <h4>Cơ sở hạ tầng:</h4>
+                                                <div class="__right">Tòa nhà 3 tầng, rộng 60m2</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Vốn, Doanh số:</h4>
+                                                <div class="__right">1,305,700,000 VNĐ</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Thị trường:</h4>
+                                                <div class="__right">Trong nước</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Sản phẩm:</h4>
+                                                <div class="__right">124 Sản phẩm</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Nhân lực:</h4>
+                                                <div class="__right">300 công nhân</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="business-desc__block">
+                                        <h3>Định hướng và chiến lược phát triển</h3>
+                                        <ul class="wrap-info__business-detail">
+                                            <li class="business-info__row">
+                                                <h4>Quy mô:</h4>
+                                                <div class="__right">Xưởng 200m2</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Vốn:</h4>
+                                                <div class="__right">3,000,000,000 VNĐ</div>
+                                            </li>
+                                            <li class="business-info__row">
+                                                <h4>Thị trường:</h4>
+                                                <div class="__right">Trong nước và Quốc tế</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="business-desc__block">
+                                        <h3>Mặt hàng</h3>
+                                        <p class="__text">
+                                            Chúng tôi luôn cố gắng tìm tòi và tạo nên những sản phẩm từ thiên nhiên vừa
+                                            không độc hại và hướng đến sức khỏe người tiêu dùng vừa nhằm bảo vệ môi
+                                            trường
+                                            sống quanh ta. TRE là sản phẩm quý báu và là biểu tượng của Đất nước Việt
+                                            Nam
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <section class="pb-2 plr-0">
-                    <div class="section-title mt-0">
-                    <h1>Gợi ý cho bạn</h1>
-                    <a class="more">
-                        Xem thêm
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                    </div>
-                    <div class="list list-suggest">
-                        <div class="item">
-                            <a href="#"><img src="./assets/img/item1.png" alt="" /></a>
-                            <div class="info">
-                            <div class="name">
-                                Tre đan lát tiện dụng dùng cho nội thất 
-                            </div>
-                            <div class="prices">
-                                <div class="price">VNĐ <span>250.000</span></div>
-                                <div class="old-price">VNĐ 500.000</div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <div class=" footer-wrapper">
+        <div class="container my-5" style="margin-bottom: 0px !important;">
+            <footer class="text-white text-center text-lg-start">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4 responsive-footer">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w-100-500 pb-3">
+                            <h5 class="text-uppercase mb-4">THÔNG TIN LIÊN HỆ</h5>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 172px; background-color: #fff; height: 1px" />
 
-            <footer class="footer footer-business bg-white">
-                <div class="p-content container-al">
-                    <div class=" flex-column d-flex" style="gap: 15px;">
-                        <div class="logo-list">
-                            <img src="./assets/img/logo-ref1.png" alt="" />
-                            <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
-                            <img src="./assets/img/logo-ref3.png" alt="" />
-                            <img src="./assets/img/ft-vcci.png" alt="" />
-                        </div>
-                        <div class="d-flex align-items-center" style="gap: 10px">
-                            <img src="./assets/img/logo2.png" class="logo-2" alt="" />
-                            <p class="footer-text m-width">
-                                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
-                                tre tại Việt Nam
+                            <p class="mb-2">SỞ CÔNG THƯƠNG TỈNH BẠC LIÊU</p>
+                            <p class="mb-2">
+                                <span class="fw-bold">Địa chỉ:</span> Khu Hành chính, đường
+                                Nguyễn Tất Thành, phường 1, Tp Bạc Liêu, tỉnh Bạc Liêu
                             </p>
+
+                            <p class="mb-2">
+                                <span class="fw-bold">Điện thoại:</span> (84) 2913.392626
+                            </p>
+                            <p>
+                                <span class="fw-bold">Email:</span>caonguyen5974@gmail.com
+                            </p>
+
+                            <div class="mt-4">
+                                <p class="fw-bold mb-1">Kết nối với chúng tôi</p>
+                                <!-- Facebook -->
+                                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-facebook-f"
+                                        style="color: #207cea"></i></a>
+                                <!-- Dribbble -->
+                                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-twitter"
+                                        style="color: #207cea"></i></a>
+                                <!-- Twitter -->
+                                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-instagram"
+                                        style="color: #207cea"></i></a>
+                                <!-- Google + -->
+                                <a type="button" class="btn btn-light rounded-circle"><i class="fab fa-youtube"
+                                        style="color: #207cea"></i></a>
+                                <!-- Linkedin -->
+                            </div>
                         </div>
-                        <div class="social-list">
-                            <img src="./assets/img/mdi_instagram.svg" alt="" />
-                            <img src="./assets/img/ic_baseline-facebook.svg" alt="" />
-                            <img src="./assets/img/mdi_google-plus.svg" alt="" />
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 w-100-500">
+                            <h6 class="text-uppercase">HỖ TRỢ KHÁCH HÀNG</h6>
+
+                            <div class="form-outline form-white mb-4 block-center">
+                                <div class="d-flex align-items-center responsive--info-footer">
+                                    <div class="icon-phone">
+                                        <img src="./assets/icon/Group 435.png" alt="" />
+                                    </div>
+                                    <div class="number-phone">
+                                        <span class="fs-3 text-light">(84) 2913.392626</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="fw-bold mb-2">Hướng dẫn đăng ký thành viên</p>
+                            <p>Hướng dẫn đăng nhập</p>
+                            <p>Hướng dẫn mua hàng</p>
+
+                            <p>Hướng dẫn bán hàng</p>
+                            <p class="mb-5">Câu hỏi thường gặp</p>
                         </div>
-                    </div>
-                    <div class="">
-                        <div class="list">
-                            <h2>Bản quyền của Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
-                            <ul>
-                                <li>
-                                    <img src="./assets/img/map.svg" alt="" />
-                                    <p class="footer-text">
-                                        Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                        <!--Grid column-->
+                        <div
+                            class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-between w-100-500">
+                            <div>
+                                <h6 class="text-uppercase">Chính sách quy chế</h6>
+
+                                <p>Quy chế sử dụng</p>
+                                <p>Bảo mật thông tin</p>
+
+                                <p>Hướng dẫn tham gia sàn</p>
+                                <p>Hướng dẫn thanh toán</p>
+                            </div>
+                            <div class="img-degree d-flex mt-5 block-center" style="    justify-content: flex-start;">
+                                <img src="./assets/image/degree.png" alt="" width="211px" height="79px" />
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 custome-box w-100-500 block-center">
+                            <div class="box-opacity">
+                                <h6 class="mb-2 text-light text-center pt-3">
+                                    THỐNG KÊ TRUY CẬP
+                                </h6>
+
+                                <div class="in-click px-4">
+                                    <p class="mb-3">Online: 11</p>
+                                    <p class="mb-3">Lượt truy cập: 1627651</p>
+                                    <p class="mb-3">Sản phẩm: 169</p>
+                                    <p class="mb-3">Chào hàng: 63</p>
+                                    <p class="mb-3">Thành viên: 85</p>
+                                    <p class="pb-4">
+                                        Thành viên mới: <br />
+                                        Cở sở bánh đậu xanh Hương đen
                                     </p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/Phone.svg" alt="" />
-                                    <p class="footer-text">Điện Thoại: 123-4567-890</p>
-                                </li>
-                                <li>
-                                    <img src="./assets/img/tabler_license.svg" alt="" />
-                                    <p class="footer-text">Số giấy phép: 387/GP- BC- BVHTT cấp ngày 25/12/2006</p>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <!--Grid column-->
                     </div>
+                    <!--Grid row-->
                 </div>
+                <!-- Grid container -->
             </footer>
         </div>
-    </body>
-    <!-- latest jquery-->
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    </div>
+    <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
-    <script type="text/javascript">
-         $('.filter-btn').on('click', function (e) {
-            $('.collection-filter').css("left", "-15px");
-        });
-        $('.filter-back').on('click', function (e) {
-                $('.collection-filter').css("left", "-365px");
-                $('.sidebar-popup').trigger('click');
-            });
-        function checkSize() {
-           var header = $("#menu-header").width();
-           var menu = $(".nav-tabs-ct").width();
-           if(header< menu) {
-            $(".nav-tabs-ct").css("overflow","auto");
-           }
-        }
-        $( document ).ready(function() {
-            checkSize();
-        });
-        $("body").append("<ul class='nk-sticky-toolbar'><li class='demo-purchase' data-content='10'><a><img src='assets/img/cart-red.svg' alt=''></a></li></ul>");
-    
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+<link rel="stylesheet" href="assets/css/main_detail.css" />
+<script type="text/javascript">
+    $("body").append("<ul class='nk-sticky-toolbar'><li class='demo-purchase' data-content='10'><a><img src='assets/img/cart-red.svg' alt=''></a></li></ul>");
+
+</script>
+
 </html>

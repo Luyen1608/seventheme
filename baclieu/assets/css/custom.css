@@ -90,8 +90,8 @@
 }
 
 .txt-headling-3 {
-    font-size: 15pt;
-    line-height: 24px;
+    font-size: 14pt;
+    line-height: 20px;
     font-weight: 500 !important;
 }
 
@@ -115,8 +115,14 @@
 
 .filter-btn {
     color: white !important;
+    height: 45px;
+    align-items: center;
+    height: 45px;
+    display: flex
 }
-
+.wrap__filter-search{
+    gap: 5px;
+}
 .collection-mobile-back {
     font-size: 20px;
     padding: 0px 15px 15px 15px;
@@ -127,6 +133,7 @@
 .filter-main-btn {
     display: none;
     cursor: pointer;
+
 }
 
 .l-business__item .__desc .business__item-title .call {
@@ -137,6 +144,10 @@
 }
 
 @media (max-width: 991px) {
+    .ml-0-991 {
+        margin-left: 0px !important;
+    }
+
     .collection-filter {
         position: fixed !important;
         height: 100vh;
@@ -239,7 +250,7 @@
     }
 
     .l-business__item .__desc .business__item-title .call {
-        display: block;
+        display: flex;
     }
 
     .footer .container-al .right {

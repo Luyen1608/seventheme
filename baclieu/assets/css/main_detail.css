@@ -515,10 +515,11 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-  .col-6-1024{
+  .col-6-1024 {
     flex: 0 0 auto;
     width: 50%;
   }
+
   .container {
     padding-right: 5%;
     padding-left: 5%;
@@ -678,6 +679,14 @@ img {
 }
 
 @media (max-width: 991px) {
+  .pr-991-0{
+    padding-right: 0px !important;
+  }
+  .col-991-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
   .block-center {
     display: flex;
     justify-content: space-evenly !important;
@@ -915,7 +924,16 @@ img {
     width: 100%;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .col-768-7{
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+  .col-768-5{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
 @media (max-width: 572px) {
 
   .number-phone,
@@ -1025,7 +1043,7 @@ img {
 
   .category-product {
     top: 35px;
-    height: 400px;
+    /* height: auto; */
     z-index: 10;
   }
 
