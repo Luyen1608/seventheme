@@ -679,6 +679,7 @@ img {
 }
 
 @media (max-width: 991px) {
+  
   .pr-991-0{
     padding-right: 0px !important;
   }

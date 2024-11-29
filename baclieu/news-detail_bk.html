@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"
+    ></script>
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pre-header">
+        <div class="container-al">
+          <div class="pre-header-contact">
+            <p class="text">Sàn thương mại điện tử các sản phẩm từ tre</p>
+            <p class="text">
+              <img src="./assets/img/Iconspace_Call_25px.svg" alt="" />
+              Liên hệ: 0123456789
+            </p>
+          </div>
+
+          <div class="select-language-btn">
+            <div class="text">
+              <img src="./assets/img/google.svg" alt="" />
+              Select language
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <h1 class="banner-heading">bamboo from vietnam</h1>
+        <div class="bamboo-left">
+          <img src="./assets/img/bbl.png" alt="" />
+        </div>
+        <div class="bamboo-right">
+          <img src="./assets/img/bamboo.jpg" class="bamboo-right-img" alt="" />
+          <img src="./assets/img/bbrec.png" class="bamboo-right-rec" alt="" />
+        </div>
+      </div>
+      <header class="header">
+        <div class="container-al">
+          <div class="logo">
+            <img src="./assets/img/logo-full.png" alt="" />
+          </div>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="header-search"
+              placeholder="Tìm kiếm sản phẩm"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="btns-wrap">
+            <div class="cart-btn">
+              <img src="./assets/img/cart-2.svg" alt="" />
+            </div>
+            <a href="#" class="sign-in-btn"> Đăng nhập </a>
+            <a href="#" class="sign-up-btn"> Đăng ký </a>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-overlay"></div>
+      <div class="mobile-categories">
+        <div class="container-al">
+          <ul class="mobile-categories-list">
+            <li><span>Trang chủ</span></li>
+            <li class="dropdown" aria-controls="sd-1" aria-expanded="true">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown" id="sd-1">
+                <li>1 Hello world</li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+            <li><span> Doanh nghiệp </span></li>
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>Thị trường quốc tế</li>
+                    <li>Mỹ</li>
+                    <li>Nhật Bản</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span>
+                    1 Hello world<i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li>1 Hello world</li>
+                    <li>2 Hello world</li>
+                    <li>3 Hello world</li>
+                  </ul>
+                </li>
+                <li>2 Hello world</li>
+                <li>3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="btns-wrap only-mobile">
+        <div class="mobile-cate-btn">
+          <div class="container-al">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="cart-btn">
+          <img src="./assets/img/cart-2.svg" alt="" />
+        </div>
+        <a href="#" class="sign-in-btn"> Đăng nhập </a>
+        <a href="#" class="sign-up-btn"> Đăng ký </a>
+      </div>
+      <div class="categories">
+        <div class="container-al">
+          <ul class="categories-list">
+            <li><span> Trang chủ </span></li>
+
+            <li class="dropdown">
+              <span> Sản phẩm <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="line">1 Hello world 1 Hello world</li>
+
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Chào hàng </span></li>
+
+            <li><span> Doanh nghiệp </span></li>
+
+            <li class="dropdown">
+              <span> Tin tức <i class="fa-solid fa-chevron-down"></i> </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown line">
+                  <span>
+                    Giới thiệu tổng quan sàn<i
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown">
+                    <li class="line">Thông thị trường quốc tế</li>
+
+                    <li class="line">Mỹ</li>
+
+                    <li class="line">
+                      Nhật Bả
+                      <nav></nav>
+                    </li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+            <li><span> Quảng cáo </span></li>
+
+            <li class="dropdown">
+              <span>
+                Hướng dẫn mua bán<i class="fa-solid fa-chevron-down"></i>
+              </span>
+              <ul class="sub-dropdown">
+                <li class="lv2-dropdown">
+                  <span class="line">
+                    1 Hello world <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <ul class="lv2-sub-dropdown mobile">
+                    <li class="line">1 Hello world</li>
+                    <li class="line">2 Hello world</li>
+                    <li class="line">3 Hello world</li>
+                  </ul>
+                </li>
+                <li class="line">2 Hello world</li>
+                <li class="line">3 Hello world</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="news-wrap">
+        <div class="container-al">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 left">
+              <div class="news-menu">
+                <h2>Thông tin thị trường quốc tế</h2>
+                <ul>
+                  <li><a href="">Thị trường Mỹ</a></li>
+                  <li><a href="#">Thị trường Nhật Bản</a></li>
+                  <li><a href="">Thị trường Trung Quốc</a></li>
+                  <li><a href="">Thị trường EU</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Thư viện kiến thức</h2>
+                <ul>
+                  <li><a href="">Thương mại điện tử</a></li>
+                  <li><a href="">Hợp đồng mua bán quốc tế</a></li>
+                  <li><a href="">Giao nhận, vận tải, bảo hiểm</a></li>
+                  <li><a href=""> Thanh toán quốc tế</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Thông tin khác</h2>
+                <ul>
+                  <li><a href="">Tin tức</a></li>
+                  <li><a href="">Hội chợ triển lãm</a></li>
+                  <li><a href="">Danh sách các nhà nhập khẩu</a></li>
+                  <li><a href=""> Terms and conditions</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href=""> Site map</a></li>
+                </ul>
+              </div>
+              <div class="news-menu">
+                <h2>Giới thiệu tổng quan sàn</h2>
+                <ul>
+                  <li><a href="">Giới thiệu chung</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8 right">
+              <div class="breadcump-wrap">
+                <div class="breadcump-item">
+                  <h2>Tin tức</h2>
+                  <div class="icon">
+                    <img src="./assets/img/breadcump-icon.svg" alt="" />
+                  </div>
+                  <h3 class="news-title">Thông tin thị trường quốc tế</h3>
+                </div>
+              </div>
+              <div class="news-detail">
+                <h1 class="news-detail-heading">
+                  Chính phủ ban hành Nghị định quy định Chức năng, nhiệm vụ và
+                  cơ cấu tổ chức mới của Bộ Công Thương
+                </h1>
+                <div class="news-detail-view">
+                  <div class="d-flex align-items-center gap-3">
+                    <p class="d-flex align-items-center gap-1">
+                      <img src="./assets/img/date-icon.svg" alt="" />
+                      08/12/2022 11:06
+                    </p>
+                    <p class="d-flex align-items-center gap-1">
+                      <img src="./assets/img/eye-icon.svg" alt="" />
+                      Lượt xem: 103
+                    </p>
+                  </div>
+                </div>
+                <h2 class="news-detail-subheading">
+                  Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có
+                  sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào
+                  thực tiễn, tăng cường hiệu quả, hiệu lực quản lý Nhà nước của
+                  ngành Công Thương.
+                </h2>
+                <div class="news-detail-text">
+                  Trong khuôn khổ các hoạt động “Tổng kết hoạt động KH&CN nổi
+                  bật của ngành Công Thương giai đoạn 2016-2020 và định hướng
+                  giai đoạn đến 2030, tầm nhìn đến 2045”, ngày 24/10/2022, Bộ
+                  Công Thương đã tổ chức Hội thảo chuyên đề “Phát triển hệ thống
+                  các tổ chức KH&CN công lập, gắn với định hướng hoạt động
+                  KH&CN, đổi mới sáng tạo của ngành Công Thương giai đoạn đến
+                  năm 2030, tầm nhìn đến 2045”. Hội thảo do Vụ trưởng Vụ KH&CN
+                  Trần Việt Hòa chủ trì có sự tham gia của đông đảo các đơn vị
+                  Cục, Vụ, Viện, các tổ chức KH&CN thuộc Bộ Công Thương.
+                </div>
+                <div class="news-detail-img">
+                  <img src="./assets/img/news-detail-img.svg" alt="" />
+                </div>
+                <div class="news-detail-text">
+                  Giai đoạn 2016-2020, hoạt động KH&CN của ngành Công Thương có
+                  sự chuyển biến rõ nét, góp phần nâng cao hiệu quả ứng dụng vào
+                  thực tiễn, tăng cường hiệu quả, hiệu lực quản lý Nhà nước của
+                  ngành Công Thương. Các nhiệm vụ trong giai đoạn này tập trung
+                  vào hỗ trợ doanh nghiệp ứng dụng, đổi mới công nghệ, quản trị
+                  sản xuất, phát triển sản phẩm theo chuỗi giá trị để tạo ra sản
+                  phẩm, hàng hóa thương hiệu Việt Nam có giá trị gia tăng và
+                  tính cạnh tranh cao trên thị trường. Nhiều công trình nghiên
+                  cứu KH&CN đã đạt được những giải thưởng cao và ứng dụng nhanh
+                  chóng vào thực tiễn của ngành, lĩnh vực, mang tới tác động
+                  tích cực, tạo cơ hội phát triển, mở rộng sản xuất kinh doanh
+                  cho các doanh nghiệp. Góp phần vào sự thành công này, các tổ
+                  chức KH&CN của ngành Công Thương đã có những điều chỉnh quan
+                  trọng về phương thức hoạt động, gắn với yêu cầu nghiên cứu,
+                  ứng dụng đổi mới công nghệ của các doanh nghiệp. Từ đó, có
+                  những đóng góp có ý nghĩa trong kết quả hoạt động KH&CN cũng
+                  như những thành tựu phát triển chung của ngành. Đồng thời,
+                  cùng với chủ trương về cổ phần hóa các doanh nghiệp nhà nước,
+                  đẩy mạnh thực hiện cơ chế tự chủ trong các đơn vị KH&CN công
+                  lập, trong hơn 10 năm qua, hệ thống các tổ chức KH&CN của
+                  ngành Công Thương đã liên tục thực hiện đổi mới, tái cơ cấu về
+                  quy mô tổ chức và phạm vi hoạt động.
+                </div>
+                <div class="news-detail-img">
+                  <img src="./assets/img/news-detail-img.svg" alt="" />
+                </div>
+                <div class="news-detail-text">
+                  Để triển khai có hiệu quả Nghị quyết Đại hội đại biểu toàn
+                  quốc lần thứ XIII của Đảng và Chiến lược phát triển kinh tế -
+                  xã hội 10 năm 2021-2030, KH&CN và đổi mới sáng tạo cùng với
+                  phát triển nguồn nhân lực chất lượng cao được xác định là một
+                  trong ba đột phá chiến lược để hiện thực hóa các mục tiêu đề
+                  ra. KH&CN cũng được khẳng định là nền tảng quan trọng thúc đẩy
+                  quá trình tái cơ cấu ngành Công Thương giai đoạn 2021-2030,
+                  tầm nhìn 2045. Điều này đặt ra những nhiệm vụ, yêu cầu mới đối
+                  với hoạt động KH&CN ngành Công Thương nói chung và đặc biệt là
+                  hệ thống các tổ chức KH&CN nói riêng. Hội thảo là một trong
+                  những hoạt động quan trọng trong tiến trình hoàn thiện báo cáo
+                  “Định hướng phát triển các tổ chức KH&CN công lập ngành Công
+                  Thương giai đoạn đến năm 2030, tầm nhìn đến 2045” do Vụ Khoa
+                  học và Công nghệ soạn thảo, nhằm tạo sự đồng thuận, thống nhất
+                  về định hướng, giải pháp phát triển các Viện trong giai đoạn
+                  tiếp theo. Điều hành Hội thảo, ông Trần Việt Hòa – Vụ trưởng
+                  Vụ KH&CN đề nghị các đại biểu tập trung thảo luận vào 3 vấn đề
+                  chính: Vai trò và sứ mệnh của các tổ chức KH&CN công lập, đồng
+                  thời đánh giá những kết quả và đóng góp của tổ chức trong giai
+                  đoạn vừa qua; Yêu cầu về phát triển KH&CN phục vụ mục tiêu
+                  phát triển ngành, lĩnh vực gắn với mục tiêu chung của phát
+                  triển, tái cơ cấu ngành Công Thương giai đoạn 2021-2030, tầm
+                  nhìn đến 2045; Căn cứ khoa học và thực tiễn để xác định việc
+                  tồn tại, phát triển của một tổ chức KH&CN. Từ đó thảo luận,
+                  trao đổi về phương án đề xuất trong dự thảo Báo cáo.
+                </div>
+                <div class="news-detail-img">
+                  <img src="./assets/img/news-detail-img2.png" alt="" />
+                </div>
+                <div class="news-detail-text">
+                  Những ý kiến trao đổi, thảo luận thẳng thắn và cởi mở tại Hội
+                  thảo sẽ được Vụ KH&CN tập hợp để hoàn thiện dự thảo Báo cáo
+                  định hướng phát triển cùng lộ trình tái cơ cấu hệ thống các tổ
+                  chức KH&CN trực thuộc Bộ giai đoạn 2021-2030, tầm nhìn đến năm
+                  2045. Đồng thời, là căn cứ đề xuất Lãnh đạo Bộ có những quyết
+                  sách phù hợp trong phát triển mạng lưới tổ chức KH&CN công lập
+                  của Bộ Công Thương trong giai đoạn tiếp theo.
+                </div>
+                <div class="news-detail-footer d-flex justify-content-between align-items-center">
+                  <a href="#">Vào đây để xem chi tiết</a>
+                  <div class="d-flex flex-column gap-1 justify-content-end">
+                    <p>Nguồn: <a href="#">https://www.vielina.com/</a></p>
+                    <p>Lượt xem: 120,345</p>
+                  </div>
+                </div>
+              </div>
+              <div class="other-news">
+                <div class="other-news-title">
+                  <img src="./assets/img/other-news-title-icon.svg" alt="">
+                  <h2>Các tin khác</h2>
+                  <div class="line"></div>
+                </div>
+                <ul>
+                  <li> <a href="#">
+                    <img src="./assets/img/other-news-list.svg" alt="">
+                      Đẩy mạnh phát triển hệ thống các tổ chức KH&CN ngành Công Thương
+                  </a>
+                  </li>
+                  <li> <a href=""><img src="./assets/img/other-news-list.svg" alt="">Thông báo tuyển sinh trình độ tiến sĩ năm 2022-2023</a></li>
+                  <li> <a href=""><img src="./assets/img/other-news-list.svg" alt="">Đề án tuyển sinh Trình độ Tiến sĩ</a></li>
+                  <li> <a href=""><img src="./assets/img/other-news-list.svg" alt="">Các viện nghiên cứu thuộc Bộ Công Thương: Thành công trong phát triển công nghệ tự động hóa</a></li>
+                  <li><a href=""> <img src="./assets/img/other-news-list.svg" alt="">VIELINA làm chủ nhiều công nghệ 4.0 trong lĩnh vực Điện tử, Tin học, Tự động hoá</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container-al">
+          <div class="left flex-column d-flex">
+            <div class="logo-list">
+              <img src="./assets/img/logo-ref1.png" alt="" />
+              <img src="./assets/img/Oxfam_logo_vertical 1.png" alt="" />
+              <img src="./assets/img/logo-ref3.png" alt="" />
+              <img src="./assets/img/ft-vcci.png" alt="" />
+            </div>
+            <div class="d-flex align-items-center" style="gap: 10px">
+              <img src="./assets/img/logo2.png" class="logo-2" alt="" />
+              <p class="footer-text m-width">
+                Dự án Phát triển bền vững và toàn diện chuỗi giá trị nghêu và
+                tre tại Việt Nam
+              </p>
+            </div>
+            <div class="social-list">
+              <a href="">
+                <img src="./assets/img/mdi_instagram.svg" alt="" />
+              </a>
+              <a href=""
+                ><img src="./assets/img/ic_baseline-facebook.svg" alt=""
+              /></a>
+              <a href=""
+                ><img src="./assets/img/mdi_google-plus.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <div class="list">
+              <h2>Hướng dẫn mua bán</h2>
+              <ul>
+                <li><a class="footer-text">Hướng dẫn cho người mua</a></li>
+                <li>
+                  <a class="footer-text">Hướng dẫn cho người bán</a>
+                </li>
+                <li>
+                  <a class="footer-text">Bảo mật thông tin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <h2>Viện Tin học Doanh nghiệp (VCCI-ITB)</h2>
+              <ul>
+                <li>
+                  <img src="./assets/img/map.svg" alt="" />
+                  <p class="footer-text">
+                    Số 9 Đào Duy Anh, Quận Đống Đa, TP Hà Nội
+                  </p>
+                </li>
+                <li>
+                  <img src="./assets/img/Phone.svg" alt="" />
+                  <p class="footer-text">Điện Thoại: 123-4567-890</p>
+                </li>
+                <li>
+                  <img src="./assets/img/Message.svg" alt="" />
+                  <p class="footer-text">Email: contact@itb.com.vn</p>
+                </li>
+              </ul>
+            </div>
+            <div class="returns">
+              <div class="returns-link">
+                <p class="text">Liên kết website</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="option-list">
+                  <div class="option-item">Liên kết website</div>
+                  <div class="option-item">lorem1</div>
+                  <div class="option-item">lorem2</div>
+                </div>
+              </div>
+              <div class="returns-visit">
+                <p class="text">Lượt truy cập</p>
+                <p class="text number">7398898</p>
+              </div>
+              <div class="dangky-img-wrap">
+                <img src="./assets/img/dk.svg" alt="" class="dangky-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/app.js"></script>
+</html>

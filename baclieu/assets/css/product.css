@@ -46,7 +46,7 @@
   padding: 11px 16px;
   font-weight: 400;
   max-width: 468px;
-  min-width: 315px;
+  min-width: 215px;
   font-size: 16px;
   line-height: 24px;
   color: #8b919a;
@@ -58,7 +58,7 @@
   border-bottom-right-radius: 0;
 }
 .search-icon {
-  background: #8bc63f;
+  background: var(--primary-color);
   mix-blend-mode: normal;
   border-radius: 4px;
   cursor: pointer;
@@ -175,7 +175,7 @@
 .form-check-label {
   font-size: 16px;
   font-weight: 500;
-  color: #959ead;
+  color: #6f6f6f;
 }
 
 .form-check input:checked ~ .form-check-label {
@@ -355,7 +355,7 @@
 }
 .l-product__item .contact-btn {
   position: absolute;
-  background: #8bc63f;
+  background: var(--primary-color);
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -365,7 +365,7 @@
   transition: 0.2s ease;
   top: 60%;
   color: #ffffff;
-  border: 1px solid #6db503;
+  border: 1px solid var(--primary-color);
   border-radius: 8px;
 }
 .contact-btn:hover {
@@ -582,20 +582,20 @@
 .wrap-product__desc-row p {
   font-weight: 400;
   min-width: 150px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #303030;
 }
 .wrap-product__desc-row h3 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 
   color: #303030;
 }
 .wrap-product__desc-row span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #303030;
 }
