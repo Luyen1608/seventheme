@@ -19,6 +19,10 @@
 
 </head>
 <style>
+  #google_translate_element span {
+    display: none;
+  }
+
   .owl-dots {
     text-align: center;
     margin-top: 20px;
@@ -82,6 +86,7 @@
                 <span>caonguyen5974@gmail.com</span>
               </div>
             </div>
+            <div id="google_translate_element"></div>
           </div>
         </div>
 
@@ -1347,6 +1352,35 @@
       dots[slideIndex - 1].className += " active";
     }
   </script>
+
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'vi',
+        includedLanguages: 'vi,en,de,ko,ru,ja,fr,th,zh-CN'
+      }, 'google_translate_element');
+    }
+    $("#google_translate_element span").empty();
+    
+  </script>
+  <script>
+  $(document).ready(function () {
+    // Trì hoãn 2 giây trước khi kiểm tra và xóa nội dung
+    setTimeout(function () {
+      // Kiểm tra nếu phần tử #translate tồn tại
+      if ($('.goog-te-gadget').length > 0) {
+        // Xóa "Powered by"
+        $('.goog-te-gadget').html(function (_, currentHtml) {
+          return currentHtml.replace(/Powered by.+/, '');
+        });
+      }
+    }, 2000); // 2000ms = 2 giây
+  });
+  </script>
+
 </body>
 
 </html>

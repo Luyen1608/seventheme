@@ -112,7 +112,8 @@ img {
 .info-company {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: auto;
+  gap: 10px;
   height: 25px;
 }
 
@@ -669,7 +670,7 @@ img {
   }
 
   .info-company {
-    width: 50%;
+    width: auto;
   }
 
   .menu-wrapper {
@@ -745,7 +746,7 @@ img {
   }
 
   .infomation {
-    width: 96%;
+    width: 100%;
   }
 
   .frame {
@@ -753,7 +754,7 @@ img {
   }
 
   .info-company {
-    width: 50%;
+    width: auto;
   }
 
   .image-logo {
@@ -1081,7 +1082,8 @@ img {
   }
 
   .info-company {
-    display: none;
+    display: flex;
+    width: 100%;
   }
 
   .header__center {
