@@ -1422,3 +1422,51 @@ img {
     width: 177px;
   }
 }
+/* text input */
+@media screen and (max-width: 890px) {
+  .form-group-header {
+    width: 350px !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .form-group-header {
+    width: 250px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-group-header {
+    width: 100% !important;
+    padding: 10px 0px;
+  }
+}
+.top-search .form-search select {
+  height: auto;
+  max-width: 100px;
+}
+
+.top-search .form-search input {
+  border: none;
+  border-left: 1px solid #a1a1a1;
+  border-radius: 0;
+  line-height: 1.2;
+}
+
+.top-search .form-search {
+  border: 1px solid #FFF;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #FFF;
+}
+
+.top-search .btn-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.custom-select {
+  padding: 0 .35rem 0 .35rem;
+  margin-right: 5px;
+}
+
+/* end text input header */
