@@ -1,0 +1,244 @@
+/*======= common style =======*/
+
+
+/* font roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font roboto */
+
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* font Quicksand */
+
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --style-color-main: #13AC37  ;
+   --style-color-dark: #147D45;
+    --style-color-light: rgba(32, 156, 90, 0.62);
+    --style-color-light-2: rgba(32, 156, 90, 0.20);
+    --style-color-btn-contrast: #ff8e01;
+
+    --style-color-in-bg-footer: #2f3235;
+
+    --style-color-in-bg: white;
+    --style-color-in-bg-menu: black;
+    --style-color-bg-footer-light: white;
+    --style-color-in-bg-dark: rgb(255, 255, 255);
+    /* footer */
+    --style-color-bg-footer: #13AC37;
+    --style-color-color-footer: white;
+    --style-color-bg-btn-footer: white;
+    --style-color-bg-color-hover: white;
+    --style-color-color-share: white;
+    --style-color-bg-placehoder-footer: #ffffff;
+    --style-color-call: #f74239;
+    --style-color-btn-footer:#13AC37;
+    --style-footer-color-hover:#ffb300;
+    
+    --style-color-menu-active: white;
+    --style-color-menu-hover: white;
+    
+    --style-color-filter-hover: #0096C7;
+
+
+     /* hover */
+     --style-color-btn-search-new: #162570;
+     --style-color-input: rgb(205 210 234 / 50%);
+     --style-color-bg-new: rgb(205 210 234 / 20%);
+ 
+     --style-color-menu-hover: white;
+     --hover-dark: white;
+     --hover-white:#ff8e01;
+     --hover-light: #ff8e01;
+ 
+     --home-hover-title: #ff8e01;
+     --pre-header-hover-title: white;
+     
+     /* end hover */
+
+}
+#homeStyle04 .header__menu {
+    background: var(--style-color-main) !important;
+    border-radius: 10px;
+}
+#homeStyle04 .wrap-nav___left {
+    border: 1px solid var(--style-color-main)!important;
+}
+.form-group__ft input {
+    border: 1px solid var(--style-color-color-footer);
+}
+footer .form-group__ft button {
+    background-color: var(--style-color-bg-btn-footer)!important;
+}
+.footer-company__info {
+    color: var(--style-color-color-footer)!important;
+}
+footer .footer-company__info span {
+    color: var(--style-color-color-footer)!important;
+}
+footer {
+    padding-top: 0%!important;
+    margin-top: 40px!important;
+    background-color: var(--style-color-bg-footer)!important;
+    color: var(--style-color-color-footer)!important;
+}
+footer input::placeholder{
+    color: var(--style-color-bg-placehoder-footer)!important;
+}
+#homeStyle04 footer .footer__block-title, #homeStyle04 footer .call-now{
+    color: var(--style-color-color-footer) !important;
+}
+.footer__menu li a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+footer a:hover {
+    color: var(--style-footer-color-hover) !important;
+}
+.footer__menu li a{
+    color: var(--style-color-color-footer) !important;
+}
+#homeStyle01 a:hover {
+    color: var(--style-color-bg-color-hover) !important;
+}
+footer .call-now a {
+    color: var(--style-color-call) !important;
+}
+
+.section-title h2.title-border {
+    margin: 0px !important;
+}
+input:focus textarea:focus {
+    outline: none !important;
+    border: 1px solid var(--style-color-main) !important;
+}
+#homeStyle04.wrapper {
+    padding-bottom: 70px;
+}
+.header-top {
+    width: 100%;
+    background: linear-gradient(0deg, var(--style-color-main), var(--style-color-main));
+}
+.header-top__inner {
+   color: var(--style-color-in-bg) !important;
+}
+#homeStyle01 .nav__left-title {
+    background-color: var(--style-color-light-2) !important;
+    color: var(--style-color-light-2);
+}
+.side-nav {
+    padding: 5px 0px !important;
+}
+
+.nav__left-title {
+    background: linear-gradient(0deg, var(--style-color-main), var(--style-color-main)) !important;
+}
+.icon-fb-footer{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.news-menu input::placeholder {
+    color: rgba(0, 0, 0, 0.405) !important;
+}
+#homeStyle01 .change-ship a:hover{
+    color: var(--style-color-dark)!important;
+    opacity: 0.6;
+}
+
+/* home */
+@media only screen and (max-width: 768px) {
+    .section-title img {
+        height: 10px !important;
+        width: 150px !important;
+    }
+}
+.wrap__header-user {
+    gap: 10px;
+}
+.header__info .__item.--ct {
+    gap: 10px;
+}
+footer input {
+    color: var(--style-color-in-bg) !important;
+}
+.p-product__list02 .product__item:hover .p__text span {
+    color: var(--style-color-dark) !important
+}
+#homeStyle03 .shopping-cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--style-color-main);
+}
+@media only screen and (max-width: 1024px) {
+    #homeStyle03 .shopping-cart {
+        width: inherit;
+        height: inherit;
+        border: none;
+    }
+}
+.form-group-header button {
+    background-color: var(--style-color-main);
+}
+input.--style01 {
+    border-color: var(--style-color-main);
+}
+footer .style04-footer {
+    margin-bottom: 40px;
+    width: 100%;
+}
+#homeStyle04 .header__menu li>a:hover {
+    background-color: var(--style-color-btn-contrast);
+}
+#homeStyle04 .menu__sub li a {
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 100%;
+}
+#homeStyle04 .menu__sub li a:hover>svg>path  {
+    fill: var(--style-color-menu-hover);
+}
+.wrap-nav___left .nav__left-title{
+    height: 45px;
+    padding: 0px;
+}
+.header__right .home-banner, .header__right .home-banner img{
+    height: 100%;
+}
+footer .footer__block-title {
+    color: var(--style-color-in-bg-footer) !important;
+}
+footer .style03-footer {
+    margin-bottom: 40px!important;
+    width: 100% !important;
+}
+footer .call-now {
+    color: #fff;
+}
+#homeStyle04 .shopping-cart {
+    border: 1px solid var(--style-color-main);
+}
+/* tin tuc */
+.news-menu {
+    background-color: var(--style-color-bg-new) !important;
+}
+.news-wrap .news-item {
+    background-color: var(--style-color-bg-new) !important;
+}
+.news-search .search-icon {
+    background: var(--style-color-btn-search-new)!important;
+}
+#homeStyle003 .p__text a:hover {
+    color: var(--style-color-in-bg-dark) !important;
+}
