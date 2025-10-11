@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mẫu Chứng Nhận</title>
-    <!-- Sử dụng font Inter hoặc một font tương tự có sẵn trên hệ thống -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
 
@@ -14,19 +13,15 @@
             --color-red: #ED1C24;
             --color-blue: #074EA2;
             --font-main: 'Times New Roman', Times, serif;
-            /* Màu chữ mặc định là đen để nổi bật trên nền vàng */
             --color-text: #000000;
         }
 
-        /* Định nghĩa kích thước trang A4 cho in ấn */
         @page {
             size: A4;
             margin: 0;
-            /* Loại bỏ lề mặc định của trình duyệt */
         }
 
         body {
-            /* Giữ nguyên cho hiển thị màn hình */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -37,47 +32,29 @@
             overflow-x: hidden;
         }
 
-        /* KHUNG GIẤY A4 CỐ ĐỊNH (210mm x 297mm) - Dùng đơn vị mm cố định */
         .certificate-container {
             width: 210mm;
             height: 297mm;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             position: relative;
             overflow: hidden;
-
-            /* THAY THẾ BẰNG ẢNH NỀN CỐ ĐỊNH */
             background-image: url('bg_logo.png');
-            /* Đường dẫn đến ảnh nền */
-
-            /* SỬA ĐỔI: Dùng 'contain' để giữ nguyên tỷ lệ ảnh gốc, không bị cắt xén. */
-            /* Ảnh sẽ được căn giữa tuyệt đối, nếu có khoảng trắng thừa (rất ít) sẽ là màu trắng. */
             background-size: contain;
             background-repeat: no-repeat;
-
-            /* ĐẢM BẢO CĂN GIỮA TUYỆT ĐỐI */
             background-position: center center;
         }
 
-        /* Lớp nội dung chính - Định vị tuyệt đối */
         .main-content {
             width: 100%;
             height: 100%;
             position: relative;
-            /* Quan trọng: làm gốc cho các phần tử con Absolute */
             z-index: 2;
             color: var(--color-text);
-            /* main-content không cần padding hay border vì ảnh nền đã có sẵn */
         }
 
-        /* ======================================================= */
-        /* Định vị tuyệt đối các khối nội dung Text */
-        /* ======================================================= */
-
-        /* 1. Header & Quốc Huy - Vị trí Top 15mm */
         .header-block {
             position: absolute;
             top: 25mm;
-            /* Điều chỉnh để khớp với ảnh nền */
             left: 0;
             right: 0;
             text-align: center;
@@ -93,7 +70,6 @@
 
         .slogan-text {
             font-size: 14pt;
-            /* font-style: italic; */
             font-weight: 600;
             line-height: 1.2;
             margin: 0;
@@ -106,28 +82,22 @@
             margin: 0.5mm auto 4mm;
         }
 
-        /* Quốc Huy (Sử dụng placeholder để giữ vị trí) */
         .national-emblem-placeholder {
             width: 40mm;
             height: 40mm;
-            /* Vị trí Quốc Huy đã có sẵn trên ảnh nền, không cần đặt chữ */
             margin: 5mm auto 0;
             display: block;
         }
 
-        /* 2. Title Section - Vị trí Tiêu đề CHỨNG NHẬN */
         .title-section {
             position: absolute;
             top: 100mm;
-            /* Điều chỉnh vị trí phù hợp */
             left: 0;
             right: 0;
             text-align: center;
         }
 
         .title-section h3 {
-            /* font-family: "Noto Serif", serif; */
-            /* font-family: "Old Standard TT", serif; */
             font-family: "Playfair Display SC", serif;
 
             font-size: 15pt;
@@ -136,7 +106,6 @@
             text-transform: uppercase;
         }
 
-        /* Tiêu đề chính: CHỨNG NHẬN */
         .cert-main-title {
             font-size: 35pt;
             font-weight: 900;
@@ -158,15 +127,11 @@
         }
 
 
-        /* 3. Body Content - Vị trí Top của các dòng thông tin */
         .body-content {
             position: absolute;
             top: 155mm;
-            /* Điều chỉnh vị trí phù hợp */
             left: 38mm;
-            /* Căn lề trái */
             right: 45mm;
-            /* Căn lề phải */
         }
 
         .content-item {
@@ -187,14 +152,12 @@
             letter-spacing: -0.2mm;
         }
 
-        /* Đường chấm chấm cần điền */
         .content-item .line {
             flex-grow: 1;
             border-bottom: 0.5mm dotted #555;
             margin-bottom: 1mm;
         }
 
-        /* 4. Footer/Signature - Vị trí chữ ký */
         .signature-block {
             position: absolute;
             bottom: 81mm;
@@ -217,6 +180,20 @@
             margin-bottom: 1mm;
         }
 
+        .QR-block {
+            background-image: url(https://quetmavach.com/wp-content/uploads/2018/07/quet-ma-qr-1.png);
+            position: absolute;
+            bottom: 30mm;
+            right: 157mm;
+            width: 40%;
+            text-align: center;
+            z-index: 9999;
+            width: 17mm;
+            height: 23mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
 
         .signature-area p {
             margin: 0;
@@ -243,11 +220,9 @@
             font-size: 10pt;
             font-style: italic;
             margin-top: 2mm;
-            /* Vị trí chữ ký đã có sẵn trên ảnh nền, không cần khoảng trống */
             height: 0;
         }
 
-        /* 5. Footer Info - Vị trí Bottom của thông tin quyết định */
         .footer-info {
             font-family: "Noto Sans", sans-serif;
             color: var(--color-blue);
@@ -264,7 +239,6 @@
             color: #06509E;
         }
 
-        /* Media Query cho in ấn */
         @media print {
             body {
                 background-color: white !important;
@@ -284,24 +258,19 @@
 <body>
 
     <div class="certificate-container">
-        <!-- KHÔNG CẦN CÁC LỚP VIỀN GIẢ LẬP VÌ ĐÃ CÓ ẢNH NỀN -->
 
         <div class="main-content">
 
-            <!-- 1. Header & Quốc Huy -->
             <div class="header-block">
                 <p class="republic-text">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
                 <p class="slogan-text">Độc lập - Tự do - Hạnh phúc</p>
                 <div class="divider"></div>
 
-                <!-- Placeholder cho Quốc Huy (Vị trí này để text căn giữa) -->
                 <div class="national-emblem-placeholder"></div>
 
             </div>
 
-            <!-- 2. Chủ tịch và Chứng nhận -->
             <div class="title-section">
-                <!-- Điều chỉnh các dòng chữ này để khớp với ảnh nền -->
                 <h3 style="margin-top: -4mm;color: #054F9F;">BỘ TRƯỞNG BỘ CÔNG THƯƠNG
                 </h3>
                 <p class="cert-main-title">CHỨNG NHẬN</p>
@@ -309,7 +278,6 @@
                 <p class="cert-subtitle" style="margin-top: -5mm;">CẤP QUỐC GIA - NĂM 2025</p>
             </div>
 
-            <!-- 3. Nội dung chi tiết -->
             <div class="body-content">
                 <div class="content-item">
                     <label>TÊN SẢN PHẨM:</label>
@@ -322,25 +290,24 @@
                 </div>
             </div>
 
-            <!-- 4. Chữ ký và ngày tháng -->
             <div class="signature-block">
                 <div class="signature-area">
                     <p class="date">Hà Nội, ngày 09 tháng 10 năm 2025
                     <p>
                     <p class="role">KT. BỘ TRƯỞNG</p>
                     <p class="role">THỨ TRƯỞNG</p>
-                    <!-- KHÔNG CẦN KHOẢNG TRỐNG CHỮ KÝ VÌ CHỮ KÝ CÓ SẴN TRÊN ẢNH NỀN -->
                 </div>
             </div>
 
-            <!-- 4. họ tên -->
             <div class="fullName-block">
                 <p class="fullName">Nguyễn Sinh Nhật Tân
                 <p>
             </div>
+            <div class="QR-block">
+            </div>
+
         </div>
 
-        <!-- 5. Thông tin cuối trang -->
         <div class="footer-info">
             <p style="margin-bottom: 1mm;">- Theo Quyết định số 2568/QĐ-BCT ngày 15 tháng 9 năm 2025</p>
             <p style="margin-top: 2mm;">- Giấy chứng nhận có giá trị đến hết ngày 31 tháng 12 năm 2028</p>
