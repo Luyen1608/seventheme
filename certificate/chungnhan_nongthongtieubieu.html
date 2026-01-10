@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>Mẫu Chứng Nhận</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
         :root {
-            --color-red: #ED1C24;
+            --color-red: #ff2f1b;
             --color-blue: #074EA2;
             --font-main: 'Times New Roman', Times, serif;
             --color-text: #000000;
@@ -43,33 +45,36 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
+
         .img-rate {
-             background-image: url('logo-binh-chon.png');
-           position: absolute;
-    top: 36mm;
-    right: 78mm;
-    text-align: center;
-    z-index: 9999;
-    width: 52mm;
-    height: 62mm;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+            background-image: url('logo-binh-chon.png');
+            position: absolute;
+            top: 36mm;
+            right: 78mm;
+            text-align: center;
+            z-index: 9999;
+            width: 52mm;
+            height: 62mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
-        .img-stamp{
-             background-image: url('condau.png');
-    position: absolute;
-    bottom: 47mm;
-    right: 55mm;
-    text-align: center;
-    z-index: 9999;
-    width: 34mm;
-    height: 32mm;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-            
+
+        .img-stamp {
+            background-image: url('condau.png');
+            position: absolute;
+            bottom: 48mm;
+            right: 60mm;
+            text-align: center;
+            z-index: 9999;
+            width: 34mm;
+            height: 32mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
         }
+
         .main-content {
             width: 100%;
             height: 100%;
@@ -117,15 +122,14 @@
 
         .title-section {
             position: absolute;
-            top: 100mm;
-            left: 0;
+            top: 113.5mm;
+            left: -3px;
             right: 0;
             text-align: center;
         }
 
         .title-section h3 {
             font-family: "Playfair Display SC", serif;
-
             font-size: 15pt;
             font-weight: 700;
             margin-bottom: 2mm;
@@ -142,10 +146,10 @@
         }
 
         .cert-subtitle {
-            font-family: "Open Sans", sans-serif;
-            font-size: 15pt;
+            font-family: "Oswald", sans-serif;
+            font-size: 19.4pt;
             font-weight: 700;
-            margin-bottom: 5mm;
+            margin-bottom: 6mm;
             margin-top: -1mm;
             line-height: 1.4;
             letter-spacing: -0.2mm;
@@ -155,27 +159,46 @@
 
         .body-content {
             position: absolute;
-            top: 155mm;
-            left: 38mm;
+            top: 141mm;
+            left: 54mm;
             right: 45mm;
+        }
+
+        .item-name,
+        .item-company {
+            padding-left: 20mm
+        }
+
+        .item-company {
+            line-height: 9.6mm;
+        }
+
+        .item-address {
+            width: 119mm !important;
+            line-height: 9.6mm;
         }
 
         .content-item {
             color: #06509E;
             display: flex;
             align-items: flex-end;
-            margin-bottom: 7mm;
+            margin-bottom: 1mm;
             font-size: 12pt;
             font-weight: 600;
+            width: 110mm;
         }
 
+        .content-item label.item-company {}
+
         .content-item label {
+            font-style: italic;
             color: var(--color-blue);
-            font-family: "Noto Sans", sans-serif;
-            white-space: nowrap;
+            font-family: "Lora", serif;
+            /* white-space: nowrap; */
             margin-right: 4mm;
             font-weight: 700;
             letter-spacing: -0.2mm;
+            font-size: 6.5mm;
         }
 
         .content-item .line {
@@ -186,16 +209,16 @@
 
         .signature-block {
             position: absolute;
-            bottom: 81mm;
-            right: 30mm;
+            bottom: 80mm;
+            right: 35mm;
             width: 40%;
             text-align: center;
         }
 
         .fullName-block {
             position: absolute;
-            bottom: 33mm;
-            right: 30mm;
+            bottom: 36mm;
+            right: 34mm;
             width: 40%;
             text-align: center;
             color: var(--color-blue);
@@ -209,12 +232,12 @@
         .QR-block {
             background-image: url(https://quetmavach.com/wp-content/uploads/2018/07/quet-ma-qr-1.png);
             position: absolute;
-            bottom: 30mm;
-            right: 157mm;
+            bottom: 39mm;
+            right: 159mm;
             width: 40%;
             text-align: center;
             z-index: 9999;
-            width: 17mm;
+            width: 20mm;
             height: 23mm;
             background-position: center;
             background-size: contain;
@@ -228,7 +251,7 @@
 
         .signature-area .date {
             color: var(--color-blue);
-            margin-bottom: 1mm;
+            margin-bottom: 2mm;
             font-style: italic;
             font-size: 12pt;
         }
@@ -236,10 +259,10 @@
         .signature-area .role {
             color: var(--color-blue);
             font-family: "Noto Sans", sans-serif;
-            font-size: 10pt;
+            font-size: 13pt;
             font-weight: 800;
             text-transform: uppercase;
-            margin-bottom: 1mm;
+            margin-bottom: 0mm;
         }
 
         .signature-area .note {
@@ -253,9 +276,9 @@
             font-family: "Noto Sans", sans-serif;
             color: var(--color-blue);
             position: absolute;
-            bottom: 20mm;
-            left: 36mm;
-            font-size: 8pt;
+            bottom: 24mm;
+            left: 30mm;
+            font-size: 11pt;
             font-weight: 500;
             text-align: left;
             font-style: italic;
@@ -287,32 +310,20 @@
 
         <div class="main-content">
 
-            <div class="header-block">
-                <p class="republic-text">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
-                <p class="slogan-text">Độc lập - Tự do - Hạnh phúc</p>
-                <div class="divider"></div>
-
-                <div class="national-emblem-placeholder"></div>
-
-            </div>
-
             <div class="title-section">
-                <h3 style="margin-top: -4mm;color: #054F9F;">BỘ TRƯỞNG BỘ CÔNG THƯƠNG
-                </h3>
-                <p class="cert-main-title">CHỨNG NHẬN</p>
                 <p class="cert-subtitle">SẢN PHẨM CÔNG NGHIỆP NÔNG THÔN TIÊU BIỂU</p>
                 <p class="cert-subtitle" style="margin-top: -5mm;">CẤP QUỐC GIA - NĂM 2025</p>
             </div>
 
             <div class="body-content">
-                <div class="content-item">
-                    <label>TÊN SẢN PHẨM:</label>
+                <div class="content-item item-name">
+                    <label class="">Trà túi lọc Già Cổ Lam</label>
                 </div>
-                <div class="content-item">
-                    <label>ĐƠN VỊ SẢN XUẤT:</label>
+                <div class="content-item item-company">
+                    <label class="">Công ty cổ phần dược phẩm phẩm ALPHARCO ALPHARCO</label>
                 </div>
-                <div class="content-item">
-                    <label>ĐỊA CHỈ:</label>
+                <div class="content-item item-address">
+                    <label class="">Công ty cổ phần dược phẩm phẩm an pha co Công ty cổ phần dược</label>
                 </div>
             </div>
 
@@ -320,8 +331,8 @@
                 <div class="signature-area">
                     <p class="date">Hà Nội, ngày 09 tháng 10 năm 2025
                     <p>
-                    <p class="role">KT. BỘ TRƯỞNG</p>
-                    <p class="role">THỨ TRƯỞNG</p>
+                    <p class="role">BỘ CÔNG THƯƠNG</p>
+                    <p class="role">BỘ TRƯỞNG</p>
                 </div>
             </div>
 
@@ -331,16 +342,14 @@
             </div>
             <div class="QR-block">
             </div>
-             <div class="img-rate">
-            </div>
-             <div class="img-stamp">
+            <div class="img-stamp">
             </div>
 
         </div>
 
         <div class="footer-info">
-            <p style="margin-bottom: 1mm;">- Theo Quyết định số 2568/QĐ-BCT ngày 15 tháng 9 năm 2025</p>
-            <p style="margin-top: 2mm;">- Giấy chứng nhận có giá trị đến hết ngày 31 tháng 12 năm 2028</p>
+            <p style="margin-bottom: 0mm;">Theo Quyết định số 2568/QĐ-BCT, ngày 15 / 09 / 2025</p>
+            <p style="margin-top: 0mm;">Có giá trị đến ngày 31 tháng 12 năm 2028</p>
         </div>
 
     </div>
