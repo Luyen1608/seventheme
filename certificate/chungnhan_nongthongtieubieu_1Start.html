@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Mẫu Chứng Nhận</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        :root {
+            --color-red: #ff2f1b;
+            --color-blue: #074EA2;
+            --font-main: 'Times New Roman', Times, serif;
+            --color-text: #000000;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: var(--font-main);
+            overflow-x: hidden;
+        }
+
+        .certificate-container {
+            width: 210mm;
+            height: 297mm;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            background-image: url('bg_logo1start.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .img-rate {
+            background-image: url('logo-binh-chon.png');
+            position: absolute;
+            top: 36mm;
+            right: 78mm;
+            text-align: center;
+            z-index: 9999;
+            width: 52mm;
+            height: 62mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .img-stamp {
+            background-image: url('condau.png');
+            position: absolute;
+            bottom: 48mm;
+            right: 60mm;
+            text-align: center;
+            z-index: 9999;
+            width: 34mm;
+            height: 32mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        .main-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            color: var(--color-text);
+        }
+
+        .header-block {
+            position: absolute;
+            top: 25mm;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .republic-text {
+            font-size: 14pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .slogan-text {
+            font-size: 14pt;
+            font-weight: 600;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .divider {
+            width: 60mm;
+            height: 0.5mm;
+            background-color: black;
+            margin: 0.5mm auto 4mm;
+        }
+
+        .national-emblem-placeholder {
+            width: 40mm;
+            height: 40mm;
+            margin: 5mm auto 0;
+            display: block;
+        }
+
+        .title-section {
+            position: absolute;
+            top: 113.5mm;
+            left: -3px;
+            right: 0;
+            text-align: center;
+        }
+
+        .title-section h3 {
+            font-family: "Playfair Display SC", serif;
+            font-size: 15pt;
+            font-weight: 700;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+        }
+
+        .cert-main-title {
+            font-size: 35pt;
+            font-weight: 900;
+            color: var(--color-red);
+            margin: 5mm 0 4mm;
+            text-transform: uppercase;
+            letter-spacing: 0.2mm;
+        }
+
+        .cert-subtitle {
+            font-family: "Oswald", sans-serif;
+            font-size: 19.4pt;
+            font-weight: 700;
+            margin-bottom: 6mm;
+            margin-top: -1mm;
+            line-height: 1.4;
+            letter-spacing: -0.2mm;
+            color: var(--color-red);
+        }
+
+
+        .body-content {
+            position: absolute;
+            top: 141mm;
+            left: 54mm;
+            right: 45mm;
+        }
+
+        .item-name,
+        .item-company {
+            padding-left: 20mm
+        }
+
+        .item-company {
+            line-height: 9.6mm;
+        }
+
+        .item-address {
+            width: 119mm !important;
+            line-height: 9.6mm;
+        }
+
+        .content-item {
+            color: #06509E;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 1mm;
+            font-size: 12pt;
+            font-weight: 600;
+            width: 110mm;
+        }
+
+        .content-item label.item-company {}
+
+        .content-item label {
+            font-style: italic;
+            color: var(--color-blue);
+            font-family: "Lora", serif;
+            /* white-space: nowrap; */
+            margin-right: 4mm;
+            font-weight: 700;
+            letter-spacing: -0.2mm;
+            font-size: 6.5mm;
+        }
+
+        .content-item .line {
+            flex-grow: 1;
+            border-bottom: 0.5mm dotted #555;
+            margin-bottom: 1mm;
+        }
+
+        .signature-block {
+            position: absolute;
+            bottom: 80mm;
+            right: 35mm;
+            width: 40%;
+            text-align: center;
+        }
+
+        .fullName-block {
+            position: absolute;
+            bottom: 36mm;
+            right: 34mm;
+            width: 40%;
+            text-align: center;
+            color: var(--color-blue);
+            font-family: "Noto Sans", sans-serif;
+            font-size: 11pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 1mm;
+        }
+
+        .QR-block {
+            background-image: url(https://quetmavach.com/wp-content/uploads/2018/07/quet-ma-qr-1.png);
+            position: absolute;
+            bottom: 39mm;
+            right: 159mm;
+            width: 40%;
+            text-align: center;
+            z-index: 9999;
+            width: 20mm;
+            height: 23mm;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .signature-area p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .signature-area .date {
+            color: var(--color-blue);
+            margin-bottom: 2mm;
+            font-style: italic;
+            font-size: 12pt;
+        }
+
+        .signature-area .role {
+            color: var(--color-blue);
+            font-family: "Noto Sans", sans-serif;
+            font-size: 13pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 0mm;
+        }
+
+        .signature-area .note {
+            font-size: 10pt;
+            font-style: italic;
+            margin-top: 2mm;
+            height: 0;
+        }
+
+        .footer-info {
+            font-family: "Noto Sans", sans-serif;
+            color: var(--color-blue);
+            position: absolute;
+            bottom: 24mm;
+            left: 30mm;
+            font-size: 11pt;
+            font-weight: 500;
+            text-align: left;
+            font-style: italic;
+        }
+
+        .color-blu {
+            color: #06509E;
+        }
+
+        @media print {
+            body {
+                background-color: white !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: block !important;
+                overflow: hidden !important;
+            }
+
+            .certificate-container {
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="certificate-container">
+
+        <div class="main-content">
+
+            <div class="title-section">
+                <p class="cert-subtitle">SẢN PHẨM CÔNG NGHIỆP NÔNG THÔN TIÊU BIỂU</p>
+                <p class="cert-subtitle" style="margin-top: -5mm;">CẤP QUỐC GIA - NĂM 2025</p>
+            </div>
+
+            <div class="body-content">
+                <div class="content-item item-name">
+                    <label class="">Trà túi lọc Già Cổ Lam</label>
+                </div>
+                <div class="content-item item-company">
+                    <label class="">Công ty cổ phần dược phẩm phẩm ALPHARCO ALPHARCO</label>
+                </div>
+                <div class="content-item item-address">
+                    <label class="">Công ty cổ phần dược phẩm phẩm an pha co Công ty cổ phần dược</label>
+                </div>
+            </div>
+
+            <div class="signature-block">
+                <div class="signature-area">
+                    <p class="date">Hà Nội, ngày 09 tháng 10 năm 2025
+                    <p>
+                    <p class="role">BỘ CÔNG THƯƠNG</p>
+                    <p class="role">BỘ TRƯỞNG</p>
+                </div>
+            </div>
+
+            <div class="fullName-block">
+                <p class="fullName">Nguyễn Sinh Nhật Tân
+                <p>
+            </div>
+            <div class="QR-block">
+            </div>
+            <div class="img-stamp">
+            </div>
+
+        </div>
+
+        <div class="footer-info">
+            <p style="margin-bottom: 0mm;">Theo Quyết định số 2568/QĐ-BCT, ngày 15 / 09 / 2025</p>
+            <p style="margin-top: 0mm;">Có giá trị đến ngày 31 tháng 12 năm 2028</p>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
